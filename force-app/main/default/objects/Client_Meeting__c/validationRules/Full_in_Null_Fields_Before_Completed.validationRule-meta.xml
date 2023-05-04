@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_in_Null_Fields_Before_Completed</fullName>
+    <active>true</active>
+    <description>Checks if the record type ID is &quot;012G00000014QFb&quot; and the status field is &quot;Completed&quot;. If conditions are met, it checks if &quot;Partner Satisfaction Score&quot; or &quot;Are you willing to provide a referral?&quot; are null.</description>
+    <errorConditionFormula>AND(
+ RecordTypeId = &quot;012G00000014QFb&quot;,
+ISPICKVAL( Status__c , &quot;Completed&quot;),
+OR(
+ISBLANK( Rate_Likelihood_of_Renewing_Year_2__c ),
+ISBLANK( TEXT(Are_you_willing_to_provide_a_referral__c ))
+)
+)</errorConditionFormula>
+    <errorMessage>&quot;Partner Satisfaction Score&quot; and &quot;Are you willing to provide a referral?&quot; cannot be null before marking &quot;Status&quot; Completed.</errorMessage>
+</ValidationRule>

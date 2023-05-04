@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POs_Waiting_My_Approval</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Department__c</columns>
+    <columns>Department_Paying_out_PO__c</columns>
+    <columns>Vendor__c</columns>
+    <columns>PO_Total_Amount__c</columns>
+    <columns>Comments__c</columns>
+    <columns>Approved__c</columns>
+    <columns>Approved_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Current_User_is_Manager__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>POs Waiting My Approval</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

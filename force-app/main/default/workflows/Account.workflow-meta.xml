@@ -1,0 +1,2730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_New_Payment_Issue_RISK</fullName>
+        <description>Account: New Payment Issue RISK</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/New_Payment_Issue_Risk</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_On_Hold_Not_Payment_Issue</fullName>
+        <description>Account On Hold - Not Payment Issue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>avechiarella@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kconlan@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Account_On_Hold_Not_Payment_Issue</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Removed_Payment_Issue_RISK</fullName>
+        <description>Account: Removed Payment Issue RISK</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Removed_Payment_Issue_Risk</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Removed_from_On_Hold_Not_Payment_Issue</fullName>
+        <description>Account Removed from On Hold - Not Payment Issue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>avechiarella@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kconlan@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Account_Removed_from_On_Hold_Not_Payment_Issue</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_under_50_Last_Month</fullName>
+        <description>Account under 50% Last Month</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Current_PSR__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Inside_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Account_under_50_Last_Month</template>
+    </alerts>
+    <alerts>
+        <fullName>Acct_Billing_Contact_Changed_Alert</fullName>
+        <ccEmails>billing@abstraktmg.com</ccEmails>
+        <description>Acct: Billing Contact Changed Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mkolbet@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Abstrakt_Acct_Billing_Contact_Changed</template>
+    </alerts>
+    <alerts>
+        <fullName>Acct_Cleansing_Program_Concluded</fullName>
+        <description>Acct: Cleansing Program Concluded</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Acct_Cleansing_Program_Concluded</template>
+    </alerts>
+    <alerts>
+        <fullName>Acct_Cleansing_Program_Concluded_Email</fullName>
+        <description>Acct: Cleansing Program Concluded-Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nbazzetta@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Acct_Cleansing_Program_Concluded</template>
+    </alerts>
+    <alerts>
+        <fullName>Acct_New_Cleansing_Program</fullName>
+        <description>Acct: New Cleansing Program</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Acct_New_Cleansing_Program</template>
+    </alerts>
+    <alerts>
+        <fullName>Acct_New_Cleansing_Program_Email</fullName>
+        <description>Acct: New Cleansing Program-Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nbazzetta@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Acct_New_Cleansing_Program</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_Appropriate_People_of_a_Client_Satisfaction_Change</fullName>
+        <description>Alert Appropriate People of a Client Satisfaction Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>cgooding@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jschwepker@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>motoole@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Satisfaction_Level_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_Email_on_Client_with_Payment_Issue</fullName>
+        <description>Alert: Email on Client with Payment Issue</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Assistant_Partner_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Inside_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Manager_Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Abstrakt_Marketing_Group/Alert_Calls_Occurring_on_Client_with_Payment_Issue</template>
+    </alerts>
+    <alerts>
+        <fullName>Automotive_Account_Satisfaction_Level_Change</fullName>
+        <description>Automotive Account Satisfaction Level Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cgooding@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jhenthorn@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Abstrakt_Marketing_Group/Auto_Account_Satisfaction_Level_Changed</template>
+    </alerts>
+    <alerts>
+        <fullName>Automotive_Client_Cancellation</fullName>
+        <description>Automotive Client Cancellation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>cgooding@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jhenthorn@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Cancellation_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Bionic_New_Account_Assignment_Alert</fullName>
+        <description>Bionic - New Account Assignment Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Current_PSR__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Bionic_New_Account_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Blogging_Client_Cancellation</fullName>
+        <ccEmails>socialmedia@abstraktmg.com</ccEmails>
+        <description>Blogging Client Cancellation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cgooding@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rkunin@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Social_Media_Client_Blog_Cancellation</template>
+    </alerts>
+    <alerts>
+        <fullName>Cancel_Plan_Email_Alert</fullName>
+        <description>Cancel Plan Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>BGM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Pipeline Operations Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Training and Development Specialist</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Cancel_Save_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Client_Experience_Survey</fullName>
+        <description>Client Experience Survey</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Main_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Experience_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Notification_for_Account_Owner_Change</fullName>
+        <description>Email Notification for Account Owner Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nwulf@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Account_Owner_Changed_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Failure_to_Pay</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>Failure to Pay</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Project_Management_Emails/Failure_to_Pay</template>
+    </alerts>
+    <alerts>
+        <fullName>Failure_to_Pay_Inbound</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>Failure to Pay - Inbound</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Failure_to_Pay_Inbound</template>
+    </alerts>
+    <alerts>
+        <fullName>Marketing_Collateral_Cancellation_Email_Alert</fullName>
+        <description>Marketing Collateral Cancellation Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>avechiarella@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kconlan@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Marketing_Collateral_Emails/Marketing_Collateral_Cancellation</template>
+    </alerts>
+    <alerts>
+        <fullName>Marketing_Collateral_Top_10_Cancel_Risk_Alert</fullName>
+        <description>Marketing Collateral Top 10 Cancel Risk Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>astevenson@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Top_10_Cancel_Risk</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Cancel_Date_on_Cancelled_Account</fullName>
+        <description>New Cancel Date on Cancelled Account - Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>awittmaier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>clarence.collins@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>enester@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jvallieres@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jvanhook@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kbryan@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mkolbet@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/New_Cancel_Date_on_Cancelled_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Payment_Issue</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>New Payment Issue</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Current_PSR__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Inside_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Asset_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Manager_Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Project_Management_Emails/New_Payment_Issue</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Payment_Issue_Inbound</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>New Payment Issue - Inbound</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/New_Payment_Issue_Inbound</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Pipeline_Client</fullName>
+        <ccEmails>sean@abstraktmg.com</ccEmails>
+        <ccEmails>smiller@abstraktmg.com</ccEmails>
+        <description>New Pipeline Client</description>
+        <protected>false</protected>
+        <senderAddress>bizdev@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/Abstrakt_New_Client_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Social_Media_Client</fullName>
+        <ccEmails>amy@abstraktmg.com</ccEmails>
+        <ccEmails>socialmedia@abstraktmg.com</ccEmails>
+        <ccEmails>brian@abstraktmg.com</ccEmails>
+        <description>New Social Media Client</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>brian@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>cgooding@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dwood@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dyocco@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lengelhardt@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>bizdev@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/Abstrakt_New_Client_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_to_Create_Inbound_User</fullName>
+        <description>Notification to Create Inbound User</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>hwischmeier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Notification_to_Create_Inbound_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Social_Media_Team_of_New_Blogging_Client</fullName>
+        <ccEmails>socialmedia@abstraktmg.com</ccEmails>
+        <description>Notify Social Media Team of New Blogging Client</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Social_Media_Client_Blog_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Removed_from_Payment_Issue</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>Removed from Payment Issue</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Project_Management_Emails/Client_Removed_from_Payment_Issue</template>
+    </alerts>
+    <alerts>
+        <fullName>Removed_from_Payment_Issue_Inbound</fullName>
+        <ccEmails>bcchanges@abstraktmg.com</ccEmails>
+        <description>Removed from Payment Issue - Inbound</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Removed_from_Payment_Issue_Inbound</template>
+    </alerts>
+    <alerts>
+        <fullName>Top_10_Cancel_Risk_Account_Alert</fullName>
+        <description>Top 10 Cancel Risk Account Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assistant_Partner_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Inside_Sales_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Operations_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Quality_Assurance_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Manager_Director__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Top_10_Cancel_Risk</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Add_1_to_50</fullName>
+        <field>Times_Finished_Under_50__c</field>
+        <formula>IF(ISBLANK(Times_Finished_Under_50__c ),1,Times_Finished_Under_50__c  + 1)</formula>
+        <name>Add 1 to 50%</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Automate_Opportunity_Creation_is_True</fullName>
+        <field>Automate_Opportunity_Creation__c</field>
+        <literalValue>1</literalValue>
+        <name>Automate Opportunity Creation is True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Retention_Status</fullName>
+        <field>Retention_Status__c</field>
+        <literalValue>Former</literalValue>
+        <name>Change Retention Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Send_QBO_Invoice</fullName>
+        <field>Send_QBO_Invoice__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Send QBO Invoice</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Workato_Box</fullName>
+        <field>Org_Wide_Email_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Workato Box</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Definition_of_Success_Last_Modified</fullName>
+        <description>Definition of Success Last Modified when field Client Definition of Success updated.</description>
+        <field>Definition_of_Success_Last_Modified__c</field>
+        <formula>TODAY()</formula>
+        <name>Definition of Success Last Modified</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Payment_Issue_Month</fullName>
+        <description>Update the Last Payment Issue Month date on account page when Payment Issue checkbox is marked.</description>
+        <field>Last_Payment_Issue_Month__c</field>
+        <formula>CASE(MONTH(TODAY()),
+1,&quot;January&quot;,
+2,&quot;February&quot;,
+3,&quot;March&quot;,
+4,&quot;April&quot;,
+5,&quot;May&quot;,
+6,&quot;June&quot;,
+7,&quot;July&quot;,
+8,&quot;August&quot;,
+9,&quot;September&quot;,
+10,&quot;October&quot;,
+11,&quot;November&quot;,
+12,&quot;December&quot;,
+&quot;&quot;) + &quot;, &quot; +
+TEXT(YEAR(TODAY()))</formula>
+        <name>Last Payment Issue Month</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mark_Account_Canceled</fullName>
+        <field>Status__c</field>
+        <literalValue>Canceled</literalValue>
+        <name>Mark Account Canceled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Marketing_Collateral_Cancel_Date</fullName>
+        <field>Asset_Cancellation_Date__c</field>
+        <formula>Cancel_Date__c</formula>
+        <name>Marketing Collateral Cancel Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Blue</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Blue</literalValue>
+        <name>PCTR-Change to Blue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Green</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Green</literalValue>
+        <name>PCTR-Change to Green</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Orange</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Orange</literalValue>
+        <name>PCTR-Change to Orange</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Pink</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Pink</literalValue>
+        <name>PCTR-Change to Pink</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Red</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Red</literalValue>
+        <name>PCTR-Change to Red</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PCTR_Change_to_Yellow</fullName>
+        <field>Pipeline_Client_Temperature_Reading__c</field>
+        <literalValue>Yellow</literalValue>
+        <name>PCTR-Change to Yellow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Collection_Specialist</fullName>
+        <field>Collections_Specialist__c</field>
+        <lookupValue>nick.bewen@sapperconsulting.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Populate Collection Specialist</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Reply_to_Email_Address</fullName>
+        <description>This will be populated with the BGM Email Address field as the default.  It can be adjusted if necessary.</description>
+        <field>Reply_To_Email_Address__c</field>
+        <formula>BGM_Email_Address__c</formula>
+        <name>Populate Reply to Email Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Progress_on_Client_Success_Last_Updated</fullName>
+        <description>When Progress on Client Definition of Success is updated Client Success Last Updated is stamped with current date</description>
+        <field>Progress_on_Client_Success_Last_Updated__c</field>
+        <formula>TODAY()</formula>
+        <name>Progress on Client Success Last Updated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Satisfaction_Level_Prior_Value_Change</fullName>
+        <field>Satisfaction_Level_Prior_Value__c</field>
+        <formula>TEXT(PRIORVALUE( Chances_of_long_term_partnership__c ))</formula>
+        <name>Satisfaction Level Prior Value Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Override_for_Launching_Suspects</fullName>
+        <field>Override_for_Launching_Extra_Suspects__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Override for Launching Suspects</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Expected_Hours_Per_Day</fullName>
+        <field>Expected_Hours_per_Day__c</field>
+        <formula>CASE( Program_Size__c ,
+0.5,1,
+1,2,
+1.5,3,
+2,4,
+2.5,5,
+3,6,
+3.5,7,
+4,8,
+4.5,9,
+5,10,
+0)</formula>
+        <name>Update Expected Hours Per Day</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Start_Workflow_Date</fullName>
+        <field>Start_Workflow__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Start Workflow Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Start_Workflowv3</fullName>
+        <field>Start_Workflow__c</field>
+        <formula>TODAY () + 1</formula>
+        <name>Update Start Workflow Date to Tomorrow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Working_for_Free</fullName>
+        <field>Working_for_Free__c</field>
+        <name>Working for Free</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Account_Real_Time_Workato_Webhook</fullName>
+        <apiVersion>42.0</apiVersion>
+        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Account&amp;org_id=00D7j0000004dhQ</endpointUrl>
+        <fields>Current_PSR__c</fields>
+        <fields>Id</fields>
+        <fields>Org_Wide_Email_Id__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>cgooding@abstraktmg.com</integrationUser>
+        <name>Account Real-Time Workato Webhook</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Account_User_Changes</fullName>
+        <apiVersion>55.0</apiVersion>
+        <endpointUrl>https://8wbaw3ihee.execute-api.us-west-2.amazonaws.com/sfdc/account</endpointUrl>
+        <fields>Assistant_Partner_Sales_Manager__c</fields>
+        <fields>Cancel_Date__c</fields>
+        <fields>Current_PSR__c</fields>
+        <fields>Director__c</fields>
+        <fields>Go_Live_Date__c</fields>
+        <fields>Id</fields>
+        <fields>Implementation_Manager__c</fields>
+        <fields>Implementation_Start_Date__c</fields>
+        <fields>Inside_Sales_Manager__c</fields>
+        <fields>Name</fields>
+        <fields>Operations_Manager__c</fields>
+        <fields>OwnerId</fields>
+        <fields>RecordTypeId</fields>
+        <fields>Sales_Manager_Director__c</fields>
+        <fields>Status__c</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>sboudreau@abstraktmg.com</integrationUser>
+        <name>Account User Changes</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Account%3A Add 1 to Under 50%25</fullName>
+        <actions>
+            <name>Add_1_to_50</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.X50_or_Under_Goal_Last_Month__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This is to add 1 to accounts that finished under 50%</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Email Notifications for Account Owner Change</fullName>
+        <actions>
+            <name>Email_Notification_for_Account_Owner_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND( 
+(YEAR(Go_Live_Date__c)+MONTH(Go_Live_Date__c))&lt;&gt;(YEAR(TODAY())+MONTH(TODAY())),
+(YEAR( Implementation_Start_Date__c )+MONTH(Implementation_Start_Date__c ))&lt;&gt;(YEAR(TODAY())+MONTH(TODAY())),
+ISPICKVAL(Status__c, &apos;ACTIVE&apos; ) , 
+ISCHANGED(OwnerId),
+ LastModifiedById  &lt;&gt;  &apos;005G0000007udBg&apos; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account%3A Program Size Update Expected Hours</fullName>
+        <actions>
+            <name>Update_Expected_Hours_Per_Day</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+ISCHANGED( Program_Size__c ),
+ RecordTypeId =&apos;012A0000000kZfwIAE&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Auto Satisfaction Level Change</fullName>
+        <actions>
+            <name>Automotive_Account_Satisfaction_Level_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>equals</operation>
+            <value>Somewhat Satisfied,Not Satisfied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer Account</value>
+        </criteriaItems>
+        <description>Notify Chris, Joe, and Derrick when a change is made to the satisfaction level</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Automate Opportunities for Active Accounts</fullName>
+        <actions>
+            <name>Automate_Opportunity_Creation_is_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Automotive Client Cancellation</fullName>
+        <actions>
+            <name>Automotive_Client_Cancellation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Every time a Cancel Date is put in for a client a notification will be sent out to the selected recipients.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Billed Amount Shifts - Populate 3 Amount Fields</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Billed_Amount__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Client Definition of Success is Changed</fullName>
+        <actions>
+            <name>Definition_of_Success_Last_Modified</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When Client Definition of Success field is updated, this will update Definition of Success Last Modified</description>
+        <formula>ISCHANGED( Client_Definition_of_Success__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Client Marked Under 50%25 Last Month</fullName>
+        <actions>
+            <name>Account_under_50_Last_Month</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.X50_or_Under_Goal_Last_Month__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active,On Hold</value>
+        </criteriaItems>
+        <description>Email sent out to PSR and Manager to develop game plan for under 50% client</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Current PSR Changed</fullName>
+        <actions>
+            <name>Account_Real_Time_Workato_Webhook</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISCHANGED( Current_PSR__c ),  CONTAINS(RecordType.Name, &quot;Pipeline&quot;),  Go_Live_Date__c  &lt; TODAY ())</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Working for Free</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Working_for_Free__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>First Day of Current Month Changes</fullName>
+        <actions>
+            <name>Check_Send_QBO_Invoice</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This is used to populate the Send QBO Invoice checkbox on the Account</description>
+        <formula>ISCHANGED( First_Day_of_Current_Month__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Follow-up Task After Not Satisfied</fullName>
+        <actions>
+            <name>Client_Satisfaction_Solution</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>equals</operation>
+            <value>Not Satisfied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client</value>
+        </criteriaItems>
+        <description>Task assigned to Jim upon a client being moved to Not Satisfied.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Follow-up Task After Somewhat Satisfied v2</fullName>
+        <actions>
+            <name>Client_Satisfaction_Solutionv2</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>equals</operation>
+            <value>Somewhat Satisfied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client</value>
+        </criteriaItems>
+        <description>Task assigned to PSM upon a client being moved to Somewhat Satisfied.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inbound Account Ready for Portal User</fullName>
+        <actions>
+            <name>Notification_to_Create_Inbound_User</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>AgencyClient</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.GA_Account_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.GA_Account_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.GA_Property_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.GA_View_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This workflow notifies Hannah that the Inbound account is ready for a portal user.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last Payment Issue Month</fullName>
+        <actions>
+            <name>Last_Payment_Issue_Month</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Payment_Issue__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Stamps Last Payment Issue Month with current date when Payment Issue checkbox is marked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Collateral Cancellation</fullName>
+        <actions>
+            <name>Marketing_Collateral_Cancellation_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Sends email to Marketing Collateral Project Manager when a cancel date has been updated on the account page.</description>
+        <formula>AND( 
+Name &lt;&gt; &quot;AMG - Salesforce Support and Product Development&quot;,
+Marketing_Assets__c = TRUE,
+ISCHANGED(Cancel_Date__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Collateral Top 10 Cancel Risk</fullName>
+        <actions>
+            <name>Marketing_Collateral_Top_10_Cancel_Risk_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Top_10_Risk__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Marketing_Assets__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Sends email alert  Top 10 Cancel Risk to Marketing Collateral PM</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Monthly Task Creation - Kickoff</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Go_Live_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <description>This workflow schedules the Monthly Task Creation to be started on the Go Live Date.  This must be in a separate workflow rule because it only occurs once rather than monthly.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Start_Workflow_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Move Account to Cancelled v2</fullName>
+        <actions>
+            <name>Mark_Account_Canceled</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>This moves an account to cancelled when the cancel date equals TODAY.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Account.Cancel_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Blue</fullName>
+        <actions>
+            <name>PCTR_Change_to_Blue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Working_for_Free__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Billed_Amount__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Green</fullName>
+        <actions>
+            <name>PCTR_Change_to_Green</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>equals</operation>
+            <value>Satisfied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Go_Live_Date__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Working_for_Free__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Billed_Amount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Orange</fullName>
+        <actions>
+            <name>PCTR_Change_to_Orange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>THIS MONTH</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Pink</fullName>
+        <actions>
+            <name>PCTR_Change_to_Pink</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Go_Live_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>PCTR_Change_to_Green</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Red</fullName>
+        <actions>
+            <name>PCTR_Change_to_Red</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS MONTH</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PCTR-Change to Yellow</fullName>
+        <actions>
+            <name>PCTR_Change_to_Yellow</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>equals</operation>
+            <value>Somewhat Satisfied,Not Satisfied</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Working_for_Free__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Collection Specialist</fullName>
+        <actions>
+            <name>Populate_Collection_Specialist</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parent Account,AgencyClient,Pipeline Client</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Reply to Email Address</fullName>
+        <actions>
+            <name>Populate_Reply_to_Email_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.BGM_Email_Address__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This will populate the Reply to email address automatically when the BGM email address is populated.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Progress on Client Success Last Updated</fullName>
+        <actions>
+            <name>Progress_on_Client_Success_Last_Updated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When Progress on Client Definition of Success field is updated, this will update Progress on Client Success Last Updated</description>
+        <formula>ISCHANGED( Progress_on_Client_Definition_of_Success__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Remove Override Checkbox for Launching Suspects</fullName>
+        <actions>
+            <name>Uncheck_Override_for_Launching_Suspects</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This will uncheck the box on the first of the next month.</description>
+        <formula>AND(Override_for_Launching_Extra_Suspects__c = True, DAY(TODAY())= 1)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>SYS - Change Retention Status if Status Changes</fullName>
+        <actions>
+            <name>Change_Retention_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Canceled</value>
+        </criteriaItems>
+        <description>Changes the retention status in the retention details if the account status changes to canceled</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SYS - New Pipeline Client</fullName>
+        <actions>
+            <name>New_Pipeline_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notify appropriate people when a new pipeline client is created.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SYS - New Social Media Client</fullName>
+        <actions>
+            <name>New_Social_Media_Client</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Social Media Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notify appropriate people when a new social media client is created.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Top 10 Cancel Risk</fullName>
+        <actions>
+            <name>Top_10_Cancel_Risk_Account_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Sends email alert  Top 10 Cancel Risk to account team</description>
+        <formula>Top_10_Risk__c  = TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Infinity Costs Based on Appt Goal</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Monthly_Appt_Goal__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Marketing Collateral Cancel Date</fullName>
+        <actions>
+            <name>Marketing_Collateral_Cancel_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Asset_Cancellation_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Update the Marketing Collateral Cancel Date with Cancel Date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Sales Territory Field</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Satisfaction Prior Value</fullName>
+        <actions>
+            <name>Satisfaction_Level_Prior_Value_Change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Satisfaction_Level__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Satisfaction Prior to Cancel</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Cancel_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Weekly Task Creation - Kickoff %28Auto%29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <description>This workflow schedules the Monthly Task Creation to be started on the Go Live Date.  This must be in a separate workflow rule because it only occurs once instead of weekly.  (Automotive Only)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Weekly Task Creations %28Auto%29</fullName>
+        <actions>
+            <name>Dealer_Acct_Mgmt_Meeting</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Go_Live_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Number_of_Days_Live__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Start_Workflow__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer Account</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Workato Update - Org-Wide Email Update Required</fullName>
+        <actions>
+            <name>Check_Workato_Box</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISCHANGED(Current_PSR__c ), NOT(ISBLANK(Org_Wide_Email_Id__c )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>AM_IMP_Calibrate</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>AM/IMP Calibrate</subject>
+    </tasks>
+    <tasks>
+        <fullName>Anniversary_Gift</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Contract_End_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Anniversary Gift</subject>
+    </tasks>
+    <tasks>
+        <fullName>Automotive_Weekly_Meeting</fullName>
+        <assignedTo>Sales Rep</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Automotive Weekly Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>Automotive_Weekly_Meeting_v2</fullName>
+        <assignedTo>Sales Rep</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Automotive Weekly Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>Client_Satisfaction_Solution</fullName>
+        <assignedTo>cgooding@abstraktmg.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Note the solution being used to satisfy client.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Client Satisfaction Solution</subject>
+    </tasks>
+    <tasks>
+        <fullName>Client_Satisfaction_Solutionv2</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Note the solution being used to satisfy client.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Client Satisfaction Solution</subject>
+    </tasks>
+    <tasks>
+        <fullName>Dealer_Acct_Mgmt_Meeting</fullName>
+        <assignedTo>Sales Rep</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Dealer Acct Mgmt Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>First_Year_Strategy_Review</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>333</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>First Year Strategy Review</subject>
+    </tasks>
+    <tasks>
+        <fullName>Go_Live_Meeting</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Go Live Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>Go_Live_Meeting_1</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Go Live Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>IMP_Referral_Request</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Referral Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>Internal_Sales_to_AM_IMP</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Internal Sales to AM/IMP</subject>
+    </tasks>
+    <tasks>
+        <fullName>Kickoff_Call</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Kickoff_Meeting_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Kickoff Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Mid_Month_Calibration</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>Mid_Month_Calibration_Monthly</fullName>
+        <assignedTo>cgooding@abstraktmg.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Mid Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>Mid_Month_Calibration_Post_12_Month</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_10_Normal_Activity</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>270</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 10: Normal Activity</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_11_200_of_Normal_Activity_and_Appointments</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>300</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 11: 200% of Normal Activity and Appointments</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_12_Database_Marketing_Email_or_Direct_Mail</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>335</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 12: Database Marketing (Email or Direct Mail)</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_12_Normal_Activity</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>335</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 12: Normal Activity</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_12_ROI_Analysis</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>335</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 12: ROI Analysis</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_1_10_Mandatory_Touch_Points_to_Build_Initial_Relationship</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Kickoff_Meeting_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 1: 10 Mandatory Touch Points to Build Initial Relationship</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_1_Invite_to_follow_our_Facebook_site</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Kickoff_Meeting_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 1: Invite to follow our Facebook site</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_1_LinkedIn_Invite_After_Kickoff_Meeting</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Kickoff_Meeting_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 1: LinkedIn Invite After Kickoff Meeting</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_1_Send_a_Gift</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Express excitement for going live at the end of the month</description>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Kickoff_Meeting_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 1: Send a Gift</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_2_150_of_Normal_Resources_Applied</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>-1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.First_of_Next_Month__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 2: 150% of Normal Resources Applied</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_2_Introduce_Client_Nurture_Program</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 2: Introduce Client Nurture Program</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_2_Normal_Goal</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>i.e. 5 MSP or 10 Industrial</description>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 2: Normal Goal</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_2_Referral_Request</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>62</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Referral Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_3_Executive_Call</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>90</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 3: Executive Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_3_Leave_Voicemail_Thanking_Them_for_Being_a_Client</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>90</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 3: Leave Voicemail Thanking Them for Being a Client</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_3_Normal_Month_Activity_and_Goals</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>60</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 3: Normal Month Activity and Goals</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_4_200_activity_and_appointment_goals</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>90</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 4: 200% activity and appointment goals</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_5_ISM_Provides_Program_Change_Options</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>120</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 5: ISM Provides Program Change Options</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_5_Normal_Month_s_Actitvity</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>120</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 5: Normal Month&apos;s Actitvity</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_6_150_of_Activity_and_Appointment_Goals</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>150</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 6: 150% of Activity and Appointment Goals</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_7_Customer_Survey_Marketing_Interview</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>180</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 7: Customer Survey/Marketing Interview</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_7_Hand_Written_Thank_You_Note_with_Team_Picture</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>180</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 7: Hand Written Thank You Note with Team Picture</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_7_Normal_Activity</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>180</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 7: Normal Activity</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_8_200_Activity_and_Appointment_Goals</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>210</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month 8: 200% Activity and Appointment Goals</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>31</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_End_Recap_Monthly</fullName>
+        <assignedTo>cgooding@abstraktmg.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_End_Recap_Post12MonthsLive</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>Month_End_Recap_Post_1Year</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>15</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>62</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>Relationship_Builder_Monthly</fullName>
+        <assignedTo>cgooding@abstraktmg.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>Role_Play_Call</fullName>
+        <assignedTo>Implementation Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>25</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Role Play Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Role_Play_Call_1</fullName>
+        <assignedTo>Implementation Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>-5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Role Play Call/Call Guide Review</subject>
+    </tasks>
+    <tasks>
+        <fullName>Role_Play_Call_2</fullName>
+        <assignedTo>Implementation Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>-5</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Role Play Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>Welcome_Kit_1</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Welcome Kit</subject>
+    </tasks>
+    <tasks>
+        <fullName>X10th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>287</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>10th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X10th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>302</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>10th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X10th_Month_Referral</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>302</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>10th Month | Referral</subject>
+    </tasks>
+    <tasks>
+        <fullName>X10th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>302</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>10th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X11th_Month_List_Review</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>334</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>11th Month | List Review</subject>
+    </tasks>
+    <tasks>
+        <fullName>X11th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>317</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>11th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X11th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>334</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>11th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X11th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>334</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>11th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X12th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>346</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>12th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X12th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>341</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>12th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X1st_Month_1st_Week_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>9</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>1st Month | 1st Week Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X1st_Month_3rd_Week_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>23</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>1st Month | 3rd Week Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X1st_Month_Partner_Call</fullName>
+        <assignedTo>Partner</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>1st Month | Partner Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>X2nd_Month_1st_Week_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>38</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>2nd Month | 1st Week Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X2nd_Month_3rd_Week_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>52</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>2nd Month | 3rd Week Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X2nd_Month_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>62</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>2nd Month | Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X3rd_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>77</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>3rd Month | Mid Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X3rd_Month_Month_End_Call</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>92</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>3rd Month | Month-End Call</subject>
+    </tasks>
+    <tasks>
+        <fullName>X3rd_Month_Partner_Email</fullName>
+        <assignedTo>Partner</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <description>3rd Month Partner Email</description>
+        <dueDateOffset>91</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>3rd Month | Partner Email</subject>
+    </tasks>
+    <tasks>
+        <fullName>X3rd_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>91</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>3rd Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X4th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <description>This is to review the 3rd month&apos;s activity.</description>
+        <dueDateOffset>107</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>4th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X4th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>122</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>4th Month | Month End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X4th_Month_Referral_Request</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>121</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>4th Month | Referral Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>X4th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>121</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>4th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X5th_Month_List_Review</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>150</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>5th Month | List Review</subject>
+    </tasks>
+    <tasks>
+        <fullName>X5th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>137</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>5th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X5th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>152</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>5th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X5th_Month_Partner_Call_Survey</fullName>
+        <assignedTo>Partner</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>152</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>5th Month | Partner Call/Survey</subject>
+    </tasks>
+    <tasks>
+        <fullName>X5th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>150</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>5th Month Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X6th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>167</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>6th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X6th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>182</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>6th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X6th_Month_Referral_Request</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>182</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>6th Month | Referral Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>X6th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>182</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>6th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X6th_Month_Strategy_Review_with_Partner</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>182</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>6th Month | Strategy Review with Partner</subject>
+    </tasks>
+    <tasks>
+        <fullName>X7th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>197</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>7th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X7th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>212</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>7th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X7th_Month_Partner_Email</fullName>
+        <assignedTo>Partner</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>212</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>7th Month | Partner Email</subject>
+    </tasks>
+    <tasks>
+        <fullName>X7th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>212</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>7th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X8th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>226</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>8th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X8th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>242</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>8th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X8th_Month_Referral_Request</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>242</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>8th Month | Referral Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>X8th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>242</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>8th Month | Relationship Builder</subject>
+    </tasks>
+    <tasks>
+        <fullName>X9th_Month_Mid_Month_Calibration</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>256</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>9th Month | Mid-Month Calibration</subject>
+    </tasks>
+    <tasks>
+        <fullName>X9th_Month_Month_End_Recap</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>272</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>9th Month | Month-End Recap</subject>
+    </tasks>
+    <tasks>
+        <fullName>X9th_Month_Partner_Call_Survey</fullName>
+        <assignedTo>Partner</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>272</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>9th Month | Partner Call/Survey</subject>
+    </tasks>
+    <tasks>
+        <fullName>X9th_Month_Relationship_Builder</fullName>
+        <assignedTo>Account Manager</assignedTo>
+        <assignedToType>accountTeam</assignedToType>
+        <dueDateOffset>272</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Go_Live_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>9th Month | Relationship Builder</subject>
+    </tasks>
+</Workflow>
