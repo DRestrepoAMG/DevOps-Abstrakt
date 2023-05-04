@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Level_Ideas</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>State_the_Issue__c</columns>
+    <columns>Notes__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>Associated_Action__c</columns>
+    <columns>Case_Category__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Eric Watkins</value>
+    </filters>
+    <label>Next Level Ideas</label>
+    <sharedTo>
+        <group>Directors_and_Above</group>
+    </sharedTo>
+</ListView>

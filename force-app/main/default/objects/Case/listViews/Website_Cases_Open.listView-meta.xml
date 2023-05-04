@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_Cases_Open</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Associated_Action__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>Assigned_Must_be_Resolved_by_Date__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Case_Category__c</columns>
+    <columns>Case_Types__c</columns>
+    <columns>User__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Category__c</field>
+        <operation>equals</operation>
+        <value>Website Design,Website Development</value>
+    </filters>
+    <filters>
+        <field>Case_Category__c</field>
+        <operation>equals</operation>
+        <value>Website Design</value>
+    </filters>
+    <label>Website Cases Open</label>
+</ListView>

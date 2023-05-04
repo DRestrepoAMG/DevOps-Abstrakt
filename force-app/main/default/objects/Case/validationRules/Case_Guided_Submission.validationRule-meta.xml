@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Guided_Submission</fullName>
+    <active>true</active>
+    <description>Modified by Jessica to exclude cases automatically created from chatter answers</description>
+    <errorConditionFormula>Guided_Case_Submission__c = FALSE &amp;&amp; NOT(ISPICKVAL(Origin,&apos;Chatter Answers&apos;))</errorConditionFormula>
+    <errorMessage>Your case was not submitted. Please submit case using &quot;New Case Record&quot; button.</errorMessage>
+</ValidationRule>

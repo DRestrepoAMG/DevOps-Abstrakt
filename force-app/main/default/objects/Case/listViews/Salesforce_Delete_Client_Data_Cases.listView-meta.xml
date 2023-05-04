@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Delete_Client_Data_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Case_Category__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Assigned_Must_be_Resolved_by_Date__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Associated_Action__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,In Discovery,Being Addressed,On Hold,Waiting on Internal,Waiting on Client</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>equals</operation>
+        <value>Delete Client Data</value>
+    </filters>
+    <label>Salesforce: Delete Client Data Cases</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

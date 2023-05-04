@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_to_Complete_not_Null</fullName>
+    <active>true</active>
+    <description>Time to Complete - Office/Facilities must be filled out for cases assigned to anybody but Mary</description>
+    <errorConditionFormula>AND(ISBLANK(Text(Vendor_Time__c)),
+ISPICKVAL(Status,&apos;Closed&apos;),
+	OR(
+	ISPICKVAL(Case_Category__c,&apos;Office Supply Request&apos;),
+	ISPICKVAL(Case_Category__c,&apos;Desk Move Request&apos;),
+	ISPICKVAL(Case_Category__c,&apos;Facilities / Maintenance Request&apos;),
+	ISPICKVAL(Case_Category__c,&apos;Shuttle Service Log&apos;),
+	ISPICKVAL(Case_Category__c,&apos;Reception / Office Manager Requests&apos;)
+	))</errorConditionFormula>
+    <errorMessage>Field &apos;Time to Complete - Office/Facilities&apos; cannot be blank</errorMessage>
+</ValidationRule>

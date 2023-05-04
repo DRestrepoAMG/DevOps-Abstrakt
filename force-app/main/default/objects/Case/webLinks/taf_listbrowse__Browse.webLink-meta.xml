@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>taf_listbrowse__Browse</fullName>
+    <availability>online</availability>
+    <description>Browse Selected Records</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Browse</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var rowIdsArray = {!GETRECORDIDS($ObjectType.Case)}; 
+if (rowIdsArray.length == 0) 
+{ 
+alert(&quot;Please select at least one case.&quot;) 
+} 
+else 
+{ 
+var rowIds = &quot;&quot;; 
+for(var i=0; i&lt;rowIdsArray.length; i++) 
+{ 
+rowIds += rowIdsArray[i] + &quot;$&quot;; 
+} 
+rowIds = rowIds.substring(0, rowIds.length - 1); 
+var currentUrl = window.location.href; 
+window.location = &quot;/apex/taf_listbrowse__ListBrowse?rids=&quot; + rowIds + &quot;&amp;retUrl=&quot; + currentUrl; 
+}</url>
+</WebLink>

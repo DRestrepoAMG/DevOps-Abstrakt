@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Open_Cases</fullName>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Submitted_By__c</field>
+        <operation>contains</operation>
+        <value>milner,nester,watkins,schneider,rentel,schwepker,clark,carter,sepe,wheeler,osburn</value>
+    </filters>
+    <filters>
+        <field>Department_Responsible_for_Issue__c</field>
+        <operation>equals</operation>
+        <value>Project Management (Product/Process/Role Document),Salesforce Support</value>
+    </filters>
+    <label>Executive Cases Submitted</label>
+</ListView>

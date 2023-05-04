@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_SDR_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>State_the_Issue__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Associated_Action__c</columns>
+    <columns>Case_Category__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Hours_Charged_To__c</field>
+        <operation>equals</operation>
+        <value>Outbound Pipeline Account Management,Outbound Pipeline Activity Fulfillment</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,In Discovery,Being Addressed,On Hold,Waiting on Internal,Waiting on Client</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>sean b,brad k,danielle h,paul h,stephanie c,michaela w,paige b,melissa m</value>
+    </filters>
+    <label>Outbound SDR Cases</label>
+</ListView>

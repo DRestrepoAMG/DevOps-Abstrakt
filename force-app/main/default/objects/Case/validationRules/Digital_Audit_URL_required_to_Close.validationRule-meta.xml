@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Audit_URL_required_to_Close</fullName>
+    <active>true</active>
+    <description>Digital Audit URL on the Case Type &apos;Website Audit&apos; must be populated to change the Status to Closed</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Case_Types__c,&apos;Website Audit&apos;),
+ISBLANK(Digital_Audit_URL__c),
+ISPICKVAL( Status ,&apos;Closed&apos;)
+)</errorConditionFormula>
+    <errorMessage>Digital Audit URL must be populated before moving Status to Closed. If this case is no longer needed move the Status to &apos;Cancelled&apos;.</errorMessage>
+</ValidationRule>

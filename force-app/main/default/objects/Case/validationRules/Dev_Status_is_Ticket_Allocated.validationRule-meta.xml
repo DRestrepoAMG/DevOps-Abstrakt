@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dev_Status_is_Ticket_Allocated</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Dev_Status__c,&quot;Ticket Allocated&quot;) &amp;&amp; 
+OR (
+ISBLANK(Ticket__c) ,
+ISBLANK(Text(Dev_Team_Allocated__c)),
+ISBLANK(Planned_Completion_Date__c)
+)</errorConditionFormula>
+    <errorMessage>Ticket #, Dev Team Allocated, and Plannted Completion Date must be populated when Dev Status = Ticket Allocated</errorMessage>
+</ValidationRule>
