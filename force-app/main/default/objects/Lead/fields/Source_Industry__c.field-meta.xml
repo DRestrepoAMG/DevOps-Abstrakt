@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_Industry__c</fullName>
+    <description>Pulled from ZoomInfo list of industries. Used to track the client&apos;s actual industry.</description>
+    <externalId>false</externalId>
+    <label>Source Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Source_Industry</valueSetName>
+    </valueSet>
+</CustomField>

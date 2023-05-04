@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Abstrakt</fullName>
+        <default>false</default>
+        <label>Abstrakt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accounting</fullName>
+        <default>false</default>
+        <label>Accounting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising &amp; Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Allergy Testing</fullName>
+        <default>false</default>
+        <label>Allergy Testing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Architecture, Engineering &amp; Design</fullName>
+        <default>false</default>
+        <label>Architecture, Engineering &amp; Design</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Cleaning</fullName>
+        <default>false</default>
+        <label>Commercial Cleaning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Electric</fullName>
+        <default>false</default>
+        <label>Commercial Electric</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Fire Protection</fullName>
+        <default>false</default>
+        <label>Commercial Fire Protection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Flooring</fullName>
+        <default>false</default>
+        <label>Commercial Flooring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Improvement</fullName>
+        <default>false</default>
+        <label>Commercial Improvement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Real Estate</fullName>
+        <default>false</default>
+        <label>Commercial Real Estate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Roofing</fullName>
+        <default>false</default>
+        <label>Commercial Roofing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Concrete/Asphalt Services</fullName>
+        <default>false</default>
+        <label>Concrete/Asphalt Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Copy/Print</fullName>
+        <default>false</default>
+        <label>Copy/Print</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cybersecurity</fullName>
+        <default>false</default>
+        <label>Cybersecurity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail and Printing</fullName>
+        <default>false</default>
+        <label>Direct Mail and Printing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HR &amp; Staffing</fullName>
+        <default>false</default>
+        <label>HR &amp; Staffing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HVAC</fullName>
+        <default>false</default>
+        <label>HVAC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IT</fullName>
+        <default>false</default>
+        <label>IT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Landscape Services</fullName>
+        <default>false</default>
+        <label>Landscape Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LED Lighting</fullName>
+        <default>false</default>
+        <label>LED Lighting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Material Handling</fullName>
+        <default>false</default>
+        <label>Material Handling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media &amp; Event Production</fullName>
+        <default>false</default>
+        <label>Media &amp; Event Production</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Merger &amp; Acquisition</fullName>
+        <default>false</default>
+        <label>Merger &amp; Acquisition</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mortgage - LO Recruitment</fullName>
+        <default>false</default>
+        <label>Mortgage - LO Recruitment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mortgage - Realtor Referral</fullName>
+        <default>false</default>
+        <label>Mortgage - Realtor Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outsourced HR</fullName>
+        <default>false</default>
+        <label>Outsourced HR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Painting</fullName>
+        <default>false</default>
+        <label>Painting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pest Control</fullName>
+        <default>false</default>
+        <label>Pest Control</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Real Estate Agent Recruitment</fullName>
+        <default>false</default>
+        <label>Real Estate Agent Recruitment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Restaurants</fullName>
+        <default>false</default>
+        <label>Restaurants</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solar</fullName>
+        <default>false</default>
+        <label>Solar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecom</fullName>
+        <default>false</default>
+        <label>Telecom</label>
+    </standardValue>
+</StandardValueSet>
