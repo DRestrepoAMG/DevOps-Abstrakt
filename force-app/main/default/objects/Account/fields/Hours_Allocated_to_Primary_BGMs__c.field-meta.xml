@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hours_Allocated_to_Primary_BGMs__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This sums up the hours assigned to primary SDR.</inlineHelpText>
+    <label>Hours Allocated to Primary SDRs</label>
+    <summarizedField>BGM_Team__c.BGM_Hours_per_day__c</summarizedField>
+    <summaryFilterItems>
+        <field>BGM_Team__c.ResponsibilityLevel__c</field>
+        <operation>equals</operation>
+        <value>Primary</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>BGM_Team__c.Is_Next_Month_Rollup_Helper__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>BGM_Team__c.Account_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

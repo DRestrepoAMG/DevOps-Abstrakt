@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clients_Canceling_this_Year_Agency</fullName>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Appointment_Guarantee__c</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Prospekt_Process__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Metro__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Billed_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Implementing,Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Agency_Client</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Active</value>
+    </filters>
+    <label>Agency Cancels - All Time</label>
+</ListView>

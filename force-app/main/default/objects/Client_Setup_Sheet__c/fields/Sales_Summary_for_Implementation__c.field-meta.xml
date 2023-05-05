@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Summary_for_Implementation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Information that should be relayed to the implementation team summarizing the sales journey for this client. This can be professional info, personable info, or the client&apos;s overall goals. ESR may also ask that the IPM reaches out to them for a quick call</inlineHelpText>
+    <label>Sales Summary for Implementation</label>
+    <length>20000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

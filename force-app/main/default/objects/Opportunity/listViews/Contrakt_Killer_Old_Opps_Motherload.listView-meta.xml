@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrakt_Killer_Old_Opps_Motherload</fullName>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>contains</operation>
+        <value>AMG Email,Call In,Cold Calling,Live Chat,Maryville,Other,PPM,SDR,SDR Email,SDR - Live Transfer,Unbounce Web Lead,Wake the Dead - SDR,Web Lead</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Commercial Roofing</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>indianapolis</value>
+    </filters>
+    <label>Contrakt Killer Old Opps Motherload</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

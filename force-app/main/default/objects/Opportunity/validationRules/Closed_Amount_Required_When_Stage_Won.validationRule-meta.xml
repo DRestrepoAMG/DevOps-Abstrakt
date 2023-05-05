@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Amount_Required_When_Stage_Won</fullName>
+    <active>true</active>
+    <description>Required an amount to be populated when opportunity is marked closed won.</description>
+    <errorConditionFormula>AND(
+	OR(
+	ISPICKVAL(StageName, &quot;Won&quot;),
+	ISPICKVAL(StageName, &quot;Won - Closed Business&quot;)
+	)
+,ISNULL(Amount)
+)</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>Must have an amount populated when opportunity is marked closed won.</errorMessage>
+</ValidationRule>

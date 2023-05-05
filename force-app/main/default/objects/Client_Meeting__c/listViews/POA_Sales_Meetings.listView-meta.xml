@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POA_Sales_Meetings</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Meeting_Held_Date__c</columns>
+    <columns>Meeting_Held_With__c</columns>
+    <columns>Status__c</columns>
+    <columns>Next_Meeting_Date_Time__c</columns>
+    <columns>Call_Recording_URL__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Kelly Hull,Madelynne Kraus,Adison Huelskamp,Riley Mushill,Kevin Wilson,Laryssa Roeper,Dennis Moorhead-Meinhardt</value>
+    </filters>
+    <label>POA Sales Meetings</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+        <role>Partner_Sales_Manager</role>
+        <role>Partner_Success_Manager</role>
+    </sharedTo>
+</ListView>

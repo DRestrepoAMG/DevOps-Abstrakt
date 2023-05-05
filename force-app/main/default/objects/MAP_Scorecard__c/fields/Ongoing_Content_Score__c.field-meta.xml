@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ongoing_Content_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE(Blog_Template__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Page_Title__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Meta_Description_and_Meta_Title__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(URL_Slug__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Category__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Links__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Feature_Image__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0)+
+CASE(Post_Scheduled__c,
+&apos;1&apos;,1,
+&apos;0&apos;,0,
+0))/8</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ongoing Content Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

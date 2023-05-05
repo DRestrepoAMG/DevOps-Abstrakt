@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Gods_Old_Opp_Prospecting</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Website__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>X2nd_Voice__c</columns>
+    <columns>Manager_Top_5__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notContain</operation>
+        <value>won</value>
+    </filters>
+    <filters>
+        <field>X2nd_Voice__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Top_2__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>LinkedIn_Profile_URL__c</field>
+        <operation>notEqual</operation>
+        <value>X</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Commercial Cleaning,Commercial Electric,Commercial Real Estate,Copy/Print,LED Lighting,Mortgage - LO Recruitment,Mortgage - Realtor Referral,Painting,Real Estate Agent Recruitment,Telecom</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Commercial Roofing,Construction,HVAC,IT,Other,Solar</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Pitch_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>N_DAYS_AGO:90</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>notEqual</operation>
+        <value>Pipeline Auto,Pipeline Inbound,Salesforce Consulting,Salesforce Integration,Staffing MRR,Staffing Project</value>
+    </filters>
+    <label>Sales Gods - Old Opp Prospecting</label>
+</ListView>

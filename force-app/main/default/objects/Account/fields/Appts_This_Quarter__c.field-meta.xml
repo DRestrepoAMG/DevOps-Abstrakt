@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appts_This_Quarter__c</fullName>
+    <description>This field is populated by a nightly batch process and represents the total number of contacts associated with this account which have an appointment Dev Outcome and an Appt Date this quarter (based on the Current Contract Calling Start Date)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is populated by a nightly batch process and represents the total number of contacts associated with this account which have an appointment Dev Outcome and an Appt Date this quarter (based on the Current Contract Calling Start Date)</inlineHelpText>
+    <label>Appts This Quarter</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

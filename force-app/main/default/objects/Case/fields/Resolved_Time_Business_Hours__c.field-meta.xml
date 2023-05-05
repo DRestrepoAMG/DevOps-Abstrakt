@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolved_Time_Business_Hours__c</fullName>
+    <description>The formula for finding business hours between two Date/Time values expands on the formula for finding elapsed business days. It
+works on the same principle of using a reference Date/Time, in this case 1/8/1900 at 16:00 GMT (9 a.m. PDT), and then finding your
+Dates’ respective distances from that reference. The formula rounds the value it finds to the nearest hour and assumes an 8–hour, 9 a.m.
+– 5 p.m. work day.
+
+https://resources.docs.salesforce.com/212/latest/en-us/sfdc/pdf/formula_date_time_tipsheet.pdf
+
+https://success.salesforce.com/answers?id=9063A000000iXTlQAM
+
+changed 8 to 9 in the first line of formula (9 hour work day including Lunch)
+and changed the DATETIMEVALUE( &apos;1900-01-08 16:00:00&apos; ) to DATETIMEVALUE( &apos;1900-01-08 11:00:00&apos; )
+as DateTime values are stored in GMT, you will have to add the difference of the hours.</description>
+    <externalId>false</externalId>
+    <formula>ROUND( 9 * (
+( 5 * FLOOR( ( DATEVALUE( ClosedDate ) - DATE( 1900, 1, 8) ) / 7) +
+MIN(5,
+MOD( DATEVALUE( ClosedDate ) - DATE( 1900, 1, 8), 7) +
+MIN( 1, 24 / 9 * ( MOD(	ClosedDate - DATETIMEVALUE( &apos;1900-01-08 11:00:00&apos; ), 1 ) )
+)
+)
+)
+-
+( 5 * FLOOR( ( DATEVALUE( CreatedDate) - DATE( 1900, 1, 8) ) / 7) +
+MIN( 5,
+MOD( DATEVALUE( CreatedDate ) - DATE( 1996, 1, 1), 7 ) +
+MIN( 1, 24 / 9 * ( MOD( CreatedDate - DATETIMEVALUE( &apos;1900-01-08 11:00:00&apos; ), 1) )
+)
+)
+)
+),
+0 )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Resolved Time (Business Hours)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

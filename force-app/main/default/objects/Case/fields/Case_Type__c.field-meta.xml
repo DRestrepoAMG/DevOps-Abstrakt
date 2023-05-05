@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce List Import</fullName>
+                <default>false</default>
+                <label>Salesforce List Import</label>
+            </value>
+            <value>
+                <fullName>Ownership Change</fullName>
+                <default>false</default>
+                <label>Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Dashboard Request</fullName>
+                <default>false</default>
+                <label>Dashboard Request</label>
+            </value>
+            <value>
+                <fullName>Resolving Technology Issue</fullName>
+                <default>false</default>
+                <label>Resolving Technology Issue</label>
+            </value>
+            <value>
+                <fullName>Email Built-In Predictive Response</fullName>
+                <default>false</default>
+                <label>Email Built-In Predictive Response</label>
+            </value>
+            <value>
+                <fullName>Report Request</fullName>
+                <default>false</default>
+                <label>Report Request</label>
+            </value>
+            <value>
+                <fullName>New Product Software Request</fullName>
+                <default>false</default>
+                <label>New Product Software Request</label>
+            </value>
+            <value>
+                <fullName>List Request</fullName>
+                <default>false</default>
+                <label>List Request</label>
+            </value>
+            <value>
+                <fullName>Dealer Complaint</fullName>
+                <default>false</default>
+                <label>Dealer Complaint</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>404 Errors</fullName>
+                <default>false</default>
+                <label>404 Errors</label>
+            </value>
+            <value>
+                <fullName>Account Page Update</fullName>
+                <default>false</default>
+                <label>Account Page Update</label>
+            </value>
+            <value>
+                <fullName>Adding Partner Logos</fullName>
+                <default>false</default>
+                <label>Adding Partner Logos</label>
+            </value>
+            <value>
+                <fullName>Aesthetic Changes</fullName>
+                <default>false</default>
+                <label>Aesthetic Changes</label>
+            </value>
+            <value>
+                <fullName>Allocation Changes</fullName>
+                <default>false</default>
+                <label>Allocation Changes</label>
+            </value>
+            <value>
+                <fullName>Analytics Issues</fullName>
+                <default>false</default>
+                <label>Analytics Issues</label>
+            </value>
+            <value>
+                <fullName>Clean up Pipeline</fullName>
+                <default>false</default>
+                <label>Clean up Pipeline</label>
+            </value>
+            <value>
+                <fullName>Client Certification</fullName>
+                <default>false</default>
+                <label>Client Certification</label>
+            </value>
+            <value>
+                <fullName>Client Facing Product Enhancement</fullName>
+                <default>false</default>
+                <label>Client Facing Product Enhancement</label>
+            </value>
+            <value>
+                <fullName>Client Go Live Edits</fullName>
+                <default>false</default>
+                <label>Client Go Live Edits</label>
+            </value>
+            <value>
+                <fullName>Compose Email Library</fullName>
+                <default>false</default>
+                <label>Compose Email Library</label>
+            </value>
+            <value>
+                <fullName>Content Revision</fullName>
+                <default>false</default>
+                <label>Content Revision</label>
+            </value>
+            <value>
+                <fullName>Create Call Guide</fullName>
+                <default>false</default>
+                <label>Create Call Guide</label>
+            </value>
+            <value>
+                <fullName>Custom Report Development</fullName>
+                <default>false</default>
+                <label>Custom Report Development</label>
+            </value>
+            <value>
+                <fullName>Development Production Support - Bug Fix</fullName>
+                <default>false</default>
+                <label>Development Production Support - Bug Fix</label>
+            </value>
+            <value>
+                <fullName>Development Production Support - Enhancements</fullName>
+                <default>false</default>
+                <label>Development Production Support - Enhancements</label>
+            </value>
+            <value>
+                <fullName>Development Production Support - QA Feedback</fullName>
+                <default>false</default>
+                <label>Development Production Support - QA Feedback</label>
+            </value>
+            <value>
+                <fullName>Email Issue</fullName>
+                <default>false</default>
+                <label>Email Issue</label>
+            </value>
+            <value>
+                <fullName>Email Library</fullName>
+                <default>false</default>
+                <label>Email Library</label>
+            </value>
+            <value>
+                <fullName>Finalize Call Guide</fullName>
+                <default>false</default>
+                <label>Finalize Call Guide</label>
+            </value>
+            <value>
+                <fullName>Headers</fullName>
+                <default>false</default>
+                <label>Headers</label>
+            </value>
+            <value>
+                <fullName>Icon Changes</fullName>
+                <default>false</default>
+                <label>Icon Changes</label>
+            </value>
+            <value>
+                <fullName>Image Changes</fullName>
+                <default>false</default>
+                <label>Image Changes</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Implementation - Survey</fullName>
+                <default>false</default>
+                <label>Implementation - Survey</label>
+            </value>
+            <value>
+                <fullName>Implementation List</fullName>
+                <default>false</default>
+                <label>Implementation List</label>
+            </value>
+            <value>
+                <fullName>Inbound Sales Support</fullName>
+                <default>false</default>
+                <label>Inbound Sales Support</label>
+            </value>
+            <value>
+                <fullName>Local SEO</fullName>
+                <default>false</default>
+                <label>Local SEO</label>
+            </value>
+            <value>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+                <label>Market Research</label>
+            </value>
+            <value>
+                <fullName>Marketing Asset</fullName>
+                <default>false</default>
+                <label>Marketing Asset</label>
+            </value>
+            <value>
+                <fullName>Marketing Request</fullName>
+                <default>false</default>
+                <label>Marketing Request</label>
+            </value>
+            <value>
+                <fullName>Need More Information</fullName>
+                <default>false</default>
+                <label>Need More Information</label>
+            </value>
+            <value>
+                <fullName>Offboarding Process</fullName>
+                <default>false</default>
+                <label>Offboarding Process</label>
+            </value>
+            <value>
+                <fullName>Office Manager Request</fullName>
+                <default>false</default>
+                <label>Office Manager Request</label>
+            </value>
+            <value>
+                <fullName>Operations Project</fullName>
+                <default>false</default>
+                <label>Operations Project</label>
+            </value>
+            <value>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <fullName>PPC</fullName>
+                <default>false</default>
+                <label>PPC</label>
+            </value>
+            <value>
+                <fullName>PPC Fix</fullName>
+                <default>false</default>
+                <label>PPC Fix</label>
+            </value>
+            <value>
+                <fullName>Process Development</fullName>
+                <default>false</default>
+                <label>Process Development</label>
+            </value>
+            <value>
+                <fullName>Process Training</fullName>
+                <default>false</default>
+                <label>Process Training</label>
+            </value>
+            <value>
+                <fullName>Product Development</fullName>
+                <default>false</default>
+                <label>Product Development</label>
+            </value>
+            <value>
+                <fullName>Proof Read</fullName>
+                <default>false</default>
+                <label>Proof Read</label>
+            </value>
+            <value>
+                <fullName>QAS UPDATE</fullName>
+                <default>false</default>
+                <label>QAS UPDATE</label>
+            </value>
+            <value>
+                <fullName>Retention Meeting Action Item</fullName>
+                <default>false</default>
+                <label>Retention Meeting Action Item</label>
+            </value>
+            <value>
+                <fullName>Salesforce Audit</fullName>
+                <default>false</default>
+                <label>Salesforce Audit</label>
+            </value>
+            <value>
+                <fullName>Salesforce Bug Fix</fullName>
+                <default>false</default>
+                <label>Salesforce Bug Fix</label>
+            </value>
+            <value>
+                <fullName>Salesforce Development</fullName>
+                <default>false</default>
+                <label>Salesforce Development</label>
+            </value>
+            <value>
+                <fullName>Survey Edit/Issue</fullName>
+                <default>false</default>
+                <label>Survey Edit/Issue</label>
+            </value>
+            <value>
+                <fullName>Technology Issue</fullName>
+                <default>false</default>
+                <label>Technology Issue</label>
+            </value>
+            <value>
+                <fullName>Training/Litmos</fullName>
+                <default>false</default>
+                <label>Training/Litmos</label>
+            </value>
+            <value>
+                <fullName>Upload Email Library</fullName>
+                <default>false</default>
+                <label>Upload Email Library</label>
+            </value>
+            <value>
+                <fullName>Web Development - Agency</fullName>
+                <default>false</default>
+                <label>Web Development - Agency</label>
+            </value>
+            <value>
+                <fullName>Website Audit</fullName>
+                <default>false</default>
+                <label>Website Audit</label>
+            </value>
+            <value>
+                <fullName>Website Bug Fix</fullName>
+                <default>false</default>
+                <label>Website Bug Fix</label>
+            </value>
+            <value>
+                <fullName>Website Enhancement</fullName>
+                <default>false</default>
+                <label>Website Enhancement</label>
+            </value>
+            <value>
+                <fullName>Website Fix</fullName>
+                <default>false</default>
+                <label>Website Fix</label>
+            </value>
+            <value>
+                <fullName>Website QA Feedback</fullName>
+                <default>false</default>
+                <label>Website QA Feedback</label>
+            </value>
+            <value>
+                <fullName>Shuttle Service Log</fullName>
+                <default>false</default>
+                <label>Shuttle Service Log</label>
+            </value>
+            <value>
+                <fullName>Office Supply Request</fullName>
+                <default>false</default>
+                <label>Office Supply Request</label>
+            </value>
+            <value>
+                <fullName>Client Visit</fullName>
+                <default>false</default>
+                <label>Client Visit</label>
+            </value>
+            <value>
+                <fullName>Desk Move Request</fullName>
+                <default>false</default>
+                <label>Desk Move Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

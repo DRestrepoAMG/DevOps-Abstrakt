@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PPM_Sales_Appts_This_Month</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Referred_by_Account__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Mailing_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>PPM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>PPM Sales Appts This Month</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+        <role>Director_of_Maryville</role>
+    </sharedTo>
+</ListView>

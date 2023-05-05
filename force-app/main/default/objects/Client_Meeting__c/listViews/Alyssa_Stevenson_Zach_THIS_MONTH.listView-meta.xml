@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alyssa_Stevenson_Zach_THIS_MONTH</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Next_Meeting_Date_Time__c</columns>
+    <columns>Meeting_Held_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Call_Recording_Link__c</columns>
+    <columns>PSR_Changes__c</columns>
+    <columns>List_Changes__c</columns>
+    <columns>Activity_Results_Notes__c</columns>
+    <columns>New_Info_for_Enhanced_Performance__c</columns>
+    <columns>Best_Practices_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>contains</operation>
+        <value>Alyssa Stevenson,Bayer</value>
+    </filters>
+    <label>Alyssa Stevenson/Zach - THIS MONTH</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

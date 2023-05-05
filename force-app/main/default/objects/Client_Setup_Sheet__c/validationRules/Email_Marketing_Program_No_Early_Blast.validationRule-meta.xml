@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Marketing_Program_No_Early_Blast</fullName>
+    <active>true</active>
+    <description>You must fill out Early Email Blast Campaign if the client has opted into an Email Marketing Program</description>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+ISPICKVAL(Email_Marketing_Program__c, &apos;Opt-In&apos;),
+ISBLANK(TEXT( Early_Email_Blast_Campaign__c))
+)</errorConditionFormula>
+    <errorMessage>You must fill out Early Email Blast Campaign if the client has opted into an Email Marketing Program</errorMessage>
+</ValidationRule>

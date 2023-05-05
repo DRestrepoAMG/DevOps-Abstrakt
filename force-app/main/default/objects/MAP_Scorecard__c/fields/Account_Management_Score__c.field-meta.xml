@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Management_Score__c</fullName>
+    <description>Used Partner Operations Analyst Account Management Score</description>
+    <externalId>false</externalId>
+    <formula>(CASE(Paperwork_Attached_and_Updates_Made__c,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+&apos;3&apos;,3,
+0)+ 
+ CASE(Current_Addendum_URL__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+&apos;3&apos;,3,
+0)+ 
+ CASE(Cleansing_Program__c,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0)+ 
+CASE(Payment_Issue_Goals_Updated__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Appointment_Deficit_Duties_Complete__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+&apos;3&apos;,3,
+&apos;4&apos;,4,
+0)+
+CASE( Suspect_and_Cleansing_Report_Submitted__c ,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0)+ 
+CASE(Time_Logged__c ,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0)+
+ CASE(PSR_Allocations_Accurate__c ,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Org_Display_Names_Updated__c ,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( SPFC_Fields_Updated__c ,
+&apos;Yes&apos;,1,
+&apos;No&apos;,0,
+0))/(18-
+(CASE(Cleansing_Program__c,
+&apos;NA&apos;,1,
+0)+
+CASE(PSR_Allocations_Accurate__c ,
+&apos;NA&apos;,1,
+0)+
+CASE(Org_Display_Names_Updated__c ,
+&apos;NA&apos;,1,
+0)+
+CASE(Payment_Issue_Goals_Updated__c ,
+&apos;NA&apos;,2,
+0)+
+CASE(SPFC_Fields_Updated__c ,
+&apos;NA&apos;,1,
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Management Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

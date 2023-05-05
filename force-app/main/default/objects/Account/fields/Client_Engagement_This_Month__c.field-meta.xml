@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Engagement_This_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(Client_Appt_Status_Updated_This_Month__c&gt;0,Client_Scorecards_This_Month__c&gt;0),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Client Engagement This Month</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_Likelihood_of_Renewing_Year_2__c</fullName>
+    <description>Previously was Lifetime Partnership Score</description>
+    <externalId>false</externalId>
+    <inlineHelpText>1 - Not Renewing
+2 - Not Likely to Renew
+3 - On the Fence
+4 - 100% Renewing, Not Quite a Lifetime Partner Yet
+5 - I&apos;m a Lifetime Partner</inlineHelpText>
+    <label>Partner Satisfaction Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Renewal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the client has an auto renew in their agreement</description>
+    <externalId>false</externalId>
+    <label>Auto Renewal</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

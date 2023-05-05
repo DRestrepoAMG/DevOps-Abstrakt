@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sapper_Consulting_Clients</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Main_Contact__c</columns>
+    <columns>Email__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Main_Contact_Phone__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Associated_Opportunity_URL__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Sapper_Consulting</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Abstrakt,Sapper</value>
+    </filters>
+    <label>Sapper Consulting Clients</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

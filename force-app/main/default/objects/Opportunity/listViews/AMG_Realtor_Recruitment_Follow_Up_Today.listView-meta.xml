@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMG_Realtor_Recruitment_Follow_Up_Today</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>Industry__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Mailing_State__c</columns>
+    <columns>Exclusive_Target_List__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Real Estate Agent Recruitment</value>
+    </filters>
+    <filters>
+        <field>Follow_up_Date__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>AMG Realtor Recruitment Follow-Up Today</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

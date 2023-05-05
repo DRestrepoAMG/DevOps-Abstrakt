@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Other_Niche_Clients</fullName>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Metro__c</columns>
+    <columns>Status__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Exclusivity__c</columns>
+    <columns>Exclusivity_Notes__c</columns>
+    <columns>Services_Prospecting_for_Client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.INDUSTRY</field>
+        <operation>contains</operation>
+        <value>Other</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Signing,Implementing,Active,On Hold</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Abstrakt,Test,Inactive Client</value>
+    </filters>
+    <label>Active Other Niche Clients</label>
+    <sharedTo>
+        <role>Corporate_Graphic_Designer</role>
+    </sharedTo>
+</ListView>

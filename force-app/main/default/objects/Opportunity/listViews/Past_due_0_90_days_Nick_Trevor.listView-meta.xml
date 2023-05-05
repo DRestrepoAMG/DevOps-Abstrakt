@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Past_due_0_90_days_Nick_Trevor</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area_Name__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Notes__c</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>X2nd_Voice__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>LED Lighting</value>
+    </filters>
+    <label>Past due 0-90 days - Nick/Trevor</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Client_Accounts_At_Goal</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Inside_Sales_Manager__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Satisfaction_Level__c</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Metro__c</columns>
+    <columns>Monthly_Appt_Goal__c</columns>
+    <columns>This_Month_Billed_Amount__c</columns>
+    <columns>of_Guaranteed_Appointments__c</columns>
+    <columns>Appointment_Guarantee__c</columns>
+    <columns>Pipeline_Process__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Abstrakt,test</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Percent_Appt_Goal_No_Overage__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>100</value>
+    </filters>
+    <label>Active Client Accounts - At Goal</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Cannot_Mark_Status_as_Cancelled</fullName>
+    <active>true</active>
+    <description>Prevent clients from accidently marking the marketing collateral content as cancelled.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Status__c), 
+ISPICKVAL(Status__c, &apos;Client Cancelled&apos;), 
+RecordTypeId = &quot;0124A000001UU0B&quot;,   
+OR($User.ProfileId = &apos;00eG0000000GfP9&apos;,
+$User.ProfileId = &apos;00e4A000000i4IS&apos;,
+$User.ProfileId = &apos;00e4A000000i4IN&apos;,
+$User.ProfileId = &apos;00e4w000000Go0R&apos;,
+$User.ProfileId = &apos;00e4w000000Go0W&apos;,
+$User.ProfileId = &apos;00e4w000000Go0M&apos;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You do not have permission to mark the status as &quot;Client Cancelled&quot;.</errorMessage>
+</ValidationRule>

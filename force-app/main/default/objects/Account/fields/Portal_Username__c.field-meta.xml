@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Username__c</fullName>
+    <description>Identifies the Username of the selected Partner Main POC</description>
+    <externalId>false</externalId>
+    <formula>Portal_Main_POC__r.Username</formula>
+    <label>Portal Username</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

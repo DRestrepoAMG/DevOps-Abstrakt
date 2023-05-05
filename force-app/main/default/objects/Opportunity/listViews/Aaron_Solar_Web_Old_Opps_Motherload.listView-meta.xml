@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aaron_Solar_Web_Old_Opps_Motherload</fullName>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>Metro_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>contains</operation>
+        <value>AMG Email,Call In,LinkedIn,Live Chat,Unbounce Web Lead,Wake the Dead - Web Lead,Web Lead</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>LED Lighting,Solar</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Aaron Solar Web Old Opps Motherload</label>
+</ListView>

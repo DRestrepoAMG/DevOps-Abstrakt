@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Mark_Won_Without_Approval</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( ISPICKVAL( Product__c , &quot;Pipeline Inbound&quot;), 
+( Website_Approved_1__c = FALSE),
+ ISPICKVAL( StageName , &quot;Won&quot;) )</errorConditionFormula>
+    <errorMessage>Website needs approval first</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logged_Hours_This_Month__c</fullName>
+    <description>This field is populated by the nightly Account Metric Batch process with a sum of the Total Session Hours on tasks within the current month with the &apos;Logging Hours&apos; record type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is populated by the nightly Account Metric Batch process with a sum of the Total Session Hours on tasks within the current month with the &apos;Logging Hours&apos; record type</inlineHelpText>
+    <label>Logged Hours This Month</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

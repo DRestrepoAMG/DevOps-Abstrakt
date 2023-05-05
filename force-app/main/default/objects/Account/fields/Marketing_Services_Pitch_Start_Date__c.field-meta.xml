@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Services_Pitch_Start_Date__c</fullName>
+    <description>The date/time of the pitch. Required before changing &quot;Marketing Service Audit Status&quot; to &quot;Scheduled in Implementation&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date/time of the pitch. Required before changing &quot;Marketing Service Audit Status&quot; to &quot;Scheduled in Implementation&quot;</inlineHelpText>
+    <label>Inbound SDR Pitch Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

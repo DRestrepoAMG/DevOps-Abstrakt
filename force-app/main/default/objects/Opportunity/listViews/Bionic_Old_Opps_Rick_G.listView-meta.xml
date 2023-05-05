@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bionic_Old_Opps_Rick_G</fullName>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Most_Recent_Pitch_Result__c</columns>
+    <columns>Reason_Lost__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>contains</operation>
+        <value>AMG Email,Call In,Cold Calling,Live Chat,Maryville,Other,PPM,SDR,SDR Email,SDR - Live Transfer,Unbounce Web Lead,Wake the Dead - SDR,Web Lead</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Bionic Old Opps - Rick G</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

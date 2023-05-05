@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coaching_Possible_Responses__c</fullName>
+    <externalId>false</externalId>
+    <label>Coaching Possible Responses</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Don’t need to teach me my industry</fullName>
+                <default>false</default>
+                <label>Don’t need to teach me my industry</label>
+            </value>
+            <value>
+                <fullName>Doesn’t understand coaching is Pipeline Mgmt.</fullName>
+                <default>false</default>
+                <label>Doesn’t understand coaching is Pipeline Mgmt.</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

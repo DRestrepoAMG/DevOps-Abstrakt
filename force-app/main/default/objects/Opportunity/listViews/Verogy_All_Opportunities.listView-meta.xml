@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verogy_All_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Appt_Date__c</columns>
+    <columns>Meeting_Status__c</columns>
+    <columns>Assigned_to__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Verogy</value>
+    </filters>
+    <label>Verogy - All Opportunities</label>
+    <sharedTo>
+        <portalRoleAndSubordinates>VerogyParentPartnerUser</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services_Prospecting_for_Client__c</fullName>
+    <description>List services Abstrakt is prospecting for our clients. We use this field to identify what clients we need to de-dupe client lists against each other if they are offering the same services</description>
+    <externalId>false</externalId>
+    <inlineHelpText>List services Abstrakt is prospecting for our clients. Use this field to identify what clients we need to de-dupe lists against</inlineHelpText>
+    <label>Services Prospecting for Client</label>
+    <length>550</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

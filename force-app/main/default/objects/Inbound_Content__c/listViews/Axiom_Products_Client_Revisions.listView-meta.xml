@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Axiom_Products_Client_Revisions</fullName>
+    <columns>NAME</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Countdown_to_Auto_Approval__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Content_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Client Revisions</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+        <value>Axiom Products - Marketing Services</value>
+    </filters>
+    <label>Axiom Products Client Revisions</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <portalRole>AxiomProductsMarketingServicesPartnerUser</portalRole>
+        <portalRole>GoodSilverSteakCoMarketingServicesPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_of_Origin__c</fullName>
+    <externalId>false</externalId>
+    <label>Department of Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outbound Pipeline</fullName>
+                <default>false</default>
+                <label>Outbound Pipeline</label>
+            </value>
+            <value>
+                <fullName>Executive Sales</fullName>
+                <default>false</default>
+                <label>Executive Sales</label>
+            </value>
+            <value>
+                <fullName>Technology &amp; Cloud</fullName>
+                <default>false</default>
+                <label>Technology &amp; Cloud</label>
+            </value>
+            <value>
+                <fullName>Training &amp; Recruiting</fullName>
+                <default>false</default>
+                <label>Training &amp; Recruiting</label>
+            </value>
+            <value>
+                <fullName>Outbound Operations</fullName>
+                <default>false</default>
+                <label>Outbound Operations</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Inbound Pipeline</fullName>
+                <default>false</default>
+                <label>Inbound Pipeline</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Video</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Video</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR</fullName>
+                <default>false</default>
+                <label>Bionic SDR</label>
+            </value>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>Content</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Content</label>
+            </value>
+            <value>
+                <fullName>Copywriters</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Copywriters</label>
+            </value>
+            <value>
+                <fullName>Creative</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Creative</label>
+            </value>
+            <value>
+                <fullName>Digital Strategy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Digital Strategy</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Office Manager / Facilities Requests</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Office Manager / Facilities Requests</label>
+            </value>
+            <value>
+                <fullName>Training and Quality</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Training and Quality</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Video Production</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

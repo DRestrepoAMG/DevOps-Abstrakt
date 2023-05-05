@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Marketing_Collateral_Conlan</fullName>
+    <columns>Account__c</columns>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>NAME</columns>
+    <columns>Topic__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Status__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <filters>
+        <field>Collateral_Type__c</field>
+        <operation>equals</operation>
+        <value>Social Cover</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2022</value>
+    </filters>
+    <label>All Marketing Collateral - Conlan</label>
+    <sharedTo>
+        <role>Implementation_Specialist</role>
+    </sharedTo>
+</ListView>

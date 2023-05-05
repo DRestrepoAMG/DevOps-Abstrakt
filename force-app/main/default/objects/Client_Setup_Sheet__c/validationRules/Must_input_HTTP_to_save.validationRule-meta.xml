@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_input_HTTP_to_save</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(NOT(BEGINS(&apos;http&apos;,   Website__c )),IF(CONTAINS(RIGHT(Website__c,1),&apos;/&apos;),TRUE,FALSE))</errorConditionFormula>
+    <errorMessage>Website must start with &apos;http&apos; and not end with /</errorMessage>
+</ValidationRule>

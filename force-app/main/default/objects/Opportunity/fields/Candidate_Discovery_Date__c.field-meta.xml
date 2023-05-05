@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_Discovery_Date__c</fullName>
+    <description>Date the Talent Solutions Applicant Opportunity was created or when we actively started perusing the candidate
+MCarter (case chatter 00070676 - regarding the field being the same as created date): &quot;I&apos;d like to still add those two fields -- we had a few clients sign but then ask us to delay the start day by a few weeks. This would ensure we always have the right date.&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the Talent Solutions Applicant Opportunity was created or when we actively started perusing the candidate</inlineHelpText>
+    <label>Candidate Discovery Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

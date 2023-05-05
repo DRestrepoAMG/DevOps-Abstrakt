@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Pipeline_Referral</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>New Pipeline Referral</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/006/e?
+what_id={!Account.Id}
+&amp;RecordType=012G0000000qERi
+&amp;ent=Opportunity
+&amp;CF00NG000000FHs32={!Account.Name}
+&amp;opp4=Abstrakt Marketing Group
+&amp;CF00NG000000FHtWV={!$User.FirstName} {!$User.LastName}
+&amp;opp11=Pitching</url>
+</WebLink>

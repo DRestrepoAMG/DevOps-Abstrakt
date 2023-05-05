@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explaination_for_Reason_Lost</fullName>
+    <active>false</active>
+    <description>Requires further explanation why a lost opportunity was labeled as Other or No Interest.</description>
+    <errorConditionFormula>AND (OR(ISPICKVAL( Reason_Lost__c , &quot;Other&quot;),
+ISPICKVAL( Reason_Lost__c , &quot;No Interest&quot;),
+ISPICKVAL( Reason_Lost__c , &quot;Not a Fit&quot;),
+ISPICKVAL( Reason_Lost__c , &quot;No Budget&quot;)),
+ISBLANK( Why_I_Lost_this_Deal__c ), 
+RecordTypeId = &quot;012G0000000qERi&quot;)</errorConditionFormula>
+    <errorMessage>When Reason Lost is Other, No Interest, No Budget or Not a Fit the field &quot;Why I Lost this Deal&quot; needs to be populated for opportunity to be saved.</errorMessage>
+</ValidationRule>

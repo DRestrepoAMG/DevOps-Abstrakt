@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Pitch_Check_Sheet__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Outbound_Pitch_Check_Sheet_Score__c&gt;0, Outbound_Pitch_Check_Sheet_Score__c/54,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outbound Pitch Check Sheet %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

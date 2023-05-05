@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Industry__c),
+&quot;IT&quot;, &quot;IT&quot;,
+&quot;HVAC&quot;, &quot;HVAC&quot;,
+&quot;Commercial Cleaning&quot;, &quot;Commercial Cleaning&quot;,
+&quot;Realtor Recruitment&quot;, &quot;Realtor Recruitment&quot;,
+&quot;Commercial Real Estate&quot;, &quot;Commercial Real Estate&quot;,
+&quot;Material Handling&quot;, &quot;Material Handling&quot;,
+&quot;LED Lighting&quot;, &quot;LED Lighting&quot;,
+&quot;Solar&quot;, &quot;Solar&quot;,
+&quot;LO Recruitment&quot;, &quot;LO Recruitment&quot;,
+&quot;Construction&quot;, &quot;Construction&quot;,
+&quot;Commercial Roofing&quot;, &quot;Commercial Roofing&quot;,
+&quot;Commercial Electric&quot;, &quot;Commercial Electric&quot;,
+&quot;Mortgage - LO Recruitment&quot;,&quot;Mortgage - LO Recruitment&quot;,
+&quot;Real Estate Agent Recruitment&quot;,&quot;Real Estate Agent Recruitment&quot; ,&quot;Other&quot;)</formula>
+    <label>Industry Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

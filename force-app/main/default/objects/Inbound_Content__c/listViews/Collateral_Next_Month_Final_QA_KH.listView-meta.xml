@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collateral_Next_Month_Final_QA_KH</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Ready_to_Send_to_Client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Outbound_Asset_Manager__c</field>
+        <operation>contains</operation>
+        <value>Kat Honiker</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral,Inbound_Content__c.Video</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notContain</operation>
+        <value>Client Cancelled</value>
+    </filters>
+    <filters>
+        <field>Marketing_Collateral_Auto_Approval_Date__c</field>
+        <operation>equals</operation>
+        <value>NEXT_MONTH</value>
+    </filters>
+    <label>Collateral Next Month (Final QA) - KH</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

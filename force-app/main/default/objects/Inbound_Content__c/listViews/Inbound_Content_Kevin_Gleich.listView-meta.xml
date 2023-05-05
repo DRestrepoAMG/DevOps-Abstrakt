@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Content_Kevin_Gleich</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Status__c</columns>
+    <columns>Content_Link__c</columns>
+    <columns>Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Content_Writer__c</field>
+        <operation>equals</operation>
+        <value>Kevin Gleich</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Inbound_Content</value>
+    </filters>
+    <label>Inbound Content - Kevin Gleich</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

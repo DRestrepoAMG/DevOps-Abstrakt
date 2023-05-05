@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_Player_Scorecard__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Provides a link to the user&apos;s A-Player overall score and individual metric score values.</description>
+    <externalId>false</externalId>
+    <label>A-Player Scorecard</label>
+    <referenceTo>User_Scorecard__c</referenceTo>
+    <relationshipLabel>Abstrakt Role User Details</relationshipLabel>
+    <relationshipName>Abstrakt_Role_User_Details</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

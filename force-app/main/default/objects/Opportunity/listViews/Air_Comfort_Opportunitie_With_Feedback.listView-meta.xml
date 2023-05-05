@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Air_Comfort_Opportunitie_With_Feedback</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Client_Notes__c</columns>
+    <columns>Meeting_Status__c</columns>
+    <columns>Assigned_to__c</columns>
+    <columns>Opportunity_Assigned_to_Email__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Client_Opportunity</value>
+    </filters>
+    <label>Air Comfort - Opportunities Feedback</label>
+    <sharedTo>
+        <portalRoleAndSubordinates>AirComfortCorporationParentPartnerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>AirComfortCorporationPartnerUser</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

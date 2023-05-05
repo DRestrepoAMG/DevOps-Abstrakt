@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Content_Waiting_on_Client</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Page_Blog_Title__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Goal__c</columns>
+    <columns>Value__c</columns>
+    <columns>Funnel_Focus__c</columns>
+    <columns>Submitted_to_Client_Date__c</columns>
+    <columns>Content_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Inbound_Content</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Waiting on Client Approval</value>
+    </filters>
+    <label>SEO Content - Waiting on Approval</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+    </sharedTo>
+</ListView>

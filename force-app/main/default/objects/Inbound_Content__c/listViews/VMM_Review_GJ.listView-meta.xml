@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VMM_Review_GJ</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Virtual_Marketing_Manager__c</columns>
+    <columns>Status__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Account Owner Review,VMM Review</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>Abstrakt,Laclede,Cloud</value>
+    </filters>
+    <label>VMM Review - ZB</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

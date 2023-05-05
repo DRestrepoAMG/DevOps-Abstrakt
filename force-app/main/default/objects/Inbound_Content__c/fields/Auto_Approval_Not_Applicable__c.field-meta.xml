@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Approval_Not_Applicable__c</fullName>
+    <description>Give visibility on the creative content record if the client has Auto-Approval Not Applicable on the account page.</description>
+    <externalId>false</externalId>
+    <formula>Account__r.Auto_Approval_Not_Applicable__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Auto-Approval Not Applicable</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

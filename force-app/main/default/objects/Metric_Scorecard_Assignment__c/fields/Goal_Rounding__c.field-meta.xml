@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal_Rounding__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This determines how the Current Goal will be rounded</inlineHelpText>
+    <label>Goal Rounding</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Rounding</fullName>
+                <default>true</default>
+                <label>Standard Rounding</label>
+            </value>
+            <value>
+                <fullName>Round Up</fullName>
+                <default>false</default>
+                <label>Round Up</label>
+            </value>
+            <value>
+                <fullName>Round Down</fullName>
+                <default>false</default>
+                <label>Round Down</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Batch_Account_Metrics__c</fullName>
+    <externalId>false</externalId>
+    <formula>RecordType.Name = &apos;Pipeline Client&apos; &amp;&amp; TEXT(Status__c) = &apos;Active&apos; &amp;&amp;
+ (Current_Contract_Calling_Start_Date__c != null || Director__c != null || Sales_Manager_Director__c != null || Inside_Sales_Manager__c != null || Assistant_Partner_Sales_Manager__c != null || Current_PSR__c != null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Temp field created by Jessica to demonstrate which accounts are populated by Batch Account Metrics vs Batch Pipeline Account Metrics</inlineHelpText>
+    <label>Batch Account Metrics</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

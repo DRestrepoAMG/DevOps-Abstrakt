@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_Lack_of_Relationships__c</fullName>
+    <externalId>false</externalId>
+    <label>Reasons for Lack of Relationships</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Have you followed up on all appts</fullName>
+                <default>false</default>
+                <label>Have you followed up on all appts</label>
+            </value>
+            <value>
+                <fullName>Is your follow up digital, phone or live</fullName>
+                <default>false</default>
+                <label>Is your follow up digital, phone or live</label>
+            </value>
+            <value>
+                <fullName>Did you research the KDM prior to the Appt</fullName>
+                <default>false</default>
+                <label>Did you research the KDM prior to the Appt</label>
+            </value>
+            <value>
+                <fullName>Did you research the company</fullName>
+                <default>false</default>
+                <label>Did you research the company</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

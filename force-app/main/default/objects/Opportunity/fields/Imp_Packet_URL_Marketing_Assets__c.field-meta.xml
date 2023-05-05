@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Imp_Packet_URL_Marketing_Assets__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Begins(Implementation_Packet_Edit_Link__c, &quot;https://www.surveygizmo.com&quot;), &quot;&quot;,
+
+HYPERLINK(IF(ISPICKVAL(Industry__c, &apos;IT&apos;), 
+&quot;https://www.surveygizmo.com/s3/3464334/AMG-Imp-IT?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Commercial Cleaning&apos;), 
+&quot;https://www.surveygizmo.com/s3/3462274/AMG-Imp-CC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Real Estate Agent Recruitment&apos;), 
+&quot;https://www.surveygizmo.com/s3/3527570/AMG-Imp-RRC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - LO Recruitment&apos;), 
+&quot;https://www.surveygizmo.com/s3/3527570/AMG-Imp-RRC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - LO/Referral&apos;), 
+&quot;https://www.surveygizmo.com/s3/3530561/AMG-Imp-LRC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - Realtor Referral&apos;), 
+&quot;https://www.surveygizmo.com/s3/3530536/AMG-Imp-RRF?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Material Handling&apos;), 
+&quot;https://www.surveygizmo.com/s3/3462301/AMG-Imp-MH?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;HVAC&apos;), 
+&quot;https://www.surveygizmo.com/s3/3464096/AMG-Imp-HVAC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;LED Lighting&apos;), 
+&quot;https://www.surveygizmo.com/s3/3462068/AMG-Imp-LED?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Commercial Roofing&apos;), 
+&quot;https://www.surveygizmo.com/s3/3916052/AMG-Imp-Roof?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Solar&apos;), 
+&quot;https://www.surveygizmo.com/s3/4308874/AMG-IMP-Solar?opportunityid=&quot;+Id, 
+
+&quot;https://www.surveygizmo.com/s3/3464212/AMG-Imp-Other?opportunityid=&quot;+Id))))))))))), &quot;Use This Link to Start Packet Only&quot;))</formula>
+    <inlineHelpText>This is used to start the packet for marketing assets.  Client needs to be sent the edit link.</inlineHelpText>
+    <label>Imp Packet URL - Marketing Assets</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

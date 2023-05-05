@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Senior_Audit_Feedback__c</fullName>
+    <defaultValue>&apos;__Copywriter/Content Engaging__&apos;&amp; BR() &amp; BR() &amp;
+&apos;__Editor/Information Correct__&apos;&amp; BR() &amp; BR() &amp;
+&apos;__Designer/Design Engaging__&apos;&amp; BR() &amp; BR() &amp;
+&apos;__Marketing Mgr./Clients Wants Represented__&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Senior Audit Feedback</label>
+    <length>3000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

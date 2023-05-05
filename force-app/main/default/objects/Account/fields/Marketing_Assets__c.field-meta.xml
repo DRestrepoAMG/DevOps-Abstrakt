@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Assets__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If box is checked client is receiving the marketing assets along with their program</description>
+    <externalId>false</externalId>
+    <label>Marketing Collateral?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

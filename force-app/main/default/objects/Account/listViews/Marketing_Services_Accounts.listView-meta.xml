@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Services_Accounts</fullName>
+    <columns>Virtual_Marketing_Manager__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Agency_Services__c</columns>
+    <columns>Copywriter__c</columns>
+    <columns>Digital_Strategist__c</columns>
+    <columns>Graphic_Designer__c</columns>
+    <columns>Web_Designer__c</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>marketing services</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Agency_Client</value>
+    </filters>
+    <label>Marketing Services Accounts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

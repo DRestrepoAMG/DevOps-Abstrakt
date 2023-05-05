@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quickbooks_Service__c</fullName>
+    <externalId>false</externalId>
+    <label>Quickbooks Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstrakt Cloud Solutions:Salesforce Implementation</fullName>
+                <default>false</default>
+                <label>Abstrakt Cloud Solutions:Salesforce Implementation</label>
+            </value>
+            <value>
+                <fullName>Abstrakt Cloud Solutions:Salesforce Integration</fullName>
+                <default>false</default>
+                <label>Abstrakt Cloud Solutions:Salesforce Integration</label>
+            </value>
+            <value>
+                <fullName>Abstrakt Cloud Solutions:Salesforce Licensing</fullName>
+                <default>false</default>
+                <label>Abstrakt Cloud Solutions:Salesforce Licensing</label>
+            </value>
+            <value>
+                <fullName>Abstrakt Cloud Solutions:Virtual Salesforce Manager</fullName>
+                <default>false</default>
+                <label>Abstrakt Cloud Solutions:Virtual Salesforce Manager</label>
+            </value>
+            <value>
+                <fullName>Accounts Receivable</fullName>
+                <default>false</default>
+                <label>Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive</fullName>
+                <default>false</default>
+                <label>Agency-Automotive</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Ad Management Fee</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Ad Management Fee</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Agency - Pass Through</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Agency - Pass Through</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Agency - Services</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Agency - Services</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Direct Mail</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Direct Mail</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Direct Servces</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Direct Servces</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Media Buys -Media Buys</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Media Buys -Media Buys</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Social Return - Ad Spend</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Social Return - Ad Spend</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Social Return - Cont Mgmt</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Social Return - Cont Mgmt</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Social Return - Rep Mgmt</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Social Return - Rep Mgmt</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Auto Social Return - Services</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Auto Social Return - Services</label>
+            </value>
+            <value>
+                <fullName>Agency-Automotive:Review Solicitation</fullName>
+                <default>false</default>
+                <label>Agency-Automotive:Review Solicitation</label>
+            </value>
+            <value>
+                <fullName>Agency Service</fullName>
+                <default>false</default>
+                <label>Agency Service</label>
+            </value>
+            <value>
+                <fullName>Auto Dealer Pipeline - BuyBack</fullName>
+                <default>false</default>
+                <label>Auto Dealer Pipeline - BuyBack</label>
+            </value>
+            <value>
+                <fullName>Business Cards</fullName>
+                <default>false</default>
+                <label>Business Cards</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Cleaning Service</fullName>
+                <default>false</default>
+                <label>Cleaning Service</label>
+            </value>
+            <value>
+                <fullName>Client Reimbursable</fullName>
+                <default>false</default>
+                <label>Client Reimbursable</label>
+            </value>
+            <value>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+                <label>Deposit</label>
+            </value>
+            <value>
+                <fullName>DME - Marketing Services</fullName>
+                <default>false</default>
+                <label>DME - Marketing Services</label>
+            </value>
+            <value>
+                <fullName>Golf</fullName>
+                <default>false</default>
+                <label>Golf</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Marketing Services</fullName>
+                <default>false</default>
+                <label>Marketing Services</label>
+            </value>
+            <value>
+                <fullName>Media Buys</fullName>
+                <default>false</default>
+                <label>Media Buys</label>
+            </value>
+            <value>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+                <label>Pipeline</label>
+            </value>
+            <value>
+                <fullName>Pipeline:Pipeline Sales Assets</fullName>
+                <default>false</default>
+                <label>Pipeline:Pipeline Sales Assets</label>
+            </value>
+            <value>
+                <fullName>Pipeline:Pipeline Video Series</fullName>
+                <default>false</default>
+                <label>Pipeline:Pipeline Video Series</label>
+            </value>
+            <value>
+                <fullName>Pipeline In-bound</fullName>
+                <default>false</default>
+                <label>Pipeline In-bound</label>
+            </value>
+            <value>
+                <fullName>Pipeline In-bound:Creative Services</fullName>
+                <default>false</default>
+                <label>Pipeline In-bound:Creative Services</label>
+            </value>
+            <value>
+                <fullName>Pipeline In-bound:Inbound Social Media</fullName>
+                <default>false</default>
+                <label>Pipeline In-bound:Inbound Social Media</label>
+            </value>
+            <value>
+                <fullName>Pipeline In-bound:Website</fullName>
+                <default>false</default>
+                <label>Pipeline In-bound:Website</label>
+            </value>
+            <value>
+                <fullName>Printed Material</fullName>
+                <default>false</default>
+                <label>Printed Material</label>
+            </value>
+            <value>
+                <fullName>Pro-Forma Sales</fullName>
+                <default>false</default>
+                <label>Pro-Forma Sales</label>
+            </value>
+            <value>
+                <fullName>Promotional Items</fullName>
+                <default>false</default>
+                <label>Promotional Items</label>
+            </value>
+            <value>
+                <fullName>Reimbursables</fullName>
+                <default>false</default>
+                <label>Reimbursables</label>
+            </value>
+            <value>
+                <fullName>Salesforce Development</fullName>
+                <default>false</default>
+                <label>Salesforce Development</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Subcontracted Services</fullName>
+                <default>false</default>
+                <label>Subcontracted Services</label>
+            </value>
+            <value>
+                <fullName>Travel Expense</fullName>
+                <default>false</default>
+                <label>Travel Expense</label>
+            </value>
+            <value>
+                <fullName>Website Design</fullName>
+                <default>false</default>
+                <label>Website Design</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

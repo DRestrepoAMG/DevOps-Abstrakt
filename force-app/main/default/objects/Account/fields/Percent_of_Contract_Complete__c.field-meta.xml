@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_of_Contract_Complete__c</fullName>
+    <description>This shows the percent of the contract complete and should be compared to percent to goal for contract.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status__c, &apos;Active&apos;),  Number_of_Days_Since_Current_Contract__c /  (Contract_End_Date__c -   Current_Contract_Calling_Start_Date__c + 1),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This shows the percent of the contract complete and should be compared to percent to goal for contract.</inlineHelpText>
+    <label>Percent of Contract Complete</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

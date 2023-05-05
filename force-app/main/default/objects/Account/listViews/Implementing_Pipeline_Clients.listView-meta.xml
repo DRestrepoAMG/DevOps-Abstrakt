@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Implementing_Pipeline_Clients</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Marketing_Assets__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>Go_Live_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Implementation_Manager__c</field>
+        <operation>equals</operation>
+        <value>Tyler Sprock</value>
+    </filters>
+    <label>Implementing Pipeline Clients</label>
+</ListView>

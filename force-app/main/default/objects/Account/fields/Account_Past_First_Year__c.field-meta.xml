@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Past_First_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+NOT(
+ISPICKVAL( Status__c , &apos;Canceled&apos;)),
+ Number_of_Days_Live__c &gt; 365)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Past First Year</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

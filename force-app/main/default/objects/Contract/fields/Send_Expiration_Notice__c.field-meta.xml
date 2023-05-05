@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Expiration_Notice__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR((( EndDate -CASE( OwnerExpirationNotice ,
+&quot;120 Days&quot;,120,
+&quot;90 Days&quot;,90,
+&quot;60 Days&quot;,60,
+&quot;45 Days&quot;,45,
+&quot;30 Days&quot;,30,
+&quot;15 Days&quot;,15,
+0))-30)=TODAY(),
+(( EndDate -CASE( OwnerExpirationNotice ,
+&quot;120 Days&quot;,120,
+&quot;90 Days&quot;,90,
+&quot;60 Days&quot;,60,
+&quot;45 Days&quot;,45,
+&quot;30 Days&quot;,30,
+&quot;15 Days&quot;,15,
+0))-60)=TODAY())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send Expiration Notice</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

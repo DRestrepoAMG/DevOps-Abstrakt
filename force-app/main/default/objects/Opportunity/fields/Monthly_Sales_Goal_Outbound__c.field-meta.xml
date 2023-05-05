@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monthly_Sales_Goal_Outbound__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( MONTH( Contract_Execution_Date__c ) ,
+1,130000,
+2,130000,
+3,130000,
+4,155000,
+5,155000,
+6,155000,
+7,155000,
+8,155000,
+9,155000,
+10,155000,
+11,155000,
+12,155000,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Monthly Sales Goal Outbound</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

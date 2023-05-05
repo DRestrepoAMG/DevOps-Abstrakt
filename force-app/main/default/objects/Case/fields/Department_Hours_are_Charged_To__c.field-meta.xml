@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_Hours_are_Charged_To__c</fullName>
+    <externalId>false</externalId>
+    <label>Department Hours are Charged To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>AMG Cloud</fullName>
+                <default>false</default>
+                <label>AMG Cloud</label>
+            </value>
+            <value>
+                <fullName>AMG Marketing &amp; Culture</fullName>
+                <default>false</default>
+                <label>AMG Marketing &amp; Culture</label>
+            </value>
+            <value>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+                <label>Data Analytics</label>
+            </value>
+            <value>
+                <fullName>Digital Content &amp; Strategy</fullName>
+                <default>false</default>
+                <label>Digital Content &amp; Strategy</label>
+            </value>
+            <value>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+                <label>Email Marketing</label>
+            </value>
+            <value>
+                <fullName>Executive Sales</fullName>
+                <default>false</default>
+                <label>Executive Sales</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Marketing Collateral</fullName>
+                <default>false</default>
+                <label>Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>Marketing Services Account Management</fullName>
+                <default>false</default>
+                <label>Marketing Services Account Management</label>
+            </value>
+            <value>
+                <fullName>Outbound Pipeline Account Management</fullName>
+                <default>false</default>
+                <label>Outbound Pipeline Account Management</label>
+            </value>
+            <value>
+                <fullName>Outbound Pipeline Activity Fulfillment</fullName>
+                <default>false</default>
+                <label>Outbound Pipeline Activity Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Product &amp; Process Management</fullName>
+                <default>false</default>
+                <label>Product &amp; Process Management</label>
+            </value>
+            <value>
+                <fullName>Recruiting</fullName>
+                <default>false</default>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <fullName>Sales Enablement</fullName>
+                <default>false</default>
+                <label>Sales Enablement</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <label>Video Production</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>HR / Recruiting / Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HR / Recruiting / Training</label>
+            </value>
+            <value>
+                <fullName>Implementations / Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementations / Operations</label>
+            </value>
+            <value>
+                <fullName>Inbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inbound</label>
+            </value>
+            <value>
+                <fullName>Product Development / Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Development / Sales</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Website / Ongoing Creative Product Development</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Website / Ongoing Creative Product Development</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

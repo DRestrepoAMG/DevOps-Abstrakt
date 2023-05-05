@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Inbound_Content</fullName>
+    <columns>NAME</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>Content_Link__c</columns>
+    <columns>Feedback__c</columns>
+    <columns>Submitted_to_Client_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Creative_Calendar</value>
+    </filters>
+    <filters>
+        <field>Social_Media_Manager__c</field>
+        <operation>equals</operation>
+        <value>Brooke Prinster</value>
+    </filters>
+    <label>My Inbound Content</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

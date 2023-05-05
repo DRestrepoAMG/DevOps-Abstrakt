@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Last_3_Months</fullName>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>Vendor__c</columns>
+    <columns>NAME</columns>
+    <columns>PO_Total_Amount__c</columns>
+    <columns>Account_Code__c</columns>
+    <columns>Accounting_Month__c</columns>
+    <columns>Accounting_Year__c</columns>
+    <columns>PO_Status__c</columns>
+    <columns>Submission_Date__c</columns>
+    <columns>Payment_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_MONTHS:3</value>
+    </filters>
+    <label>All (Last 3 Months)</label>
+</ListView>

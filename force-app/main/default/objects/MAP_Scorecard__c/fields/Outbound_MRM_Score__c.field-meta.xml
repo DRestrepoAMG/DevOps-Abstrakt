@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_MRM_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE( Commitment_Recap__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Set_the_Agenda__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Important_Abstrakt_Announcements__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( State_of_Business__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Our_Pipeline__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Introduce_your_Organization_to_KDMs__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Schedule_Date_Time_Appointments__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Build_Maintain_Relationships__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Your_Pipeline__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Sales_Consulting__c,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+ 
+CASE(Recommendations_to_Client__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( X360_Degree_Marketing__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+ CASE( Talked_about_The_Grow_Show__c  ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Lifetime_Partnership__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Recap_Commitments__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( AR__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Referrals__c,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Confirm_Next_Meeting_Date__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0))/36</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outbound MRM Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

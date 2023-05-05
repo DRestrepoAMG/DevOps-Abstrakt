@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Production_Month__c</fullName>
+    <externalId>false</externalId>
+    <label>Production Month</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Month 1</fullName>
+                <default>false</default>
+                <label>Month 1</label>
+            </value>
+            <value>
+                <fullName>Month 2</fullName>
+                <default>false</default>
+                <label>Month 2</label>
+            </value>
+            <value>
+                <fullName>Month 3</fullName>
+                <default>false</default>
+                <label>Month 3</label>
+            </value>
+            <value>
+                <fullName>Month 4</fullName>
+                <default>false</default>
+                <label>Month 4</label>
+            </value>
+            <value>
+                <fullName>Month 5</fullName>
+                <default>false</default>
+                <label>Month 5</label>
+            </value>
+            <value>
+                <fullName>Month 6</fullName>
+                <default>false</default>
+                <label>Month 6</label>
+            </value>
+            <value>
+                <fullName>Month 7</fullName>
+                <default>false</default>
+                <label>Month 7</label>
+            </value>
+            <value>
+                <fullName>Month 8</fullName>
+                <default>false</default>
+                <label>Month 8</label>
+            </value>
+            <value>
+                <fullName>Month 9</fullName>
+                <default>false</default>
+                <label>Month 9</label>
+            </value>
+            <value>
+                <fullName>Month 10</fullName>
+                <default>false</default>
+                <label>Month 10</label>
+            </value>
+            <value>
+                <fullName>Month 11</fullName>
+                <default>false</default>
+                <label>Month 11</label>
+            </value>
+            <value>
+                <fullName>Month 12</fullName>
+                <default>false</default>
+                <label>Month 12</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

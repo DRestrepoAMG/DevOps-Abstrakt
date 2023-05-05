@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grow_Show_Episode_Recommendation__c</fullName>
+    <description>Used on Sapper MRM to encourage clients to listen to the Grow Show podcast.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Highlight the most relevant podcast that would benefit the client</inlineHelpText>
+    <label>Grow Show Episode Recommendation</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

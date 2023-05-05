@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MHN_Info_Requested__c</fullName>
+    <externalId>false</externalId>
+    <label>MHN Info Requested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bins</fullName>
+                <default>false</default>
+                <label>Bins</label>
+            </value>
+            <value>
+                <fullName>Cabinets</fullName>
+                <default>false</default>
+                <label>Cabinets</label>
+            </value>
+            <value>
+                <fullName>Carts</fullName>
+                <default>false</default>
+                <label>Carts</label>
+            </value>
+            <value>
+                <fullName>Casters</fullName>
+                <default>false</default>
+                <label>Casters</label>
+            </value>
+            <value>
+                <fullName>Chairs &amp; Stools</fullName>
+                <default>false</default>
+                <label>Chairs &amp; Stools</label>
+            </value>
+            <value>
+                <fullName>Conveyor Systems</fullName>
+                <default>false</default>
+                <label>Conveyor Systems</label>
+            </value>
+            <value>
+                <fullName>Cranes</fullName>
+                <default>false</default>
+                <label>Cranes</label>
+            </value>
+            <value>
+                <fullName>Dock Equipment</fullName>
+                <default>false</default>
+                <label>Dock Equipment</label>
+            </value>
+            <value>
+                <fullName>Dollies</fullName>
+                <default>false</default>
+                <label>Dollies</label>
+            </value>
+            <value>
+                <fullName>Drums &amp; Equipment</fullName>
+                <default>false</default>
+                <label>Drums &amp; Equipment</label>
+            </value>
+            <value>
+                <fullName>Fans</fullName>
+                <default>false</default>
+                <label>Fans</label>
+            </value>
+            <value>
+                <fullName>Fork Lifts &amp; Attachments</fullName>
+                <default>false</default>
+                <label>Fork Lifts &amp; Attachments</label>
+            </value>
+            <value>
+                <fullName>Hoist &amp; Equipment</fullName>
+                <default>false</default>
+                <label>Hoist &amp; Equipment</label>
+            </value>
+            <value>
+                <fullName>Hoppers</fullName>
+                <default>false</default>
+                <label>Hoppers</label>
+            </value>
+            <value>
+                <fullName>Hydraulic Dumpers</fullName>
+                <default>false</default>
+                <label>Hydraulic Dumpers</label>
+            </value>
+            <value>
+                <fullName>Ladders</fullName>
+                <default>false</default>
+                <label>Ladders</label>
+            </value>
+            <value>
+                <fullName>Material Handling Equipment</fullName>
+                <default>false</default>
+                <label>Material Handling Equipment</label>
+            </value>
+            <value>
+                <fullName>Matting</fullName>
+                <default>false</default>
+                <label>Matting</label>
+            </value>
+            <value>
+                <fullName>Mezzanines</fullName>
+                <default>false</default>
+                <label>Mezzanines</label>
+            </value>
+            <value>
+                <fullName>Modular Buildings</fullName>
+                <default>false</default>
+                <label>Modular Buildings</label>
+            </value>
+            <value>
+                <fullName>Modular Offices</fullName>
+                <default>false</default>
+                <label>Modular Offices</label>
+            </value>
+            <value>
+                <fullName>Pallets &amp; Equipment</fullName>
+                <default>false</default>
+                <label>Pallets &amp; Equipment</label>
+            </value>
+            <value>
+                <fullName>Partitions &amp; Barriers</fullName>
+                <default>false</default>
+                <label>Partitions &amp; Barriers</label>
+            </value>
+            <value>
+                <fullName>Rack Systems</fullName>
+                <default>false</default>
+                <label>Rack Systems</label>
+            </value>
+            <value>
+                <fullName>Safety Equipment</fullName>
+                <default>false</default>
+                <label>Safety Equipment</label>
+            </value>
+            <value>
+                <fullName>Scales</fullName>
+                <default>false</default>
+                <label>Scales</label>
+            </value>
+            <value>
+                <fullName>Security Equipment</fullName>
+                <default>false</default>
+                <label>Security Equipment</label>
+            </value>
+            <value>
+                <fullName>Shelving</fullName>
+                <default>false</default>
+                <label>Shelving</label>
+            </value>
+            <value>
+                <fullName>Shipping Supplies</fullName>
+                <default>false</default>
+                <label>Shipping Supplies</label>
+            </value>
+            <value>
+                <fullName>Strapping</fullName>
+                <default>false</default>
+                <label>Strapping</label>
+            </value>
+            <value>
+                <fullName>Trucks / Hand Trucks</fullName>
+                <default>false</default>
+                <label>Trucks / Hand Trucks</label>
+            </value>
+            <value>
+                <fullName>Warehouse Equipment</fullName>
+                <default>false</default>
+                <label>Warehouse Equipment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

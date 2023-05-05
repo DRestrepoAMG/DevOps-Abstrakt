@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Meeting_Notes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Is there anything else the client would like to discuss?
+What pearls of wisdom (company or industry) can they pass along to help the PSM and PSR understand completely their product, its sale or their industry better?</inlineHelpText>
+    <label>Additional Meeting Notes</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Contract_Out_Clause</fullName>
+    <active>true</active>
+    <description>A Contract Out Clause option must be selected when Appointment Guarantee contains Annual or Appointments.</description>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+NOT(ISPICKVAL(Pipeline_Appointment_Guarantee__c ,&apos;Dials Only&apos;)),
+ISPICKVAL(Status__c ,&apos;Completed&apos;),
+ISBLANK(TEXT( Contract_Out_Clause__c ))
+)</errorConditionFormula>
+    <errorMessage>Please select a Contract Out Clause value when Pipeline Appointment Guarantee includes appointments.</errorMessage>
+</ValidationRule>

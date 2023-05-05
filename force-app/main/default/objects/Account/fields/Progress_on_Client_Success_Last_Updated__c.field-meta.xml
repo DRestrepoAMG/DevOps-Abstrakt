@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_on_Client_Success_Last_Updated__c</fullName>
+    <description>Updates date when Progress on Client Definition of Success is changed.</description>
+    <externalId>false</externalId>
+    <label>Progress on Client Success Last Updated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Implementation_Director</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;Salesforce Admin&apos;, 
+$Profile.Name &lt;&gt; &apos;Quality/Training Staff&apos;,
+$Profile.Name &lt;&gt; &apos;Project Team Leader&apos;,
+$Profile.Name &lt;&gt; &apos;Accounting Generalist&apos;, 
+OR( Implementation_Director_Approved__c = TRUE ) 
+)</errorConditionFormula>
+    <errorDisplayField>X5_Renewal_Increase__c</errorDisplayField>
+    <errorMessage>You are not the implementation director you can&apos;t approve this</errorMessage>
+</ValidationRule>

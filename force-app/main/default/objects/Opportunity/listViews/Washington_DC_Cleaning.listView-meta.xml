@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Washington_DC_Cleaning</fullName>
+    <columns>X2nd_Voice__c</columns>
+    <columns>Top_2__c</columns>
+    <columns>Manager_Top_5__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Pitch_1_Result__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Main_Contact_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Industry__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>washington</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Commercial Cleaning</value>
+    </filters>
+    <label>Washington DC Cleaning</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+    </sharedTo>
+</ListView>

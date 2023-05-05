@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Generated_From__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The LinkedIn profile that the lead was generated from</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The LinkedIn profile that the lead was generated from.</inlineHelpText>
+    <label>Profile Generated From</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

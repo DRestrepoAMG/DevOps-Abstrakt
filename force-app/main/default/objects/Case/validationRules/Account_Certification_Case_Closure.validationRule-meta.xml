@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Certification_Case_Closure</fullName>
+    <active>true</active>
+    <description>Only the Quality team can close Account Certification cases.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Case_Category__c, &apos;Account Certification&apos;),
+ IsClosed = TRUE,
+ $UserRole.Id &lt;&gt; &apos;00E4A000000G0rA&apos;,
+ $UserRole.Id &lt;&gt; &apos;00E4A000001Fr30&apos;,
+ $Profile.Id &lt;&gt; &apos;00eA0000000nBcd&apos;,
+ $User.Id &lt;&gt;&apos;005G00000074kuK&apos;)</errorConditionFormula>
+    <errorMessage>You don&apos;t have permission to close Account Certification cases. Please reach out to the TDS.</errorMessage>
+</ValidationRule>

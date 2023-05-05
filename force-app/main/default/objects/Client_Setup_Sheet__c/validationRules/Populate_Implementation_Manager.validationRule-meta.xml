@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Populate_Implementation_Manager</fullName>
+    <active>false</active>
+    <description>Implementation Manager must be populated. Email alert is sent to Implementation Manager and gets populated on the account page.</description>
+    <errorConditionFormula>AND(Sales_Director_Approved__c = TRUE,
+ ISBLANK(Implementation_Project_Manager__c))</errorConditionFormula>
+    <errorMessage>Please populate Implementation Manager</errorMessage>
+</ValidationRule>

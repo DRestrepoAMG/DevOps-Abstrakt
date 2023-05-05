@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finding_Specific_Collateral_Examples</fullName>
+    <columns>Collateral_Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Topic__c</columns>
+    <columns>Auto_Approved__c</columns>
+    <columns>Overall_Rating__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Internal_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <filters>
+        <field>Collateral_Type__c</field>
+        <operation>equals</operation>
+        <value>Case Study</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved,Published</value>
+    </filters>
+    <filters>
+        <field>Topic__c</field>
+        <operation>contains</operation>
+    </filters>
+    <label>Finding Specific Collateral Examples</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

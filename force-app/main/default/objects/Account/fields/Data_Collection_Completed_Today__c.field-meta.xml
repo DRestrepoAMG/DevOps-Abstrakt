@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Collection_Completed_Today__c</fullName>
+    <description>approved by Kristin harris to create on 7-2-19 verbally with Nick W.</description>
+    <externalId>false</externalId>
+    <label>Company Cleansed Completed Today</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

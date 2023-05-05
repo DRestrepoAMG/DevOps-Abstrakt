@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_View_SEO_Items</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>SEO_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.SEO_Items</value>
+    </filters>
+    <label>SEO Items - All Time</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+    </sharedTo>
+</ListView>

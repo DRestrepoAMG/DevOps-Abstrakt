@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Scorecard_Avg_This_Month__c</fullName>
+    <description>This field is populated by a nightly batch process and represents the average score of client scorecards associated with this account which have a Completed Date this month (based on the Current Contract Calling Start Date, whichever is later)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is populated by a nightly batch process and represents the average score of client scorecards associated with this account which have a Completed Date this month (based on the Current Contract Calling Start Date, whichever is later)</inlineHelpText>
+    <label>Client Scorecard Avg This Month</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

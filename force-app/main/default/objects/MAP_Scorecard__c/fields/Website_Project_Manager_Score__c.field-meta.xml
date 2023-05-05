@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_Project_Manager_Score__c</fullName>
+    <description>Used for Website Project Manager&apos;s Quality Scorecard</description>
+    <externalId>false</externalId>
+    <formula>((((Case(Design__c,
+&quot;No&quot;, 0,
+&quot;Yes&quot;, 1,
+0))/1)*(10/100))*100+
+(((Case(Text_Consistency__c,
+&quot;No&quot;, 0,
+&quot;Yes&quot;, 1,
+0))/1)*(10/100))*100+
+(((Case(Website_Forms__c,
+&quot;No&quot;, 0,
+&quot;Yes&quot;, 1,
+0))/1)*(10/100))*100+
+(((Case(Internal_Links__c,
+&quot;No&quot;, 0,
+&quot;Yes&quot;, 1,
+0))/1)*(10/100))*100+
+(((Case( Site_Requirement__c,
+&quot;No&quot;, 0,
+&quot;Yes&quot;, 1,
+0))/1)*(10/100))*100+
+(((((Case(SEMRush_Score__c,
+&quot;No&quot;,0,
+&quot;Yes&quot;,1,
+0))/1)*(25/100))*100)+
+((((Case(Website_Performance__c,
+&quot;No&quot;,0,
+&quot;Yes&quot;,1,
+0))/1)*(25/100))*100)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Website Project Manager Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

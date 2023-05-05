@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISBLANK(Scorecard_Rollup__c) ||  Scorecard_Rollup__r.Metric_Count__c &gt; 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This box is checked if this is a regular metric component or a rollup with at least one scorecard assignment</inlineHelpText>
+    <label>Valid</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

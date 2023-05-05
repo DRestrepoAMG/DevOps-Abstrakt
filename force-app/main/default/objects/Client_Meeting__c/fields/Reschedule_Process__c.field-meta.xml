@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reschedule_Process__c</fullName>
+    <defaultValue>&quot;From time to time, appointments will not occur as scheduled for various reasons outside of Abstrakt&apos;s control. If these missed appointments are accompanied with a call recording that confirms that the potential sales target agreed to the date and time of the meeting, the lead will be counted as an appointment for agreement purposes. It will be the client&apos;s responsibility to follow up with the company to reschedule the meeting.&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;The reason this is in place is the human element – Abstrakt as a company must succeed and have something measurable, we unfortunately cannot control KDM’s being sick, having family issues, or simply being disorganized individuals. We are a partnership we will help out where needed because we want this to be a long term partnership.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Reschedule Process</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

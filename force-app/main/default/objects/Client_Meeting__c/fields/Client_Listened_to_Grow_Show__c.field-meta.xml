@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Listened_to_Grow_Show__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used on Sapper MRM to track how many clients are listening to the Grow Show</description>
+    <externalId>false</externalId>
+    <label>Client Listened to Grow Show</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_Tags_Feedback__c</fullName>
+    <defaultValue>&quot;The correct category is selected and the correct tags have been applied to the post.&quot;</defaultValue>
+    <description>Digital QA Scorecard: Blog</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The correct category is selected and the correct tags have been applied to the post.</inlineHelpText>
+    <label>Category/Tags Feedback</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

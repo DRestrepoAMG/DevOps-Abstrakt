@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Client_Accounts_with_Assets</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Inside_Sales_Manager__c</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>Operations_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>abstrakt,test</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Marketing_Assets__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active Client Accounts with Assets</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

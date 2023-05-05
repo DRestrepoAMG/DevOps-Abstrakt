@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Goal_Formula__c</fullName>
+    <description>Goal is prorated to 25% when % to Appt Goal Actual is at least 100% and doesn&apos;t have a Surveys Collected Additional Guarantee.</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(to_Appt_Goal_Actual__c &gt;=1,
+NOT( INCLUDES( Additional_Guarantees__c , &quot;Surveys Collected&quot;))), 
+Monthly_Survey_Goal__c*(75/100),
+Monthly_Survey_Goal__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Goal is prorated to 25% when % to Appt Goal Actual is at least 100% and doesn&apos;t have a Surveys Collected Additional Guarantee.</inlineHelpText>
+    <label>Survey Goal Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

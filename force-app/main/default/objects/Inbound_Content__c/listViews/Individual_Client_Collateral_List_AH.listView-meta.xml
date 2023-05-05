@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individual_Client_Collateral_List_AH</fullName>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Topic__c</columns>
+    <columns>Status__c</columns>
+    <columns>Emails_with_this_Asset__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Published_Link__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Collateral_Number__c</columns>
+    <columns>Designer__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Feedback__c</columns>
+    <columns>Client_Feedback_2nd_Round__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Video</value>
+    </filters>
+    <filters>
+        <field>Associated_Project__c</field>
+        <operation>contains</operation>
+        <value>selerant</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Published</value>
+    </filters>
+    <label>Individual Client Collateral List - AH</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Communication_Possible_Responses__c</fullName>
+    <externalId>false</externalId>
+    <label>Communication Possible Responses</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not enough</fullName>
+                <default>false</default>
+                <label>Not enough</label>
+            </value>
+            <value>
+                <fullName>Too much</fullName>
+                <default>false</default>
+                <label>Too much</label>
+            </value>
+            <value>
+                <fullName>Lack follow up</fullName>
+                <default>false</default>
+                <label>Lack follow up</label>
+            </value>
+            <value>
+                <fullName>Didn’t implement change</fullName>
+                <default>false</default>
+                <label>Didn’t implement change</label>
+            </value>
+            <value>
+                <fullName>Didn’t understand your needs</fullName>
+                <default>false</default>
+                <label>Didn’t understand your needs</label>
+            </value>
+            <value>
+                <fullName>It’s the same every month</fullName>
+                <default>false</default>
+                <label>It’s the same every month</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

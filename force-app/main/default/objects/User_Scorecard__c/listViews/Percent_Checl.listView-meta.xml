@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_Checl</fullName>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>User_Role__c</columns>
+    <columns>Overall_Score__c</columns>
+    <columns>Metric_1_Percent__c</columns>
+    <columns>Metric_2_Percent__c</columns>
+    <columns>Metric_3_Percent__c</columns>
+    <columns>Metric_4_Percent__c</columns>
+    <columns>Metric_5_Percent__c</columns>
+    <columns>Metric_6_Percent__c</columns>
+    <columns>Metric_7_Percent__c</columns>
+    <columns>Metric_8_Percent__c</columns>
+    <columns>Metric_9_Percent__c</columns>
+    <columns>Metric_10_Percent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Scorecard__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>User_Role__c</field>
+        <operation>notContain</operation>
+        <value>Past Employee</value>
+    </filters>
+    <label>Percent Checl</label>
+    <sharedTo>
+        <role>Implementation_Specialist</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_MSA__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of MSA</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>13 MO Commitment - 2022 MSA</fullName>
+                <default>false</default>
+                <label>13 MO Commitment - 2022 MSA</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - 2022 MSA</fullName>
+                <default>false</default>
+                <label>45 Day Out - 2022 MSA</label>
+            </value>
+            <value>
+                <fullName>Talent Solutions MSA</fullName>
+                <default>false</default>
+                <label>Talent Solutions MSA</label>
+            </value>
+            <value>
+                <fullName>7 Month - 45 Day Out</fullName>
+                <default>false</default>
+                <label>7 Month - 45 Day Out</label>
+            </value>
+            <value>
+                <fullName>13 MO Commitment - Marketing Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 MO Commitment - Marketing Services</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - 2021 MSA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 Mo Commitment - 2021 MSA</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - 2021 MSA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 Day Out - 2021 MSA</label>
+            </value>
+            <value>
+                <fullName>Lock-In Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lock-In Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>THIS A TEST - DO NOT USE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>THIS A TEST - DO NOT USE</label>
+            </value>
+            <value>
+                <fullName>True-Up</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

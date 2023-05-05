@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstrakt</fullName>
+                <default>false</default>
+                <label>Abstrakt</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising &amp; Marketing</label>
+            </value>
+            <value>
+                <fullName>Allergy Testing</fullName>
+                <default>false</default>
+                <label>Allergy Testing</label>
+            </value>
+            <value>
+                <fullName>Architecture, Engineering &amp; Design</fullName>
+                <default>false</default>
+                <label>Architecture, Engineering &amp; Design</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Commercial Cleaning</fullName>
+                <default>false</default>
+                <label>Commercial Cleaning</label>
+            </value>
+            <value>
+                <fullName>Commercial Electric</fullName>
+                <default>false</default>
+                <label>Commercial Electric</label>
+            </value>
+            <value>
+                <fullName>Commercial Fire Protection</fullName>
+                <default>false</default>
+                <label>Commercial Fire Protection</label>
+            </value>
+            <value>
+                <fullName>Commercial Flooring</fullName>
+                <default>false</default>
+                <label>Commercial Flooring</label>
+            </value>
+            <value>
+                <fullName>Commercial Improvement</fullName>
+                <default>false</default>
+                <label>Commercial Improvement</label>
+            </value>
+            <value>
+                <fullName>Commercial Real Estate</fullName>
+                <default>false</default>
+                <label>Commercial Real Estate</label>
+            </value>
+            <value>
+                <fullName>Commercial Roofing</fullName>
+                <default>false</default>
+                <label>Commercial Roofing</label>
+            </value>
+            <value>
+                <fullName>Concrete/Asphalt Services</fullName>
+                <default>false</default>
+                <label>Concrete/Asphalt Services</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Copy/Print</fullName>
+                <default>false</default>
+                <label>Copy/Print</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Direct Mail and Printing</fullName>
+                <default>false</default>
+                <label>Direct Mail and Printing</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>HR &amp; Staffing</fullName>
+                <default>false</default>
+                <label>HR &amp; Staffing</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Commercial Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Landscape Services</fullName>
+                <default>false</default>
+                <label>Landscape Services</label>
+            </value>
+            <value>
+                <fullName>LED Lighting</fullName>
+                <default>false</default>
+                <label>LED Lighting</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Material Handling</fullName>
+                <default>false</default>
+                <label>Material Handling</label>
+            </value>
+            <value>
+                <fullName>Media &amp; Event Production</fullName>
+                <default>false</default>
+                <label>Media &amp; Event Production</label>
+            </value>
+            <value>
+                <fullName>Merger &amp; Acquisition</fullName>
+                <default>false</default>
+                <label>Merger &amp; Acquisition</label>
+            </value>
+            <value>
+                <fullName>Mortgage - LO Recruitment</fullName>
+                <default>false</default>
+                <label>Mortgage - LO Recruitment</label>
+            </value>
+            <value>
+                <fullName>Mortgage - Realtor Referral</fullName>
+                <default>false</default>
+                <label>Mortgage - Realtor Referral</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outsourced HR</fullName>
+                <default>false</default>
+                <label>Outsourced HR</label>
+            </value>
+            <value>
+                <fullName>Painting</fullName>
+                <default>false</default>
+                <label>Painting</label>
+            </value>
+            <value>
+                <fullName>Pest Control</fullName>
+                <default>false</default>
+                <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Real Estate Agent Recruitment</fullName>
+                <default>false</default>
+                <label>Real Estate Agent Recruitment</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>AT&amp;T</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AT&amp;T</label>
+            </value>
+            <value>
+                <fullName>Banks</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Banks</label>
+            </value>
+            <value>
+                <fullName>Clubs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clubs</label>
+            </value>
+            <value>
+                <fullName>Commercial Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Commercial Equipment</label>
+            </value>
+            <value>
+                <fullName>Commercial Piping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Commercial Piping</label>
+            </value>
+            <value>
+                <fullName>Commercial Recycling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Commercial Recycling</label>
+            </value>
+            <value>
+                <fullName>Consumer Brands</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consumer Brands</label>
+            </value>
+            <value>
+                <fullName>Cosmetic Surgery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cosmetic Surgery</label>
+            </value>
+            <value>
+                <fullName>Enterprise B2B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Enterprise B2B</label>
+            </value>
+            <value>
+                <fullName>Financial Recruiting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Financial Recruiting</label>
+            </value>
+            <value>
+                <fullName>Franchise Recruitment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Franchise Recruitment</label>
+            </value>
+            <value>
+                <fullName>Gases and Welding</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gases and Welding</label>
+            </value>
+            <value>
+                <fullName>Home Audio Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Home Audio Equipment</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Mobile Cleansing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mobile Cleansing</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Mortgage - LO/Referral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mortgage - LO/Referral</label>
+            </value>
+            <value>
+                <fullName>Mortgage - Realtor Recruitment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mortgage - Realtor Recruitment</label>
+            </value>
+            <value>
+                <fullName>Private Equity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Equity</label>
+            </value>
+            <value>
+                <fullName>Psychological Treatment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Psychological Treatment</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Realtor Referral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Realtor Referral</label>
+            </value>
+            <value>
+                <fullName>Uniforms</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Uniforms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

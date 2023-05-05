@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Graphic_Designers</fullName>
+    <columns>Designer__c</columns>
+    <columns>NAME</columns>
+    <columns>Creative_Score__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Typography_Feedback__c</columns>
+    <columns>Imagery_Icons_Feedback__c</columns>
+    <columns>Appropriate_Use_of_Hierarchy__c</columns>
+    <columns>Consistent_Creative_Use_of_Typography__c</columns>
+    <columns>Imagery_supports_the_client_s_industry__c</columns>
+    <columns>Design_Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Designer__c</field>
+        <operation>contains</operation>
+        <value>wegmann,rocklage,killebrew,fleischut,arndt,woods,ferguson,moore,schilly</value>
+    </filters>
+    <label>Graphic Designers</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

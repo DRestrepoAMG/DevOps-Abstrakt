@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kaylee_Motherload</fullName>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>contains</operation>
+        <value>AMG Email,Call In,Live Chat,SDR,Unbounce Web Lead,Web Lead</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Construction</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>5 Boroughs,St. Louis-St. Charles-Farmington,Seattle-Tacoma,Riverside-San Bernardino-Ontario,Pittsburgh-New Castle-Weirton,Phoenix-Mesa-Scottsdale,Austin-Round Rock,Baltimore-Columbia-Towson,Central Valley,Charlotte-Concord</value>
+    </filters>
+    <filters>
+        <field>Top_2__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>X2nd_Voice__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Kaylee Motherload</label>
+</ListView>

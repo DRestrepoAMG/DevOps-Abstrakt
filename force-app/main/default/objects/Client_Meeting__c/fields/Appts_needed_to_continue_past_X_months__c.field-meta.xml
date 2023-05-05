@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appts_needed_to_continue_past_X_months__c</fullName>
+    <defaultValue>&quot;Ramp Up Explanation” then in box – “It takes our process at least 90 days to really get off the ground so I want to give you a scenario… If we’ve been doing this for 4 months and you’ve had 2-3 meetings a month instead of the expected 5, how do you feel about our partnership?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Appts needed to continue past X months?</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

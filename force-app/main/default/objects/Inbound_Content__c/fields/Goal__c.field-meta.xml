@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal__c</fullName>
+    <description>Track what marketing services want the topic of the inbound creative content record to do or change.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Goals section of the notes is where we want to notate what we want this topic to do or change.
+What is this topic doing to drive more leads?
+Provide an entree point for new users? 
+Increase the ranking/Visibility for a specific term? 
+Influence buyers&apos; decisions to prime readers for conversion? 
+Act as a final sales point to increase leads/Conversion?</inlineHelpText>
+    <label>Goal</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

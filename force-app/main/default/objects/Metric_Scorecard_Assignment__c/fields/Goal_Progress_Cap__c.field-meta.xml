@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal_Progress_Cap__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Maximum progress to goal which will be credited in calculating the overall score. If left blank, no cap will apply. This is a percent except for Metric Scorecards with Sum Goal Type.</inlineHelpText>
+    <label>Goal Progress Cap</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

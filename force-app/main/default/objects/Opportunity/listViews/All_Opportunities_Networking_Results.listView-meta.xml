@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Opportunities_Networking_Results</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Appt_Date__c</columns>
+    <columns>Meeting_Status__c</columns>
+    <columns>Assigned_to__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>Networking Results</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Client_Opportunity</value>
+    </filters>
+    <label>All Opportunities - Networking Results</label>
+    <sharedTo>
+        <portalRole>LiveConsultingPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

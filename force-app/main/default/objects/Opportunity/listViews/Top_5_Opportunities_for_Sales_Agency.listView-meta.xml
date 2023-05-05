@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_5_Opportunities_for_Sales_Agency</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Notes__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Budget__c</columns>
+    <columns>Authority__c</columns>
+    <columns>Pain__c</columns>
+    <columns>Timeframe__c</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Virtual_Marketing_Manager</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.WON</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Delayed,Lost</value>
+    </filters>
+    <label>Top 5 Opportunities for Sales (Agency)</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

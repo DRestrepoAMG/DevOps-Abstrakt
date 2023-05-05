@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Points__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Case_Type__c, 
+&quot;PSR Team&quot;,0.5, 
+&quot;Allocation Changes&quot;,0.5, 
+&quot;Ownership Change&quot;,0.5, 
+&quot;Clean Up Pipeline&quot;,3, 
+&quot;Dashboard / Report Request&quot;,1, 
+&quot;Email Library&quot;,0.5, 
+&quot;Implementation List&quot;,2, 
+&quot;List Request&quot;,2, 
+&quot;Operations Project&quot;,1, 
+&quot;Retention Meeting Action Item&quot;,2, 
+&quot;Salesforce Audit&quot;,2, 
+&quot;Salesforce Bug Fix&quot;,2, 
+&quot;Salesforce Development&quot;,2, 
+&quot;Survey Edit/Issue&quot;,0.5, 
+&quot;Offboarding Process&quot;,0.5, 
+&quot;Account Page Update&quot;,0.5, 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Points</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

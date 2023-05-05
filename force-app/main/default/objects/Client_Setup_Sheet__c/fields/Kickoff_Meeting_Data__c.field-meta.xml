@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kickoff_Meeting_Data__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Pulled from the AMC Kickoff Meeting Date field and updated via automation</inlineHelpText>
+    <label>Kickoff Meeting Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

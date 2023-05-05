@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Recurring_is_true_must_enter_value</fullName>
+    <active>true</active>
+    <description>If the opportunity is marked as recurring, you must enter the length of the contract</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Type , &quot;Reoccurring&quot; ),
+ISNULL( Length_of_Contract_Months__c ))</errorConditionFormula>
+    <errorDisplayField>Length_of_Contract_Months__c</errorDisplayField>
+    <errorMessage>You must fill in the &quot;Length of Contract (Months)&quot; field for reoccurring opportunities.</errorMessage>
+</ValidationRule>

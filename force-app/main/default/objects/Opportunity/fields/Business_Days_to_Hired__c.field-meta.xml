@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Days_to_Hired__c</fullName>
+    <description>Talent Solutions Applicant</description>
+    <externalId>false</externalId>
+    <formula>(5 * ( FLOOR( ( (Candidate_Start_Date__c -1) - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD( (Candidate_Start_Date__c -1) - DATE( 1900, 1, 8), 7 ) ) )
+-
+(5 * ( FLOOR( ( Candidate_s_First_Interview_Date__c - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD( Candidate_s_First_Interview_Date__c - DATE( 1900, 1, 8), 7 ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Business days it took to successfully hire the candidate. (Candidate Start Date - Candidate&apos;s First Interview) **Calculation does not count either of the days in the calculation, only the business days in-between the two.</inlineHelpText>
+    <label>Business Days to Hired</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

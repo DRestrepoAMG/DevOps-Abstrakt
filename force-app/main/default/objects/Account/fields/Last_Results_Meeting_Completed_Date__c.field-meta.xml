@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Results_Meeting_Completed_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Last Results Meeting Completed Date</label>
+    <summarizedField>Client_Meeting__c.Meeting_Held_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Client_Meeting__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Client_Meeting__c.Account__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_or_Service_of_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Product or Service of Interest?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Virtual BDC</fullName>
+                <default>false</default>
+                <label>Virtual BDC</label>
+            </value>
+            <value>
+                <fullName>Service Retention and Reactivation</fullName>
+                <default>false</default>
+                <label>Service Retention and Reactivation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

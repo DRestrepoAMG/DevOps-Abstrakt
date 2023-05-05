@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Owner_Change</fullName>
+    <active>true</active>
+    <description>Allow users to change owner. Alex Knudsen, Alicia Haas, Artur Derkach, Brynn Diggs,Cassi McGee,Claire Kelly,Doug Yocco,Katie Payne,Kayla Graham,Melanie Calrk,Trish Stoverink</description>
+    <errorConditionFormula>AND(
+ NOT(ISPICKVAL(Case_Types__c,&apos;Website Audit&apos;)),
+ISCHANGED(OwnerId),
+PRIORVALUE(OwnerId) &lt;&gt; $User.Id,
+$Profile.Id &lt;&gt; &apos;00eA0000000nBcd&apos;,
+$User.UserRoleId &lt;&gt; &apos;00E4w0000020Qrx&apos;,
+$UserRole.Id &lt;&gt; &apos;00E4A000000G0rj&apos;,
+$User.Id &lt;&gt; &apos;005G0000004IOby&apos;,
+$User.Id &lt;&gt; &apos;005G0000003IJ3p&apos;,
+$User.Id &lt;&gt; &apos;0054w00000A4cPZ&apos;,
+$User.Id&lt;&gt;&apos;0054w000009wHg1&apos;,
+$User.Id&lt;&gt;&apos;0054A000009R4sN&apos;,
+$User.Id&lt;&gt; &apos;0054w00000AyvvZ&apos;,
+$User.Id&lt;&gt;&apos;0054w000009xHRS&apos;,
+$User.Id&lt;&gt;&apos;005G0000007ubv3&apos;,
+$User.Id&lt;&gt;&apos;0054w00000B0XlZ&apos;,
+$User.Id&lt;&gt;&apos;0054w00000AzJki&apos;,
+$User.Id&lt;&gt;&apos;0054w00000AzJmP&apos;,
+$User.Id&lt;&gt;&apos;0054A000008qVrT&apos;,
+$User.Id &lt;&gt;&apos;0054w00000B0dmG&apos;,
+$User.Id&lt;&gt;&apos;0054w00000Azx0I&apos;,
+$User.UserRoleId&lt;&gt;&apos;00EG0000000Fuir&apos;,
+NOT(ISPICKVAL( Case_Category__c , &quot;Appointment Goal / Point Request&quot;)) )</errorConditionFormula>
+    <errorMessage>You do not have the correct permissions to change case owner.</errorMessage>
+</ValidationRule>

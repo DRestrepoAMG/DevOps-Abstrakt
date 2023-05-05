@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Good_Silver_Steak_All_Creative_Content</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Topic__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Content_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Client Cancelled,Client Auto Opted Out</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+        <value>Good Silver Steak Co - Marketing Services</value>
+    </filters>
+    <label>Good Silver Steak - All Creative Content</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <portalRole>AxiomProductsMarketingServicesPartnerUser</portalRole>
+        <portalRole>GoodSilverSteakCoMarketingServicesPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

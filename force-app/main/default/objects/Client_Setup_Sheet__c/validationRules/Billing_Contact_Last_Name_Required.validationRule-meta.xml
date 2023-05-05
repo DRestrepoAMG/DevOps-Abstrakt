@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Contact_Last_Name_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+ISPICKVAL( Status__c ,&apos;Completed&apos;),
+Billing_Contact_Last_Name__c =null
+)</errorConditionFormula>
+    <errorDisplayField>Billing_Contact__c</errorDisplayField>
+    <errorMessage>You must provide a first and last name for billing contact</errorMessage>
+</ValidationRule>

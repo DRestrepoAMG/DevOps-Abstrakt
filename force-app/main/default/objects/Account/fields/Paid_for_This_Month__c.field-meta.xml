@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_for_This_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>Invoices_Total_Amount_Due__c  =0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Paid for This Month</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

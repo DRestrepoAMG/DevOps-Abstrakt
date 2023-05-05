@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Length_of_Contract_Months__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the number of months that the contract was signed for. (i.e. if it is a 2 year contract at $100/month, enter 24 in the &quot;Length of Contract&quot; field and $100 in the &quot;Amount&quot; field).</inlineHelpText>
+    <label>Length of Contract (Months)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

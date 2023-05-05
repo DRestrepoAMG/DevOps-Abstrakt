@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Researching</fullName>
+                <default>false</default>
+                <label>Researching</label>
+            </value>
+            <value>
+                <fullName>Creative Brief</fullName>
+                <default>false</default>
+                <label>Creative Brief</label>
+            </value>
+            <value>
+                <fullName>Ready for Content</fullName>
+                <default>false</default>
+                <label>Ready for Content</label>
+            </value>
+            <value>
+                <fullName>Writing Content</fullName>
+                <default>false</default>
+                <label>Writing Content</label>
+            </value>
+            <value>
+                <fullName>Internal Editing</fullName>
+                <default>false</default>
+                <label>Internal Editing</label>
+            </value>
+            <value>
+                <fullName>Script QA Edits</fullName>
+                <default>false</default>
+                <label>Script QA Edits</label>
+            </value>
+            <value>
+                <fullName>Video Team Review</fullName>
+                <default>false</default>
+                <label>Video Team Review</label>
+            </value>
+            <value>
+                <fullName>Project Manager QA</fullName>
+                <default>false</default>
+                <label>Project Manager QA</label>
+            </value>
+            <value>
+                <fullName>QA Edits</fullName>
+                <default>false</default>
+                <label>QA Edits</label>
+            </value>
+            <value>
+                <fullName>Waiting on Client Review</fullName>
+                <default>false</default>
+                <label>Waiting on Client Review</label>
+            </value>
+            <value>
+                <fullName>Client Script Revisions</fullName>
+                <default>false</default>
+                <label>Client Script Revisions</label>
+            </value>
+            <value>
+                <fullName>Script Approved</fullName>
+                <default>false</default>
+                <label>Script Approved</label>
+            </value>
+            <value>
+                <fullName>Co-Op Approved</fullName>
+                <default>false</default>
+                <label>Co-Op Approved</label>
+            </value>
+            <value>
+                <fullName>Storyboard Creation</fullName>
+                <default>false</default>
+                <label>Storyboard Creation</label>
+            </value>
+            <value>
+                <fullName>Ready for Voiceover</fullName>
+                <default>false</default>
+                <label>Ready for Voiceover</label>
+            </value>
+            <value>
+                <fullName>Voiceover Recorded</fullName>
+                <default>false</default>
+                <label>Voiceover Recorded</label>
+            </value>
+            <value>
+                <fullName>Ready for Overlay Design</fullName>
+                <default>false</default>
+                <label>Ready for Overlay Design</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>Internal Video Proofing</fullName>
+                <default>false</default>
+                <label>Internal Video Proofing</label>
+            </value>
+            <value>
+                <fullName>Video Edits</fullName>
+                <default>false</default>
+                <label>Video Edits</label>
+            </value>
+            <value>
+                <fullName>Video PM Final QA</fullName>
+                <default>false</default>
+                <label>Video PM Final QA</label>
+            </value>
+            <value>
+                <fullName>Waiting on Client Video Review</fullName>
+                <default>false</default>
+                <label>Waiting on Client Video Review</label>
+            </value>
+            <value>
+                <fullName>Client Video Revisions</fullName>
+                <default>false</default>
+                <label>Client Video Revisions</label>
+            </value>
+            <value>
+                <fullName>Video Approved</fullName>
+                <default>false</default>
+                <label>Video Approved</label>
+            </value>
+            <value>
+                <fullName>Ready to Optimize</fullName>
+                <default>false</default>
+                <label>Ready to Optimize</label>
+            </value>
+            <value>
+                <fullName>Optimized and Ready to Publish</fullName>
+                <default>false</default>
+                <label>Optimized and Ready to Publish</label>
+            </value>
+            <value>
+                <fullName>Ready for Design</fullName>
+                <default>false</default>
+                <label>Ready for Design</label>
+            </value>
+            <value>
+                <fullName>Copy Edits</fullName>
+                <default>false</default>
+                <label>Copy Edits</label>
+            </value>
+            <value>
+                <fullName>Account Owner Review</fullName>
+                <default>false</default>
+                <label>Account Owner Review</label>
+            </value>
+            <value>
+                <fullName>Design QA</fullName>
+                <default>false</default>
+                <label>Design QA</label>
+            </value>
+            <value>
+                <fullName>PM Design QA</fullName>
+                <default>false</default>
+                <label>PM Design QA</label>
+            </value>
+            <value>
+                <fullName>Design Edits</fullName>
+                <default>false</default>
+                <label>Design Edits</label>
+            </value>
+            <value>
+                <fullName>SMS Final QA</fullName>
+                <default>false</default>
+                <label>SMS Final QA</label>
+            </value>
+            <value>
+                <fullName>Ready for Graphic Designer</fullName>
+                <default>false</default>
+                <label>Ready for Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Editor Final QA</fullName>
+                <default>false</default>
+                <label>Editor Final QA</label>
+            </value>
+            <value>
+                <fullName>Design QA Edits</fullName>
+                <default>false</default>
+                <label>Design QA Edits</label>
+            </value>
+            <value>
+                <fullName>Project Manager Final QA</fullName>
+                <default>false</default>
+                <label>Project Manager Final QA</label>
+            </value>
+            <value>
+                <fullName>Upload to Station</fullName>
+                <default>false</default>
+                <label>Upload to Station</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>VMM Review</fullName>
+                <default>false</default>
+                <label>VMM Review</label>
+            </value>
+            <value>
+                <fullName>Finalize &amp; Send to Client</fullName>
+                <default>false</default>
+                <label>Finalize &amp; Send to Client</label>
+            </value>
+            <value>
+                <fullName>Client Cancelled</fullName>
+                <default>false</default>
+                <label>Client Cancelled</label>
+            </value>
+            <value>
+                <fullName>Waiting on Client Approval</fullName>
+                <default>false</default>
+                <label>Waiting on Client Approval</label>
+            </value>
+            <value>
+                <fullName>Client Revisions</fullName>
+                <default>false</default>
+                <label>Client Revisions</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Published</fullName>
+                <default>false</default>
+                <label>Published</label>
+            </value>
+            <value>
+                <fullName>Client Auto Opted Out</fullName>
+                <default>false</default>
+                <label>Client Auto Opted Out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

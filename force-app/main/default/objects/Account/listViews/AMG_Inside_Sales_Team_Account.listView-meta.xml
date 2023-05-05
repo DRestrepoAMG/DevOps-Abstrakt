@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMG_Inside_Sales_Team_Account</fullName>
+    <columns>Status__c</columns>
+    <columns>Director__c</columns>
+    <columns>Current_PSR__c</columns>
+    <columns>Survey_Report_Id__c</columns>
+    <columns>Survey_Report_URL__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Yearly_Appt_Goal__c</columns>
+    <columns>Monthly_Appt_Goal__c</columns>
+    <columns>Appts_This_Month__c</columns>
+    <columns>Exclusivity__c</columns>
+    <columns>Exclusivity_Notes__c</columns>
+    <columns>Sales_Rep__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>AMG -</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>AMG Inside Sales Team Account</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+        <group>Maryville_Mad_Dogs</group>
+        <role>Implementation_Copywriter</role>
+    </sharedTo>
+</ListView>

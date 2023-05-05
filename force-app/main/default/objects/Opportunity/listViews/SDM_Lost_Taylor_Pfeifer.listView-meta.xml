@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDM_Lost_Taylor_Pfeifer</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area_Name__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>Most_Recent_Pitch_Result__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Number_of_Attempts__c</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Opportunity_Generated_By__c</field>
+        <operation>equals</operation>
+        <value>Taylor Pfeifer,David Bauer,Jordan Berra,Tiffany Poe,John Bilich,Heather McMillian,Bryant Dykes</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Pitch_Result__c</field>
+        <operation>equals</operation>
+        <value>Cancelled,Cancelled - Need to Reschedule,No Show</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Number_of_Attempts__c</field>
+        <operation>lessOrEqual</operation>
+        <value>4</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Pitch_Date__c</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:120</value>
+    </filters>
+    <label>SDM Lost - Taylor Pfeifer</label>
+    <sharedTo>
+        <group>Sales_Enablement</group>
+    </sharedTo>
+</ListView>

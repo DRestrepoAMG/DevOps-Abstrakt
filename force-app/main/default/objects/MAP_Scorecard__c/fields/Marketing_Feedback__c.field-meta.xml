@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Feedback__c</fullName>
+    <defaultValue>&apos;__Content Flow Defined &amp; Followed__&apos;&amp; BR() &amp; BR() &amp;
+&apos;__Followed Client Requests &amp; Project Notes__&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Marketing Feedback</label>
+    <length>3000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

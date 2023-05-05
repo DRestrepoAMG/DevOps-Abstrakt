@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_Management</fullName>
+    <columns>Employee__c</columns>
+    <columns>NAME</columns>
+    <columns>Audited_By__c</columns>
+    <columns>Status__c</columns>
+    <columns>Audited_Date__c</columns>
+    <columns>Completed_Date__c</columns>
+    <columns>Action_Items_Outstanding__c</columns>
+    <columns>List_Management_Score_New__c</columns>
+    <columns>List_Management_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>List_Management_Score__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Audited_By__c</field>
+        <operation>equals</operation>
+        <value>Samantha Thalhammer,Nicholas Wulf,Doug Jennings,Shane Kracht</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>MAP_Scorecard__c.List_Management</value>
+    </filters>
+    <label>List Management</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+        <role>Director_of_Data_Analytics</role>
+    </sharedTo>
+</ListView>

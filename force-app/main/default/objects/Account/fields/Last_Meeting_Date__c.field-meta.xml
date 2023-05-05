@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Meeting_Date__c</fullName>
+    <description>This field is populated by the nightly Account Metric Batch process with the date of the most recent event with the record type &apos;Account Management Event&apos;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is populated by the nightly Account Metric Batch process with the date of the most recent event with the record type &apos;Account Management Event&apos;</inlineHelpText>
+    <label>Last Meeting Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

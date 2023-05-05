@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Appointment_Guarantee__c</fullName>
+    <externalId>false</externalId>
+    <label>Pipeline Appointment Guarantee</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual</fullName>
+                <default>false</default>
+                <label>Annual</label>
+            </value>
+            <value>
+                <fullName>Appts or Dials</fullName>
+                <default>false</default>
+                <label>Appts or Dials</label>
+            </value>
+            <value>
+                <fullName>Dials Only</fullName>
+                <default>false</default>
+                <label>Dials Only</label>
+            </value>
+            <value>
+                <fullName>Appts and Dials</fullName>
+                <default>false</default>
+                <label>Appts and Dials</label>
+            </value>
+            <value>
+                <fullName>Incentive Based Program</fullName>
+                <default>false</default>
+                <label>Incentive Based Program</label>
+            </value>
+            <value>
+                <fullName>6 Month True-Up</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>6 Month True-Up</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Annual Lock-In</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In with 6 Month Out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Annual Lock-In with 6 Month Out</label>
+            </value>
+            <value>
+                <fullName>Commission</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Commission</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Monthly Bonus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Monthly Bonus</label>
+            </value>
+            <value>
+                <fullName>Semiannual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semiannual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

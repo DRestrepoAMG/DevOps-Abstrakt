@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Sales_Revenue__c</fullName>
+    <description>Annual Sales Revenue used in Partner Success Form DocuSign Template</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Annual Sales Revenue used in Partner Success Form DocuSign Template</inlineHelpText>
+    <label>Annual Sales Revenue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Below $500,000</fullName>
+                <default>false</default>
+                <label>Below $500,000</label>
+            </value>
+            <value>
+                <fullName>$500,000 to $1,000,000</fullName>
+                <default>false</default>
+                <label>$500,000 to $1,000,000</label>
+            </value>
+            <value>
+                <fullName>$1,000,000 to $3,000,000</fullName>
+                <default>false</default>
+                <label>$1,000,000 to $3,000,000</label>
+            </value>
+            <value>
+                <fullName>$3,000,000 to $5,000,000</fullName>
+                <default>false</default>
+                <label>$3,000,000 to $5,000,000</label>
+            </value>
+            <value>
+                <fullName>Above $5,000,000</fullName>
+                <default>false</default>
+                <label>Above $5,000,000</label>
+            </value>
+            <value>
+                <fullName>$1,000,000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$1,000,000</label>
+            </value>
+            <value>
+                <fullName>$500,000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$500,000</label>
+            </value>
+            <value>
+                <fullName>Above $1,000,000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Above $1,000,000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

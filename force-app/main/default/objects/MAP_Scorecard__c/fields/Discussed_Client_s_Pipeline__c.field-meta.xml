@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discussed_Client_s_Pipeline__c</fullName>
+    <description>Used for to score how many time the manager marked yes on the field Client&apos;s Pipeline on Partner Meeting Scorecards.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( Client_s_Pipeline__c ,&apos;Yes&apos;),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Discussed Client&apos;s Pipeline</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

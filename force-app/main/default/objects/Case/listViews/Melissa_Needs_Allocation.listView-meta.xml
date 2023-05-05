@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Melissa_Needs_Allocation</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 4) OR (1 AND 3 AND 5)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>State_the_Issue__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>Associated_Action__c</columns>
+    <columns>Case_Category__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,On Hold,In Discovery,Being Addressed,Waiting on Internal,Waiting on Client</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>sean b,danielle h,paul h,brad k</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>notContain</operation>
+        <value>delete client data</value>
+    </filters>
+    <filters>
+        <field>Associated_Action__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>melissa m,michaela w</value>
+    </filters>
+    <label>Melissa- SF Needs Allocation</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Satisfaction_1_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISPICKVAL(Status__c ,&apos;Canceled&apos;)),
+NOT(ISNULL( Chances_of_long_term_partnership__c )),
+OR( Chances_of_long_term_partnership__c &lt;1,
+Chances_of_long_term_partnership__c &gt;5))</errorConditionFormula>
+    <errorDisplayField>Chances_of_long_term_partnership__c</errorDisplayField>
+    <errorMessage>Partner Satisfaction Score must be between 1 and 5</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSM_Talk_about_Seed_Sprout_Bloom__c</fullName>
+    <defaultValue>&quot;“We’re going to set you 3 types of leads. For us to be on the same page it’s important I take a moment to explain how we break these down. The first type of lead is what we refer to as a “Seed.” This is someone that is willing to sit down with you and is interested in a service you offer, but they haven’t realized a need to buy and probably won’t inside 6 months.” The second type is a “Sprout.” These sprouts will be willing to discuss your services and are beginning to realize a need to buy, this is someone that can become a customer inside 6 months with good follow-up. The third type of lead is what we call a “Bloom.” It’s important we don’t think of these as flowers, because they don’t simply need to be picked. There will still be some leg work required but this prospect has realized a need to purchase a service you offer and will likely purchase inside 90 days.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>PSM Talk about Seed, Sprout, Bloom</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

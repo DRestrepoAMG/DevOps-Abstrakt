@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_SDR_Pitch_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Inbound SDR Pitch Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Completed Pitch</fullName>
+                <default>false</default>
+                <label>Completed Pitch</label>
+            </value>
+            <value>
+                <fullName>Pitch No Show</fullName>
+                <default>false</default>
+                <label>Pitch No Show</label>
+            </value>
+            <value>
+                <fullName>Pitch Reschedule</fullName>
+                <default>false</default>
+                <label>Pitch Reschedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

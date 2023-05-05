@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Efforts_and_Current_Strategy__c</fullName>
+    <defaultValue>&quot;Why did you sign on with Abstrakt?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;Have you ever paid for content before this?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;How active were you with updating the site prior to us?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;How often did you post to social media?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;How many inbound leads were you previously getting?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;What other forms of marketing are you currently using?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Previous Efforts and Current Strategy</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

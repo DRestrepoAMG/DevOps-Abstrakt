@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Opps_No_Website</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area_Name__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Notes__c</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>Website__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>X2nd_Voice__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Manager_Top_5__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Website__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Old Opps - No Website</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

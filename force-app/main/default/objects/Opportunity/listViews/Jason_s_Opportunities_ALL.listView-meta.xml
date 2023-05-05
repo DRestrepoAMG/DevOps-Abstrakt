@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jason_s_Opportunities_ALL</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 5) AND 4</booleanFilter>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Referring_PSM_If_Applicable__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Product__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Project_Opportunity,Opportunity.Recurring_Revenue_Opportunity,Opportunity.Virtual_Marketing_Manager</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Business Development,Pitching,Second Pitch,Delayed,Verbal,Proposal</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Social Media,Website,Blog Package,Case Study,Graphic Video,Sell Sheets,SEO</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2016 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Creative Services,Virtual Marketing Manager,Pipeline Inbound</value>
+    </filters>
+    <label>Jason&apos;s Opportunities (ALL)</label>
+    <sharedTo>
+        <group>Jason</group>
+        <group>Partner_Sales_Managers</group>
+        <group>Pipeline_Directors</group>
+    </sharedTo>
+</ListView>

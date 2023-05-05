@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_Strategist_MRM_Score__c</fullName>
+    <description>Used on VMM Meeting: Social</description>
+    <externalId>false</externalId>
+    <formula>(CASE( Client_Representation__c  ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE(Credibility__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE(Social_Clarity__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Social_Creativity__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Social_Engagement__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0))/10</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Social Strategist MRM Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

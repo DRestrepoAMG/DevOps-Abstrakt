@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metrics_Last_Updated__c</fullName>
+    <description>This is the date on which the Account Metrics batch process last updated metric fields on this account - e.g. the Appts to Date value</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date on which the Account Metrics batch process last updated metric fields on this account - e.g. the Appts to Date value</inlineHelpText>
+    <label>Metrics Last Updated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

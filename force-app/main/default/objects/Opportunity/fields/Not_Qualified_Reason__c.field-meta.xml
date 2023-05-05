@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Qualified_Reason__c</fullName>
+    <description>Why a company is not qualified to pitch.</description>
+    <externalId>false</externalId>
+    <label>Not Qualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Can&apos;t Afford Program</fullName>
+                <default>false</default>
+                <label>Can&apos;t Afford Program</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t Have a Website</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t Have a Website</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t Meet # Techs/Employees</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t Meet # Techs/Employees</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t Meet Revenue Qualifier</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t Meet Revenue Qualifier</label>
+            </value>
+            <value>
+                <fullName>Have No Desire to Grow</fullName>
+                <default>false</default>
+                <label>Have No Desire to Grow</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

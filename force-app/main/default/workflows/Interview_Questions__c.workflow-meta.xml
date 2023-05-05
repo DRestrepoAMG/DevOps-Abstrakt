@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Interview_Question_New_Recruiter_Feedback</fullName>
+        <description>Interview Question: New Recruiter Feedback</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>a.lange@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>bmisplon@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>danielle.kluesner@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>isuire@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mcarter@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>nbush@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rorourke@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sboudreau@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Final_Interview_Feedback</template>
+    </alerts>
+    <rules>
+        <fullName>Interview Questions%3A New Recruiter Feedback</fullName>
+        <actions>
+            <name>Interview_Question_New_Recruiter_Feedback</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Interview_Questions__c.Recruiter_Feedback__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Interview_Questions__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Director Interview,Final Interview,1st Interview Questions (PSR)</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

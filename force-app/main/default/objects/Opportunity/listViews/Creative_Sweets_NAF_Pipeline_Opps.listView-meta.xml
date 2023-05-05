@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creative_Sweets_NAF_Pipeline_Opps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Industry__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>Most_Recent_Pitch_Result__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Product__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Pipeline Outbound</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Lost</value>
+    </filters>
+    <filters>
+        <field>Reason_Lost__c</field>
+        <operation>equals</operation>
+        <value>Not a Fit</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Pitch_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>notContain</operation>
+        <value>Canada,Kingdom</value>
+    </filters>
+    <label>Creative Sweets - NAF Pipeline Opps</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_media_approval_process__c</fullName>
+    <defaultValue>&quot;I know you’ve already been in contact with your social media manager throughout the implementation process, so you can expect to see the same team member reaching out to you to approve/edit our social media calendars. I know we’ve been asking for feedback with each calendar, but do you or your team have any additional feedback on the calendars we’ve created so far? I’ll make sure to let the team know! We’ll be reviewing the social media metrics during our monthly meetings so we’ll continue to discuss what’s working well and what changes we think will improve metrics.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Social media approval process</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

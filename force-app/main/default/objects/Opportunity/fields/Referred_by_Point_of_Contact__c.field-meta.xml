@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_by_Point_of_Contact__c</fullName>
+    <externalId>false</externalId>
+    <formula>Referred_by_Account__r.Partner_User__r.FirstName &amp; &quot; &quot; &amp; Referred_by_Account__r.Partner_User__r.LastName</formula>
+    <label>Referred by Point of Contact (Text)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

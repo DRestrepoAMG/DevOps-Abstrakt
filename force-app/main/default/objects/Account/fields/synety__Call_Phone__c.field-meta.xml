@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>synety__Call_Phone__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>if(Phone != &quot;&quot;, HYPERLINK(&apos;/apex/synety__ContactPhone?id=&apos;+Id+&apos;&amp;pn=&apos;+SUBSTITUTE(Phone, &quot;+&quot;, &quot;%2B&quot;), Phone + &quot;&quot; + IMAGE(&quot;/resource/synety__tinyPhoneIcon&quot;,
+&quot;Click to Call&quot;), &apos;_blank&apos;), &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

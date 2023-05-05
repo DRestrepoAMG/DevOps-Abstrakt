@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_to__c</fullName>
+    <description>Used by Clients in the lightning portals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Client&apos;s Internal Employee who is in charge of following up on this Opportunity.</inlineHelpText>
+    <label>Opportunity Assigned To</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

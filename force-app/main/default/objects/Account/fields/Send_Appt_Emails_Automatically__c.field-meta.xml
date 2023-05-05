@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Appt_Emails_Automatically__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box is checked if client should receive appointment emails automatically</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box is if client should receive appointment emails automatically.</inlineHelpText>
+    <label>Send Appt Emails Automatically</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

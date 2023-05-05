@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AR_Stage__c</fullName>
+    <description>Track what status an invoice is at for accounting.</description>
+    <externalId>false</externalId>
+    <label>AR Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st Email (AR Specialist)</fullName>
+                <default>false</default>
+                <label>1st Email (AR Specialist)</label>
+            </value>
+            <value>
+                <fullName>1st Call - 2nd Email (AR Specialist)</fullName>
+                <default>false</default>
+                <label>1st Call - 2nd Email (AR Specialist)</label>
+            </value>
+            <value>
+                <fullName>2nd Call - 3rd Email (AR Specialist)</fullName>
+                <default>false</default>
+                <label>2nd Call - 3rd Email (AR Specialist)</label>
+            </value>
+            <value>
+                <fullName>3rd Call (AR Specialist)</fullName>
+                <default>false</default>
+                <label>3rd Call (AR Specialist)</label>
+            </value>
+            <value>
+                <fullName>Day 10-25: PSM Calls Daily</fullName>
+                <default>false</default>
+                <label>Day 10-25: PSM Calls Daily</label>
+            </value>
+            <value>
+                <fullName>Day 25: PSM Sends Suspension Warning</fullName>
+                <default>false</default>
+                <label>Day 25: PSM Sends Suspension Warning</label>
+            </value>
+            <value>
+                <fullName>Day 25-30: PSM + Director Calls Daily</fullName>
+                <default>false</default>
+                <label>Day 25-30: PSM + Director Calls Daily</label>
+            </value>
+            <value>
+                <fullName>Day 30: PSM Sends Official Suspension Notice</fullName>
+                <default>false</default>
+                <label>Day 30: PSM Sends Official Suspension Notice</label>
+            </value>
+            <value>
+                <fullName>Day 30-40: PSM + VP Calls Daily</fullName>
+                <default>false</default>
+                <label>Day 30-40: PSM + VP Calls Daily</label>
+            </value>
+            <value>
+                <fullName>Day 40: PSM Offboards Client</fullName>
+                <default>false</default>
+                <label>Day 40: PSM Offboards Client</label>
+            </value>
+            <value>
+                <fullName>Day 40: Demand Letter Sent (AR Specialist)</fullName>
+                <default>false</default>
+                <label>Day 40: Demand Letter Sent (AR Specialist)</label>
+            </value>
+            <value>
+                <fullName>Received Payment Confirmation</fullName>
+                <default>false</default>
+                <label>Received Payment Confirmation</label>
+            </value>
+            <value>
+                <fullName>Sent to Collections</fullName>
+                <default>false</default>
+                <label>Sent to Collections</label>
+            </value>
+            <value>
+                <fullName>Offboarded</fullName>
+                <default>false</default>
+                <label>Offboarded</label>
+            </value>
+            <value>
+                <fullName>Resolved + Paid</fullName>
+                <default>false</default>
+                <label>Resolved + Paid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

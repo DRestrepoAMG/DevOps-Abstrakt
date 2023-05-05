@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Company__c</fullName>
+    <description>Used to identify which company the prospect currently is partnered with.</description>
+    <externalId>false</externalId>
+    <label>Current Company</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstrakt Marketing Group</fullName>
+                <default>false</default>
+                <label>Abstrakt Marketing Group</label>
+            </value>
+            <value>
+                <fullName>Sapper Consulting</fullName>
+                <default>false</default>
+                <label>Sapper Consulting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

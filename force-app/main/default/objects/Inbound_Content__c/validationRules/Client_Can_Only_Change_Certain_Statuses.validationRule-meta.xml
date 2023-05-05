@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Can_Only_Change_Certain_Statuses</fullName>
+    <active>true</active>
+    <description>Client can only approved statuses for revisions and approval</description>
+    <errorConditionFormula>AND(
+    ISCHANGED( Status__c),
+    NOT(
+        OR(  
+            ISPICKVAL(Status__c, &apos;Client Revisions&apos;),
+            ISPICKVAL(Status__c,&apos;Client Script Revisions&apos;),
+            ISPICKVAL(Status__c,&apos;Client Video Revisions&apos;),
+            ISPICKVAL(Status__c,&apos;Script Approved&apos;),
+            ISPICKVAL(Status__c,&apos;Approved&apos;),
+            ISPICKVAL(Status__c,&apos;Video Approved&apos;))),
+    OR(
+        $User.ProfileId = &apos;00eG0000000GfP9&apos;,
+        $User.ProfileId = &apos;00e4A000000i4IS&apos;,
+        $User.ProfileId = &apos;00e4A000000i4IN&apos;,
+        $User.ProfileId = &apos;00e4w000000Go0W&apos;,
+        $User.ProfileId = &apos;00e4w000000Go0M&apos;,
+        $User.ProfileId = &apos;00e4w000000Go0R&apos;
+    ))</errorConditionFormula>
+    <errorMessage>You don&apos;t have permission to change to this status. Please reach out to your project manager for assistance.</errorMessage>
+</ValidationRule>

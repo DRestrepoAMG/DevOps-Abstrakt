@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unallocated_Cleaning_Greenville</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) AND 6 AND 7 AND 8</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Most_Recent_Pitch_Date__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Industry__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Top_2__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Manager_Top_5__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>X2nd_Voice__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>Greenville</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Commercial Cleaning</value>
+    </filters>
+    <label>Unallocated Cleaning - Greenville</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

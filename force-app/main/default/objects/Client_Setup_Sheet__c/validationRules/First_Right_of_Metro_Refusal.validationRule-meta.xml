@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Right_of_Metro_Refusal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+First_Right_of_Refusal__c = TRUE,
+ISBLANK( First_Right_of_Refusal_Metro_Area_1__c ) )</errorConditionFormula>
+    <errorDisplayField>First_Right_of_Refusal_Metro_Area_1__c</errorDisplayField>
+    <errorMessage>Please select a metro</errorMessage>
+</ValidationRule>

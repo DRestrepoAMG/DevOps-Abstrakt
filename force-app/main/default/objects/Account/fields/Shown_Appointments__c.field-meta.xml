@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shown_Appointments__c</fullName>
+    <description>Counts all contacts that have Appointment Occurred checked using Object Rollup. https://amg.lightning.force.com/lightning/r/Object_Rollup__c/a6I4w000000mcDNEAY/view</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shown Appointment is when the Appointment Status on contact is: Discovery-Still Working,Proposal Delivered,Verbal Commitment,Nurture-No Interest,Nurture-Prospect Not Responding,Nurture-Timing/Delayed,Nurture-Proposal Not Signed,Won - Closed Business,No Longer Pursuing
+( Excludes: First Meeting Scheduled and Need to Reschedule-Meeting did not take place )</inlineHelpText>
+    <label>Shown Appointments</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

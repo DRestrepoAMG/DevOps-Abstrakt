@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ongoing_content_approval_process__c</fullName>
+    <defaultValue>&quot;Each month, we will write _____ words for your website. We recommend breaking this down into ____(i.e. two 750 word blogs and refreshed meta descriptions for seven pages)________. Refreshing the meta descriptions, or copy that shows up in the Google search, doesn’t mean that these were created incorrectly. We do the update of these page’s “elevator pitches” to draw people into the page and Google loves when we update multiple pages throughout the month.&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;Starting next month, you can expect to see these ongoing pages available for your review in our portal and a reminder email will be sent out with each page we create. It is crucial we receive your feedback in a timely manner in order to successfully continue to grow the SEO value of your website. Because of this, we request that you provide all your suggested edits added to these blogs within 5 business days. If we do not receive your edits within this time frame, we will auto approve* these posts and add them to the site in an effort to continue increasing its SEO value.&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+ &quot;*Even if these are auto approved, you will still be able to request edits after they are live on the site. All content is easy to change, even after it is on the live site, but not adding content consistently to the website will impede on our efforts to grow your site’s SEO; therefore, we must ensure we are regularly posting content to the site.&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;Is this auto-approval ok with you or would you prefer we receive explicit approval before posting anything?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Ongoing content approval process</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

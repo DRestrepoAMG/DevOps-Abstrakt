@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Behind_Pace_Calls_Hours_Targets__c</fullName>
+    <description>This specifically shows whether or not the hours, targets, and calls are on pace or behind pace for reporting.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(
+Percent_of_Logged_Hours_Goal_Complete__c &lt;   (1-Number_of_Calling_Days_Left_This_Month__c/ Number_of_Days_Total_This_Month__c)  , 
+Percent_of_Monthly_Call_Goal_Complete__c &lt;  (1-Number_of_Calling_Days_Left_This_Month__c/ Number_of_Days_Total_This_Month__c)),   
+&quot;Behind Pace&quot;, &quot;On Pace&quot;)</formula>
+    <inlineHelpText>This specifically shows whether or not the hours, targets, and calls are on pace or behind pace for reporting.</inlineHelpText>
+    <label>Behind Pace (Calls, Hours, Targets)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Days_Since_Current_Contract__c</fullName>
+    <description>If Account is Active, then it counts the number of days since the current contract start date.  If Account is Canceled, then it counts the number of days from current contract start date to cancel date.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status__c, &apos;Active&apos;), TODAY () - Current_Contract_Calling_Start_Date__c, Cancel_Date__c - Current_Contract_Calling_Start_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If Account is Active, then it counts the number of days since the current contract start date.  If Account is Canceled, then it counts the number of days from current contract start date to cancel date.</inlineHelpText>
+    <label>Number of Days Since Current Contract</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

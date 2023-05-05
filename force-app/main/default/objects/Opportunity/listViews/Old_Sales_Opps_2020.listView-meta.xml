@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Sales_Opps_2020</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Industry__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>equals</operation>
+        <value>David Mandziara</value>
+    </filters>
+    <label>Old Sales Opps 2020</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

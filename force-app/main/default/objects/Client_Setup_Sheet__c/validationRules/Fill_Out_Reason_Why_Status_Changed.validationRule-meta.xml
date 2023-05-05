@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fill_Out_Reason_Why_Status_Changed</fullName>
+    <active>true</active>
+    <description>Fill Out Reason Why Status Changed for Rescind,pushed, or canceled</description>
+    <errorConditionFormula>AND(
+	OR(
+		ISPICKVAL(Status__c, &quot;Cancelled&quot;),
+		ISPICKVAL(Status__c, &quot;Pushed&quot;),
+		ISPICKVAL(Status__c, &quot;Rescind&quot;)
+		),
+	RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+	ISBLANK(Why__c)
+	)</errorConditionFormula>
+    <errorDisplayField>Why__c</errorDisplayField>
+    <errorMessage>Please Fill out &quot;Reason Why Status Changed&quot;</errorMessage>
+</ValidationRule>

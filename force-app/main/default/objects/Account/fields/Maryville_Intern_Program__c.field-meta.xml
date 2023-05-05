@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maryville_Intern_Program__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Use to trigger a flow to create and remove account teams.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Designates if Maryville Interns are cleansing data.</inlineHelpText>
+    <label>Maryville Intern Program</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

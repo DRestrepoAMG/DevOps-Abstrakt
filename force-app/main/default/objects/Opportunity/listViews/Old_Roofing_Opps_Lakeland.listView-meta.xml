@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Roofing_Opps_Lakeland</fullName>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Manager_Top_5__c</columns>
+    <columns>Top_5_Opportunities__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Commercial Roofing</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>Lakeland</value>
+    </filters>
+    <label>Old Roofing Opps - Lakeland</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

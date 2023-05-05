@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Change__c</fullName>
+    <description>This information depicts the changes to a prospect&apos;s initial contract and is a merge field used to populate details in the DocuSign Addendum template.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This gets populated on the proposal from Docusign.</inlineHelpText>
+    <label>Change to Exhibit</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Collateral_This_Month_MN</fullName>
+    <columns>Account_Status__c</columns>
+    <columns>Overall_Rating__c</columns>
+    <columns>NAME</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Ready_to_Send_to_Client__c</columns>
+    <columns>Status__c</columns>
+    <columns>Content_Link_Internal_Only__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Published_Link__c</columns>
+    <columns>Emails_with_this_Asset__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Content_Auto_Approved__c</columns>
+    <columns>Revisions_Required__c</columns>
+    <columns>Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Outbound_Asset_Manager__c</field>
+        <operation>equals</operation>
+        <value>Merideth Neff,a8Z4w000000Y5XKEA0</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>Video</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notContain</operation>
+        <value>Client Cancelled</value>
+    </filters>
+    <filters>
+        <field>Marketing_Collateral_Auto_Approval_Date__c</field>
+        <operation>equals</operation>
+        <value>3/31/2022</value>
+    </filters>
+    <label>Moving Collateral to &apos;PUBLISHED&apos; - MN</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_be_1_to_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNULL(Rate_Likelihood_of_Renewing_Year_2__c )),
+OR( Rate_Likelihood_of_Renewing_Year_2__c &lt;1,
+Rate_Likelihood_of_Renewing_Year_2__c &gt;5))</errorConditionFormula>
+    <errorDisplayField>Rate_Likelihood_of_Renewing_Year_2__c</errorDisplayField>
+    <errorMessage>Partner Satisfaction Must be a Value between 1-5</errorMessage>
+</ValidationRule>

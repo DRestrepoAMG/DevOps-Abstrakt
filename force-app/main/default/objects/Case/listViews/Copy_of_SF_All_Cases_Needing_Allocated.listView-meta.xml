@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_SF_All_Cases_Needing_Allocated</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>State_the_Issue__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>Associated_Action__c</columns>
+    <columns>Case_Category__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,On Hold,In Discovery,Being Addressed,Waiting on Internal,Waiting on Client</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>notContain</operation>
+        <value>delete client data,ownership,offboarding process,esc,survey</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>melissa m,stephanie c,michaela w</value>
+    </filters>
+    <label>Updated SF: All Cases Needing Allocated</label>
+</ListView>

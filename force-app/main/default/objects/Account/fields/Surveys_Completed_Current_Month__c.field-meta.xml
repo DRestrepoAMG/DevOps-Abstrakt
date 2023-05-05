@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surveys_Completed_Current_Month__c</fullName>
+    <description>PREVIOUSLY: Populated via Batch_BGMAccountMetrics Apex batch from PSR Team records</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated via AccountSurveyCompletedResetBatch Apex batch which runs four times per day.  Sum of related Survey Response records with Survey Completed Date Time = this month.</inlineHelpText>
+    <label>Surveys Completed Current Month</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

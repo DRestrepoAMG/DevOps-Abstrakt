@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_50_and_090_Days_Prospect</fullName>
+    <active>true</active>
+    <description>&apos; Top 50&apos; and &apos;0-90 Days Prospect&apos; both cannot be checked.</description>
+    <errorConditionFormula>AND(Top_2__c=TRUE, X2nd_Voice__c = TRUE)</errorConditionFormula>
+    <errorMessage>Both &apos;Top 50&apos; and &apos;0-90 Days Prospect&apos; cannot be checked at the same time. Please choose one.</errorMessage>
+</ValidationRule>

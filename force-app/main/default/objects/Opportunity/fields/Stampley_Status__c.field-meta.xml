@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stampley_Status__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>using this to remove access from specific PAM referrals the SDRs can call based on closed market
+
+Megan told me to do it -David</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SalesForce to forecast if closing in current month</inlineHelpText>
+    <label>Stampley?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

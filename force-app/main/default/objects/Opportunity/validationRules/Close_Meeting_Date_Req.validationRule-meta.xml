@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Meeting_Date_Req</fullName>
+    <active>true</active>
+    <description>Close meeting date required when stage = &quot;Proposal Follow-up&quot;</description>
+    <errorConditionFormula>AND (ISPICKVAL(StageName, &quot;Proposal Follow-up&quot;),  ISNULL(Secondary_Pitch_Date__c))</errorConditionFormula>
+    <errorDisplayField>Secondary_Pitch_Date__c</errorDisplayField>
+    <errorMessage>Close Meeting Date is required when Stage is &quot;Proposal Follow-up&quot;.</errorMessage>
+</ValidationRule>

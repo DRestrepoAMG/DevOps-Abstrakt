@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Talent Solutions Interview Process</fullName>
+    <description>The interview stages to be used for Talent Solutions clients.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Hired</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Interview</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Offer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

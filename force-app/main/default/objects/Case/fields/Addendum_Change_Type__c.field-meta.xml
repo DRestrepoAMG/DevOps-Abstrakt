@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Addendum_Change_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Addendum Change Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualifier Change</fullName>
+                <default>false</default>
+                <label>Qualifier Change</label>
+            </value>
+            <value>
+                <fullName>Reset Old Appointments</fullName>
+                <default>false</default>
+                <label>Reset Old Appointments</label>
+            </value>
+            <value>
+                <fullName>Territory Change</fullName>
+                <default>false</default>
+                <label>Territory Change</label>
+            </value>
+            <value>
+                <fullName>Adding New Territory</fullName>
+                <default>false</default>
+                <label>Adding New Territory</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Price Change</fullName>
+                <default>false</default>
+                <label>Price Change</label>
+            </value>
+            <value>
+                <fullName>Program Size</fullName>
+                <default>false</default>
+                <label>Program Size</label>
+            </value>
+            <value>
+                <fullName>Renewing Contract</fullName>
+                <default>false</default>
+                <label>Renewing Contract</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

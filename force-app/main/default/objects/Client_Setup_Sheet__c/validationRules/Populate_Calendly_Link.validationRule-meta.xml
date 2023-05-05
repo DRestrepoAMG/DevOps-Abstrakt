@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Populate_Calendly_Link</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+Sales_Director_Approved__c = TRUE,
+Send_Email__c =TRUE,
+ISBLANK( Calendly__c )
+)</errorConditionFormula>
+    <errorMessage>Please put in your Calendly calendar url</errorMessage>
+</ValidationRule>

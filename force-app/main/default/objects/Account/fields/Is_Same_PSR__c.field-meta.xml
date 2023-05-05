@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Same_PSR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISNULL(Previous_PSR__c)) &amp;&amp; Current_PSR__c = Previous_PSR__c, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Same Delivery Owner?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

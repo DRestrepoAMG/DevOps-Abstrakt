@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Management_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE(Case_Resolved_Within_10_Business_Days__c,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+ 
+CASE(Case_Addressed_Within_2_Business_Days__c ,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE( Case_was_Addressed_Properly__c ,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Requested_Resolved_by_Date_Updated__c,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Requested_Resolved_by_Date_Adjustment__c,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Case_Type_Accurately_Reflects_Task__c,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Case_Name_Describes_The_Request__c ,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Sufficient_Case_Details__c ,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0)+
+CASE(Resolution_Appropriate_Fully_Complete__c ,
+&quot;Yes&quot;,1,
+&quot;No&quot;,0,
+0))/9</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Management Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

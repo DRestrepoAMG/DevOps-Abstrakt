@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_industry_areas_are_we_targeting__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What are their top industries to target? Or, What industries make up most of their current client base?</inlineHelpText>
+    <label>What industry areas are we targeting?</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

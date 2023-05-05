@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kent_Witte_IT</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact_Name__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Callback_Date__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>City_Region__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Notes__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Phone__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>McLean</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Top_5_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Follow_up_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Tyler McLean - Not top 250 Opps w. FU</label>
+    <sharedTo>
+        <role>Marketing_Sales_Representative</role>
+    </sharedTo>
+</ListView>

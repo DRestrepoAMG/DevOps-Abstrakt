@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Goal Type</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Weighted Average</fullName>
+                <default>true</default>
+                <label>Weighted Average</label>
+            </value>
+            <value>
+                <fullName>Standard Average</fullName>
+                <default>false</default>
+                <label>Standard Average</label>
+            </value>
+            <value>
+                <fullName>Sum</fullName>
+                <default>false</default>
+                <label>Sum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

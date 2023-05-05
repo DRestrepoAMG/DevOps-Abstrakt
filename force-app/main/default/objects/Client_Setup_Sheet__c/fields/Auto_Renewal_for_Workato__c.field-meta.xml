@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Renewal_for_Workato__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL( Auto_Renewal_Picklist__c ,&apos;YES&apos;),ISPICKVAL( Auto_Renewal_Picklist__c ,&apos;Auto Renews after Pilot&apos;)),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Auto Renewal for Workato</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Approval_Other_Appt</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>What_is_your_recommended_Annual_Appointm__c</columns>
+    <columns>Overview_What_does_the_company_do__c</columns>
+    <columns>How_do_they_make_money__c</columns>
+    <columns>Who_are_we_targeting__c</columns>
+    <columns>Prospects_Expectations__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Requirement_Sheet__c.Other_Appt_Guarantee</value>
+    </filters>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Approved,Denied</value>
+    </filters>
+    <label>Pending Approval - Other Appt</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

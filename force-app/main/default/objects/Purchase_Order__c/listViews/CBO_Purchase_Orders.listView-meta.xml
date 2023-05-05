@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CBO_Purchase_Orders</fullName>
+    <columns>NAME</columns>
+    <columns>Date_of_Actual_Purchase__c</columns>
+    <columns>Approved_Date__c</columns>
+    <columns>Approved__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Submission_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>CBO Purchase Orders</label>
+    <sharedTo>
+        <group>CBO</group>
+    </sharedTo>
+</ListView>

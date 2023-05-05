@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Outbound_Process__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to designate accounts that should use the flow as the calling process</description>
+    <externalId>false</externalId>
+    <label>New Outbound Process</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

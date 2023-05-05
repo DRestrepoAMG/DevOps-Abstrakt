@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Axiom_Products_Creative_Calendar</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Creative_Calendar</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+        <value>Axiom Products - Marketing Services</value>
+    </filters>
+    <label>Axiom Products - Creative Calendar</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <portalRole>AxiomProductsMarketingServicesPartnerUser</portalRole>
+        <portalRole>GoodSilverSteakCoMarketingServicesPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

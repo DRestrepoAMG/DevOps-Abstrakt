@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Guarantee_Sapper__c</fullName>
+    <externalId>false</externalId>
+    <label>Appointment Guarantee</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Guarantee</fullName>
+                <default>false</default>
+                <label>No Guarantee</label>
+            </value>
+            <value>
+                <fullName>1 Month Free</fullName>
+                <default>false</default>
+                <label>1 Month Free</label>
+            </value>
+            <value>
+                <fullName>Work For Free Until Hit</fullName>
+                <default>false</default>
+                <label>Work For Free Until Hit</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>6 Months Free</fullName>
+                <default>false</default>
+                <label>6 Months Free</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

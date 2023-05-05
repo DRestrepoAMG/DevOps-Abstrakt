@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Live_Less_Than_365_Days</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Account__r.Number_of_Days_Live__c &lt; 365, RecordType.Name= &apos;Monthly Recap Meeting Short Version&apos;)</errorConditionFormula>
+    <errorMessage>Since this client has been with us for less than 1 year, please use the standard version of the Monthly Results Meeting.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_View_Inbound_Content</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Page_Blog_Title__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Goal__c</columns>
+    <columns>Value__c</columns>
+    <columns>Funnel_Focus__c</columns>
+    <columns>Submitted_to_Client_Date__c</columns>
+    <columns>Content_Link__c</columns>
+    <columns>Published_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Inbound_Content</value>
+    </filters>
+    <label>SEO Content - All time</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alignment_With_Abstrakt_Expectations__c</fullName>
+    <description>CFS: How aligned is Abstrakt with your original expectations?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>CFS: How aligned is Abstrakt with your original expectations?</inlineHelpText>
+    <label>Alignment With Abstrakt Expectations</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Very Aligned</fullName>
+                <default>false</default>
+                <label>Very Aligned</label>
+            </value>
+            <value>
+                <fullName>Somewhat Aligned</fullName>
+                <default>false</default>
+                <label>Somewhat Aligned</label>
+            </value>
+            <value>
+                <fullName>Not Aligned</fullName>
+                <default>false</default>
+                <label>Not Aligned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

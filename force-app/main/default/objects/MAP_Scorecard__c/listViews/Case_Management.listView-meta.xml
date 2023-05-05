@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Management</fullName>
+    <columns>Employee__c</columns>
+    <columns>NAME</columns>
+    <columns>Audited_By__c</columns>
+    <columns>Status__c</columns>
+    <columns>Audited_Date__c</columns>
+    <columns>Completed_Date__c</columns>
+    <columns>Case_Management_Score__c</columns>
+    <columns>Action_Items_Outstanding__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Management_Score__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Audited_By__c</field>
+        <operation>equals</operation>
+        <value>Danielle Boyd,Nicholas Wulf</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>MAP_Scorecard__c.Case_Management</value>
+    </filters>
+    <label>Case Management</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+        <role>Director_of_Data_Analytics</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Balance__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This Month and Past Month&apos;s invoices are marked Past Due.</inlineHelpText>
+    <label>Open Balance</label>
+    <summarizedField>Invoice__c.Invoice_Balance__c</summarizedField>
+    <summaryFilterItems>
+        <field>Invoice__c.Invoice_Due_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2018</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Invoice__c.Past_Due_Invoice__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Invoice__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

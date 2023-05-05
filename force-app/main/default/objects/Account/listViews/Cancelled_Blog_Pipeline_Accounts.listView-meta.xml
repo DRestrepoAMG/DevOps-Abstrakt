@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancelled_Blog_Pipeline_Accounts</fullName>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Appointment_Guarantee__c</columns>
+    <columns>Reply_To_Email_Address__c</columns>
+    <columns>Prospekt_Process__c</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Billed_Amount__c</columns>
+    <columns>Account_Name_to_be_Used_in_Appt_Emails__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>Cancel_Date__c</field>
+        <operation>equals</operation>
+        <value>LAST_N_MONTHS:3</value>
+    </filters>
+    <label>Cancelled Blog Pipeline Accounts</label>
+</ListView>

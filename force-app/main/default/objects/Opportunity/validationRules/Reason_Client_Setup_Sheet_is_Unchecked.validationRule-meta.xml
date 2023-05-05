@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Client_Setup_Sheet_is_Unchecked</fullName>
+    <active>true</active>
+    <description>Requires sales to provide an explanation on why the client setup sheet is unchecked</description>
+    <errorConditionFormula>AND( RecordTypeId =&apos;012G0000000qERi&apos;,
+ ISCHANGED(  Client_Setup_Sheet_Completed__c ),
+Client_Setup_Sheet_Completed__c = FALSE,
+ ISBLANK( Reason_Client_Setup_Sheet_is_Unchecked__c)  )</errorConditionFormula>
+    <errorMessage>Please provide an explanation for why the client setup sheet is unchecked.</errorMessage>
+</ValidationRule>

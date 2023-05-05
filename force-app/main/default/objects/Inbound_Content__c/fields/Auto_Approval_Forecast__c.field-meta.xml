@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Approval_Forecast__c</fullName>
+    <description>Forecast if a content piece will be auto-approved at the end of the month.</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL( Status__c ,&apos;Waiting on Client Approval&apos;), Revisions_Required__c = FALSE),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Auto-Approval Forecast</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

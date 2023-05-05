@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_day_to_Rescind__c</fullName>
+    <description>Update with date when &quot;Can Rescind during Implementation&quot; = Yes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Update with date when &quot;Can Rescind during Implementation&quot; = Yes</inlineHelpText>
+    <label>Last Day to Rescind</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

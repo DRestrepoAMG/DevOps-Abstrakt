@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Department_Responsible_for_Issue__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Certification</fullName>
+                <default>false</default>
+                <label>Account Certification</label>
+            </value>
+            <value>
+                <fullName>Accounting Questions</fullName>
+                <default>false</default>
+                <label>Accounting Questions</label>
+            </value>
+            <value>
+                <fullName>Account Page Creation</fullName>
+                <default>false</default>
+                <label>Account Page Creation</label>
+            </value>
+            <value>
+                <fullName>Account Page Updates</fullName>
+                <default>false</default>
+                <label>Account Page Updates</label>
+            </value>
+            <value>
+                <fullName>Allocations</fullName>
+                <default>false</default>
+                <label>Allocations</label>
+            </value>
+            <value>
+                <fullName>A-Player Scorecard</fullName>
+                <default>false</default>
+                <label>A-Player Scorecard</label>
+            </value>
+            <value>
+                <fullName>Appointment Goal / Point Request</fullName>
+                <default>false</default>
+                <label>Appointment Goal / Point Request</label>
+            </value>
+            <value>
+                <fullName>AR Collections - Abstrakt</fullName>
+                <default>false</default>
+                <label>AR Collections - Abstrakt</label>
+            </value>
+            <value>
+                <fullName>AR Collections - Sapper</fullName>
+                <default>false</default>
+                <label>AR Collections - Sapper</label>
+            </value>
+            <value>
+                <fullName>Automation</fullName>
+                <default>false</default>
+                <label>Automation</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <label>Benefits</label>
+            </value>
+            <value>
+                <fullName>Bonus / Commission Update</fullName>
+                <default>false</default>
+                <label>Bonus / Commission Update</label>
+            </value>
+            <value>
+                <fullName>Bugs</fullName>
+                <default>false</default>
+                <label>Bugs</label>
+            </value>
+            <value>
+                <fullName>Change of Billing Contact</fullName>
+                <default>false</default>
+                <label>Change of Billing Contact</label>
+            </value>
+            <value>
+                <fullName>Change of Billing Due Date</fullName>
+                <default>false</default>
+                <label>Change of Billing Due Date</label>
+            </value>
+            <value>
+                <fullName>Change of Payment Type</fullName>
+                <default>false</default>
+                <label>Change of Payment Type</label>
+            </value>
+            <value>
+                <fullName>Cleansing Program Placeholder</fullName>
+                <default>false</default>
+                <label>Cleansing Program Placeholder</label>
+            </value>
+            <value>
+                <fullName>Client Tech Maintenance</fullName>
+                <default>false</default>
+                <label>Client Tech Maintenance</label>
+            </value>
+            <value>
+                <fullName>Client Visit</fullName>
+                <default>false</default>
+                <label>Client Visit</label>
+            </value>
+            <value>
+                <fullName>Collections Issue / Request</fullName>
+                <default>false</default>
+                <label>Collections Issue / Request</label>
+            </value>
+            <value>
+                <fullName>Compensation Document</fullName>
+                <default>false</default>
+                <label>Compensation Document</label>
+            </value>
+            <value>
+                <fullName>Contract / Addendum Questions</fullName>
+                <default>false</default>
+                <label>Contract / Addendum Questions</label>
+            </value>
+            <value>
+                <fullName>Copywriting</fullName>
+                <default>false</default>
+                <label>Copywriting</label>
+            </value>
+            <value>
+                <fullName>Corrective Action</fullName>
+                <default>false</default>
+                <label>Corrective Action</label>
+            </value>
+            <value>
+                <fullName>COVID Illness</fullName>
+                <default>false</default>
+                <label>COVID Illness</label>
+            </value>
+            <value>
+                <fullName>Creative - External</fullName>
+                <default>false</default>
+                <label>Creative - External</label>
+            </value>
+            <value>
+                <fullName>Creative - Internal</fullName>
+                <default>false</default>
+                <label>Creative - Internal</label>
+            </value>
+            <value>
+                <fullName>Custom / Other</fullName>
+                <default>false</default>
+                <label>Custom / Other</label>
+            </value>
+            <value>
+                <fullName>Design</fullName>
+                <default>false</default>
+                <label>Design</label>
+            </value>
+            <value>
+                <fullName>Desk Move Request</fullName>
+                <default>false</default>
+                <label>Desk Move Request</label>
+            </value>
+            <value>
+                <fullName>Dial Audit Request</fullName>
+                <default>false</default>
+                <label>Dial Audit Request</label>
+            </value>
+            <value>
+                <fullName>Digital Strategy</fullName>
+                <default>false</default>
+                <label>Digital Strategy</label>
+            </value>
+            <value>
+                <fullName>Distribution List Update</fullName>
+                <default>false</default>
+                <label>Distribution List Update</label>
+            </value>
+            <value>
+                <fullName>DocuSign</fullName>
+                <default>false</default>
+                <label>DocuSign</label>
+            </value>
+            <value>
+                <fullName>DocuSign Contract/Addendum Adjustment</fullName>
+                <default>false</default>
+                <label>DocuSign Contract/Addendum Adjustment</label>
+            </value>
+            <value>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+                <label>Do Not Contact</label>
+            </value>
+            <value>
+                <fullName>Editing</fullName>
+                <default>false</default>
+                <label>Editing</label>
+            </value>
+            <value>
+                <fullName>Email Blast</fullName>
+                <default>false</default>
+                <label>Email Blast</label>
+            </value>
+            <value>
+                <fullName>Email Issues / Support</fullName>
+                <default>false</default>
+                <label>Email Issues / Support</label>
+            </value>
+            <value>
+                <fullName>Email Library</fullName>
+                <default>false</default>
+                <label>Email Library</label>
+            </value>
+            <value>
+                <fullName>Email Library/Process Emails</fullName>
+                <default>false</default>
+                <label>Email Library/Process Emails</label>
+            </value>
+            <value>
+                <fullName>Employee / Customer Referral</fullName>
+                <default>false</default>
+                <label>Employee / Customer Referral</label>
+            </value>
+            <value>
+                <fullName>Employee Handbook</fullName>
+                <default>false</default>
+                <label>Employee Handbook</label>
+            </value>
+            <value>
+                <fullName>Employee Relations</fullName>
+                <default>false</default>
+                <label>Employee Relations</label>
+            </value>
+            <value>
+                <fullName>Employment Verification Letter</fullName>
+                <default>false</default>
+                <label>Employment Verification Letter</label>
+            </value>
+            <value>
+                <fullName>Error Found and Needs Updated</fullName>
+                <default>false</default>
+                <label>Error Found and Needs Updated</label>
+            </value>
+            <value>
+                <fullName>ESC Support</fullName>
+                <default>false</default>
+                <label>ESC Support</label>
+            </value>
+            <value>
+                <fullName>Facilities / Maintenance Request</fullName>
+                <default>false</default>
+                <label>Facilities / Maintenance Request</label>
+            </value>
+            <value>
+                <fullName>Field/Object</fullName>
+                <default>false</default>
+                <label>Field/Object</label>
+            </value>
+            <value>
+                <fullName>Internal Requisition/Job Posting</fullName>
+                <default>false</default>
+                <label>Internal Requisition/Job Posting</label>
+            </value>
+            <value>
+                <fullName>Klipfolio</fullName>
+                <default>false</default>
+                <label>Klipfolio</label>
+            </value>
+            <value>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+                <label>Landing Page</label>
+            </value>
+            <value>
+                <fullName>Leadership Requests</fullName>
+                <default>false</default>
+                <label>Leadership Requests</label>
+            </value>
+            <value>
+                <fullName>Leave of Absence</fullName>
+                <default>false</default>
+                <label>Leave of Absence</label>
+            </value>
+            <value>
+                <fullName>List Request</fullName>
+                <default>false</default>
+                <label>List Request</label>
+            </value>
+            <value>
+                <fullName>List Request - Sapper</fullName>
+                <default>false</default>
+                <label>List Request - Sapper</label>
+            </value>
+            <value>
+                <fullName>Litmos</fullName>
+                <default>false</default>
+                <label>Litmos</label>
+            </value>
+            <value>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+                <label>Market Research</label>
+            </value>
+            <value>
+                <fullName>Medical Accommodation</fullName>
+                <default>false</default>
+                <label>Medical Accommodation</label>
+            </value>
+            <value>
+                <fullName>Mid-Strategy Rework</fullName>
+                <default>false</default>
+                <label>Mid-Strategy Rework</label>
+            </value>
+            <value>
+                <fullName>MyVoice</fullName>
+                <default>false</default>
+                <label>MyVoice</label>
+            </value>
+            <value>
+                <fullName>New Strategy</fullName>
+                <default>false</default>
+                <label>New Strategy</label>
+            </value>
+            <value>
+                <fullName>Offboarding</fullName>
+                <default>false</default>
+                <label>Offboarding</label>
+            </value>
+            <value>
+                <fullName>Office Supply Request</fullName>
+                <default>false</default>
+                <label>Office Supply Request</label>
+            </value>
+            <value>
+                <fullName>Operations Project</fullName>
+                <default>false</default>
+                <label>Operations Project</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Partner Sales</fullName>
+                <default>false</default>
+                <label>Partner Sales</label>
+            </value>
+            <value>
+                <fullName>Partner Success</fullName>
+                <default>false</default>
+                <label>Partner Success</label>
+            </value>
+            <value>
+                <fullName>Paylocity usage</fullName>
+                <default>false</default>
+                <label>Paylocity usage</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>PPC</fullName>
+                <default>false</default>
+                <label>PPC</label>
+            </value>
+            <value>
+                <fullName>PR &amp; Marketing Support</fullName>
+                <default>false</default>
+                <label>PR &amp; Marketing Support</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>PTO</fullName>
+                <default>false</default>
+                <label>PTO</label>
+            </value>
+            <value>
+                <fullName>QAS Changes</fullName>
+                <default>false</default>
+                <label>QAS Changes</label>
+            </value>
+            <value>
+                <fullName>Reception / Office Manager Requests</fullName>
+                <default>false</default>
+                <label>Reception / Office Manager Requests</label>
+            </value>
+            <value>
+                <fullName>Recycle Rework</fullName>
+                <default>false</default>
+                <label>Recycle Rework</label>
+            </value>
+            <value>
+                <fullName>Reporting / Dashboards</fullName>
+                <default>false</default>
+                <label>Reporting / Dashboards</label>
+            </value>
+            <value>
+                <fullName>Retention / Revenue Tracker Update</fullName>
+                <default>false</default>
+                <label>Retention / Revenue Tracker Update</label>
+            </value>
+            <value>
+                <fullName>Role Documents</fullName>
+                <default>false</default>
+                <label>Role Documents</label>
+            </value>
+            <value>
+                <fullName>Sales Allocations / Ownership</fullName>
+                <default>false</default>
+                <label>Sales Allocations / Ownership</label>
+            </value>
+            <value>
+                <fullName>SapperSuite Support</fullName>
+                <default>false</default>
+                <label>SapperSuite Support</label>
+            </value>
+            <value>
+                <fullName>Secondary Domain</fullName>
+                <default>false</default>
+                <label>Secondary Domain</label>
+            </value>
+            <value>
+                <fullName>SEO Copywriting</fullName>
+                <default>false</default>
+                <label>SEO Copywriting</label>
+            </value>
+            <value>
+                <fullName>Shuttle Service Log</fullName>
+                <default>false</default>
+                <label>Shuttle Service Log</label>
+            </value>
+            <value>
+                <fullName>Strategy Request</fullName>
+                <default>false</default>
+                <label>Strategy Request</label>
+            </value>
+            <value>
+                <fullName>Surveys</fullName>
+                <default>false</default>
+                <label>Surveys</label>
+            </value>
+            <value>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+                <label>Training Request</label>
+            </value>
+            <value>
+                <fullName>Video / Photography</fullName>
+                <default>false</default>
+                <label>Video / Photography</label>
+            </value>
+            <value>
+                <fullName>Website Audit</fullName>
+                <default>false</default>
+                <label>Website Audit</label>
+            </value>
+            <value>
+                <fullName>Website Design</fullName>
+                <default>false</default>
+                <label>Website Design</label>
+            </value>
+            <value>
+                <fullName>Website Development</fullName>
+                <default>false</default>
+                <label>Website Development</label>
+            </value>
+            <value>
+                <fullName>Zoom</fullName>
+                <default>false</default>
+                <label>Zoom</label>
+            </value>
+            <value>
+                <fullName>Collections Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collections Request</label>
+            </value>
+            <value>
+                <fullName>ESC - Employee Status Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ESC - Employee Status Change</label>
+            </value>
+            <value>
+                <fullName>Messaging Update</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Messaging Update</label>
+            </value>
+            <value>
+                <fullName>Other Client Requests</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other Client Requests</label>
+            </value>
+            <value>
+                <fullName>Ownership Changes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ownership Changes</label>
+            </value>
+            <value>
+                <fullName>Policies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Policies</label>
+            </value>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Think Tank Submissions for Business Improvements</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Think Tank Submissions for Business Improvements</label>
+            </value>
+            <value>
+                <fullName>Time Frame Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Time Frame Change</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Litmos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Training Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Marketing</controllingFieldValue>
+            <valueName>Creative - External</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Support</controllingFieldValue>
+            <valueName>Automation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Support</controllingFieldValue>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Bugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Support</controllingFieldValue>
+            <valueName>Field/Object</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Support</controllingFieldValue>
+            <valueName>Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>A-Player Scorecard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>DocuSign Contract/Addendum Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>Klipfolio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Reporting / Dashboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product, Process, Reporting</controllingFieldValue>
+            <valueName>SapperSuite Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>Digital Strategy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>PPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>SEO Copywriting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>Website Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>Website Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound SDR</controllingFieldValue>
+            <valueName>Website Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Accounting Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>AR Collections - Abstrakt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>AR Collections - Sapper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Bonus / Commission Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Change of Billing Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Change of Billing Due Date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Change of Payment Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Collections Issue / Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Contract / Addendum Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accounting</controllingFieldValue>
+            <valueName>Retention / Revenue Tracker Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Benefits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Compensation Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Corrective Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>COVID Illness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Dial Audit Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Employee Handbook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Employee Relations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Employment Verification Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>ESC Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Internal Requisition/Job Posting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Leave of Absence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Medical Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Paylocity usage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>PTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resources / Training / A-Player Requests</controllingFieldValue>
+            <valueName>Role Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outbound Pipeline</controllingFieldValue>
+            <valueName>Partner Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outbound Pipeline</controllingFieldValue>
+            <valueName>Partner Success</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email Marketing</controllingFieldValue>
+            <valueName>Email Blast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email Marketing</controllingFieldValue>
+            <valueName>Email Library/Process Emails</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Copywriting / Editing</controllingFieldValue>
+            <valueName>Mid-Strategy Rework</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Copywriting / Editing</controllingFieldValue>
+            <valueName>New Strategy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Copywriting / Editing</controllingFieldValue>
+            <valueName>Recycle Rework</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Account Page Updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Allocations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Appointment Goal / Point Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Email Issues / Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>List Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>MyVoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Operations Project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Secondary Domain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Operations</controllingFieldValue>
+            <valueName>Surveys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Account Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Cleansing Program Placeholder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Distribution List Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>QAS Changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>DocuSign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Market Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Sales Allocations / Ownership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Executive Sales Support</controllingFieldValue>
+            <valueName>Zoom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Marketing</controllingFieldValue>
+            <valueName>Creative - Internal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Marketing</controllingFieldValue>
+            <valueName>PR &amp; Marketing Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Marketing</controllingFieldValue>
+            <valueName>Video / Photography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Copywriting / Editing / Design</controllingFieldValue>
+            <valueName>Copywriting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Copywriting / Editing / Design</controllingFieldValue>
+            <valueName>Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMG - Copywriting / Editing / Design</controllingFieldValue>
+            <valueName>Editing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Tech Maintenance</controllingFieldValue>
+            <valueName>Client Tech Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Client Visit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Desk Move Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Facilities / Maintenance Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Leadership Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Office Supply Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Reception / Office Manager Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office / Facilities Requests</controllingFieldValue>
+            <valueName>Shuttle Service Log</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Operations &amp; Strategy</controllingFieldValue>
+            <valueName>List Request - Sapper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Operations &amp; Strategy</controllingFieldValue>
+            <valueName>Offboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sapper - Operations &amp; Strategy</controllingFieldValue>
+            <valueName>Strategy Request</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

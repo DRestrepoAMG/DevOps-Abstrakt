@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metric_Scorecard_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used in Case Guided flow for lookup to metric scorecard.</description>
+    <externalId>false</externalId>
+    <label>Metric Scorecard Name</label>
+    <referenceTo>Metric_Scorecard__c</referenceTo>
+    <relationshipLabel>Metric Scorecards</relationshipLabel>
+    <relationshipName>Metric_Scorecards</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

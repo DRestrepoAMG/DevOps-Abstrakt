@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>13 Mo Commitment - Basic Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>13 Mo Commitment - Basic Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Basic Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>13 Mo Commitment - Basic Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>(Other) Basic Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>(Other) Basic Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>(Other) Basic Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>(Other) Basic Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Standard Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>13 Mo Commitment - Standard Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Standard Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>13 Mo Commitment - Standard Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>(Other) Standard Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>(Other) Standard Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>(Other) Standard Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>(Other) Standard Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Basic Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>45 Day Out - Basic Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Basic Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>45 Day Out - Basic Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Standard Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>45 Day Out - Standard Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Standard Program - Appt Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>45 Day Out - Standard Program - Appt Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>Basic Program - Activity Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>Basic Program - Activity Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>Basic Program - Activity Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>Basic Program - Activity Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>Standard Program - Activity Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>Standard Program - Activity Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>Standard Program - Activity Guarantee - Without Sales Tool Kit</fullName>
+                <default>false</default>
+                <label>Standard Program - Activity Guarantee - Without Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>MS - Paid Media</fullName>
+                <default>false</default>
+                <label>MS - Paid Media</label>
+            </value>
+            <value>
+                <fullName>MS - SEO Content Only (13 Month Lock)</fullName>
+                <default>false</default>
+                <label>MS - SEO Content Only (13 Month Lock)</label>
+            </value>
+            <value>
+                <fullName>MS - SEO Content Only (No Lock, 45 day out)</fullName>
+                <default>false</default>
+                <label>MS - SEO Content Only (No Lock, 45 day out)</label>
+            </value>
+            <value>
+                <fullName>MS - Website + SEO Content</fullName>
+                <default>false</default>
+                <label>MS - Website + SEO Content</label>
+            </value>
+            <value>
+                <fullName>Video Production Services - # of Videos</fullName>
+                <default>false</default>
+                <label>Video Production Services - # of Videos</label>
+            </value>
+            <value>
+                <fullName>Video Production Services - Hours</fullName>
+                <default>false</default>
+                <label>Video Production Services - Hours</label>
+            </value>
+            <value>
+                <fullName>Staffing Project</fullName>
+                <default>false</default>
+                <label>Staffing Project</label>
+            </value>
+            <value>
+                <fullName>Staffing MRR</fullName>
+                <default>false</default>
+                <label>Staffing MRR</label>
+            </value>
+            <value>
+                <fullName>(Other) 13 Mo Commitment - Basic Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(Other) 13 Mo Commitment - Basic Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>(Other) 13 Mo Commitment - Basic Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(Other) 13 Mo Commitment - Basic Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>(Other) 13 Mo Commitment - Standard Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(Other) 13 Mo Commitment - Standard Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>(Other) 13 Mo Commitment - Standard Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(Other) 13 Mo Commitment - Standard Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Basic Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 Mo Commitment - Basic Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Basic Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 Mo Commitment - Basic Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Standard Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 Mo Commitment - Standard Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>13 Mo Commitment - Standard Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 Mo Commitment - Standard Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Basic Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 Day Out - Basic Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Basic Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 Day Out - Basic Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Standard Program - Appt Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 Day Out - Standard Program - Appt Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>45 Day Out - Standard Program - Appt Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 Day Out - Standard Program - Appt Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>Basic Program - Activity Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Basic Program - Activity Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>Basic Program - Activity Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Basic Program - Activity Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>Marketing Services - Hosting Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - Hosting Agreement</label>
+            </value>
+            <value>
+                <fullName>MS - Ongoing SEO Content</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - Ongoing SEO Content</label>
+            </value>
+            <value>
+                <fullName>Marketing Services - Ongoing SEO Content + Local SEO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - Ongoing SEO Content + Local SEO</label>
+            </value>
+            <value>
+                <fullName>Marketing Services - PPC Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - PPC Agreement</label>
+            </value>
+            <value>
+                <fullName>MS - Pipeline SEO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - Pipeline SEO</label>
+            </value>
+            <value>
+                <fullName>MS - Website, SEO, + Social Content</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MS - Website, SEO, + Social Content</label>
+            </value>
+            <value>
+                <fullName>Manually Signed Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manually Signed Agreement</label>
+            </value>
+            <value>
+                <fullName>Marketing Services - Financed Website Build</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing Services - Financed Website Build</label>
+            </value>
+            <value>
+                <fullName>Marketing Services - Social</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing Services - Social</label>
+            </value>
+            <value>
+                <fullName>No Lock-In without Assets - Full Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Lock-In without Assets - Full Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>No Lock-In without Assets - Half Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Lock-In without Assets - Half Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>No Lock-in with Assets - Full Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Lock-in with Assets - Full Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>No Lock-in with Assets - Half Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Lock-in with Assets - Half Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>Standard Program - Activity Guarantee - With Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Standard Program - Activity Guarantee - With Assets</label>
+            </value>
+            <value>
+                <fullName>Standard Program - Activity Guarantee - Without Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Standard Program - Activity Guarantee - Without Assets</label>
+            </value>
+            <value>
+                <fullName>TEST (Other) Basic Program - Appt Guarantee - With Sales Tool Kit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TEST (Other) Basic Program - Appt Guarantee - With Sales Tool Kit</label>
+            </value>
+            <value>
+                <fullName>True-up with Assets - Full Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up with Assets - Full Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up with Assets - Full Program - Apt Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up with Assets - Full Program - Apt Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up with Assets - Half Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up with Assets - Half Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up with Assets - Half Program - Apt Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up with Assets - Half Program - Apt Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up without Assets - Full Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up without Assets - Full Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up without Assets - Full Program - Apt Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up without Assets - Full Program - Apt Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up without Assets - Half Program - Activity Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up without Assets - Half Program - Activity Guarantee</label>
+            </value>
+            <value>
+                <fullName>True-up without Assets - Half Program - Apt Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>True-up without Assets - Half Program - Apt Guarantee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

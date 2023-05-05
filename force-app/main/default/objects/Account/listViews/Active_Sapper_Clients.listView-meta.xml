@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Sapper_Clients</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Account_Owner_Name__c</columns>
+    <columns>Director__c</columns>
+    <columns>Current_PSR__c</columns>
+    <columns>Sales_Manager_Director__c</columns>
+    <columns>Source_Industry__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>Sapper Consulting</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,Onboarding</value>
+    </filters>
+    <label>Active Sapper Clients</label>
+</ListView>

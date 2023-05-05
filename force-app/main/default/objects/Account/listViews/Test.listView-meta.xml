@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Data_Collection_Completed_Current_Month__c</columns>
+    <columns>Data_Collection_Completed_Today__c</columns>
+    <columns>Director__c</columns>
+    <columns>Sales_Manager_Director__c</columns>
+    <columns>Inside_Sales_Manager__c</columns>
+    <columns>Current_PSR__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Current_PSR_Months_Active__c</columns>
+    <columns>Client_Scored_a_Call_This_Month__c</columns>
+    <columns>Client_Scorecards_This_Month__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Manager_Director__c</field>
+        <operation>equals</operation>
+        <value>Mark Monika</value>
+    </filters>
+    <label>Test</label>
+</ListView>

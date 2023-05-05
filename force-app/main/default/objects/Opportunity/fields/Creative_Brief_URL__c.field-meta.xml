@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creative_Brief_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://survey.alchemer.com/s3/6275911/Master-Implementation-Packet-V2?oppid=&quot;+Id, &quot;Use This to Start Packet Only&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is used to start the creative brief.  Client needs to be sent the edit link.</inlineHelpText>
+    <label>Creative Brief URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

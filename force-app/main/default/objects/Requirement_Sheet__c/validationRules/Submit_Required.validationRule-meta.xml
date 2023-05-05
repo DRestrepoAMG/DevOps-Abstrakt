@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_Required</fullName>
+    <active>true</active>
+    <description>Submit checkbox required to create website audit.</description>
+    <errorConditionFormula>AND($RecordType.Id = &quot;01I4A000002UnwQ&quot;, Submit__c = FALSE)</errorConditionFormula>
+    <errorDisplayField>Submit__c</errorDisplayField>
+    <errorMessage>Please check Submit field.</errorMessage>
+</ValidationRule>

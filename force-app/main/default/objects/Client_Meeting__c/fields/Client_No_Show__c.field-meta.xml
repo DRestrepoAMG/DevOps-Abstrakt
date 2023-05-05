@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_No_Show__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Meeting_Scheduled_For__c &lt; Meeting_Held_Date__c ,IMAGE(&quot;/img/samples/flag_red.gif&quot;,&quot;&quot;, 25, 25),IMAGE(&quot;/img/samples/flag_green.gif&quot;,&quot;&quot;, 25, 25))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Client No Show</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

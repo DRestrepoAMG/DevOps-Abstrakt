@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Assigned_to_Email_2__c</fullName>
+    <description>Used by Clients in the lightning portals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you would like additional internal sales representative to receive follow up reminders, add their email in this field.</inlineHelpText>
+    <label>Opportunity Assigned to Email #2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

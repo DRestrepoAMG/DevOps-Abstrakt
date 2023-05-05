@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_of_Buisness_Notes__c</fullName>
+    <description>MRM Partner meeting buisness issue notes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Outside of your confidence, is there anything getting in the way of this being a long-term partnership and us being able to continue being a partner that assists in the growth of your business?</inlineHelpText>
+    <label>State of Buisness Notes</label>
+    <length>8000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

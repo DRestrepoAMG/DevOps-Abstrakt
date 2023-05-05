@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FIll_Out_Why_is_this_deal_coming_in</fullName>
+    <active>true</active>
+    <description>Must be filled out if deal of the day is marked true</description>
+    <errorConditionFormula>AND(ISBLANK(Why_Is_This_Deal_Coming_In__c), Deal_of_the_Day__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>Why_Is_This_Deal_Coming_In__c</errorDisplayField>
+    <errorMessage>Please Fill out Why is this Deal coming in if Deal of the Day is marked true</errorMessage>
+</ValidationRule>

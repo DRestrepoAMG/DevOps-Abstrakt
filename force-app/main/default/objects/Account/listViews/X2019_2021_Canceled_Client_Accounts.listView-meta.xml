@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2019_2021_Canceled_Client_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Metro__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Services_Prospecting_for_Client__c</columns>
+    <columns>Program_Size__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Appointment_Guarantee__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>Cancel_Reason__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Associated_Opportunity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>Cancel_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>12/31/2018</value>
+    </filters>
+    <filters>
+        <field>Cancel_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/1/2022</value>
+    </filters>
+    <label>2019-2021 Canceled Client Accounts</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

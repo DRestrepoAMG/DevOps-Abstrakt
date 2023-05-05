@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Collateral_Ready_to_Send_MN</fullName>
+    <columns>Account__c</columns>
+    <columns>Client_Contact_1__c</columns>
+    <columns>Client_Contact_2__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Outbound_Asset_Manager__c</field>
+        <operation>equals</operation>
+        <value>Merideth Neff,a8Z4w000000Y5XKEA0</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Project Manager Final QA</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <label>Marketing Collateral Ready to Send - MN</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

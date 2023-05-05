@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emails_with_this_Asset__c</fullName>
+    <externalId>false</externalId>
+    <label>Emails with this Asset</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intro 1</fullName>
+                <default>false</default>
+                <label>Intro 1</label>
+            </value>
+            <value>
+                <fullName>Intro 2</fullName>
+                <default>false</default>
+                <label>Intro 2</label>
+            </value>
+            <value>
+                <fullName>Intro 3</fullName>
+                <default>false</default>
+                <label>Intro 3</label>
+            </value>
+            <value>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+                <label>No Interest</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Wait</fullName>
+                <default>false</default>
+                <label>Wait</label>
+            </value>
+            <value>
+                <fullName>Nurture 1</fullName>
+                <default>false</default>
+                <label>Nurture 1</label>
+            </value>
+            <value>
+                <fullName>Nurture 2</fullName>
+                <default>false</default>
+                <label>Nurture 2</label>
+            </value>
+            <value>
+                <fullName>Nurture 3</fullName>
+                <default>false</default>
+                <label>Nurture 3</label>
+            </value>
+            <value>
+                <fullName>Nurture 4</fullName>
+                <default>false</default>
+                <label>Nurture 4</label>
+            </value>
+            <value>
+                <fullName>Info</fullName>
+                <default>false</default>
+                <label>Info</label>
+            </value>
+            <value>
+                <fullName>Not Uploaded</fullName>
+                <default>false</default>
+                <label>Not Uploaded</label>
+            </value>
+            <value>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+                <label>Landing Page</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Marketing_Program_Without_POC</fullName>
+    <active>true</active>
+    <description>You must fill out Marketing POC if the client has opted into an Email Marketing Program</description>
+    <errorConditionFormula>AND(ISPICKVAL(Email_Marketing_Program__c, &apos;Opt-In&apos;),
+ISBLANK( Email_Marketing_POC__c))</errorConditionFormula>
+    <errorDisplayField>Email_Marketing_POC__c</errorDisplayField>
+    <errorMessage>You must fill out Marketing POC if the client has opted into an Email Marketing Program</errorMessage>
+</ValidationRule>

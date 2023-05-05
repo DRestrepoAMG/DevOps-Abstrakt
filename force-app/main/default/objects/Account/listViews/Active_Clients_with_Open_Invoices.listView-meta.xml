@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Clients_with_Open_Invoices</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Billing_Contact_Name__c</columns>
+    <columns>Accounting_Contact_Phone__c</columns>
+    <columns>Status__c</columns>
+    <columns>Account_Management_Billing_Notes__c</columns>
+    <columns>Billing_Contact_Notes__c</columns>
+    <columns>Payment_Type__c</columns>
+    <columns>This_Month_Billed_Amount__c</columns>
+    <columns>Invoices_Total_Amount_Due__c</columns>
+    <columns>Open_Balance__c</columns>
+    <columns>Payment_Issue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,On Hold</value>
+    </filters>
+    <filters>
+        <field>Go_Live_Date__c</field>
+        <operation>lessThan</operation>
+        <value>NEXT_MONTH</value>
+    </filters>
+    <filters>
+        <field>Open_Balance__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <label>Active Clients with Open Invoices</label>
+    <sharedTo>
+        <role>Accounting_General</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Agency_Cancellation</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create Agency Cancellation</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/a46/e?CF00NG000000FWVGq={!Account.Name} 
+&amp;RecordType=0124A000001UT26 
+&amp;00N4A00000Edx72={!Account.Cancel_Date__c} 
+&amp;00N4A00000EdxC2={!Account.Contract_URL__c}</url>
+</WebLink>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Studio_Report__c</fullName>
+    <description>DELETE LATER - This field was replaced by the already existing field &quot;Google Data Studio&quot; 2/10/23 because it pulls in the account link they were manually entering into this field.</description>
+    <externalId>false</externalId>
+    <label>Data Studio Report</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

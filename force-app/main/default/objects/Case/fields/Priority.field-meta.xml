@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority</fullName>
+    <inlineHelpText>1 is the highest priority case.  This is the case you want to be worked the first of all other cases you submitted. 
+20 is the lowest priority case.  
+If you update a case within the top 10, please update the priority level of other cases you submitted</inlineHelpText>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+</CustomField>

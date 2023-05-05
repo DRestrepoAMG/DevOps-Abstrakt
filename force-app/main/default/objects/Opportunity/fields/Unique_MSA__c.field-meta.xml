@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_MSA__c</fullName>
+    <description>This is for clients that have a MSA outside are standard MSA.
+i.e 50 % STL and 50% KC</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is for clients that have a MSA outside of their standard MSA.
+i.e 50 % STL and 50% KC</inlineHelpText>
+    <label>Unique MSA</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

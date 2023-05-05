@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Contract_Calling_Start_Date__c</fullName>
+    <description>The Calling Start Date of the most recent contract/addendum, this will be used to project/adjust monthly appointment goals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Calling Start Date of the most recent contract/addendum,  this will be used to project/adjust monthly appointment goals</inlineHelpText>
+    <label>Current Contract Calling Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

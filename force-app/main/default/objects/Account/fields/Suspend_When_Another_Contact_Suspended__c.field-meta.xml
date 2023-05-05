@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suspend_When_Another_Contact_Suspended__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this is checked, all contacts for this account will be suspended when one contact at the same company or phone is suspended with a DevOutcome of: Not a Fit,Client Request,Research Needed,Research Dead End,Out Of Business,Current Client, or Competitor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this is checked, all contacts for this account will be suspended when one contact at the same company or phone is suspended with a DevOutcome of: Not a Fit,Client Request,Research Needed,Research Dead End,Out Of Business,Current Client, or Competitor</inlineHelpText>
+    <label>Suspend When Another Contact Suspended</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

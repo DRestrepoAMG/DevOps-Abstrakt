@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Content_Waiting_on_Client</fullName>
+    <active>false</active>
+    <description>Only the Role VMM can change Inbound Content to Waiting on Client</description>
+    <errorConditionFormula>AND(
+RecordTypeId = &quot;0124A000001UU0Q&quot;,
+ISPICKVAL(Status__c, &quot;Waiting on Client Approval&quot;),
+ISCHANGED(Status__c),
+$UserRole.Id   &lt;&gt;  &quot;00EG0000000Fmlu&quot;,
+$UserRole.Id   &lt;&gt;  &quot;00E4A000001GgPl&quot;,
+$UserRole.Id &lt;&gt; &quot;00E4A000001G2Le&quot;,
+$User.Id &lt;&gt; &quot;005G00000084Gww&quot;,
+$User.Id &lt;&gt; &quot;0054A000009Bgtq&quot; )</errorConditionFormula>
+    <errorMessage>You do not have the correct permissions to change status to Waiting on Client Approval.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Video_Waiting_on_Client</fullName>
+    <active>true</active>
+    <description>Only the Role Implementation Specialist can change Video to Waiting on Client Review and Waiting on Client Video Review</description>
+    <errorConditionFormula>AND(
+RecordTypeId = &quot;0124A000001UU1i&quot;,
+OR(
+ISPICKVAL(Status__c, &quot;Waiting on Client Review&quot;),
+ISPICKVAL(Status__c, &quot;Waiting on Client Video Review&quot;)),
+ISCHANGED(Status__c),
+$UserRole.Id &lt;&gt; &apos;00EG0000000Fujk&apos;,
+$UserRole.Id &lt;&gt; &apos;00E4A000001nUvd&apos;,
+$User.Id &lt;&gt; &quot;005G0000005aVjt&quot;)</errorConditionFormula>
+    <errorMessage>You do not have the correct permissions to change status to Waiting on Client Review or Waiting on Client Video Review.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Need_Reason_to_Save_as_Lost_or_Delayed</fullName>
+    <active>false</active>
+    <description>Denotes the reason why an opportunity stage is marked as lost or delayed</description>
+    <errorConditionFormula>AND
+ (CASE(StageName , &quot;Lost&quot;, 1,&quot;Delayed&quot;, 1,0) =1,
+ISBLANK(TEXT(Reason_Lost__c)),  RecordTypeId =&quot;012G0000000qERi&quot;)</errorConditionFormula>
+    <errorMessage>Need to populate field &quot;Reason Lost&quot; to save stage as lost or delayed.</errorMessage>
+</ValidationRule>

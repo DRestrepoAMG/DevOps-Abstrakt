@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_QA_Blog_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE( Blog_Layout__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( Keyword_Strategy__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( Metadata__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( URL_Structure__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( Category_Tags__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( Internal_Linking__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE(Blog_Images__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE(Scheduling__c,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE( Keyword_Density__c ,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0)+
+CASE(Creative_Content_Shell__c,
+&apos;0&apos;,0,
+&apos;1&apos;,1,
+0))/10</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Digital QA: Blog Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

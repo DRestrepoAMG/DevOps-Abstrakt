@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_Rollup</fullName>
+    <active>true</active>
+    <description>Rollup score of users reporting to this manager</description>
+    <label>Scorecard Rollup</label>
+    <picklistValues>
+        <picklist>Goal_Rounding__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Rounding</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Summary_Level__c</picklist>
+        <values>
+            <fullName>First Grouping</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Second Grouping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Grouping</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

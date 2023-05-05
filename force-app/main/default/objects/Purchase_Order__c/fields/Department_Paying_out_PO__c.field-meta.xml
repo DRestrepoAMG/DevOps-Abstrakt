@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_Paying_out_PO__c</fullName>
+    <externalId>false</externalId>
+    <label>Approver</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chris Gooding - Cloud Solutions</fullName>
+                <default>false</default>
+                <label>Chris Gooding - Cloud Solutions</label>
+            </value>
+            <value>
+                <fullName>Eric Watkins - Outbound</fullName>
+                <default>false</default>
+                <label>Eric Watkins - Outbound</label>
+            </value>
+            <value>
+                <fullName>Melanie Clark - Culture/Marketing/Collateral/Video</fullName>
+                <default>false</default>
+                <label>Melanie Clark - Culture/Marketing/Collateral/Video</label>
+            </value>
+            <value>
+                <fullName>Brian Condon - Corporate/Facilities/Office Supplies</fullName>
+                <default>false</default>
+                <label>Brian Condon - Corporate/Facilities/Office Supplies</label>
+            </value>
+            <value>
+                <fullName>Alyssa Stevenson - Inbound/Auto</fullName>
+                <default>false</default>
+                <label>Alyssa Stevenson - Inbound/Auto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

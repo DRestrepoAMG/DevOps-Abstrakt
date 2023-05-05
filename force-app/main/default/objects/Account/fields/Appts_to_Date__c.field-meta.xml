@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appts_to_Date__c</fullName>
+    <description>This field is populated by a nightly batch process and represents the total number of contacts associated with this account which have an appointment DevOutcome</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is populated by a nightly batch process and represents the total number of contacts associated with this account which have an appointment DevOutcome</inlineHelpText>
+    <label>Lifetime Appts to Date</label>
+    <precision>9</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

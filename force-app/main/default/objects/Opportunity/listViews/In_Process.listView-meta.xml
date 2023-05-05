@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Process</fullName>
+    <columns>Top_5_Opportunities__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Temperature__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>Referring_PSM_If_Applicable__c</columns>
+    <columns>City_Region__c</columns>
+    <columns>Contact_Name__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Product__c</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Industry__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>jbahn</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>contains</operation>
+        <value>Business Development,Pitching,Verbal,Proposal</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Opportunity.Dealer_Project,Opportunity.Dealer_Recurring_Revenue</value>
+    </filters>
+    <label>Jason Deals Working</label>
+    <sharedTo>
+        <group>Jason</group>
+        <group>John_and_Megan</group>
+        <group>Partner_Sales_Managers</group>
+        <group>Pipeline_Directors</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Linking_Feedback__c</fullName>
+    <defaultValue>&quot;Contains three internal links dispersed evenly throughout the content with keyword-rich anchor text. All external links (if any) open in a new tab. All CTA buttons open to the relevant page.&quot;</defaultValue>
+    <description>Digital QA Scorecard: Blog</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contains three internal links dispersed evenly throughout the content with keyword-rich anchor text. All external links (if any) open in a new tab. All CTA buttons open to the relevant page.</inlineHelpText>
+    <label>Internal Linking Feedback</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

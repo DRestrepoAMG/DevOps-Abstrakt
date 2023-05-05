@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Lost__c</fullName>
+    <description>Denotes the reason an opportunity was lost.</description>
+    <externalId>false</externalId>
+    <label>Reason Lost / Delayed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Canceled - Needs to Reschedule</fullName>
+                <default>false</default>
+                <label>Canceled - Needs to Reschedule</label>
+            </value>
+            <value>
+                <fullName>Cleaning Old Pipeline</fullName>
+                <default>false</default>
+                <label>Cleaning Old Pipeline</label>
+            </value>
+            <value>
+                <fullName>Closed Market</fullName>
+                <default>false</default>
+                <label>Closed Market</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t Want to Grow</fullName>
+                <default>false</default>
+                <label>Don&apos;t Want to Grow</label>
+            </value>
+            <value>
+                <fullName>Engaged</fullName>
+                <default>false</default>
+                <label>Engaged</label>
+            </value>
+            <value>
+                <fullName>Ghosting</fullName>
+                <default>false</default>
+                <label>Ghosting</label>
+            </value>
+            <value>
+                <fullName>Have Too Much Work</fullName>
+                <default>false</default>
+                <label>Have Too Much Work</label>
+            </value>
+            <value>
+                <fullName>Lost - Bad Reviews</fullName>
+                <default>false</default>
+                <label>Lost - Bad Reviews</label>
+            </value>
+            <value>
+                <fullName>Lost - Canceled Signed Agreement</fullName>
+                <default>false</default>
+                <label>Lost - Canceled Signed Agreement</label>
+            </value>
+            <value>
+                <fullName>No Budget</fullName>
+                <default>false</default>
+                <label>No Budget</label>
+            </value>
+            <value>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+                <label>No Interest</label>
+            </value>
+            <value>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <label>No Show</label>
+            </value>
+            <value>
+                <fullName>Not a Fit</fullName>
+                <default>false</default>
+                <label>Not a Fit</label>
+            </value>
+            <value>
+                <fullName>Not KDM</fullName>
+                <default>false</default>
+                <label>Not KDM</label>
+            </value>
+            <value>
+                <fullName>Nurture</fullName>
+                <default>false</default>
+                <label>Nurture</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Proposal - Ghost</fullName>
+                <default>false</default>
+                <label>Proposal - Ghost</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost</fullName>
+                <default>false</default>
+                <label>Proposal - Lost</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost Bad Reviews</fullName>
+                <default>false</default>
+                <label>Proposal - Lost Bad Reviews</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost Closed Market</fullName>
+                <default>false</default>
+                <label>Proposal - Lost Closed Market</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost Ghost</fullName>
+                <default>false</default>
+                <label>Proposal - Lost Ghost</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Proposal - Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>Proposal - Market Closed</fullName>
+                <default>false</default>
+                <label>Proposal - Market Closed</label>
+            </value>
+            <value>
+                <fullName>Read Bad Review</fullName>
+                <default>false</default>
+                <label>Read Bad Review</label>
+            </value>
+            <value>
+                <fullName>Scheduled Next</fullName>
+                <default>false</default>
+                <label>Scheduled Next</label>
+            </value>
+            <value>
+                <fullName>Status Quo</fullName>
+                <default>false</default>
+                <label>Status Quo</label>
+            </value>
+            <value>
+                <fullName>Too Expensive</fullName>
+                <default>false</default>
+                <label>Too Expensive</label>
+            </value>
+            <value>
+                <fullName>Waiting List</fullName>
+                <default>false</default>
+                <label>Waiting List</label>
+            </value>
+            <value>
+                <fullName>Won - Canceled</fullName>
+                <default>false</default>
+                <label>Won - Canceled</label>
+            </value>
+            <value>
+                <fullName>Won - Pushed</fullName>
+                <default>false</default>
+                <label>Won - Pushed</label>
+            </value>
+            <value>
+                <fullName>Won - Rescinded</fullName>
+                <default>false</default>
+                <label>Won - Rescinded</label>
+            </value>
+            <value>
+                <fullName>Submitted Client Rejected</fullName>
+                <default>false</default>
+                <label>Submitted Client Rejected</label>
+            </value>
+            <value>
+                <fullName>Interview Client Rejected</fullName>
+                <default>false</default>
+                <label>Interview Client Rejected</label>
+            </value>
+            <value>
+                <fullName>Interview Candidate Rejected</fullName>
+                <default>false</default>
+                <label>Interview Candidate Rejected</label>
+            </value>
+            <value>
+                <fullName>Client Rejected</fullName>
+                <default>false</default>
+                <label>Client Rejected</label>
+            </value>
+            <value>
+                <fullName>Candidate Rejected</fullName>
+                <default>false</default>
+                <label>Candidate Rejected</label>
+            </value>
+            <value>
+                <fullName>Rejected Submittal</fullName>
+                <default>false</default>
+                <label>Rejected Submittal</label>
+            </value>
+            <value>
+                <fullName>Offer Rejected</fullName>
+                <default>false</default>
+                <label>Offer Rejected</label>
+            </value>
+            <value>
+                <fullName>Moved to Bionic Opportunity</fullName>
+                <default>false</default>
+                <label>Moved to Bionic Opportunity</label>
+            </value>
+            <value>
+                <fullName>Lost - Canceled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lost - Canceled</label>
+            </value>
+            <value>
+                <fullName>Lost - No Show</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lost - No Show</label>
+            </value>
+            <value>
+                <fullName>Proposal - Lost Rescinded Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proposal - Lost Rescinded Agreement</label>
+            </value>
+            <value>
+                <fullName>Scheduled Next Pitch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheduled Next Pitch</label>
+            </value>
+            <value>
+                <fullName>Wait List</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wait List</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Cleaning Old Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Closed Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Ghosting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>No Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>No Interest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>No Show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Not a Fit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Not KDM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Proposal - Ghost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Proposal - Lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Proposal - Market Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Read Bad Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Status Quo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Too Expensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pipeline Cancel Risk</controllingFieldValue>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Cancelled Pipeline</controllingFieldValue>
+            <controllingFieldValue>Not Supported CRM</controllingFieldValue>
+            <valueName>Waiting List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Canceled - Needs to Reschedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nurture</controllingFieldValue>
+            <controllingFieldValue>Lost - Not a Fit</controllingFieldValue>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Don&apos;t Want to Grow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost - Cancelled</controllingFieldValue>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Canceled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Business Development</controllingFieldValue>
+            <valueName>Engaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Have Too Much Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Lost - Canceled Signed Agreement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Nurture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Proposal - Lost Bad Reviews</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Proposal - Lost Closed Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Proposal - Lost Ghost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Proposal - Lost to Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <controllingFieldValue>Business Development</controllingFieldValue>
+            <valueName>Scheduled Next</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Won - Canceled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Won - Pushed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delayed</controllingFieldValue>
+            <valueName>Won - Rescinded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Moved to Bionic Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Submitted Client Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Interview Client Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Interview Candidate Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Client Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Candidate Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Rejected Submittal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Offer Rejected</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

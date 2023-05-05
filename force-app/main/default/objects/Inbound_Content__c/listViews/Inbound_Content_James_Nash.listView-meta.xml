@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Content_James_Nash</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Status__c</columns>
+    <columns>Content_Link__c</columns>
+    <columns>Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Content_Writer__c</field>
+        <operation>equals</operation>
+        <value>James Nash</value>
+    </filters>
+    <label>Inbound Content - James Nash</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

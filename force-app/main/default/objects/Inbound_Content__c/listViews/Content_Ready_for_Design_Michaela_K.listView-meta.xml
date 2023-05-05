@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Ready_for_Design_Michaela_K</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Revisions_Required__c</columns>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Associated_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Designer__c</field>
+        <operation>equals</operation>
+        <value>Michaela Kroner</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Ready for Design,Design Edits,Design QA Edits</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <label>Content Ready for Design - Michaela K</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

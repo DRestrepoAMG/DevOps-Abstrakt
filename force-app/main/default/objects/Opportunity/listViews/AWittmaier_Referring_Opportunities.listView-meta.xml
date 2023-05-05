@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AWittmaier_Referring_Opportunities</fullName>
+    <columns>Referring_PSM_If_Applicable__c</columns>
+    <columns>Referring_PSM_Director__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Temperature__c</columns>
+    <columns>Referred_by_Account__c</columns>
+    <columns>Pitch_1_Result__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>Metro_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Customer Referral,Upsell</value>
+    </filters>
+    <filters>
+        <field>Referring_PSM_If_Applicable__c</field>
+        <operation>equals</operation>
+        <value>Andrew Wittmaier</value>
+    </filters>
+    <label>AWittmaier Referring Opportunities</label>
+    <sharedTo>
+        <group>Maryville_Mad_Dogs</group>
+    </sharedTo>
+</ListView>

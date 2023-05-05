@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_Media_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE( Lead_Generation_Branded__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Client_Voice_Style_Met__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Appropriate_Hashtags__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Spelling_Grammar__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Correct_Links__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( CTA_for_Artist__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0)+
+CASE( Proper_Formatting__c ,
+&apos;1&apos;,1,
+&apos;2&apos;,2,
+0))/14</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Social Media Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

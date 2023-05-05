@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APSM_Email__c</fullName>
+    <description>DELETE FIELD *** Formula was &quot;Account.Assistant_Partner_Sales_Manager__r.Email&quot; 
+but it was eating up one of the Opps 15 unique object references. Updated it for the time being until we can delete this field ( also we already have a PAM Email field)</description>
+    <externalId>false</externalId>
+    <formula>PAM_Email__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>APSM Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metro_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Metro Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aberdeen, SD</fullName>
+                <default>false</default>
+                <label>Aberdeen, SD</label>
+            </value>
+            <value>
+                <fullName>Aberdeen, WA</fullName>
+                <default>false</default>
+                <label>Aberdeen, WA</label>
+            </value>
+            <value>
+                <fullName>Abilene, TX</fullName>
+                <default>false</default>
+                <label>Abilene, TX</label>
+            </value>
+            <value>
+                <fullName>Ada, OK</fullName>
+                <default>false</default>
+                <label>Ada, OK</label>
+            </value>
+            <value>
+                <fullName>AK NONMETROPOLITAN AREA</fullName>
+                <default>false</default>
+                <label>AK NONMETROPOLITAN AREA</label>
+            </value>
+            <value>
+                <fullName>Akron, OH</fullName>
+                <default>false</default>
+                <label>Akron, OH</label>
+            </value>
+            <value>
+                <fullName>Alamogordo, NM</fullName>
+                <default>false</default>
+                <label>Alamogordo, NM</label>
+            </value>
+            <value>
+                <fullName>Albany, GA</fullName>
+                <default>false</default>
+                <label>Albany, GA</label>
+            </value>
+            <value>
+                <fullName>Albany-Schenectady, NY</fullName>
+                <default>false</default>
+                <label>Albany-Schenectady, NY</label>
+            </value>
+            <value>
+                <fullName>Albert Lea, MN</fullName>
+                <default>false</default>
+                <label>Albert Lea, MN</label>
+            </value>
+            <value>
+                <fullName>Albuquerque-Santa Fe-Las Vegas, NM</fullName>
+                <default>false</default>
+                <label>Albuquerque-Santa Fe-Las Vegas, NM</label>
+            </value>
+            <value>
+                <fullName>Alexandria, LA</fullName>
+                <default>false</default>
+                <label>Alexandria, LA</label>
+            </value>
+            <value>
+                <fullName>Alexandria, MN</fullName>
+                <default>false</default>
+                <label>Alexandria, MN</label>
+            </value>
+            <value>
+                <fullName>Allentown-Bethlehem-Easton, PA-NJ</fullName>
+                <default>false</default>
+                <label>Allentown-Bethlehem-Easton, PA-NJ</label>
+            </value>
+            <value>
+                <fullName>Alpena, MI</fullName>
+                <default>false</default>
+                <label>Alpena, MI</label>
+            </value>
+            <value>
+                <fullName>Altoona, PA</fullName>
+                <default>false</default>
+                <label>Altoona, PA</label>
+            </value>
+            <value>
+                <fullName>Altus, OK</fullName>
+                <default>false</default>
+                <label>Altus, OK</label>
+            </value>
+            <value>
+                <fullName>Amarillo-Borger, TX</fullName>
+                <default>false</default>
+                <label>Amarillo-Borger, TX</label>
+            </value>
+            <value>
+                <fullName>Americus, GA</fullName>
+                <default>false</default>
+                <label>Americus, GA</label>
+            </value>
+            <value>
+                <fullName>Ames, IA</fullName>
+                <default>false</default>
+                <label>Ames, IA</label>
+            </value>
+            <value>
+                <fullName>Anderson, IN</fullName>
+                <default>false</default>
+                <label>Anderson, IN</label>
+            </value>
+            <value>
+                <fullName>Anderson, SC</fullName>
+                <default>false</default>
+                <label>Anderson, SC</label>
+            </value>
+            <value>
+                <fullName>Anniston-Oxford-Jacksonville, AL</fullName>
+                <default>false</default>
+                <label>Anniston-Oxford-Jacksonville, AL</label>
+            </value>
+            <value>
+                <fullName>Appleton-Oshkosh-Neenah, WI</fullName>
+                <default>false</default>
+                <label>Appleton-Oshkosh-Neenah, WI</label>
+            </value>
+            <value>
+                <fullName>Ardmore, OK</fullName>
+                <default>false</default>
+                <label>Ardmore, OK</label>
+            </value>
+            <value>
+                <fullName>Arkadelphia, AR</fullName>
+                <default>false</default>
+                <label>Arkadelphia, AR</label>
+            </value>
+            <value>
+                <fullName>Asheville-Brevard, NC</fullName>
+                <default>false</default>
+                <label>Asheville-Brevard, NC</label>
+            </value>
+            <value>
+                <fullName>Athens-Clark County, GA</fullName>
+                <default>false</default>
+                <label>Athens-Clark County, GA</label>
+            </value>
+            <value>
+                <fullName>Atlanta, GA</fullName>
+                <default>false</default>
+                <label>Atlanta, GA</label>
+            </value>
+            <value>
+                <fullName>Atlantic City-Ocean City, NJ</fullName>
+                <default>false</default>
+                <label>Atlantic City-Ocean City, NJ</label>
+            </value>
+            <value>
+                <fullName>Auburn-Opelika, AL</fullName>
+                <default>false</default>
+                <label>Auburn-Opelika, AL</label>
+            </value>
+            <value>
+                <fullName>Augusta-Richmond County, GA-SC</fullName>
+                <default>false</default>
+                <label>Augusta-Richmond County, GA-SC</label>
+            </value>
+            <value>
+                <fullName>Austin-Round Rock, TX</fullName>
+                <default>false</default>
+                <label>Austin-Round Rock, TX</label>
+            </value>
+            <value>
+                <fullName>Bakersfield, CA</fullName>
+                <default>false</default>
+                <label>Bakersfield, CA</label>
+            </value>
+            <value>
+                <fullName>Baltimore-Columbia-Towson, MD</fullName>
+                <default>false</default>
+                <label>Baltimore-Columbia-Towson, MD</label>
+            </value>
+            <value>
+                <fullName>Bangor, ME</fullName>
+                <default>false</default>
+                <label>Bangor, ME</label>
+            </value>
+            <value>
+                <fullName>Barnstable Town, MA</fullName>
+                <default>false</default>
+                <label>Barnstable Town, MA</label>
+            </value>
+            <value>
+                <fullName>Baton Rouge, LA</fullName>
+                <default>false</default>
+                <label>Baton Rouge, LA</label>
+            </value>
+            <value>
+                <fullName>Battle Creek, MI</fullName>
+                <default>false</default>
+                <label>Battle Creek, MI</label>
+            </value>
+            <value>
+                <fullName>Bay City, MI</fullName>
+                <default>false</default>
+                <label>Bay City, MI</label>
+            </value>
+            <value>
+                <fullName>Bellingham, WA</fullName>
+                <default>false</default>
+                <label>Bellingham, WA</label>
+            </value>
+            <value>
+                <fullName>Bend, OR</fullName>
+                <default>false</default>
+                <label>Bend, OR</label>
+            </value>
+            <value>
+                <fullName>Billings, MT</fullName>
+                <default>false</default>
+                <label>Billings, MT</label>
+            </value>
+            <value>
+                <fullName>Birmingham-Hoover-Talladega, AL</fullName>
+                <default>false</default>
+                <label>Birmingham-Hoover-Talladega, AL</label>
+            </value>
+            <value>
+                <fullName>Bismarck, ND</fullName>
+                <default>false</default>
+                <label>Bismarck, ND</label>
+            </value>
+            <value>
+                <fullName>Blacksburg-Christiansburg-Radford, VA</fullName>
+                <default>false</default>
+                <label>Blacksburg-Christiansburg-Radford, VA</label>
+            </value>
+            <value>
+                <fullName>Bloomington, IN</fullName>
+                <default>false</default>
+                <label>Bloomington, IN</label>
+            </value>
+            <value>
+                <fullName>Bloomington-Normal, IL</fullName>
+                <default>false</default>
+                <label>Bloomington-Normal, IL</label>
+            </value>
+            <value>
+                <fullName>Boise City-Mountain Home-Ontario, ID-OR</fullName>
+                <default>false</default>
+                <label>Boise City-Mountain Home-Ontario, ID-OR</label>
+            </value>
+            <value>
+                <fullName>Boston, MA</fullName>
+                <default>false</default>
+                <label>Boston, MA</label>
+            </value>
+            <value>
+                <fullName>Boulder, CO</fullName>
+                <default>false</default>
+                <label>Boulder, CO</label>
+            </value>
+            <value>
+                <fullName>Bowling Green, KY</fullName>
+                <default>false</default>
+                <label>Bowling Green, KY</label>
+            </value>
+            <value>
+                <fullName>Bremerton, Silverdale, WA</fullName>
+                <default>false</default>
+                <label>Bremerton, Silverdale, WA</label>
+            </value>
+            <value>
+                <fullName>Bridgeport-Stamford-New Haven, CT</fullName>
+                <default>false</default>
+                <label>Bridgeport-Stamford-New Haven, CT</label>
+            </value>
+            <value>
+                <fullName>Brunswick, GA</fullName>
+                <default>false</default>
+                <label>Brunswick, GA</label>
+            </value>
+            <value>
+                <fullName>Buffalo, NY</fullName>
+                <default>false</default>
+                <label>Buffalo, NY</label>
+            </value>
+            <value>
+                <fullName>Burlington, NC</fullName>
+                <default>false</default>
+                <label>Burlington, NC</label>
+            </value>
+            <value>
+                <fullName>Burlington-South Burlington, VT</fullName>
+                <default>false</default>
+                <label>Burlington-South Burlington, VT</label>
+            </value>
+            <value>
+                <fullName>Cape Coral-Fort Myers-Naples, FL</fullName>
+                <default>false</default>
+                <label>Cape Coral-Fort Myers-Naples, FL</label>
+            </value>
+            <value>
+                <fullName>Cape Girardeau-Jackson, MO-IL</fullName>
+                <default>false</default>
+                <label>Cape Girardeau-Jackson, MO-IL</label>
+            </value>
+            <value>
+                <fullName>Carson City, NV</fullName>
+                <default>false</default>
+                <label>Carson City, NV</label>
+            </value>
+            <value>
+                <fullName>Casper, WY</fullName>
+                <default>false</default>
+                <label>Casper, WY</label>
+            </value>
+            <value>
+                <fullName>Central Valley, CA</fullName>
+                <default>false</default>
+                <label>Central Valley, CA</label>
+            </value>
+            <value>
+                <fullName>Charleston-Huntington-Ashland, WV-OH-KY</fullName>
+                <default>false</default>
+                <label>Charleston-Huntington-Ashland, WV-OH-KY</label>
+            </value>
+            <value>
+                <fullName>Charleston-North Charleston, SC</fullName>
+                <default>false</default>
+                <label>Charleston-North Charleston, SC</label>
+            </value>
+            <value>
+                <fullName>Charlotte-Concord, NC-SC</fullName>
+                <default>false</default>
+                <label>Charlotte-Concord, NC-SC</label>
+            </value>
+            <value>
+                <fullName>Charlottesville, VA</fullName>
+                <default>false</default>
+                <label>Charlottesville, VA</label>
+            </value>
+            <value>
+                <fullName>Chattanooga-Cleveland-Dalton, TN-GA-AL</fullName>
+                <default>false</default>
+                <label>Chattanooga-Cleveland-Dalton, TN-GA-AL</label>
+            </value>
+            <value>
+                <fullName>Cheyenne, WY</fullName>
+                <default>false</default>
+                <label>Cheyenne, WY</label>
+            </value>
+            <value>
+                <fullName>Chicago-Naperville, IL</fullName>
+                <default>false</default>
+                <label>Chicago-Naperville, IL</label>
+            </value>
+            <value>
+                <fullName>Cincinnati-Wilmington-Maysville, OH-KY-IN</fullName>
+                <default>false</default>
+                <label>Cincinnati-Wilmington-Maysville, OH-KY-IN</label>
+            </value>
+            <value>
+                <fullName>Cleveland, TN</fullName>
+                <default>false</default>
+                <label>Cleveland, TN</label>
+            </value>
+            <value>
+                <fullName>Cleveland-Akron-Canton, OH</fullName>
+                <default>false</default>
+                <label>Cleveland-Akron-Canton, OH</label>
+            </value>
+            <value>
+                <fullName>Colorado Springs, CO</fullName>
+                <default>false</default>
+                <label>Colorado Springs, CO</label>
+            </value>
+            <value>
+                <fullName>Columbia, MO</fullName>
+                <default>false</default>
+                <label>Columbia, MO</label>
+            </value>
+            <value>
+                <fullName>Columbia, SC</fullName>
+                <default>false</default>
+                <label>Columbia, SC</label>
+            </value>
+            <value>
+                <fullName>Columbus, IN</fullName>
+                <default>false</default>
+                <label>Columbus, IN</label>
+            </value>
+            <value>
+                <fullName>Columbus-Marion-Zanesville, OH</fullName>
+                <default>false</default>
+                <label>Columbus-Marion-Zanesville, OH</label>
+            </value>
+            <value>
+                <fullName>Corvalis, OR</fullName>
+                <default>false</default>
+                <label>Corvalis, OR</label>
+            </value>
+            <value>
+                <fullName>Cumberland, MD-WV</fullName>
+                <default>false</default>
+                <label>Cumberland, MD-WV</label>
+            </value>
+            <value>
+                <fullName>Dallas-Fort Worth, TX</fullName>
+                <default>false</default>
+                <label>Dallas-Fort Worth, TX</label>
+            </value>
+            <value>
+                <fullName>Dalton, GA</fullName>
+                <default>false</default>
+                <label>Dalton, GA</label>
+            </value>
+            <value>
+                <fullName>Danville, IL</fullName>
+                <default>false</default>
+                <label>Danville, IL</label>
+            </value>
+            <value>
+                <fullName>Danville, VA</fullName>
+                <default>false</default>
+                <label>Danville, VA</label>
+            </value>
+            <value>
+                <fullName>Dayton-Springfield-Sidney, OH</fullName>
+                <default>false</default>
+                <label>Dayton-Springfield-Sidney, OH</label>
+            </value>
+            <value>
+                <fullName>Decatur, AL</fullName>
+                <default>false</default>
+                <label>Decatur, AL</label>
+            </value>
+            <value>
+                <fullName>Decatur, IL</fullName>
+                <default>false</default>
+                <label>Decatur, IL</label>
+            </value>
+            <value>
+                <fullName>Deltona-Daytona Beach-Ormond Beach, FL</fullName>
+                <default>false</default>
+                <label>Deltona-Daytona Beach-Ormond Beach, FL</label>
+            </value>
+            <value>
+                <fullName>Denver-Aurora, CO</fullName>
+                <default>false</default>
+                <label>Denver-Aurora, CO</label>
+            </value>
+            <value>
+                <fullName>Des Moines-Ames-West Des Moines, IA</fullName>
+                <default>false</default>
+                <label>Des Moines-Ames-West Des Moines, IA</label>
+            </value>
+            <value>
+                <fullName>Detroit-Warren-Ann Arbor, MI</fullName>
+                <default>false</default>
+                <label>Detroit-Warren-Ann Arbor, MI</label>
+            </value>
+            <value>
+                <fullName>Dothan, AL</fullName>
+                <default>false</default>
+                <label>Dothan, AL</label>
+            </value>
+            <value>
+                <fullName>Dover, DE</fullName>
+                <default>false</default>
+                <label>Dover, DE</label>
+            </value>
+            <value>
+                <fullName>Dubuque, IA</fullName>
+                <default>false</default>
+                <label>Dubuque, IA</label>
+            </value>
+            <value>
+                <fullName>Eau Claire, WI</fullName>
+                <default>false</default>
+                <label>Eau Claire, WI</label>
+            </value>
+            <value>
+                <fullName>El Centro, CA</fullName>
+                <default>false</default>
+                <label>El Centro, CA</label>
+            </value>
+            <value>
+                <fullName>Elizabethtown, KY</fullName>
+                <default>false</default>
+                <label>Elizabethtown, KY</label>
+            </value>
+            <value>
+                <fullName>Elkhart-Goshen, IN</fullName>
+                <default>false</default>
+                <label>Elkhart-Goshen, IN</label>
+            </value>
+            <value>
+                <fullName>Elmira, NY</fullName>
+                <default>false</default>
+                <label>Elmira, NY</label>
+            </value>
+            <value>
+                <fullName>El Paso-Las Cruces, TX-NM</fullName>
+                <default>false</default>
+                <label>El Paso-Las Cruces, TX-NM</label>
+            </value>
+            <value>
+                <fullName>Eugene, OR</fullName>
+                <default>false</default>
+                <label>Eugene, OR</label>
+            </value>
+            <value>
+                <fullName>Eugene-Springfield, OR</fullName>
+                <default>false</default>
+                <label>Eugene-Springfield, OR</label>
+            </value>
+            <value>
+                <fullName>Fairbanks, AK</fullName>
+                <default>false</default>
+                <label>Fairbanks, AK</label>
+            </value>
+            <value>
+                <fullName>Farmington, NM</fullName>
+                <default>false</default>
+                <label>Farmington, NM</label>
+            </value>
+            <value>
+                <fullName>Fayetteville, NC</fullName>
+                <default>false</default>
+                <label>Fayetteville, NC</label>
+            </value>
+            <value>
+                <fullName>Flagstaff, AZ</fullName>
+                <default>false</default>
+                <label>Flagstaff, AZ</label>
+            </value>
+            <value>
+                <fullName>Florence, SC</fullName>
+                <default>false</default>
+                <label>Florence, SC</label>
+            </value>
+            <value>
+                <fullName>Florence-Muscle Shoals, AL</fullName>
+                <default>false</default>
+                <label>Florence-Muscle Shoals, AL</label>
+            </value>
+            <value>
+                <fullName>Fond du Lac, WI</fullName>
+                <default>false</default>
+                <label>Fond du Lac, WI</label>
+            </value>
+            <value>
+                <fullName>Fort Collins, CO</fullName>
+                <default>false</default>
+                <label>Fort Collins, CO</label>
+            </value>
+            <value>
+                <fullName>Fort Wayne-Huntington-Auburn, IN</fullName>
+                <default>false</default>
+                <label>Fort Wayne-Huntington-Auburn, IN</label>
+            </value>
+            <value>
+                <fullName>Fresno, CA</fullName>
+                <default>false</default>
+                <label>Fresno, CA</label>
+            </value>
+            <value>
+                <fullName>Gadsden, AL</fullName>
+                <default>false</default>
+                <label>Gadsden, AL</label>
+            </value>
+            <value>
+                <fullName>Gainesville, GA</fullName>
+                <default>false</default>
+                <label>Gainesville, GA</label>
+            </value>
+            <value>
+                <fullName>Glens Falls, NY</fullName>
+                <default>false</default>
+                <label>Glens Falls, NY</label>
+            </value>
+            <value>
+                <fullName>Goldsboro, NC</fullName>
+                <default>false</default>
+                <label>Goldsboro, NC</label>
+            </value>
+            <value>
+                <fullName>Grand Forks, ND-MN</fullName>
+                <default>false</default>
+                <label>Grand Forks, ND-MN</label>
+            </value>
+            <value>
+                <fullName>Grand Junction, CO</fullName>
+                <default>false</default>
+                <label>Grand Junction, CO</label>
+            </value>
+            <value>
+                <fullName>Grand Rapids-Wyoming-Muskegon, MI</fullName>
+                <default>false</default>
+                <label>Grand Rapids-Wyoming-Muskegon, MI</label>
+            </value>
+            <value>
+                <fullName>Great Falls, MT</fullName>
+                <default>false</default>
+                <label>Great Falls, MT</label>
+            </value>
+            <value>
+                <fullName>Greenley, CO</fullName>
+                <default>false</default>
+                <label>Greenley, CO</label>
+            </value>
+            <value>
+                <fullName>Greensboro-Winston-Salem-High Point, NC</fullName>
+                <default>false</default>
+                <label>Greensboro-Winston-Salem-High Point, NC</label>
+            </value>
+            <value>
+                <fullName>Greensboro--Winston-Salem--High Point, NC</fullName>
+                <default>false</default>
+                <label>Greensboro--Winston-Salem--High Point, NC</label>
+            </value>
+            <value>
+                <fullName>Greenville-Anderson-Maudin, SC</fullName>
+                <default>false</default>
+                <label>Greenville-Anderson-Maudin, SC</label>
+            </value>
+            <value>
+                <fullName>Greenville-Spartanburg-Anderson, SC</fullName>
+                <default>false</default>
+                <label>Greenville-Spartanburg-Anderson, SC</label>
+            </value>
+            <value>
+                <fullName>Greenville-Washington, NC</fullName>
+                <default>false</default>
+                <label>Greenville-Washington, NC</label>
+            </value>
+            <value>
+                <fullName>Hagerstown-Martinsburg, MD-WV</fullName>
+                <default>false</default>
+                <label>Hagerstown-Martinsburg, MD-WV</label>
+            </value>
+            <value>
+                <fullName>Hanford-Corcoran, CA</fullName>
+                <default>false</default>
+                <label>Hanford-Corcoran, CA</label>
+            </value>
+            <value>
+                <fullName>Harrisburg-York-Lebanon-Lancastor, PA</fullName>
+                <default>false</default>
+                <label>Harrisburg-York-Lebanon-Lancastor, PA</label>
+            </value>
+            <value>
+                <fullName>Harrisonburg, VA</fullName>
+                <default>false</default>
+                <label>Harrisonburg, VA</label>
+            </value>
+            <value>
+                <fullName>Hartford-West Hartford, CT</fullName>
+                <default>false</default>
+                <label>Hartford-West Hartford, CT</label>
+            </value>
+            <value>
+                <fullName>Hattiesburg, MS</fullName>
+                <default>false</default>
+                <label>Hattiesburg, MS</label>
+            </value>
+            <value>
+                <fullName>Hawaii, HI</fullName>
+                <default>false</default>
+                <label>Hawaii, HI</label>
+            </value>
+            <value>
+                <fullName>Hickory-Lenoir-Morganton, NC</fullName>
+                <default>false</default>
+                <label>Hickory-Lenoir-Morganton, NC</label>
+            </value>
+            <value>
+                <fullName>Hinesville-Fort Stewart, GA</fullName>
+                <default>false</default>
+                <label>Hinesville-Fort Stewart, GA</label>
+            </value>
+            <value>
+                <fullName>Holland-Grand Haven, MI</fullName>
+                <default>false</default>
+                <label>Holland-Grand Haven, MI</label>
+            </value>
+            <value>
+                <fullName>Honolulu, HI</fullName>
+                <default>false</default>
+                <label>Honolulu, HI</label>
+            </value>
+            <value>
+                <fullName>Hot Springs, AR</fullName>
+                <default>false</default>
+                <label>Hot Springs, AR</label>
+            </value>
+            <value>
+                <fullName>Houma-Bayou Cane-Thibodaux, LA</fullName>
+                <default>false</default>
+                <label>Houma-Bayou Cane-Thibodaux, LA</label>
+            </value>
+            <value>
+                <fullName>Houston-The Woodlands, TX</fullName>
+                <default>false</default>
+                <label>Houston-The Woodlands, TX</label>
+            </value>
+            <value>
+                <fullName>Huntsville-Decatur-Albertville, AL</fullName>
+                <default>false</default>
+                <label>Huntsville-Decatur-Albertville, AL</label>
+            </value>
+            <value>
+                <fullName>Idaho Falls, ID</fullName>
+                <default>false</default>
+                <label>Idaho Falls, ID</label>
+            </value>
+            <value>
+                <fullName>Indianapolis-Carmel-Muncie, IN</fullName>
+                <default>false</default>
+                <label>Indianapolis-Carmel-Muncie, IN</label>
+            </value>
+            <value>
+                <fullName>Iowa City, IA</fullName>
+                <default>false</default>
+                <label>Iowa City, IA</label>
+            </value>
+            <value>
+                <fullName>Ithaca, NY</fullName>
+                <default>false</default>
+                <label>Ithaca, NY</label>
+            </value>
+            <value>
+                <fullName>Jackson, MI</fullName>
+                <default>false</default>
+                <label>Jackson, MI</label>
+            </value>
+            <value>
+                <fullName>Jackson, TN</fullName>
+                <default>false</default>
+                <label>Jackson, TN</label>
+            </value>
+            <value>
+                <fullName>Jackson-Vicksburg-Brookhaven, MS</fullName>
+                <default>false</default>
+                <label>Jackson-Vicksburg-Brookhaven, MS</label>
+            </value>
+            <value>
+                <fullName>Jacksonville, NC</fullName>
+                <default>false</default>
+                <label>Jacksonville, NC</label>
+            </value>
+            <value>
+                <fullName>Jacksonville-St. Marys-Palatka, FL-GA</fullName>
+                <default>false</default>
+                <label>Jacksonville-St. Marys-Palatka, FL-GA</label>
+            </value>
+            <value>
+                <fullName>Janesville, WI</fullName>
+                <default>false</default>
+                <label>Janesville, WI</label>
+            </value>
+            <value>
+                <fullName>Jefferson City, MO</fullName>
+                <default>false</default>
+                <label>Jefferson City, MO</label>
+            </value>
+            <value>
+                <fullName>Johnson City, TN</fullName>
+                <default>false</default>
+                <label>Johnson City, TN</label>
+            </value>
+            <value>
+                <fullName>Johnstown, PA</fullName>
+                <default>false</default>
+                <label>Johnstown, PA</label>
+            </value>
+            <value>
+                <fullName>Jonesboro, AR</fullName>
+                <default>false</default>
+                <label>Jonesboro, AR</label>
+            </value>
+            <value>
+                <fullName>Joplin, MO</fullName>
+                <default>false</default>
+                <label>Joplin, MO</label>
+            </value>
+            <value>
+                <fullName>Kankakee-Bradley, IL</fullName>
+                <default>false</default>
+                <label>Kankakee-Bradley, IL</label>
+            </value>
+            <value>
+                <fullName>Kansas City-Overland Park-Kansas City, MO-KS</fullName>
+                <default>false</default>
+                <label>Kansas City-Overland Park-Kansas City, MO-KS</label>
+            </value>
+            <value>
+                <fullName>Kennewick, WA</fullName>
+                <default>false</default>
+                <label>Kennewick, WA</label>
+            </value>
+            <value>
+                <fullName>Kingston, NY</fullName>
+                <default>false</default>
+                <label>Kingston, NY</label>
+            </value>
+            <value>
+                <fullName>Knoxville-Morristown-Sevierville, TN</fullName>
+                <default>false</default>
+                <label>Knoxville-Morristown-Sevierville, TN</label>
+            </value>
+            <value>
+                <fullName>Kokomo, IN</fullName>
+                <default>false</default>
+                <label>Kokomo, IN</label>
+            </value>
+            <value>
+                <fullName>La Crosse, WI-MN</fullName>
+                <default>false</default>
+                <label>La Crosse, WI-MN</label>
+            </value>
+            <value>
+                <fullName>Lafayette, IN</fullName>
+                <default>false</default>
+                <label>Lafayette, IN</label>
+            </value>
+            <value>
+                <fullName>Lafayette-Opelousas-Morgan City, LA</fullName>
+                <default>false</default>
+                <label>Lafayette-Opelousas-Morgan City, LA</label>
+            </value>
+            <value>
+                <fullName>Lake Charles, LA</fullName>
+                <default>false</default>
+                <label>Lake Charles, LA</label>
+            </value>
+            <value>
+                <fullName>Lake Havasu City-Kingman, AZ</fullName>
+                <default>false</default>
+                <label>Lake Havasu City-Kingman, AZ</label>
+            </value>
+            <value>
+                <fullName>Lakeland, FL</fullName>
+                <default>false</default>
+                <label>Lakeland, FL</label>
+            </value>
+            <value>
+                <fullName>Lakeland-Winter Haven, FL</fullName>
+                <default>false</default>
+                <label>Lakeland-Winter Haven, FL</label>
+            </value>
+            <value>
+                <fullName>Lancaster, PA</fullName>
+                <default>false</default>
+                <label>Lancaster, PA</label>
+            </value>
+            <value>
+                <fullName>Las Cruces, NM</fullName>
+                <default>false</default>
+                <label>Las Cruces, NM</label>
+            </value>
+            <value>
+                <fullName>Las Vegas-Henderson, NV-AZ</fullName>
+                <default>false</default>
+                <label>Las Vegas-Henderson, NV-AZ</label>
+            </value>
+            <value>
+                <fullName>Lawrence, KS</fullName>
+                <default>false</default>
+                <label>Lawrence, KS</label>
+            </value>
+            <value>
+                <fullName>Lawton, OK</fullName>
+                <default>false</default>
+                <label>Lawton, OK</label>
+            </value>
+            <value>
+                <fullName>Lebanon, PA</fullName>
+                <default>false</default>
+                <label>Lebanon, PA</label>
+            </value>
+            <value>
+                <fullName>Lewiston, ID-WA</fullName>
+                <default>false</default>
+                <label>Lewiston, ID-WA</label>
+            </value>
+            <value>
+                <fullName>Lexington-Fayette--Richmond--Frankfort, KY</fullName>
+                <default>false</default>
+                <label>Lexington-Fayette--Richmond--Frankfort, KY</label>
+            </value>
+            <value>
+                <fullName>Lima, OH</fullName>
+                <default>false</default>
+                <label>Lima, OH</label>
+            </value>
+            <value>
+                <fullName>Little Rock-North Little Rock, AR</fullName>
+                <default>false</default>
+                <label>Little Rock-North Little Rock, AR</label>
+            </value>
+            <value>
+                <fullName>Logan, UT-ID</fullName>
+                <default>false</default>
+                <label>Logan, UT-ID</label>
+            </value>
+            <value>
+                <fullName>Longview, TX</fullName>
+                <default>false</default>
+                <label>Longview, TX</label>
+            </value>
+            <value>
+                <fullName>Longview, WA</fullName>
+                <default>false</default>
+                <label>Longview, WA</label>
+            </value>
+            <value>
+                <fullName>Los Angeles-Long Beach-Anaheim, CA</fullName>
+                <default>false</default>
+                <label>Los Angeles-Long Beach-Anaheim, CA</label>
+            </value>
+            <value>
+                <fullName>Louisville/Jefferson County-Elizabethtown-Madison, KY-IN</fullName>
+                <default>false</default>
+                <label>Louisville/Jefferson County-Elizabethtown-Madison, KY-IN</label>
+            </value>
+            <value>
+                <fullName>Lynchburg, VA</fullName>
+                <default>false</default>
+                <label>Lynchburg, VA</label>
+            </value>
+            <value>
+                <fullName>Madera, CA</fullName>
+                <default>false</default>
+                <label>Madera, CA</label>
+            </value>
+            <value>
+                <fullName>Madison-Janesville-Beloit, WI</fullName>
+                <default>false</default>
+                <label>Madison-Janesville-Beloit, WI</label>
+            </value>
+            <value>
+                <fullName>Manchester -Concord - Portsmouth - Nashua, NH</fullName>
+                <default>false</default>
+                <label>Manchester -Concord - Portsmouth - Nashua, NH</label>
+            </value>
+            <value>
+                <fullName>Manhattan, KS</fullName>
+                <default>false</default>
+                <label>Manhattan, KS</label>
+            </value>
+            <value>
+                <fullName>Mankato-North Mankato, MN</fullName>
+                <default>false</default>
+                <label>Mankato-North Mankato, MN</label>
+            </value>
+            <value>
+                <fullName>Mansfield, OH</fullName>
+                <default>false</default>
+                <label>Mansfield, OH</label>
+            </value>
+            <value>
+                <fullName>McAllen-Edinburg, TX</fullName>
+                <default>false</default>
+                <label>McAllen-Edinburg, TX</label>
+            </value>
+            <value>
+                <fullName>Medford, OR</fullName>
+                <default>false</default>
+                <label>Medford, OR</label>
+            </value>
+            <value>
+                <fullName>Memphis-Forrest City, TN-MS-AR</fullName>
+                <default>false</default>
+                <label>Memphis-Forrest City, TN-MS-AR</label>
+            </value>
+            <value>
+                <fullName>Miami-Fort Lauderdale, FL</fullName>
+                <default>false</default>
+                <label>Miami-Fort Lauderdale, FL</label>
+            </value>
+            <value>
+                <fullName>Michigan City-La Porte, IN</fullName>
+                <default>false</default>
+                <label>Michigan City-La Porte, IN</label>
+            </value>
+            <value>
+                <fullName>Midland, TX</fullName>
+                <default>false</default>
+                <label>Midland, TX</label>
+            </value>
+            <value>
+                <fullName>Milwaukee-Racine-Waukesha, WI</fullName>
+                <default>false</default>
+                <label>Milwaukee-Racine-Waukesha, WI</label>
+            </value>
+            <value>
+                <fullName>Minneapolis-St. Paul, MN-WI</fullName>
+                <default>false</default>
+                <label>Minneapolis-St. Paul, MN-WI</label>
+            </value>
+            <value>
+                <fullName>Missoula, MT</fullName>
+                <default>false</default>
+                <label>Missoula, MT</label>
+            </value>
+            <value>
+                <fullName>Monroe, LA</fullName>
+                <default>false</default>
+                <label>Monroe, LA</label>
+            </value>
+            <value>
+                <fullName>Monroe, MI</fullName>
+                <default>false</default>
+                <label>Monroe, MI</label>
+            </value>
+            <value>
+                <fullName>Morgantown, WV</fullName>
+                <default>false</default>
+                <label>Morgantown, WV</label>
+            </value>
+            <value>
+                <fullName>Morristown, TN</fullName>
+                <default>false</default>
+                <label>Morristown, TN</label>
+            </value>
+            <value>
+                <fullName>Mount Vernon-Anacortes, WA</fullName>
+                <default>false</default>
+                <label>Mount Vernon-Anacortes, WA</label>
+            </value>
+            <value>
+                <fullName>Muncie, IN</fullName>
+                <default>false</default>
+                <label>Muncie, IN</label>
+            </value>
+            <value>
+                <fullName>Muskegon-Norton Shores, MI</fullName>
+                <default>false</default>
+                <label>Muskegon-Norton Shores, MI</label>
+            </value>
+            <value>
+                <fullName>Myrtle Beach-Conway-North Myrtle Beach, SC-NC</fullName>
+                <default>false</default>
+                <label>Myrtle Beach-Conway-North Myrtle Beach, SC-NC</label>
+            </value>
+            <value>
+                <fullName>Napa, CA</fullName>
+                <default>false</default>
+                <label>Napa, CA</label>
+            </value>
+            <value>
+                <fullName>Nashville-Davidson-Murfreesboro, TN</fullName>
+                <default>false</default>
+                <label>Nashville-Davidson-Murfreesboro, TN</label>
+            </value>
+            <value>
+                <fullName>New Haven-Milford, CT</fullName>
+                <default>false</default>
+                <label>New Haven-Milford, CT</label>
+            </value>
+            <value>
+                <fullName>New Orleans-Metairie-Hammond, LA-MS</fullName>
+                <default>false</default>
+                <label>New Orleans-Metairie-Hammond, LA-MS</label>
+            </value>
+            <value>
+                <fullName>New York 5 Boroughs</fullName>
+                <default>false</default>
+                <label>New York 5 Boroughs</label>
+            </value>
+            <value>
+                <fullName>New York - Central New Jersey</fullName>
+                <default>false</default>
+                <label>New York - Central New Jersey</label>
+            </value>
+            <value>
+                <fullName>New York Long Island</fullName>
+                <default>false</default>
+                <label>New York Long Island</label>
+            </value>
+            <value>
+                <fullName>New York - Northern New Jersey</fullName>
+                <default>false</default>
+                <label>New York - Northern New Jersey</label>
+            </value>
+            <value>
+                <fullName>New York - West Chester</fullName>
+                <default>false</default>
+                <label>New York - West Chester</label>
+            </value>
+            <value>
+                <fullName>New York - Yonkers - Poughkeepsie - Woodstock, NY</fullName>
+                <default>false</default>
+                <label>New York - Yonkers - Poughkeepsie - Woodstock, NY</label>
+            </value>
+            <value>
+                <fullName>Niles-Benton Harbor, MI</fullName>
+                <default>false</default>
+                <label>Niles-Benton Harbor, MI</label>
+            </value>
+            <value>
+                <fullName>NM NONMETROPOLITAN AREA</fullName>
+                <default>false</default>
+                <label>NM NONMETROPOLITAN AREA</label>
+            </value>
+            <value>
+                <fullName>North Port-Sarasota, FL</fullName>
+                <default>false</default>
+                <label>North Port-Sarasota, FL</label>
+            </value>
+            <value>
+                <fullName>Oakland-Fairfield-Martinez, CA</fullName>
+                <default>false</default>
+                <label>Oakland-Fairfield-Martinez, CA</label>
+            </value>
+            <value>
+                <fullName>Ocean City, NJ</fullName>
+                <default>false</default>
+                <label>Ocean City, NJ</label>
+            </value>
+            <value>
+                <fullName>Odessa, TX</fullName>
+                <default>false</default>
+                <label>Odessa, TX</label>
+            </value>
+            <value>
+                <fullName>Ogden-Clearfield, UT</fullName>
+                <default>false</default>
+                <label>Ogden-Clearfield, UT</label>
+            </value>
+            <value>
+                <fullName>Oklahoma City-Shawnee, OK</fullName>
+                <default>false</default>
+                <label>Oklahoma City-Shawnee, OK</label>
+            </value>
+            <value>
+                <fullName>Olympia, Tumwater, WA</fullName>
+                <default>false</default>
+                <label>Olympia, Tumwater, WA</label>
+            </value>
+            <value>
+                <fullName>Omaha-Council Bluffs-Fremont, NE-IA</fullName>
+                <default>false</default>
+                <label>Omaha-Council Bluffs-Fremont, NE-IA</label>
+            </value>
+            <value>
+                <fullName>Orlando-Deltona-Daytona Beach, FL</fullName>
+                <default>false</default>
+                <label>Orlando-Deltona-Daytona Beach, FL</label>
+            </value>
+            <value>
+                <fullName>Oshkosh-Neenah, WI</fullName>
+                <default>false</default>
+                <label>Oshkosh-Neenah, WI</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Owensboro, KY</fullName>
+                <default>false</default>
+                <label>Owensboro, KY</label>
+            </value>
+            <value>
+                <fullName>Oxnard-Thousand Oaks-Ventura, CA</fullName>
+                <default>false</default>
+                <label>Oxnard-Thousand Oaks-Ventura, CA</label>
+            </value>
+            <value>
+                <fullName>Palm Bay-Melbourne-Titusville, FL</fullName>
+                <default>false</default>
+                <label>Palm Bay-Melbourne-Titusville, FL</label>
+            </value>
+            <value>
+                <fullName>Palm Coast, FL</fullName>
+                <default>false</default>
+                <label>Palm Coast, FL</label>
+            </value>
+            <value>
+                <fullName>Panama City-Lynn Haven, FL</fullName>
+                <default>false</default>
+                <label>Panama City-Lynn Haven, FL</label>
+            </value>
+            <value>
+                <fullName>Parkersburg-Marietta-Vienna, WV-OH</fullName>
+                <default>false</default>
+                <label>Parkersburg-Marietta-Vienna, WV-OH</label>
+            </value>
+            <value>
+                <fullName>Pascagoula, MS</fullName>
+                <default>false</default>
+                <label>Pascagoula, MS</label>
+            </value>
+            <value>
+                <fullName>Philadelphia-Reading-Camden, PA-NJ-DE-MD</fullName>
+                <default>false</default>
+                <label>Philadelphia-Reading-Camden, PA-NJ-DE-MD</label>
+            </value>
+            <value>
+                <fullName>Phoenix-Mesa-Scottsdale, AZ</fullName>
+                <default>false</default>
+                <label>Phoenix-Mesa-Scottsdale, AZ</label>
+            </value>
+            <value>
+                <fullName>Pine Bluff, AR</fullName>
+                <default>false</default>
+                <label>Pine Bluff, AR</label>
+            </value>
+            <value>
+                <fullName>Pittsburgh-New Castle-Weirton, PA-OH-WV</fullName>
+                <default>false</default>
+                <label>Pittsburgh-New Castle-Weirton, PA-OH-WV</label>
+            </value>
+            <value>
+                <fullName>Pittsfield, MA</fullName>
+                <default>false</default>
+                <label>Pittsfield, MA</label>
+            </value>
+            <value>
+                <fullName>Pocatello, ID</fullName>
+                <default>false</default>
+                <label>Pocatello, ID</label>
+            </value>
+            <value>
+                <fullName>Portland-Lewiston-South Portland, ME</fullName>
+                <default>false</default>
+                <label>Portland-Lewiston-South Portland, ME</label>
+            </value>
+            <value>
+                <fullName>Portland-Vancouver-Salem, OR-WA</fullName>
+                <default>false</default>
+                <label>Portland-Vancouver-Salem, OR-WA</label>
+            </value>
+            <value>
+                <fullName>Poughkeepsie-Newburgh-Middletown, NY</fullName>
+                <default>false</default>
+                <label>Poughkeepsie-Newburgh-Middletown, NY</label>
+            </value>
+            <value>
+                <fullName>Prescott, AZ</fullName>
+                <default>false</default>
+                <label>Prescott, AZ</label>
+            </value>
+            <value>
+                <fullName>Providence-Warwick, RI-MA</fullName>
+                <default>false</default>
+                <label>Providence-Warwick, RI-MA</label>
+            </value>
+            <value>
+                <fullName>Pueblo, CO</fullName>
+                <default>false</default>
+                <label>Pueblo, CO</label>
+            </value>
+            <value>
+                <fullName>Punta Gorda, FL</fullName>
+                <default>false</default>
+                <label>Punta Gorda, FL</label>
+            </value>
+            <value>
+                <fullName>Racine, WI</fullName>
+                <default>false</default>
+                <label>Racine, WI</label>
+            </value>
+            <value>
+                <fullName>Raleigh-Durham-Chapel Hill, NC</fullName>
+                <default>false</default>
+                <label>Raleigh-Durham-Chapel Hill, NC</label>
+            </value>
+            <value>
+                <fullName>Rapid City, SD</fullName>
+                <default>false</default>
+                <label>Rapid City, SD</label>
+            </value>
+            <value>
+                <fullName>Redding, CA</fullName>
+                <default>false</default>
+                <label>Redding, CA</label>
+            </value>
+            <value>
+                <fullName>Reno, NV</fullName>
+                <default>false</default>
+                <label>Reno, NV</label>
+            </value>
+            <value>
+                <fullName>Richmond, VA</fullName>
+                <default>false</default>
+                <label>Richmond, VA</label>
+            </value>
+            <value>
+                <fullName>Riverside-San Bernardino-Ontario, CA</fullName>
+                <default>false</default>
+                <label>Riverside-San Bernardino-Ontario, CA</label>
+            </value>
+            <value>
+                <fullName>Roanoke, VA</fullName>
+                <default>false</default>
+                <label>Roanoke, VA</label>
+            </value>
+            <value>
+                <fullName>Rochester, MN</fullName>
+                <default>false</default>
+                <label>Rochester, MN</label>
+            </value>
+            <value>
+                <fullName>Rochester-Batavia-Seneca Falls, NY</fullName>
+                <default>false</default>
+                <label>Rochester-Batavia-Seneca Falls, NY</label>
+            </value>
+            <value>
+                <fullName>Rocky Mount, NC</fullName>
+                <default>false</default>
+                <label>Rocky Mount, NC</label>
+            </value>
+            <value>
+                <fullName>Rome, GA</fullName>
+                <default>false</default>
+                <label>Rome, GA</label>
+            </value>
+            <value>
+                <fullName>Sacramento-Roseville, CA</fullName>
+                <default>false</default>
+                <label>Sacramento-Roseville, CA</label>
+            </value>
+            <value>
+                <fullName>Saginaw-Midland-Bay City, MI</fullName>
+                <default>false</default>
+                <label>Saginaw-Midland-Bay City, MI</label>
+            </value>
+            <value>
+                <fullName>Salisbury, MD-DE</fullName>
+                <default>false</default>
+                <label>Salisbury, MD-DE</label>
+            </value>
+            <value>
+                <fullName>Salt Lake City-Provo-Orem, UT</fullName>
+                <default>false</default>
+                <label>Salt Lake City-Provo-Orem, UT</label>
+            </value>
+            <value>
+                <fullName>San Angelo, TX</fullName>
+                <default>false</default>
+                <label>San Angelo, TX</label>
+            </value>
+            <value>
+                <fullName>San Antonio-New Braunfels, TX</fullName>
+                <default>false</default>
+                <label>San Antonio-New Braunfels, TX</label>
+            </value>
+            <value>
+                <fullName>San Diego-Carlsbad, CA</fullName>
+                <default>false</default>
+                <label>San Diego-Carlsbad, CA</label>
+            </value>
+            <value>
+                <fullName>Sandusky, OH</fullName>
+                <default>false</default>
+                <label>Sandusky, OH</label>
+            </value>
+            <value>
+                <fullName>San Francisco, CA</fullName>
+                <default>false</default>
+                <label>San Francisco, CA</label>
+            </value>
+            <value>
+                <fullName>San Jose, CA</fullName>
+                <default>false</default>
+                <label>San Jose, CA</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz – Monterey Bay, CA</fullName>
+                <default>false</default>
+                <label>Santa Cruz – Monterey Bay, CA</label>
+            </value>
+            <value>
+                <fullName>Santa Fe, NM</fullName>
+                <default>false</default>
+                <label>Santa Fe, NM</label>
+            </value>
+            <value>
+                <fullName>Santa Rosa-San Rafael-Napa-Lakeport, CA</fullName>
+                <default>false</default>
+                <label>Santa Rosa-San Rafael-Napa-Lakeport, CA</label>
+            </value>
+            <value>
+                <fullName>Sarasota-Bradenton-Venice, FL</fullName>
+                <default>false</default>
+                <label>Sarasota-Bradenton-Venice, FL</label>
+            </value>
+            <value>
+                <fullName>Scranton-Wilkes-Barre-Hazleton, PA</fullName>
+                <default>false</default>
+                <label>Scranton-Wilkes-Barre-Hazleton, PA</label>
+            </value>
+            <value>
+                <fullName>Seattle-Tacoma, WA</fullName>
+                <default>false</default>
+                <label>Seattle-Tacoma, WA</label>
+            </value>
+            <value>
+                <fullName>Sebastian-Vero Beach, FL</fullName>
+                <default>false</default>
+                <label>Sebastian-Vero Beach, FL</label>
+            </value>
+            <value>
+                <fullName>Sheboygan, WI</fullName>
+                <default>false</default>
+                <label>Sheboygan, WI</label>
+            </value>
+            <value>
+                <fullName>Sherman-Denison, TX</fullName>
+                <default>false</default>
+                <label>Sherman-Denison, TX</label>
+            </value>
+            <value>
+                <fullName>Sioux City, IA-NE-SD</fullName>
+                <default>false</default>
+                <label>Sioux City, IA-NE-SD</label>
+            </value>
+            <value>
+                <fullName>South Bend-Elkhart-Mishawaka, IN-MI</fullName>
+                <default>false</default>
+                <label>South Bend-Elkhart-Mishawaka, IN-MI</label>
+            </value>
+            <value>
+                <fullName>Spartanburg, SC</fullName>
+                <default>false</default>
+                <label>Spartanburg, SC</label>
+            </value>
+            <value>
+                <fullName>Spokane-Spokane Valley-Coeur d&apos;Alene, WA-ID</fullName>
+                <default>false</default>
+                <label>Spokane-Spokane Valley-Coeur d&apos;Alene, WA-ID</label>
+            </value>
+            <value>
+                <fullName>Springfield, IL</fullName>
+                <default>false</default>
+                <label>Springfield, IL</label>
+            </value>
+            <value>
+                <fullName>Springfield, OH</fullName>
+                <default>false</default>
+                <label>Springfield, OH</label>
+            </value>
+            <value>
+                <fullName>Springfield-Greenfield Town, MA</fullName>
+                <default>false</default>
+                <label>Springfield-Greenfield Town, MA</label>
+            </value>
+            <value>
+                <fullName>St. Cloud, MN</fullName>
+                <default>false</default>
+                <label>St. Cloud, MN</label>
+            </value>
+            <value>
+                <fullName>St. George, UT</fullName>
+                <default>false</default>
+                <label>St. George, UT</label>
+            </value>
+            <value>
+                <fullName>St. Joseph, MO-KS</fullName>
+                <default>false</default>
+                <label>St. Joseph, MO-KS</label>
+            </value>
+            <value>
+                <fullName>St. Louis-St. Charles-Farmington, MO-IL</fullName>
+                <default>false</default>
+                <label>St. Louis-St. Charles-Farmington, MO-IL</label>
+            </value>
+            <value>
+                <fullName>State College, PA</fullName>
+                <default>false</default>
+                <label>State College, PA</label>
+            </value>
+            <value>
+                <fullName>Stockton-Modesto, CA</fullName>
+                <default>false</default>
+                <label>Stockton-Modesto, CA</label>
+            </value>
+            <value>
+                <fullName>Sumter, SC</fullName>
+                <default>false</default>
+                <label>Sumter, SC</label>
+            </value>
+            <value>
+                <fullName>Syracuse-Auburn, NY</fullName>
+                <default>false</default>
+                <label>Syracuse-Auburn, NY</label>
+            </value>
+            <value>
+                <fullName>Tampa-St. Petersburg-Clearwater, FL</fullName>
+                <default>false</default>
+                <label>Tampa-St. Petersburg-Clearwater, FL</label>
+            </value>
+            <value>
+                <fullName>Terre Haute, IN</fullName>
+                <default>false</default>
+                <label>Terre Haute, IN</label>
+            </value>
+            <value>
+                <fullName>Texarkana, TX-Texarkana, AR</fullName>
+                <default>false</default>
+                <label>Texarkana, TX-Texarkana, AR</label>
+            </value>
+            <value>
+                <fullName>Toledo-Port Clinton, OH</fullName>
+                <default>false</default>
+                <label>Toledo-Port Clinton, OH</label>
+            </value>
+            <value>
+                <fullName>Tucson-Nogales, AZ</fullName>
+                <default>false</default>
+                <label>Tucson-Nogales, AZ</label>
+            </value>
+            <value>
+                <fullName>Tulsa-Muskogee-Bartlesville, OK</fullName>
+                <default>false</default>
+                <label>Tulsa-Muskogee-Bartlesville, OK</label>
+            </value>
+            <value>
+                <fullName>Valdosta, GA</fullName>
+                <default>false</default>
+                <label>Valdosta, GA</label>
+            </value>
+            <value>
+                <fullName>Victoria, TX</fullName>
+                <default>false</default>
+                <label>Victoria, TX</label>
+            </value>
+            <value>
+                <fullName>Vineland-Millville-Bridgeton, NJ</fullName>
+                <default>false</default>
+                <label>Vineland-Millville-Bridgeton, NJ</label>
+            </value>
+            <value>
+                <fullName>Virginia Beach-Norfolk, VA-NC</fullName>
+                <default>false</default>
+                <label>Virginia Beach-Norfolk, VA-NC</label>
+            </value>
+            <value>
+                <fullName>Warner Robins, GA</fullName>
+                <default>false</default>
+                <label>Warner Robins, GA</label>
+            </value>
+            <value>
+                <fullName>Washington-Arlington-Alexandria, DC-VA-MD-WV</fullName>
+                <default>false</default>
+                <label>Washington-Arlington-Alexandria, DC-VA-MD-WV</label>
+            </value>
+            <value>
+                <fullName>Waterloo-Cedar Falls, IA</fullName>
+                <default>false</default>
+                <label>Waterloo-Cedar Falls, IA</label>
+            </value>
+            <value>
+                <fullName>Wausau, WI</fullName>
+                <default>false</default>
+                <label>Wausau, WI</label>
+            </value>
+            <value>
+                <fullName>Weirton-Steubenville, WV-OH</fullName>
+                <default>false</default>
+                <label>Weirton-Steubenville, WV-OH</label>
+            </value>
+            <value>
+                <fullName>Wenatchee, WA</fullName>
+                <default>false</default>
+                <label>Wenatchee, WA</label>
+            </value>
+            <value>
+                <fullName>West Palm Beach - Melbourne FL</fullName>
+                <default>false</default>
+                <label>West Palm Beach - Melbourne FL</label>
+            </value>
+            <value>
+                <fullName>Wheeling, WV-OH</fullName>
+                <default>false</default>
+                <label>Wheeling, WV-OH</label>
+            </value>
+            <value>
+                <fullName>Wichita-Arkansas City-Winfield, KS</fullName>
+                <default>false</default>
+                <label>Wichita-Arkansas City-Winfield, KS</label>
+            </value>
+            <value>
+                <fullName>Wichita Falls, TX</fullName>
+                <default>false</default>
+                <label>Wichita Falls, TX</label>
+            </value>
+            <value>
+                <fullName>Williamsport, PA</fullName>
+                <default>false</default>
+                <label>Williamsport, PA</label>
+            </value>
+            <value>
+                <fullName>Wilmington, NC</fullName>
+                <default>false</default>
+                <label>Wilmington, NC</label>
+            </value>
+            <value>
+                <fullName>Winchester, VA-WV</fullName>
+                <default>false</default>
+                <label>Winchester, VA-WV</label>
+            </value>
+            <value>
+                <fullName>Winston-Salem, NC</fullName>
+                <default>false</default>
+                <label>Winston-Salem, NC</label>
+            </value>
+            <value>
+                <fullName>Worcester, MA</fullName>
+                <default>false</default>
+                <label>Worcester, MA</label>
+            </value>
+            <value>
+                <fullName>Yakima, WA</fullName>
+                <default>false</default>
+                <label>Yakima, WA</label>
+            </value>
+            <value>
+                <fullName>Youngstown-Warren, OH-PA</fullName>
+                <default>false</default>
+                <label>Youngstown-Warren, OH-PA</label>
+            </value>
+            <value>
+                <fullName>Yuba City, CA</fullName>
+                <default>false</default>
+                <label>Yuba City, CA</label>
+            </value>
+            <value>
+                <fullName>Yuma, AZ</fullName>
+                <default>false</default>
+                <label>Yuma, AZ</label>
+            </value>
+            <value>
+                <fullName>Coeur d&apos;Alene, ID</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coeur d&apos;Alene, ID</label>
+            </value>
+            <value>
+                <fullName>Durham, NC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Durham, NC</label>
+            </value>
+            <value>
+                <fullName>New York-Newark-Jersey City, NY-NJ-PA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New York-Newark-Jersey City, NY-NJ-PA</label>
+            </value>
+            <value>
+                <fullName>Provo-Orem, UT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Provo-Orem, UT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

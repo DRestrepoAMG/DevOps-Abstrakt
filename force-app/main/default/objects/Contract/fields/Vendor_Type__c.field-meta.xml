@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hardware &amp; Tangible Property (laptops, headphones, monitors)</fullName>
+                <default>false</default>
+                <label>Hardware &amp; Tangible Property (laptops, headphones, monitors)</label>
+            </value>
+            <value>
+                <fullName>Office/Facilities (repairs, maintenance, rent, office supplies)</fullName>
+                <default>false</default>
+                <label>Office/Facilities (repairs, maintenance, rent, office supplies)</label>
+            </value>
+            <value>
+                <fullName>Professional Services (legal, 401k, payroll)</fullName>
+                <default>false</default>
+                <label>Professional Services (legal, 401k, payroll)</label>
+            </value>
+            <value>
+                <fullName>Software/Technology (servicing clients)</fullName>
+                <default>false</default>
+                <label>Software/Technology (servicing clients)</label>
+            </value>
+            <value>
+                <fullName>Sub-Contractors (servicing clients)</fullName>
+                <default>false</default>
+                <label>Sub-Contractors (servicing clients)</label>
+            </value>
+            <value>
+                <fullName>Software/Technology, Sub-Contractors (servicing clients)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Software/Technology, Sub-Contractors (servicing clients)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Satisfaction_Index_Less_than_4</fullName>
+    <active>true</active>
+    <description>Must enter a Path to Better Score if less than 4.</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Customer_Satisfaction_Index_CSI__c, &quot;3&quot;),
+ISPICKVAL(Customer_Satisfaction_Index_CSI__c, &quot;2&quot;),
+ISPICKVAL(Customer_Satisfaction_Index_CSI__c,  &quot;1&quot;)),
+
+ Path_to_Better_Score__c = &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Path_to_Better_Score__c</errorDisplayField>
+    <errorMessage>Must enter a Path to Better Score if less than 4.</errorMessage>
+</ValidationRule>

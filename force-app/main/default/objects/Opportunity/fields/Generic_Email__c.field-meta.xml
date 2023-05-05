@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generic_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(CONTAINS(Main_Contact_Email__c  , &apos;gmail&apos;) ,
+CONTAINS(Main_Contact_Email__c  ,&apos;att&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;ymail&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;cox&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;msn&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;netscape&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;yahoo&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;verizon&apos;),
+CONTAINS(Main_Contact_Email__c  , &apos;comcast&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;aol&apos;),
+CONTAINS(Main_Contact_Email__c ,&apos;sbcglobal&apos;),
+CONTAINS(Main_Contact_Email__c  ,&apos;bellsouth&apos;),
+CONTAINS(Main_Contact_Email__c  , &apos;hotmail&apos;),
+CONTAINS(Main_Contact_Email__c  , &apos;outlook&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Generic Email</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abstrakt_Studios_Video_Opps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Industry__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Product__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Group_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>equals</operation>
+        <value>David Lemon,Neil Erker,Tom Blood</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won,Lost</value>
+    </filters>
+    <label>Creative Sweets - Video Opps</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

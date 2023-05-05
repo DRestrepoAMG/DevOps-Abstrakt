@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Collateral_PM_Content_QA_ALL</fullName>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Designer__c</columns>
+    <columns>Associated_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Project Manager QA</value>
+    </filters>
+    <filters>
+        <field>Outbound_Asset_Manager__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>Video</value>
+    </filters>
+    <label>Marketing Collateral - PM Content QA ALL</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

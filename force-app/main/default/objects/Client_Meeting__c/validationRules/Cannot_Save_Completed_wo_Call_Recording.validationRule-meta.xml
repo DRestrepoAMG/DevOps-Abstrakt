@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Save_Completed_wo_Call_Recording</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordTypeId  &lt;&gt; &quot;01IG0000002g1Dh&quot; ,RecordTypeId  &lt;&gt; &quot;0124w000001Yq91&quot; , Call_Recording_Link__c = &apos;&apos;,  ISPICKVAL(Status__c, &apos;Completed&apos;),  RecordTypeId &lt;&gt; &apos;012G0000001Qbtj&apos;, RecordTypeId &lt;&gt; &apos;0124A000001Qc48&apos;,RecordTypeId &lt;&gt; &apos;0124A000001Qc6E&apos;,RecordTypeId &lt;&gt; &apos;0124A000001UTu8&apos;)</errorConditionFormula>
+    <errorMessage>Please put call recording link before marking completed.</errorMessage>
+</ValidationRule>

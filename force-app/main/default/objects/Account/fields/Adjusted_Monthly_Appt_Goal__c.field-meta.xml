@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjusted_Monthly_Appt_Goal__c</fullName>
+    <description>This number identifies that number of appointments that we need per month to hit the annual goal.  It will account for months that we came up short.</description>
+    <externalId>false</externalId>
+    <formula>CEILING( ABS(of_Appts_Needed_by_End_of_Contract__c / Number_of_Months_Left_in_Contract__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This number identifies that number of appointments that we need per month to hit the annual goal.  It will account for months that we came up short.</inlineHelpText>
+    <label>Adjusted Monthly Appt Goal</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

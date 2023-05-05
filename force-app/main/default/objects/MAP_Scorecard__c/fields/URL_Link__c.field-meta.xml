@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL_Link__c</fullName>
+    <description>1)Used to include a link in automated emails.
+2)Used In Process Audit as a reference to the record/process being scored</description>
+    <externalId>false</externalId>
+    <inlineHelpText>PROCESS AUDIT: link to the record/process being audited
+COPYWRITERS / STRATEGISTS: Alchemer URL Link</inlineHelpText>
+    <label>URL Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_in_Content_Writing</fullName>
+    <columns>NAME</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Countdown_to_Auto_Approval__c</columns>
+    <columns>Content_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Writing Content</value>
+    </filters>
+    <label>Content in Content Writing</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

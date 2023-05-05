@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Qualifiers_if_marked_as_Won</fullName>
+    <active>false</active>
+    <description>This requires qualifiers to be populated if Stage is being marked as &quot;Won.&quot;</description>
+    <errorConditionFormula>AND(ISPICKVAL(StageName, &quot;Won&quot;),
+
+Appointment_Qualifiers_in_Proposal__c = &quot;&quot;,  (RecordTypeId &lt;&gt; &quot;012G0000000qd32&quot;),
+(RecordTypeId &lt;&gt; &quot;012G0000001QbU9&quot;),(RecordTypeId &lt;&gt; &quot;012G0000000qERd&quot;),RecordTypeId &lt;&gt; &quot;0124A000001gz3W&quot;, RecordTypeId &lt;&gt; &quot;0124A000001gz6B&quot;,
+
+Owner.Profile.Name &lt;&gt; &quot;Pipeline Client User&quot;)</errorConditionFormula>
+    <errorMessage>Qualifiers  are required to save as Won.</errorMessage>
+</ValidationRule>

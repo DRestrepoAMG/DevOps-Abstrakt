@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Day_to_Rescind_Required</fullName>
+    <active>true</active>
+    <description>Update with date when &quot;Can Rescind during Implementation&quot; = Yes</description>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+ISPICKVAL( Can_Rescind_during_Implementation__c, &quot;Yes&quot;) ,
+ISBLANK(Last_day_to_Rescind__c)
+)</errorConditionFormula>
+    <errorDisplayField>Last_day_to_Rescind__c</errorDisplayField>
+    <errorMessage>&quot;Last Day to Rescind&quot; cannot be blank if &quot;Can Rescind during Implementation&quot; = Yes</errorMessage>
+</ValidationRule>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (ISPICKVAL(Status__c, &quot;Canceled&quot;),
+IF (Number_of_Days_Before_Cancel__c &lt; 0, &quot;Implementation&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 30, &quot;Month 1&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 60, &quot;Month 2&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 90, &quot;Month 3&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 120, &quot;Month 4&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 150, &quot;Month 5&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 180, &quot;Month 6&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 210, &quot;Month 7&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 240, &quot;Month 8&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 270, &quot;Month 9&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 300, &quot;Month 10&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 330, &quot;Month 11&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 365, &quot;Month 12&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 390, &quot;Year 2 Month 1&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 420, &quot;Year 2 Month 2&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 450, &quot;Year 2 Month 3&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 480, &quot;Year 2 Month 4&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 510, &quot;Year 2 Month 5&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 540, &quot;Year 2 Month 6&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 570, &quot;Year 2 Month 7&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 600, &quot;Year 2 Month 8&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 630, &quot;Year 2 Month 9&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 660, &quot;Year 2 Month 10&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 690, &quot;Year 2 Month 11&quot;,
+IF (Number_of_Days_Before_Cancel__c&lt;= 720, &quot;Year 2 Month 12&quot;,
+&quot;Over 2 Years&quot;))))))))))))))))))))))))),
+IF (Number_of_Days_Live__c &lt; 0, &quot;A. Implementation&quot;,
+IF (Number_of_Days_Live__c &lt;= 30, &quot;B. Month 1&quot;,
+IF (Number_of_Days_Live__c &lt;= 60, &quot;C. Month 2&quot;,
+IF (Number_of_Days_Live__c &lt;= 90, &quot;D. Month 3&quot;,
+IF (Number_of_Days_Live__c &lt;= 120, &quot;E. Month 4&quot;,
+IF (Number_of_Days_Live__c &lt;= 150, &quot;F. Month 5&quot;,
+IF (Number_of_Days_Live__c &lt;= 180, &quot;G. Month 6&quot;,
+IF (Number_of_Days_Live__c &lt;= 210, &quot;H. Month 7&quot;,
+IF (Number_of_Days_Live__c &lt;= 240, &quot;I. Month 8&quot;,
+IF (Number_of_Days_Live__c &lt;= 270, &quot;J. Month 9&quot;,
+IF (Number_of_Days_Live__c &lt;= 300, &quot;K. Month 10&quot;,
+IF (Number_of_Days_Live__c &lt;= 330, &quot;L. Month 11&quot;, 
+IF (Number_of_Days_Live__c &lt;= 365, &quot;M. Month 12&quot;,
+IF (Number_of_Days_Live__c &lt;= 390, &quot;N. Year 2 Month 1&quot;,
+IF (Number_of_Days_Live__c &lt;= 420, &quot;O. Year 2 Month 2&quot;,
+IF (Number_of_Days_Live__c &lt;= 450, &quot;P. Year 2 Month 3&quot;,
+IF (Number_of_Days_Live__c &lt;= 480, &quot;Q. Year 2 Month 4&quot;,
+IF (Number_of_Days_Live__c &lt;= 510, &quot;R. Year 2 Month 5&quot;,
+IF (Number_of_Days_Live__c &lt;= 540, &quot;S. Year 2 Month 6&quot;,
+IF (Number_of_Days_Live__c &lt;= 570, &quot;T. Year 2 Month 7&quot;,
+IF (Number_of_Days_Live__c &lt;= 600, &quot;U. Year 2 Month 8&quot;,
+IF (Number_of_Days_Live__c &lt;= 630, &quot;V. Year 2 Month 9&quot;,
+IF (Number_of_Days_Live__c &lt;= 660, &quot;W. Year 2 Month 10&quot;,
+IF (Number_of_Days_Live__c &lt;= 690, &quot;X. Year 2 Month 11&quot;,
+IF (Number_of_Days_Live__c &lt;= 720, &quot;Y. Year 2 Month 12&quot;, 
+&quot;Z. Over 2 Years&quot;))))))))))))))))))))))))))</formula>
+    <inlineHelpText>This shows what month they are in within their contract.</inlineHelpText>
+    <label>Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

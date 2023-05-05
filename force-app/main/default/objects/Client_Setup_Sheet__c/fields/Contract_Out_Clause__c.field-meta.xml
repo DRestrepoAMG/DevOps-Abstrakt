@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Out_Clause__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Out Clause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30 Day Out</fullName>
+                <default>false</default>
+                <label>30 Day Out</label>
+            </value>
+            <value>
+                <fullName>45-Day Out</fullName>
+                <default>false</default>
+                <label>45-Day Out</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In</fullName>
+                <default>false</default>
+                <label>Annual Lock-In</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In – 6 Month Out</fullName>
+                <default>false</default>
+                <label>Annual Lock-In – 6 Month Out</label>
+            </value>
+            <value>
+                <fullName>45 Day Out</fullName>
+                <default>false</default>
+                <label>45 Day Out</label>
+            </value>
+            <value>
+                <fullName>Full Term Lock</fullName>
+                <default>false</default>
+                <label>Full Term Lock</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In with 6 Months Live, No Guarantee 45-Day Out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Annual Lock-In with 6 Months Live, No Guarantee 45-Day Out</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

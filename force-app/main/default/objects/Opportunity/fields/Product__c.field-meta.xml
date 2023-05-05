@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bionic SDR</fullName>
+                <default>false</default>
+                <label>Bionic SDR</label>
+            </value>
+            <value>
+                <fullName>Creative Services</fullName>
+                <default>false</default>
+                <label>Creative Services</label>
+            </value>
+            <value>
+                <fullName>Pipeline Auto</fullName>
+                <default>false</default>
+                <label>Pipeline Auto</label>
+            </value>
+            <value>
+                <fullName>Pipeline Inbound</fullName>
+                <default>false</default>
+                <label>Pipeline Inbound</label>
+            </value>
+            <value>
+                <fullName>Pipeline Management</fullName>
+                <default>false</default>
+                <label>Pipeline Management</label>
+            </value>
+            <value>
+                <fullName>Pipeline Outbound</fullName>
+                <default>false</default>
+                <label>Pipeline Outbound</label>
+            </value>
+            <value>
+                <fullName>Salesforce Consulting</fullName>
+                <default>false</default>
+                <label>Salesforce Consulting</label>
+            </value>
+            <value>
+                <fullName>Salesforce Integration</fullName>
+                <default>false</default>
+                <label>Salesforce Integration</label>
+            </value>
+            <value>
+                <fullName>Staffing MRR</fullName>
+                <default>false</default>
+                <label>Staffing MRR</label>
+            </value>
+            <value>
+                <fullName>Staffing Project</fullName>
+                <default>false</default>
+                <label>Staffing Project</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <label>Video Production</label>
+            </value>
+            <value>
+                <fullName>Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <label>Virtual Marketing Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

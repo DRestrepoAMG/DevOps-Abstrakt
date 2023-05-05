@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appt_Deficit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(((Percent_of_Contract_Complete__c * Yearly_Appt_Goal__c) - (Percent_to_Annual_Appt_Goal__c * Yearly_Appt_Goal__c)) &gt; 0,
+    (CEILING(Percent_of_Contract_Complete__c * Yearly_Appt_Goal__c) - (Percent_to_Annual_Appt_Goal__c * Yearly_Appt_Goal__c)), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText># of Appointments need by end of contract</inlineHelpText>
+    <label>Appt Deficit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

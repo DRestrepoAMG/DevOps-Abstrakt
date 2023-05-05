@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value__c</fullName>
+    <description>Used to provide increased information to better inform the team when creating inbound content.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Always keep in mind the value of similar blogs &amp; pages when planning a topic. If the values are too similar then our content runs the risk of duplicating content and self-cannibalization.
+Answer to the question “why would someone read this blog/page?
+What information, insight, or industry knowledge are we providing in this topic to support our goal?</inlineHelpText>
+    <label>Value</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

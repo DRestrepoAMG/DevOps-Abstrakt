@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Inbound_Client_Setup_Sheet</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>New Inbound Client Setup Sheet</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/a3U/e?
+&amp;CF00NG000000FIA3L={!Opportunity.Name}
+&amp;Name={!Opportunity.Name}
+&amp;00NG000000FIA3a={!Opportunity.Main_Contact_Name__c}
+&amp;00NG000000FIA3f={!Opportunity.Main_Contact_Phone__c}
+&amp;00NG000000FIA3k={!Opportunity.Main_Contact_Email__c}
+&amp;00NG000000FIA44={!Opportunity.Website__c}
+&amp;CF00NG000000FIA4J={!Opportunity.OwnerFullName}
+&amp;CF00NG000000FIA4T={!Opportunity.Opportunity_Generated_By__c}
+&amp;00NG000000FIA4Y={!Opportunity.Contract_Execution_Date__c}
+&amp;00NG000000FIA49={!Opportunity.Industry__c}
+&amp;00NG000000FWUOt={!Opportunity.Product__c}
+&amp;00NG000000FIAGy={!Opportunity.Referring_PSM_If_Applicable__c}
+&amp;00NG000000FIA4i={!Opportunity.Amount}
+&amp;00NG000000FIA4n={!Opportunity.Amount}
+&amp;00NG000000FIA3Q={!Opportunity.Mailing_Street__c}
+&amp;00NG000000FIA3V={!Opportunity.Phone__c}
+&amp;00NG000000FWUOt={!Opportunity.Product__c}
+&amp;00NG000000FIA4E=Agency
+&amp;RecordType=012G0000001QbUY</url>
+</WebLink>

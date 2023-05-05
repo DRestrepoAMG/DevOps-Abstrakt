@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Business_Forms</fullName>
+    <columns>NAME</columns>
+    <columns>PSR_Name__c</columns>
+    <columns>Approved__c</columns>
+    <columns>Accounting_Processed__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Requirement_Sheet__c.Closed_Business_Bonus_Form</value>
+    </filters>
+    <filters>
+        <field>Date_of_Close__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH,LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>Approved__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>Approved Closed Business Forms</label>
+    <sharedTo>
+        <role>Accounting_General</role>
+        <role>Senior_Operations_Manager</role>
+    </sharedTo>
+</ListView>

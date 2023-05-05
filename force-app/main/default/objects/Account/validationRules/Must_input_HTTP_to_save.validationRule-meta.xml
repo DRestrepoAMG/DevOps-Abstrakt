@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_input_HTTP_to_save</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(BEGINS(LOWER(Website),&apos;http&apos; )), RecordTypeId = &apos;012A0000000kZbF&apos;)  &amp;&amp; ISCHANGED(Website)</errorConditionFormula>
+    <errorMessage>Must include HTTP to save website.</errorMessage>
+</ValidationRule>

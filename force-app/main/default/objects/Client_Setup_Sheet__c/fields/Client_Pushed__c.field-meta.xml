@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Pushed__c</fullName>
+    <description>If the Original Contract Start Date field is not blank and the Original Contract Start Date value does not equal to the Contract start date, the checkbox is marked TRUE to indicate this client has pushed.</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(NOT(ISBLANK(Original_Contract_Start_Date__c)),Original_Contract_Start_Date__c&lt;&gt;Contract_Start_Date__c),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If the Original Contract Start Date field is not blank and the Original Contract Start Date value does not equal to the Contract start date, the checkbox is marked TRUE to indicate this client has pushed.</inlineHelpText>
+    <label>Client Pushed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

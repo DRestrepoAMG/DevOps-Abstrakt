@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <description>Hold CTRL and select if you are choosing multiple departments.</description>
+    <externalId>false</externalId>
+    <label>Departments using Product/Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR</fullName>
+                <default>false</default>
+                <label>Bionic SDR</label>
+            </value>
+            <value>
+                <fullName>Cloud Solutions</fullName>
+                <default>false</default>
+                <label>Cloud Solutions</label>
+            </value>
+            <value>
+                <fullName>Creative Services</fullName>
+                <default>false</default>
+                <label>Creative Services</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Inbound SDR</fullName>
+                <default>false</default>
+                <label>Inbound SDR</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Culture</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Culture</label>
+            </value>
+            <value>
+                <fullName>Outbound SDR</fullName>
+                <default>false</default>
+                <label>Outbound SDR</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Talent Solutions</fullName>
+                <default>false</default>
+                <label>Talent Solutions</label>
+            </value>
+            <value>
+                <fullName>Executive Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Executive Sales</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Video</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing &amp; Video</label>
+            </value>
+            <value>
+                <fullName>Marketing Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing Services</label>
+            </value>
+            <value>
+                <fullName>Outbound Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound Operations</label>
+            </value>
+            <value>
+                <fullName>Outbound Pipeline</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound Pipeline</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Technology &amp; Cloud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Technology &amp; Cloud</label>
+            </value>
+            <value>
+                <fullName>Training &amp; Recruiting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Training &amp; Recruiting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL_Structure_Feedback__c</fullName>
+    <defaultValue>&quot;Slug is 6 words or less and contains no redundancies when looking at the full URL.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Slug is 6 words or less and contains no redundancies when looking at the full URL.</inlineHelpText>
+    <label>URL Structure Feedback</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

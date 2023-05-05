@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Market_View</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Industry__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Delayed,Lost</value>
+    </filters>
+    <filters>
+        <field>Reason_Lost__c</field>
+        <operation>equals</operation>
+        <value>Closed Market</value>
+    </filters>
+    <label>Closed Market View</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

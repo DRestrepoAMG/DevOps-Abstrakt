@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Pitch_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the close meeting date only when one has been scheduled.</inlineHelpText>
+    <label>Secondary Pitch Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

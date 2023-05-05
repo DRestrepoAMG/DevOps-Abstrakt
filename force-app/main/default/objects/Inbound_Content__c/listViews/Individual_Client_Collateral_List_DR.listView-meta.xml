@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individual_Client_Collateral_List_DR</fullName>
+    <columns>Account__c</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Collateral_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Topic__c</columns>
+    <columns>Designer__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Published_Link__c</columns>
+    <columns>Content_Link_Internal_Only__c</columns>
+    <columns>Status__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Inbound_Content</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notContain</operation>
+        <value>Client Cancelled</value>
+    </filters>
+    <filters>
+        <field>Associated_Project__c</field>
+        <operation>contains</operation>
+        <value>Connor Construction</value>
+    </filters>
+    <label>Individual Client Collateral List - DR</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delayed_Deals_to_September</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Callback_Date__c</columns>
+    <columns>City_Region__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Notes__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>Abstrakt Marketing Group</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Delayed</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Pipeline Outbound</value>
+    </filters>
+    <filters>
+        <field>Follow_up_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>10/16/2019</value>
+    </filters>
+    <filters>
+        <field>Reason_Lost__c</field>
+        <operation>notContain</operation>
+        <value>CLOSED</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notContain</operation>
+        <value>,commercial real estate,AT&amp;T,IT,copy/print,telecom</value>
+    </filters>
+    <label>Delayed Deals to September</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+    </sharedTo>
+</ListView>

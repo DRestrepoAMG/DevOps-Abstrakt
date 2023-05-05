@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abstrakt_Automotive_Sales</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Contact__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Callback_Date__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Pitch_1_Result__c</columns>
+    <columns>Task__c</columns>
+    <columns>Number_of_Attempts__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Mailing_State__c</columns>
+    <columns>Pitch_2_Result__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Automotive</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Davis</value>
+    </filters>
+    <label>Abstrakt Automotive Sales</label>
+    <sharedTo>
+        <role>Executive_Sales_Rep</role>
+    </sharedTo>
+</ListView>

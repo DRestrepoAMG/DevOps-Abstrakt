@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Client_Accounts_pipeline</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Reply_To_Email_Address__c</columns>
+    <columns>Prospekt_Process__c</columns>
+    <columns>Billed_Amount__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Metro__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Account_Name_to_be_Used_in_Appt_Emails__c</columns>
+    <columns>Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>Working_for_Free__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>JLeising</value>
+    </filters>
+    <label>Active Client Accounts pipeline</label>
+</ListView>

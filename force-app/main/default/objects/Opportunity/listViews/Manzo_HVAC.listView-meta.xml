@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manzo_HVAC</fullName>
+    <columns>Top_5_Opportunities__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Pitch_1_Result__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>City_Region__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Number_of_Available_Programs__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Main_Contact_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Industry__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Expected_Close_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>detroit,pittsburgh,atlanta,el paso,houston,miami,minneapolis,raleigh</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>HVAC</value>
+    </filters>
+    <label>Manzo HVAC</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

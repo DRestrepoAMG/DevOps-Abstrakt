@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Items_Outstanding__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Managers checks box to indicate action items are outstanding. Employee unchecks box when action items are complete.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Managers checks box to indicate action items are outstanding. Employee unchecks box when action items are complete.</inlineHelpText>
+    <label>Action Items Outstanding</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Setup_Sheet_Error</fullName>
+    <active>true</active>
+    <description>Validation rule to give the salesreps an error when trying to save client setup sheets instead of John</description>
+    <errorConditionFormula>AND( Client_Setup_Sheet_Completed__c = TRUE , 
+ OR(ISPICKVAL(Product__c,&apos;Pipeline Outbound&apos;),
+ISPICKVAL(Product__c,&apos;Pipeline Management&apos;)), 
+OR(
+ISNULL(Amount),
+ISNULL(Metro_Area__c),
+ISNULL(CloseDate ), 
+ISNULL(Contract_Execution_Date__c),
+ISBLANK(Appointment_Qualifiers_in_Proposal__c),
+ISBLANK(Abstrakt_Services_Included__c ), 
+AND(
+ ISBLANK(Minimum_Number_of_Appts__c ),
+CONTAINS(TEXT(Contract_Type__c), &apos;Appt Guarantee&apos;)), 
+ISBLANK(Pricebook2.Name)),
+AND(
+RecordTypeId = &quot;012G0000000qERi&quot;),
+NOT(ISPICKVAL( StageName ,&apos;Won&apos;)))</errorConditionFormula>
+    <errorMessage>Must complete all of the fields before completing client setup sheet</errorMessage>
+</ValidationRule>

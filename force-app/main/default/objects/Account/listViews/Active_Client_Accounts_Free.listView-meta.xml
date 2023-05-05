@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Client_Accounts_Free</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Monthly_Appt_Goal__c</columns>
+    <columns>Inside_Sales_Manager__c</columns>
+    <columns>Working_for_Free__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Prospekt_Process__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Pipeline_Process__c</columns>
+    <columns>New_Email_System__c</columns>
+    <columns>Billed_Amount__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Metro__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Signing,Active,On Hold,Canceled</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>abstrakt,test</value>
+    </filters>
+    <filters>
+        <field>Working_for_Free__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active Client Accounts (Free)</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

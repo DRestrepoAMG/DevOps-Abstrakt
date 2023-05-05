@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Communication_from_VMM__c</fullName>
+    <defaultValue>&quot;As Tyler/Nate has mentioned before, we will be meeting monthly to discuss your inbound metrics. These meetings are a time for us to dive into the website metrics, discuss what’s working well and where we can improve, and adjust the overall strategy for growth.&quot; +SUBSTITUTE($Label.NewLine,&quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine,&quot;-&quot;, &quot;&quot;)+
+&quot;(For Inbound/Outbound: Typically, we will meet during your existing Outbound meetings so our internal teams can be aware of both sides of the account and you don’t have to worry about attending two meetings.) Outside of the people on this call/your existing Outbound meeting, are there any other team members you’d like me to add on that invitation?&quot; +SUBSTITUTE($Label.NewLine,&quot;-&quot;, &quot;&quot;)
++SUBSTITUTE($Label.NewLine,&quot;-&quot;, &quot;&quot;)+
+&quot;(Inbound Only: Perfect! Let’s go ahead and set up a time next month for us to meet)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Communication from DSM</label>
+    <length>2500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

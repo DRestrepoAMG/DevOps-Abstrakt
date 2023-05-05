@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_Up_to_Close</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Follow Up to Close</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://na11.salesforce.com/00U/e?
+evt3={!Opportunity.Name}&amp;
+evt5=Follow Up to Close&amp;
+00NG000000EhV97&amp;
+evt2={!Opportunity.Contact__c}&amp;
+RecordType=012G0000000qd4K&amp;ent=Event</url>
+</WebLink>

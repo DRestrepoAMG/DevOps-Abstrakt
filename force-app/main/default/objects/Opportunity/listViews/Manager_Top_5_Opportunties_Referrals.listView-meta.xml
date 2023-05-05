@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Top_5_Opportunties_Referrals</fullName>
+    <columns>Referring_PSM_Director__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Manager_Top_5__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Expected_Close_Date__c</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>Budget__c</columns>
+    <columns>Authority__c</columns>
+    <columns>Pain__c</columns>
+    <columns>Timeframe__c</columns>
+    <columns>Verbal__c</columns>
+    <columns>Next_Step_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notContain</operation>
+        <value>won</value>
+    </filters>
+    <filters>
+        <field>Manager_Top_5__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Referring_PSM_If_Applicable__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Manager Top 5 Opportunties - Referrals</label>
+</ListView>

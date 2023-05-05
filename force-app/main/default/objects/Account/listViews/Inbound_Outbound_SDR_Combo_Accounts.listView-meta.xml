@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Outbound_SDR_Combo_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Copywriter__c</columns>
+    <columns>Billed_Amount__c</columns>
+    <columns>Contract_URL__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Account_Management_Notes__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Kickoff_Meeting_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Abstrakt,test</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Signing,Implementing,Active,Pending Cancellation</value>
+    </filters>
+    <filters>
+        <field>Virtual_Marketing_Manager__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Inbound &amp; Outbound SDR Combo Accounts</label>
+</ListView>

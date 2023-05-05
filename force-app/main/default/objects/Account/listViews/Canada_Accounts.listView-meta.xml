@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Accounts</fullName>
+    <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Metro__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Exclusivity__c</columns>
+    <columns>Exclusivity_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>contains</operation>
+        <value>ON,Ontario,AB,Alberta,BC,British Columbia,MB,Manitoba,QC,Quebec,Toronto</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Pipeline_Client</value>
+    </filters>
+    <filters>
+        <field>Metro__c</field>
+        <operation>contains</operation>
+        <value>Canada</value>
+    </filters>
+    <label>Canada Accounts</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+    </sharedTo>
+</ListView>

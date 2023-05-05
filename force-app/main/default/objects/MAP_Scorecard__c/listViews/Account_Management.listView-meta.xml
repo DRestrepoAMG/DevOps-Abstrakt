@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Management</fullName>
+    <columns>Employee__c</columns>
+    <columns>NAME</columns>
+    <columns>Action_Items_Outstanding__c</columns>
+    <columns>Audited_By__c</columns>
+    <columns>Status__c</columns>
+    <columns>Audited_Date__c</columns>
+    <columns>Completed_Date__c</columns>
+    <columns>Account_Management_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>MAP_Scorecard__c.Account_Management</value>
+    </filters>
+    <label>Account Management</label>
+    <sharedTo>
+        <role>Data_Analyst</role>
+        <role>Director_of_Data_Analytics</role>
+    </sharedTo>
+</ListView>

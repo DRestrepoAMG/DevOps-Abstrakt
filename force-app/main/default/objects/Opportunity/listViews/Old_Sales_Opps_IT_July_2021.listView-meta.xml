@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Sales_Opps_IT_July_2021</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Top_5_Opportunities__c</columns>
+    <columns>Manager_Top_5__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Industry__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>Los Angeles,5,San Diego,Salt Lake</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <label>Old Sales Opps - IT July 2021</label>
+    <sharedTo>
+        <role>SDR</role>
+        <role>SDR_Manager</role>
+    </sharedTo>
+</ListView>

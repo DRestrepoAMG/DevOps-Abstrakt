@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Pushed__c</fullName>
+    <description>The box will be checked if the meeting scheduled date doesn&apos;t equal meeting held date.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR( Meeting_Rescheduled_For__c&lt; Meeting_Held_Date__c ,Meeting_Scheduled_For__c &lt; Meeting_Held_Date__c ),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meeting Pushed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

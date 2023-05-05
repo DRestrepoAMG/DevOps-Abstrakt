@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text_Opt_in_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Client_Cell_Number_for_SMS__c</columns>
+    <columns>Client_Cell_Number_for_SMS_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Client_Cell_Number_for_SMS__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>AMG,Abstrakt</value>
+    </filters>
+    <label>Text Opt-in Accounts</label>
+</ListView>

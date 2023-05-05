@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_Cant_be_in_the_Past</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( 
+AND(
+CloseDate &lt; TODAY(),
+ Client_Setup_Sheet_Completed__c = TRUE),
+AND(
+ ISCHANGED(CloseDate), 
+CloseDate &lt; TODAY(),
+Client_Setup_Sheet_Completed__c = TRUE))</errorConditionFormula>
+    <errorMessage>Close Date can&apos;t be in the past.</errorMessage>
+</ValidationRule>

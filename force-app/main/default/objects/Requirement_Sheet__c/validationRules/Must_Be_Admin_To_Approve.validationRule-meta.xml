@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Be_Admin_To_Approve</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL(Approved__c, &quot;Yes&quot;),
+$Profile.Name &lt;&gt; &apos;Project Team Leader&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;Salesforce Admin&apos;, 
+$Profile.Name &lt;&gt; &apos;Executive Admin&apos;,
+$Profile.Name &lt;&gt; &apos;Digital Project Manager&apos;,
+$Profile.Name &lt;&gt; &apos;Agency Director&apos;,
+$Profile.Name &lt;&gt; &apos;Social Media Manager&apos;,
+$Profile.Name &lt;&gt; &apos;Project Team Member&apos;,
+$Profile.Name &lt;&gt; &apos;Accounting Generalist&apos;)</errorConditionFormula>
+    <errorMessage>DO NOT HAVE PRIVILEGE TO APPROVE</errorMessage>
+</ValidationRule>

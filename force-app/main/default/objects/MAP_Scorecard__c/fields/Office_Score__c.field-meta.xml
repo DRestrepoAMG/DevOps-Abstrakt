@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE( Proactive__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)+
+CASE( Friendliness__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)+
+CASE( Solution_Oriented__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)+
+CASE( Shuttle_Experience__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)+
+CASE(First_Impression__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)+
+CASE(Incomplete_Cases__c,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0))/
+(30-(CASE(Proactive__c ,
+&quot;NA&quot;,5,0)+
+CASE(Friendliness__c ,
+&quot;NA&quot;,5,0)+
+CASE(Solution_Oriented__c,
+&quot;NA&quot;,5,0)+
+CASE(Shuttle_Experience__c ,
+&quot;NA&quot;,5,0)+
+CASE(First_Impression__c ,
+&quot;NA&quot;,5,0)+
+CASE(Incomplete_Cases__c,
+&quot;NA&quot;,5,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Office Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

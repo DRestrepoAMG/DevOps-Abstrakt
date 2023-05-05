@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projected_Cancel_Notice_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is used by the PSM to predict when a client is likely to give us notice of cancellation.</inlineHelpText>
+    <label>Projected Cancel Notice Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

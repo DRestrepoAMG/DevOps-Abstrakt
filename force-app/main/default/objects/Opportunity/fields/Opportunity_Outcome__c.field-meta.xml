@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Opportunity_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstrakt Competitor</fullName>
+                <default>false</default>
+                <label>Abstrakt Competitor</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Additional Authority</fullName>
+                <default>false</default>
+                <label>Additional Authority</label>
+            </value>
+            <value>
+                <fullName>B to C</fullName>
+                <default>false</default>
+                <label>B to C</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Check Budget</fullName>
+                <default>false</default>
+                <label>Check Budget</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Completed - No Interest</fullName>
+                <default>false</default>
+                <label>Completed - No Interest</label>
+            </value>
+            <value>
+                <fullName>Ghost</fullName>
+                <default>false</default>
+                <label>Ghost</label>
+            </value>
+            <value>
+                <fullName>Internal Competition</fullName>
+                <default>false</default>
+                <label>Internal Competition</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>Market Closed</fullName>
+                <default>false</default>
+                <label>Market Closed</label>
+            </value>
+            <value>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+                <label>Market Research</label>
+            </value>
+            <value>
+                <fullName>No ROI</fullName>
+                <default>false</default>
+                <label>No ROI</label>
+            </value>
+            <value>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <label>No Show</label>
+            </value>
+            <value>
+                <fullName>Not a Fit (B to C)</fullName>
+                <default>false</default>
+                <label>Not a Fit (B to C)</label>
+            </value>
+            <value>
+                <fullName>Not in Budget</fullName>
+                <default>false</default>
+                <label>Not in Budget</label>
+            </value>
+            <value>
+                <fullName>Not KDM</fullName>
+                <default>false</default>
+                <label>Not KDM</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Proposal – Ghost</fullName>
+                <default>false</default>
+                <label>Proposal – Ghost</label>
+            </value>
+            <value>
+                <fullName>References</fullName>
+                <default>false</default>
+                <label>References</label>
+            </value>
+            <value>
+                <fullName>Think About It</fullName>
+                <default>false</default>
+                <label>Think About It</label>
+            </value>
+            <value>
+                <fullName>Too Expensive</fullName>
+                <default>false</default>
+                <label>Too Expensive</label>
+            </value>
+            <value>
+                <fullName>Won</fullName>
+                <default>false</default>
+                <label>Won</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Interested</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Not a Fit</controllingFieldValue>
+            <valueName>Abstrakt Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not a Fit</controllingFieldValue>
+            <valueName>B to C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not a Fit</controllingFieldValue>
+            <valueName>No ROI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <valueName>Ghost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Internal Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Market Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Not in Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Proposal – Ghost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost (Nurture)</controllingFieldValue>
+            <valueName>Too Expensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Next Step</controllingFieldValue>
+            <valueName>Additional Authority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Next Step</controllingFieldValue>
+            <valueName>Check Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Next Step</controllingFieldValue>
+            <valueName>Market Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Next Step</controllingFieldValue>
+            <valueName>References</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Next Step</controllingFieldValue>
+            <valueName>Think About It</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <valueName>Active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <valueName>Lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposal</controllingFieldValue>
+            <valueName>Won</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Completed</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Completed</controllingFieldValue>
+            <valueName>No Show</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Completed</controllingFieldValue>
+            <valueName>Not a Fit (B to C)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Completed</controllingFieldValue>
+            <valueName>Not KDM</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

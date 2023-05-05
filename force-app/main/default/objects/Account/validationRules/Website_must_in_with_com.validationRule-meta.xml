@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_must_in_with_com</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(IF(CONTAINS(RIGHT(Website,1),&apos;/&apos;),TRUE,FALSE),RecordTypeId = &apos;012A0000000kZbF&apos;) &amp;&amp; ISCHANGED(Website)</errorConditionFormula>
+    <errorMessage>Website must end in .com</errorMessage>
+</ValidationRule>

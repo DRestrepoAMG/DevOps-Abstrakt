@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abstrakt_Interest__c</fullName>
+    <description>This is used on the contact us form page on the website.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is used on the contact us form page on the website.</inlineHelpText>
+    <label>Abstrakt Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Branding</fullName>
+                <default>false</default>
+                <label>Branding</label>
+            </value>
+            <value>
+                <fullName>Direct Marketing</fullName>
+                <default>false</default>
+                <label>Direct Marketing</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Lead Generation</fullName>
+                <default>false</default>
+                <label>Lead Generation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Search Engine Marketing</fullName>
+                <default>false</default>
+                <label>Search Engine Marketing</label>
+            </value>
+            <value>
+                <fullName>Search Engine Optimization</fullName>
+                <default>false</default>
+                <label>Search Engine Optimization</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Traditional Media</fullName>
+                <default>false</default>
+                <label>Traditional Media</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <label>Video Production</label>
+            </value>
+            <value>
+                <fullName>Web Development</fullName>
+                <default>false</default>
+                <label>Web Development</label>
+            </value>
+            <value>
+                <fullName>Agency Services</fullName>
+                <default>false</default>
+                <label>Agency Services</label>
+            </value>
+            <value>
+                <fullName>Web Marketing</fullName>
+                <default>false</default>
+                <label>Web Marketing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

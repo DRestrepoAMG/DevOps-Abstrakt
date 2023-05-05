@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Word_Count_This_Month__c</fullName>
+    <description>An aggregate of Actual Word Count This Month from Creative Content Word Count where the published date is this month.</description>
+    <externalId>false</externalId>
+    <label>Actual Word Count This Month</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

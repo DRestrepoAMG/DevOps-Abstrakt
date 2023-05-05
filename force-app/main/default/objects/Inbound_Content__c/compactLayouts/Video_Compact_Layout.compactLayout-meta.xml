@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Video_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Marketing_Video_Auto_Approval_Date__c</fields>
+    <fields>Content_Rating__c</fields>
+    <fields>Video_Rating__c</fields>
+    <fields>Overall_Rating__c</fields>
+    <label>Video Compact Layout</label>
+</CompactLayout>

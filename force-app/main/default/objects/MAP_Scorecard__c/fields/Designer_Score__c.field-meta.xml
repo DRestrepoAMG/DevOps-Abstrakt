@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Designer_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(VALUE(TEXT( Technicality_Design__c ))+ VALUE(TEXT( Designed_From_a_Sales_Perspective__c ))+ VALUE(TEXT( Cohesive_with_Brand_and_Past_Pieces__c ))
++
+IF(ISPICKVAL(Designer_Design_Engaging__c,&apos;NA&apos;),0,VALUE(TEXT(Designer_Design_Engaging__c)))
+)/
+(15+IF(ISPICKVAL(Designer_Design_Engaging__c,&apos;NA&apos;),0,5)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Impacted By: Part 3 (Design Proofer), Part 5 (Video Producer), &amp; Part 6 (Senior Auditor)</inlineHelpText>
+    <label>Designer Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

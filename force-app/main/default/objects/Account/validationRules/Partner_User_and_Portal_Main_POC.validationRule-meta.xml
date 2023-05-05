@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_User_and_Portal_Main_POC</fullName>
+    <active>true</active>
+    <description>If  Either Portal Main POC or Partner User is changed and the two values do not match and Record Type = Pipeline Client, the following error is shown: Partner User must match Portal Main POC</description>
+    <errorConditionFormula>AND(
+		RecordTypeId = &quot;012A0000000kZfw&quot;,
+		Portal_Main_POC__c &lt;&gt; Partner_User__c,
+		OR(
+		ISCHANGED(Portal_Main_POC__c),
+		ISCHANGED(Partner_User__c)
+		)
+	)</errorConditionFormula>
+    <errorMessage>Partner User must match Portal Main POC</errorMessage>
+</ValidationRule>

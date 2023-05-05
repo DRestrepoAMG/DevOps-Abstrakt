@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Putting_CC_on_Hold</fullName>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Topic__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Published_Link__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Collateral_Number__c</columns>
+    <columns>Designer__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Feedback__c</columns>
+    <columns>Client_Feedback_2nd_Round__c</columns>
+    <columns>Internal_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>Sheer</value>
+    </filters>
+    <label>Individual Client Collateral List</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Outbound_Assets_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

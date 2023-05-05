@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_PSR_is_a_PAM__c</fullName>
+    <description>This is used to complete PAM A-Player Scores</description>
+    <externalId>false</externalId>
+    <formula>OR(
+Current_PSR__r.Profile.Name = &apos;Partner Account Manager&apos;,
+Current_PSR__r.Profile.Name = &apos;Partner Account Manager: Beta Tester&apos;,
+Current_PSR__r.Profile.Name = &apos;Partner Account Manager -- New Dialer&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Delivery Owner is a PAM</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

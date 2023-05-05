@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task__c</fullName>
+    <externalId>false</externalId>
+    <label>Task</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call - Appt No Show</fullName>
+                <default>false</default>
+                <label>Call - Appt No Show</label>
+            </value>
+            <value>
+                <fullName>Call - Close Call</fullName>
+                <default>false</default>
+                <label>Call - Close Call</label>
+            </value>
+            <value>
+                <fullName>Call - Confirm Appt</fullName>
+                <default>false</default>
+                <label>Call - Confirm Appt</label>
+            </value>
+            <value>
+                <fullName>Call - Follow Up</fullName>
+                <default>false</default>
+                <label>Call - Follow Up</label>
+            </value>
+            <value>
+                <fullName>Call - Nurture</fullName>
+                <default>false</default>
+                <label>Call - Nurture</label>
+            </value>
+            <value>
+                <fullName>Call - Pitch</fullName>
+                <default>false</default>
+                <label>Call - Pitch</label>
+            </value>
+            <value>
+                <fullName>Call - Schedule Pitch</fullName>
+                <default>false</default>
+                <label>Call - Schedule Pitch</label>
+            </value>
+            <value>
+                <fullName>Email - Confirm Appt</fullName>
+                <default>false</default>
+                <label>Email - Confirm Appt</label>
+            </value>
+            <value>
+                <fullName>Email - Nurture</fullName>
+                <default>false</default>
+                <label>Email - Nurture</label>
+            </value>
+            <value>
+                <fullName>Email - Post Pitch</fullName>
+                <default>false</default>
+                <label>Email - Post Pitch</label>
+            </value>
+            <value>
+                <fullName>Email - Pre Pitch</fullName>
+                <default>false</default>
+                <label>Email - Pre Pitch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

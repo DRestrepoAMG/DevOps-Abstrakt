@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guided_Case_Submission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked when case is submitted using Flow &quot;Case: Guided Case Submission&quot;</description>
+    <externalId>false</externalId>
+    <label>Guided Case Submission</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

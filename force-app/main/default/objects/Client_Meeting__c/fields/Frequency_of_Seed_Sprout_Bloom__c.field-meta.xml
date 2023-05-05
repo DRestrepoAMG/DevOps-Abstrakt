@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frequency_of_Seed_Sprout_Bloom__c</fullName>
+    <defaultValue>&quot;In our first year together, you can expect about 60% of our leads to be seeds. It’s safe to assume 30% will be sprouts and about 1 in 10 will be Blooms. As time passes, we see these numbers flip-flop, but in our first year this is a safe expectation. (PSM Should use PDF for Seed, Sprout, Bloom to explain this further)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Frequency of Seed, Sprout, Bloom</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_member_s_perception_effectivenes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>&quot;How did the team member feel about their effectiveness?&quot;</inlineHelpText>
+    <label>Employee&apos;s perception of effectiveness?</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

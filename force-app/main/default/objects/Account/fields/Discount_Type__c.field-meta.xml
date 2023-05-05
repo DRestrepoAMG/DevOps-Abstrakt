@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Discount Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual No Cancel</fullName>
+                <default>false</default>
+                <label>Annual No Cancel</label>
+            </value>
+            <value>
+                <fullName>Annual True-Up</fullName>
+                <default>false</default>
+                <label>Annual True-Up</label>
+            </value>
+            <value>
+                <fullName>Multi-Program</fullName>
+                <default>false</default>
+                <label>Multi-Program</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Paid In Full</fullName>
+                <default>false</default>
+                <label>Paid In Full</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

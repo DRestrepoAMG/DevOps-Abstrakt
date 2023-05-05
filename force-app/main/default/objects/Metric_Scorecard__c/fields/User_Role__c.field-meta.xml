@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>User Role</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting General</fullName>
+                <default>false</default>
+                <label>Accounting General</label>
+            </value>
+            <value>
+                <fullName>Agency Account Manager</fullName>
+                <default>false</default>
+                <label>Agency Account Manager</label>
+            </value>
+            <value>
+                <fullName>Agency Director</fullName>
+                <default>false</default>
+                <label>Agency Director</label>
+            </value>
+            <value>
+                <fullName>Agency Project Manager</fullName>
+                <default>false</default>
+                <label>Agency Project Manager</label>
+            </value>
+            <value>
+                <fullName>Agency Sales Executive</fullName>
+                <default>false</default>
+                <label>Agency Sales Executive</label>
+            </value>
+            <value>
+                <fullName>Agency Sales Staff</fullName>
+                <default>false</default>
+                <label>Agency Sales Staff</label>
+            </value>
+            <value>
+                <fullName>AMG - Salesforce Support &amp; Product Development Partner User</fullName>
+                <default>false</default>
+                <label>AMG - Salesforce Support &amp; Product Development Partner User</label>
+            </value>
+            <value>
+                <fullName>Automotive Sales Director</fullName>
+                <default>false</default>
+                <label>Automotive Sales Director</label>
+            </value>
+            <value>
+                <fullName>Automotive Sales Rep</fullName>
+                <default>false</default>
+                <label>Automotive Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Automotive Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <label>Automotive Virtual Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>BDS</fullName>
+                <default>false</default>
+                <label>BDS</label>
+            </value>
+            <value>
+                <fullName>BDS Hybrid</fullName>
+                <default>false</default>
+                <label>BDS Hybrid</label>
+            </value>
+            <value>
+                <fullName>BDS Maryville</fullName>
+                <default>false</default>
+                <label>BDS Maryville</label>
+            </value>
+            <value>
+                <fullName>BDS New Hire</fullName>
+                <default>false</default>
+                <label>BDS New Hire</label>
+            </value>
+            <value>
+                <fullName>BDS - Partner Account Manager</fullName>
+                <default>false</default>
+                <label>BDS - Partner Account Manager</label>
+            </value>
+            <value>
+                <fullName>BDS Stable</fullName>
+                <default>false</default>
+                <label>BDS Stable</label>
+            </value>
+            <value>
+                <fullName>BDS Team Lead</fullName>
+                <default>false</default>
+                <label>BDS Team Lead</label>
+            </value>
+            <value>
+                <fullName>BDS Training</fullName>
+                <default>false</default>
+                <label>BDS Training</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR</fullName>
+                <default>false</default>
+                <label>Bionic SDR</label>
+            </value>
+            <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Chief Operations Officer</fullName>
+                <default>false</default>
+                <label>Chief Operations Officer</label>
+            </value>
+            <value>
+                <fullName>Corporate Graphic Designer</fullName>
+                <default>false</default>
+                <label>Corporate Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Corporate Videographer</fullName>
+                <default>false</default>
+                <label>Corporate Videographer</label>
+            </value>
+            <value>
+                <fullName>Creative Director</fullName>
+                <default>false</default>
+                <label>Creative Director</label>
+            </value>
+            <value>
+                <fullName>Creative Services Project Manager</fullName>
+                <default>false</default>
+                <label>Creative Services Project Manager</label>
+            </value>
+            <value>
+                <fullName>Creative Video Director</fullName>
+                <default>false</default>
+                <label>Creative Video Director</label>
+            </value>
+            <value>
+                <fullName>Data Analyst</fullName>
+                <default>false</default>
+                <label>Data Analyst</label>
+            </value>
+            <value>
+                <fullName>Desktop Support Specialist</fullName>
+                <default>false</default>
+                <label>Desktop Support Specialist</label>
+            </value>
+            <value>
+                <fullName>Digital Analyst</fullName>
+                <default>false</default>
+                <label>Digital Analyst</label>
+            </value>
+            <value>
+                <fullName>Digital Marketing Copywriter</fullName>
+                <default>false</default>
+                <label>Digital Marketing Copywriter</label>
+            </value>
+            <value>
+                <fullName>Digital SDR</fullName>
+                <default>false</default>
+                <label>Digital SDR</label>
+            </value>
+            <value>
+                <fullName>Digital Strategist</fullName>
+                <default>false</default>
+                <label>Digital Strategist</label>
+            </value>
+            <value>
+                <fullName>Digital Success Manager</fullName>
+                <default>false</default>
+                <label>Digital Success Manager</label>
+            </value>
+            <value>
+                <fullName>Director of AMG Marketing</fullName>
+                <default>false</default>
+                <label>Director of AMG Marketing</label>
+            </value>
+            <value>
+                <fullName>Director of Content</fullName>
+                <default>false</default>
+                <label>Director of Content</label>
+            </value>
+            <value>
+                <fullName>Director of Customer Marketing</fullName>
+                <default>false</default>
+                <label>Director of Customer Marketing</label>
+            </value>
+            <value>
+                <fullName>Director of Data &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Director of Data &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Director of Digital Marketing</fullName>
+                <default>false</default>
+                <label>Director of Digital Marketing</label>
+            </value>
+            <value>
+                <fullName>Director of Email Fulfillment</fullName>
+                <default>false</default>
+                <label>Director of Email Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Director of Employee Engagement and Corporate Culture</fullName>
+                <default>false</default>
+                <label>Director of Employee Engagement and Corporate Culture</label>
+            </value>
+            <value>
+                <fullName>Director of Executive Sales</fullName>
+                <default>false</default>
+                <label>Director of Executive Sales</label>
+            </value>
+            <value>
+                <fullName>Director of Facilities</fullName>
+                <default>false</default>
+                <label>Director of Facilities</label>
+            </value>
+            <value>
+                <fullName>Director of Implementation</fullName>
+                <default>false</default>
+                <label>Director of Implementation</label>
+            </value>
+            <value>
+                <fullName>Director of Intern Success</fullName>
+                <default>false</default>
+                <label>Director of Intern Success</label>
+            </value>
+            <value>
+                <fullName>Director of Marketing</fullName>
+                <default>false</default>
+                <label>Director of Marketing</label>
+            </value>
+            <value>
+                <fullName>Director of Marketing Collateral</fullName>
+                <default>false</default>
+                <label>Director of Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>Director of Maryville</fullName>
+                <default>false</default>
+                <label>Director of Maryville</label>
+            </value>
+            <value>
+                <fullName>Director of Partner Success</fullName>
+                <default>false</default>
+                <label>Director of Partner Success</label>
+            </value>
+            <value>
+                <fullName>Director of Pipeline</fullName>
+                <default>false</default>
+                <label>Director of Pipeline</label>
+            </value>
+            <value>
+                <fullName>Director of Process &amp; Change Management</fullName>
+                <default>false</default>
+                <label>Director of Process &amp; Change Management</label>
+            </value>
+            <value>
+                <fullName>Director of Sapper Client Strategy</fullName>
+                <default>false</default>
+                <label>Director of Sapper Client Strategy</label>
+            </value>
+            <value>
+                <fullName>Director of Sapper Success</fullName>
+                <default>false</default>
+                <label>Director of Sapper Success</label>
+            </value>
+            <value>
+                <fullName>Director of Sr SDR</fullName>
+                <default>false</default>
+                <label>Director of Sr SDR</label>
+            </value>
+            <value>
+                <fullName>Director of Training</fullName>
+                <default>false</default>
+                <label>Director of Training</label>
+            </value>
+            <value>
+                <fullName>Director of Video Production</fullName>
+                <default>false</default>
+                <label>Director of Video Production</label>
+            </value>
+            <value>
+                <fullName>Editor</fullName>
+                <default>false</default>
+                <label>Editor</label>
+            </value>
+            <value>
+                <fullName>Email Marketing Specialist</fullName>
+                <default>false</default>
+                <label>Email Marketing Specialist</label>
+            </value>
+            <value>
+                <fullName>EVP of Agency Acct Management</fullName>
+                <default>false</default>
+                <label>EVP of Agency Acct Management</label>
+            </value>
+            <value>
+                <fullName>EVP of Sapper Partner Delivery</fullName>
+                <default>false</default>
+                <label>EVP of Sapper Partner Delivery</label>
+            </value>
+            <value>
+                <fullName>EVP of Sapper Partner Success</fullName>
+                <default>false</default>
+                <label>EVP of Sapper Partner Success</label>
+            </value>
+            <value>
+                <fullName>Executive Partner Sales Manager</fullName>
+                <default>false</default>
+                <label>Executive Partner Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Executive Sales In-Training</fullName>
+                <default>false</default>
+                <label>Executive Sales In-Training</label>
+            </value>
+            <value>
+                <fullName>Executive Sales Rep</fullName>
+                <default>false</default>
+                <label>Executive Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Executive Sales Rep - 1</fullName>
+                <default>false</default>
+                <label>Executive Sales Rep - 1</label>
+            </value>
+            <value>
+                <fullName>Executive Sales Rep - 2</fullName>
+                <default>false</default>
+                <label>Executive Sales Rep - 2</label>
+            </value>
+            <value>
+                <fullName>Executive Sales Rep - Creative</fullName>
+                <default>false</default>
+                <label>Executive Sales Rep - Creative</label>
+            </value>
+            <value>
+                <fullName>Executive Vice President of Inbound SDR</fullName>
+                <default>false</default>
+                <label>Executive Vice President of Inbound SDR</label>
+            </value>
+            <value>
+                <fullName>Executive VP of Sales</fullName>
+                <default>false</default>
+                <label>Executive VP of Sales</label>
+            </value>
+            <value>
+                <fullName>Facilities Coordinator</fullName>
+                <default>false</default>
+                <label>Facilities Coordinator</label>
+            </value>
+            <value>
+                <fullName>First Impressions Officer</fullName>
+                <default>false</default>
+                <label>First Impressions Officer</label>
+            </value>
+            <value>
+                <fullName>Graphic Designer</fullName>
+                <default>false</default>
+                <label>Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>HR Generalist</fullName>
+                <default>false</default>
+                <label>HR Generalist</label>
+            </value>
+            <value>
+                <fullName>Implementation Content Manager</fullName>
+                <default>false</default>
+                <label>Implementation Content Manager</label>
+            </value>
+            <value>
+                <fullName>Implementation Copywriter</fullName>
+                <default>false</default>
+                <label>Implementation Copywriter</label>
+            </value>
+            <value>
+                <fullName>Implementation Director</fullName>
+                <default>false</default>
+                <label>Implementation Director</label>
+            </value>
+            <value>
+                <fullName>Implementation Manager</fullName>
+                <default>false</default>
+                <label>Implementation Manager</label>
+            </value>
+            <value>
+                <fullName>Implementation Specialist</fullName>
+                <default>false</default>
+                <label>Implementation Specialist</label>
+            </value>
+            <value>
+                <fullName>Inbound Executive Sales Rep</fullName>
+                <default>false</default>
+                <label>Inbound Executive Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Inbound Implementation Content Manager</fullName>
+                <default>false</default>
+                <label>Inbound Implementation Content Manager</label>
+            </value>
+            <value>
+                <fullName>Inbound Implementation Copywriter</fullName>
+                <default>false</default>
+                <label>Inbound Implementation Copywriter</label>
+            </value>
+            <value>
+                <fullName>IT Director</fullName>
+                <default>false</default>
+                <label>IT Director</label>
+            </value>
+            <value>
+                <fullName>Marketing Collateral Project Manager</fullName>
+                <default>false</default>
+                <label>Marketing Collateral Project Manager</label>
+            </value>
+            <value>
+                <fullName>Marketing Data Analyst</fullName>
+                <default>false</default>
+                <label>Marketing Data Analyst</label>
+            </value>
+            <value>
+                <fullName>Marketing Intern</fullName>
+                <default>false</default>
+                <label>Marketing Intern</label>
+            </value>
+            <value>
+                <fullName>Marketing Sales Representative</fullName>
+                <default>false</default>
+                <label>Marketing Sales Representative</label>
+            </value>
+            <value>
+                <fullName>Maryville Sales Representative</fullName>
+                <default>false</default>
+                <label>Maryville Sales Representative</label>
+            </value>
+            <value>
+                <fullName>New Hire Trainer</fullName>
+                <default>false</default>
+                <label>New Hire Trainer</label>
+            </value>
+            <value>
+                <fullName>New Hire Training Manager</fullName>
+                <default>false</default>
+                <label>New Hire Training Manager</label>
+            </value>
+            <value>
+                <fullName>Office Manager</fullName>
+                <default>false</default>
+                <label>Office Manager</label>
+            </value>
+            <value>
+                <fullName>Operations Specialist</fullName>
+                <default>false</default>
+                <label>Operations Specialist</label>
+            </value>
+            <value>
+                <fullName>Outbound Assets Manager</fullName>
+                <default>false</default>
+                <label>Outbound Assets Manager</label>
+            </value>
+            <value>
+                <fullName>Outbound Implementation Content Manager</fullName>
+                <default>false</default>
+                <label>Outbound Implementation Content Manager</label>
+            </value>
+            <value>
+                <fullName>Outbound Implementation Copywriter</fullName>
+                <default>false</default>
+                <label>Outbound Implementation Copywriter</label>
+            </value>
+            <value>
+                <fullName>Partner Executive Sales Rep</fullName>
+                <default>false</default>
+                <label>Partner Executive Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Partner Sales Manager</fullName>
+                <default>false</default>
+                <label>Partner Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Partner Success Manager</fullName>
+                <default>false</default>
+                <label>Partner Success Manager</label>
+            </value>
+            <value>
+                <fullName>Past Employee</fullName>
+                <default>false</default>
+                <label>Past Employee</label>
+            </value>
+            <value>
+                <fullName>Payroll Specialist</fullName>
+                <default>false</default>
+                <label>Payroll Specialist</label>
+            </value>
+            <value>
+                <fullName>President/CEO</fullName>
+                <default>false</default>
+                <label>President/CEO</label>
+            </value>
+            <value>
+                <fullName>President of Outbound</fullName>
+                <default>false</default>
+                <label>President of Outbound</label>
+            </value>
+            <value>
+                <fullName>President of Sapper Consulting</fullName>
+                <default>false</default>
+                <label>President of Sapper Consulting</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Manager</fullName>
+                <default>false</default>
+                <label>Quality Assurance Manager</label>
+            </value>
+            <value>
+                <fullName>Recruiter</fullName>
+                <default>false</default>
+                <label>Recruiter</label>
+            </value>
+            <value>
+                <fullName>Recruiting</fullName>
+                <default>false</default>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <fullName>Sales Enablement Digital Campaign Manager</fullName>
+                <default>false</default>
+                <label>Sales Enablement Digital Campaign Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Enablement Email Manager</fullName>
+                <default>false</default>
+                <label>Sales Enablement Email Manager</label>
+            </value>
+            <value>
+                <fullName>Salesforce Administrator</fullName>
+                <default>false</default>
+                <label>Salesforce Administrator</label>
+            </value>
+            <value>
+                <fullName>Salesforce Developer</fullName>
+                <default>false</default>
+                <label>Salesforce Developer</label>
+            </value>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Sapper Chief Revenue Officer</fullName>
+                <default>false</default>
+                <label>Sapper Chief Revenue Officer</label>
+            </value>
+            <value>
+                <fullName>Sapper Content Manager</fullName>
+                <default>false</default>
+                <label>Sapper Content Manager</label>
+            </value>
+            <value>
+                <fullName>Sapper Content Team Manager</fullName>
+                <default>false</default>
+                <label>Sapper Content Team Manager</label>
+            </value>
+            <value>
+                <fullName>Sapper Email Marketing Copywriter</fullName>
+                <default>false</default>
+                <label>Sapper Email Marketing Copywriter</label>
+            </value>
+            <value>
+                <fullName>Sapper Operations</fullName>
+                <default>false</default>
+                <label>Sapper Operations</label>
+            </value>
+            <value>
+                <fullName>Sapper Operations Analyst</fullName>
+                <default>false</default>
+                <label>Sapper Operations Analyst</label>
+            </value>
+            <value>
+                <fullName>Sapper Operations Manager</fullName>
+                <default>false</default>
+                <label>Sapper Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Sapper Partner Delivery Director</fullName>
+                <default>false</default>
+                <label>Sapper Partner Delivery Director</label>
+            </value>
+            <value>
+                <fullName>Sapper Partner Delivery Manager</fullName>
+                <default>false</default>
+                <label>Sapper Partner Delivery Manager</label>
+            </value>
+            <value>
+                <fullName>Sapper Partner Performance Manager</fullName>
+                <default>false</default>
+                <label>Sapper Partner Performance Manager</label>
+            </value>
+            <value>
+                <fullName>Sapper Sales Development Representative</fullName>
+                <default>false</default>
+                <label>Sapper Sales Development Representative</label>
+            </value>
+            <value>
+                <fullName>Sapper Success Manager</fullName>
+                <default>false</default>
+                <label>Sapper Success Manager</label>
+            </value>
+            <value>
+                <fullName>SDR</fullName>
+                <default>false</default>
+                <label>SDR</label>
+            </value>
+            <value>
+                <fullName>SDR Manager</fullName>
+                <default>false</default>
+                <label>SDR Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Art Director</fullName>
+                <default>false</default>
+                <label>Senior Art Director</label>
+            </value>
+            <value>
+                <fullName>Senior Corporate Vidographer</fullName>
+                <default>false</default>
+                <label>Senior Corporate Vidographer</label>
+            </value>
+            <value>
+                <fullName>Senior Director of Executive Sales Recruitment</fullName>
+                <default>false</default>
+                <label>Senior Director of Executive Sales Recruitment</label>
+            </value>
+            <value>
+                <fullName>Senior Executive Sales Rep</fullName>
+                <default>false</default>
+                <label>Senior Executive Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Senior Executive Sales Rep - Cloud</fullName>
+                <default>false</default>
+                <label>Senior Executive Sales Rep - Cloud</label>
+            </value>
+            <value>
+                <fullName>Senior Graphic Designer</fullName>
+                <default>false</default>
+                <label>Senior Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Senior Marketing Director</fullName>
+                <default>false</default>
+                <label>Senior Marketing Director</label>
+            </value>
+            <value>
+                <fullName>Senior Operations Manager</fullName>
+                <default>false</default>
+                <label>Senior Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Quality Assurance Manager</fullName>
+                <default>false</default>
+                <label>Senior Quality Assurance Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Social Media Manager</fullName>
+                <default>false</default>
+                <label>Senior Social Media Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <label>Senior Virtual Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Web Developer</fullName>
+                <default>false</default>
+                <label>Senior Web Developer</label>
+            </value>
+            <value>
+                <fullName>SEO Content Team Lead</fullName>
+                <default>false</default>
+                <label>SEO Content Team Lead</label>
+            </value>
+            <value>
+                <fullName>SEO Copywriter</fullName>
+                <default>false</default>
+                <label>SEO Copywriter</label>
+            </value>
+            <value>
+                <fullName>Social Media Manager</fullName>
+                <default>false</default>
+                <label>Social Media Manager</label>
+            </value>
+            <value>
+                <fullName>Sr. Accounting</fullName>
+                <default>false</default>
+                <label>Sr. Accounting</label>
+            </value>
+            <value>
+                <fullName>Sr. Marketing Collateral Manager</fullName>
+                <default>false</default>
+                <label>Sr. Marketing Collateral Manager</label>
+            </value>
+            <value>
+                <fullName>Sr. Sales Operations Manager</fullName>
+                <default>false</default>
+                <label>Sr. Sales Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Student Ambassador</fullName>
+                <default>false</default>
+                <label>Student Ambassador</label>
+            </value>
+            <value>
+                <fullName>Video Production Sales Rep</fullName>
+                <default>false</default>
+                <label>Video Production Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <label>Virtual Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>VP of Accounting</fullName>
+                <default>false</default>
+                <label>VP of Accounting</label>
+            </value>
+            <value>
+                <fullName>VP of Human Resources</fullName>
+                <default>false</default>
+                <label>VP of Human Resources</label>
+            </value>
+            <value>
+                <fullName>VP of Marketing</fullName>
+                <default>false</default>
+                <label>VP of Marketing</label>
+            </value>
+            <value>
+                <fullName>VP of Operations</fullName>
+                <default>false</default>
+                <label>VP of Operations</label>
+            </value>
+            <value>
+                <fullName>VP of Partner Sales</fullName>
+                <default>false</default>
+                <label>VP of Partner Sales</label>
+            </value>
+            <value>
+                <fullName>VP of Product</fullName>
+                <default>false</default>
+                <label>VP of Product</label>
+            </value>
+            <value>
+                <fullName>VP of Product Development</fullName>
+                <default>false</default>
+                <label>VP of Product Development</label>
+            </value>
+            <value>
+                <fullName>VP of Sales</fullName>
+                <default>false</default>
+                <label>VP of Sales</label>
+            </value>
+            <value>
+                <fullName>VP of Sapper Partner Success</fullName>
+                <default>false</default>
+                <label>VP of Sapper Partner Success</label>
+            </value>
+            <value>
+                <fullName>VP of Talent Acquisition</fullName>
+                <default>false</default>
+                <label>VP of Talent Acquisition</label>
+            </value>
+            <value>
+                <fullName>VP of Technology &amp; Salesforce</fullName>
+                <default>false</default>
+                <label>VP of Technology &amp; Salesforce</label>
+            </value>
+            <value>
+                <fullName>VP of Video Production</fullName>
+                <default>false</default>
+                <label>VP of Video Production</label>
+            </value>
+            <value>
+                <fullName>Web Designer</fullName>
+                <default>false</default>
+                <label>Web Designer</label>
+            </value>
+            <value>
+                <fullName>Web Developer</fullName>
+                <default>false</default>
+                <label>Web Developer</label>
+            </value>
+            <value>
+                <fullName>Website Experience Copywriter</fullName>
+                <default>false</default>
+                <label>Website Experience Copywriter</label>
+            </value>
+            <value>
+                <fullName>Website Experience Manager</fullName>
+                <default>false</default>
+                <label>Website Experience Manager</label>
+            </value>
+            <value>
+                <fullName>Workforce Analyst</fullName>
+                <default>false</default>
+                <label>Workforce Analyst</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

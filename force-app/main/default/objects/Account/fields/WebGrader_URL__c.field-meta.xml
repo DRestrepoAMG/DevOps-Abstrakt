@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WebGrader_URL__c</fullName>
+    <description>For SEO use only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For SEO use only.</inlineHelpText>
+    <label>WebsiteGrader.com URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

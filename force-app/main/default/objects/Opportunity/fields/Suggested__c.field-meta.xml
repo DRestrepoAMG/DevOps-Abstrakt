@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suggested__c</fullName>
+    <description>Used to track what inbound services current Sapper or Abstrakt clients could benefit from being sold.</description>
+    <externalId>false</externalId>
+    <label>Inbound Product Suggestions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New WordPress Website</fullName>
+                <default>false</default>
+                <label>New WordPress Website</label>
+            </value>
+            <value>
+                <fullName>Ongoing SEO Content</fullName>
+                <default>false</default>
+                <label>Ongoing SEO Content</label>
+            </value>
+            <value>
+                <fullName>Local SEO</fullName>
+                <default>false</default>
+                <label>Local SEO</label>
+            </value>
+            <value>
+                <fullName>Paid Media</fullName>
+                <default>false</default>
+                <label>Paid Media</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

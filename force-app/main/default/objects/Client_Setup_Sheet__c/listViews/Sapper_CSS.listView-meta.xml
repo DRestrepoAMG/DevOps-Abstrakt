@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sapper_CSS</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Sapper_Setup_Survey__c</columns>
+    <columns>Workato_Processed__c</columns>
+    <columns>Sales_Director_Approved__c</columns>
+    <columns>New_Account_Required__c</columns>
+    <columns>Final_Update_Made__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Client_Setup_Sheet__c.Sapper_CSS</value>
+    </filters>
+    <label>Sapper CSS</label>
+    <sharedTo>
+        <group>Salesforce_Admins</group>
+    </sharedTo>
+</ListView>

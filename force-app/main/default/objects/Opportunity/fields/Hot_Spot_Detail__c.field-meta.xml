@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hot_Spot_Detail__c</fullName>
+    <description>This is created for Brennan Industrial Truck Company and is related to Hot Spot checkbox field</description>
+    <externalId>false</externalId>
+    <label>Hot Spot Detail</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X50_or_Under_Goal_Last_Month__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to help identify what accounts need more attention the next month. Updated my Nick Wulf monthly</description>
+    <externalId>false</externalId>
+    <label>Under 50% Last Month</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Daily_Sales_Success_Manager_Meetings</fullName>
+    <columns>Meeting_Held_Date__c</columns>
+    <columns>Partner_Sales_Manager__c</columns>
+    <columns>Partner_Success_Manager__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Client_Meeting__c.PSMs_Weekly_Meeting</value>
+    </filters>
+    <label>Daily Sales/Success Manager Meetings</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

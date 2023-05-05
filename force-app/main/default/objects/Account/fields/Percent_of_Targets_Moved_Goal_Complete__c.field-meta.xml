@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_of_Targets_Moved_Goal_Complete__c</fullName>
+    <externalId>false</externalId>
+    <formula>NULLVALUE(Targets_Moved_This_Month__c,0) / MAX(Monthly_Targets_Moved_Goal__c,1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Percent of Targets Moved Goal Complete</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

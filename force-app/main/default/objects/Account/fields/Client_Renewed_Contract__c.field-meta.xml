@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Renewed_Contract__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+	AND(
+		ISPICKVAL(Status__c, &quot;Canceled&quot;),
+		  Number_of_Days_Before_Cancel__c &gt; 365 ),
+	AND(
+		ISPICKVAL(Status__c, &quot;Active&quot;),
+		  Number_of_Days_Live__c &gt; 365 ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Client Renewed Contract</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

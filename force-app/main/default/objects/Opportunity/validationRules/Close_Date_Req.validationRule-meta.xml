@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_Req</fullName>
+    <active>true</active>
+    <description>Close meeting date required when Stage = &quot;Won - Closed Business&quot;</description>
+    <errorConditionFormula>AND (ISPICKVAL(StageName, &quot;Won - Closed Business&quot;),  ISNULL(CloseDate))</errorConditionFormula>
+    <errorMessage>Close meeting date required when Stage = &quot;Won - Closed Business&quot;</errorMessage>
+</ValidationRule>

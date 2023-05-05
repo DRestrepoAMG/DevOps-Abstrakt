@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Start_Website_Performance_Test__c</columns>
+    <columns>Performance_Test_URL__c</columns>
+    <columns>Run_Website_Performance__c</columns>
+    <columns>Get_Website_Performance_Results__c</columns>
+    <columns>Performance_Test_Results_Updated__c</columns>
+    <columns>Performance_Test_Started__c</columns>
+    <columns>Total_Months_Live__c</columns>
+    <columns>Social_Media_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Agency_Client,Account.Automotive_Agency_Account</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.URL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Agency Accounts</label>
+</ListView>

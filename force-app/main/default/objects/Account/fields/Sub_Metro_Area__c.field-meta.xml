@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Metro_Area__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is for the markets where we can only sell 1 client per Sub-Metro Area.  This field is needed for reporting on the Sub-Metro level to roll up the number of clients in each Sub-Metro Area</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is for the markets where we can only sell 1 client per Sub-Metro Area.  This field is needed for reporting on the Sub-Metro level to roll up the number of clients in each Sub-Metro Area</inlineHelpText>
+    <label>Sub-Metro Area</label>
+    <referenceTo>Sub_Metro_Area__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

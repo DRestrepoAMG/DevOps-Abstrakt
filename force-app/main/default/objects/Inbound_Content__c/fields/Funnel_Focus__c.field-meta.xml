@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funnel_Focus__c</fullName>
+    <description>used on Ongoing SEO Content</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Topic clusters are typically centered around a core page, pillar page, product page, or main entity page that clearly defines that concept. As a unit, a topic cluster works to answer all of the questions users may have about a specific subject area in your industry niche.</inlineHelpText>
+    <label>Topic Cluster</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

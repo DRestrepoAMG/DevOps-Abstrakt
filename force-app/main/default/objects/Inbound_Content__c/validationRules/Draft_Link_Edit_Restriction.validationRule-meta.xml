@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Draft_Link_Edit_Restriction</fullName>
+    <active>true</active>
+    <description>Restricts Role Graphic Design from editing Draft Link on record type Marketing Collateral.</description>
+    <errorConditionFormula>AND( 
+RecordTypeId = &quot;0124A000001UU0B&quot;,
+ISCHANGED( Draft_Link__c ) ,
+$UserRole.Id   =  &quot;00EG0000000FujQ&quot;,
+$UserRole.Id = &quot;00E4A000001FkWA&quot;,
+$UserRole.Id = &quot;00E4A000000G0rU&quot;)</errorConditionFormula>
+    <errorMessage>You do not have the correct permissions to edit the Draft Link</errorMessage>
+</ValidationRule>

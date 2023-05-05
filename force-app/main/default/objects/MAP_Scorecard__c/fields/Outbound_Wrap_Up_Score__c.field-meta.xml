@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Wrap_Up_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(CASE(Abstrakt_Timeline_of_Expectations__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Your_Contract__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(About_Abstrakt__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Your_Target_Market__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Your_Expectations__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Your_Business__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Abstrakt_Non_Negotiables__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+CASE(Marketing_Materials__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0)+
+ CASE(CFS_Score__c,
+&apos;Yes&apos;,1,
+&apos;Somewhat&apos;,0.5,
+0))/(IF(ISPICKVAL(Marketing_Materials__c,&apos;NA&apos;),8,9))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outbound Wrap-Up Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

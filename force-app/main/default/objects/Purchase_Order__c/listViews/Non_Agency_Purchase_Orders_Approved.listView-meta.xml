@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Agency_Purchase_Orders_Approved</fullName>
+    <columns>NAME</columns>
+    <columns>Vendor__c</columns>
+    <columns>Account_Code__c</columns>
+    <columns>Accounting_Month__c</columns>
+    <columns>Accounting_Year__c</columns>
+    <columns>Comments__c</columns>
+    <columns>Payment_Type__c</columns>
+    <columns>PO_Total_Amount__c</columns>
+    <columns>Department__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Department__c</field>
+        <operation>notEqual</operation>
+        <value>Agency</value>
+    </filters>
+    <filters>
+        <field>Approved__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Non-Agency Purchase Orders-Approved</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

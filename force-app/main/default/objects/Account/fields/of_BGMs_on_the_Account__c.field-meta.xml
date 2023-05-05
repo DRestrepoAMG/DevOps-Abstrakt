@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_BGMs_on_the_Account__c</fullName>
+    <externalId>false</externalId>
+    <label># of Primary BGMs on the Account</label>
+    <summaryFilterItems>
+        <field>BGM_Team__c.BGM_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>BGM_Team__c.ResponsibilityLevel__c</field>
+        <operation>equals</operation>
+        <value>Primary</value>
+    </summaryFilterItems>
+    <summaryForeignKey>BGM_Team__c.Account_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

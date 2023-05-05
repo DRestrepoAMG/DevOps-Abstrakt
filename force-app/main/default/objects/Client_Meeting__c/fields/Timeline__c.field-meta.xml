@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timeline__c</fullName>
+    <defaultValue>&quot;As we mentioned in the kickoff call, it takes up to 90 days for Google to fully index your website’s content. That means that during our first few walk-throughs of the portal, we’ll still see the keywords your website is currently ranking for. After these next 90 days, we’ll see the keywords we determined during the sitemap process start to populate on pages 1-10 of Google. In a perfect world, we would have every keyword jump to page p 1. However, SEO is a long-term strategy that takes a lot of work. That’s why we include ongoing content as a part of our process. Most keywords will start on lower pages and take some extra effort to make it to the first page. By adding additional pages with these keywords, we will encourage their growth.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Timeline</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

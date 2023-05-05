@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Guarantees__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Guarantees</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Companies Cleansed</fullName>
+                <default>false</default>
+                <label>Companies Cleansed</label>
+            </value>
+            <value>
+                <fullName>Surveys Collected</fullName>
+                <default>false</default>
+                <label>Surveys Collected</label>
+            </value>
+            <value>
+                <fullName>3-month live 15% - Cancel</fullName>
+                <default>false</default>
+                <label>3-month live 15% - Cancel</label>
+            </value>
+            <value>
+                <fullName>3-month live 15% - Money Back</fullName>
+                <default>false</default>
+                <label>3-month live 15% - Money Back</label>
+            </value>
+            <value>
+                <fullName>3 Months Live 8 Appts</fullName>
+                <default>false</default>
+                <label>3 Months Live 8 Appts</label>
+            </value>
+            <value>
+                <fullName>6-month live 30% - Cancel</fullName>
+                <default>false</default>
+                <label>6-month live 30% - Cancel</label>
+            </value>
+            <value>
+                <fullName>Annual Guarantee - Only 14th month free</fullName>
+                <default>false</default>
+                <label>Annual Guarantee - Only 14th month free</label>
+            </value>
+            <value>
+                <fullName>Annual Guarantee - Free until guarantee met</fullName>
+                <default>false</default>
+                <label>Annual Guarantee - Free until guarantee met</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Bionic+</fullName>
+                <default>false</default>
+                <label>Bionic+</label>
+            </value>
+            <value>
+                <fullName>Cold Call Save Play</fullName>
+                <default>false</default>
+                <label>Cold Call Save Play</label>
+            </value>
+            <value>
+                <fullName>3-month live 15% - Cancel &amp; Money Back</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3-month live 15% - Cancel &amp; Money Back</label>
+            </value>
+            <value>
+                <fullName>45-day Out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45-day Out</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Annual Lock-In</label>
+            </value>
+            <value>
+                <fullName>Annual Lock-In w/ 6-month live no guarantee 45-day out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Annual Lock-In w/ 6-month live no guarantee 45-day out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

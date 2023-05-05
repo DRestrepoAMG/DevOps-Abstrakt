@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_User_Cannot_Update_Opp_Owner</fullName>
+    <active>true</active>
+    <description>This validation rule makes it so that clients cannot change the opportunity owner.</description>
+    <errorConditionFormula>$User.ProfileId  =  &quot;00eG0000000GfP9&quot; &amp;&amp;  ISCHANGED( OwnerId )</errorConditionFormula>
+    <errorMessage>You do not have the correct permissions to change the opportunity owner.</errorMessage>
+</ValidationRule>

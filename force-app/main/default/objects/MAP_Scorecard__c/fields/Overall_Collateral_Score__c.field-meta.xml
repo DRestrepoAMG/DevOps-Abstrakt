@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Collateral_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(
+	VALUE(TEXT(Technicality__c))+
+	VALUE(TEXT(Storytelling_Sales_Focused__c))+
+	VALUE(TEXT(Content_Flow_Defined_Followed__c))+
+	VALUE(TEXT(Followed_Client_Requests_Project_Notes__c))+
+	VALUE(TEXT(Technicality_Design__c))+
+	VALUE(TEXT(Designed_From_a_Sales_Perspective__c))+
+	VALUE(TEXT(Cohesive_with_Brand_and_Past_Pieces__c))+
+	VALUE(TEXT(Overall_look_Anything_Missed__c))+
+	VALUE(TEXT(Technicality_Video__c))+
+	VALUE(TEXT(Produced_from_a_Sales_Perspective__c))+
+	VALUE(TEXT(Cohesive_with_Brand_Past_Pieces_Video__c))+
+	IF(
+		ISPICKVAL(
+			Copywriter_Content_Engaging__c,
+			&apos;NA&apos;
+			),
+		0,
+		VALUE(TEXT(Copywriter_Content_Engaging__c))
+		)+
+	IF(
+		ISPICKVAL(
+			Editor_Information_Correct__c  ,
+			&apos;NA&apos;
+			),
+		0,
+		VALUE(TEXT(Editor_Information_Correct__c  ))
+		)+
+	IF(
+		ISPICKVAL(
+			Designer_Design_Engaging__c  ,
+			&apos;NA&apos;
+			),
+		0,
+		VALUE(TEXT(Designer_Design_Engaging__c  ))
+		)+
+	IF(
+		ISPICKVAL(
+			Marketing_Manager_Client_Wants_Represent__c ,
+			&apos;NA&apos;
+			),
+		0,
+		VALUE(TEXT(Marketing_Manager_Client_Wants_Represent__c ))
+		)+
+	IF(
+		ISPICKVAL(
+			Producer_Production_Engaging__c ,
+			&apos;NA&apos;
+			),
+		0,
+		VALUE(TEXT(Producer_Production_Engaging__c))
+		)
+)/
+
+(55+
+	IF(
+		ISPICKVAL(
+			Copywriter_Content_Engaging__c,
+			&apos;NA&apos;
+			),
+		0,
+		5
+		)+
+	IF(
+		ISPICKVAL(
+			Editor_Information_Correct__c  ,
+			&apos;NA&apos;
+			),
+		0,
+		5
+		)+
+	IF(
+		ISPICKVAL(
+			Designer_Design_Engaging__c  ,
+			&apos;NA&apos;
+			),
+		0,
+		5
+		)+
+	IF(
+		ISPICKVAL(
+			Marketing_Manager_Client_Wants_Represent__c ,
+			&apos;NA&apos;
+			),
+		0,
+		5
+		)+
+	IF(
+		ISPICKVAL(
+			Producer_Production_Engaging__c ,
+			&apos;NA&apos;
+			),
+		0,
+		5
+		)
+	)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Parts 1-6, but averages to 100% with or without Part 5 or Part 6</inlineHelpText>
+    <label>Overall Collateral Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

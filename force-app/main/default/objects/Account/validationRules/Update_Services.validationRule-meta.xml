@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Services</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT( ISBLANK( ParentId )),
+ Abstrakt_Internal_Process__c =FALSE,
+OR(ISCHANGED( Services__c ),
+ ISCHANGED( Agency_Services__c )))</errorConditionFormula>
+    <errorMessage>Please update services and agency services on the parent account page.</errorMessage>
+</ValidationRule>

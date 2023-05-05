@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Abstrakt_Opportunity_Notification</fullName>
+        <description>Abstrakt Opportunity Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jfrieden@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Generated_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Exec_Sales_New_Opportunity_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Client_Follow_Up_Reminder</fullName>
+        <description>Client Follow Up Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Opportunity_Assigned_to_Email_2__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Assigned_to_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>integrations@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Follow_Up_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Client_Opportunity_Marked_Won</fullName>
+        <description>Client Opportunity Marked Won</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>Delivery Director</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Inside Sales Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Success Director</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <field>PAM_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Appointment_Set_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Client_Opportunity_Marked_Won_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_John_About_Lost_or_Delayed_Deals</fullName>
+        <description>Email John About Lost or Delayed Deals</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jschwepker@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Why_Deal_Was_Lost_or_Delayed</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_for_Client_Opportunity_Status_Change_Notification</fullName>
+        <description>Email for Client Opportunity Status Change Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>Inside Sales Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Partner Performance Manager</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <field>PAM_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Appointment_Set_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>New_Email_Platform/Client_Opportunity_Status_Change_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>First_Right_of_Refusal</fullName>
+        <ccEmails>salesteam@abstraktmg.com</ccEmails>
+        <description>First Right of Refusal notice to Sales Team</description>
+        <protected>false</protected>
+        <senderAddress>bizdev@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/First_Right_of_Refusal</template>
+    </alerts>
+    <alerts>
+        <fullName>Hot_Opportunity_Notification</fullName>
+        <description>Hot Opportunity Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jschwepker@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>bizdev@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/Abstrakt_Hot_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Hot_Opportunity_alert</fullName>
+        <description>Hot Opportunity Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jschwepker@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>bizdev@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Abstrakt_Marketing_Group/Abstrakt_Hot_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Referral_Opportunity_Notification</fullName>
+        <description>New Referral Opportunity Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/New_Referral_Opportunity_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Contract_Sent_Market_Notification</fullName>
+        <ccEmails>sboudreau@abstraktmg.com</ccEmails>
+        <ccEmails>jschwepker@abstraktmg.com</ccEmails>
+        <ccEmails>mls@abstraktmg.com</ccEmails>
+        <description>Opportunity: Contract Sent Market Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Director_of_Executive_Sales</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>Executive_Sales_Rep</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>Executive_Vice_President_of_Sales</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>Senior_Executive_Sales_Rep</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>awittmaier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ryan.neumann@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Abstrakt_Marketing_Group/Docusign_Sent_Metro_Area_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Email_for_Check_Sheet_Completed</fullName>
+        <description>Opportunity: Email for Check Sheet Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>enester@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Manager_Check_Sheet_Completed_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Outbound_Check_Sheet_Completed_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Outbound_Pitch_Tracker_Completed_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Send_Notification_for_Open_Market</fullName>
+        <ccEmails>jschwepker@abstraktmg.com</ccEmails>
+        <ccEmails>jbliss@abstraktmg.com</ccEmails>
+        <description>Opportunity: Send Notification for Open Market</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Notification_of_Cancelled_Account_to_Sales</template>
+    </alerts>
+    <alerts>
+        <fullName>PSM_Referral_Send_Email_To_Mark</fullName>
+        <description>PSM Referral - Send Email To Mark</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mark.monika@sapperconsulting.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Referring_PSM_If_Applicable__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/PSM_Referrals_New_Opportunity_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Salesforce_Opportunity_Follow_Up</fullName>
+        <description>Salesforce Opportunity Follow Up</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Salesforce_Opportunity_Follow_Up</template>
+    </alerts>
+    <alerts>
+        <fullName>Unique_MSA_Case_Alert_to_Sales</fullName>
+        <description>Unique MSA Case Alert to Sales</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Sales_Templates/Unique_MSA_Case_Alert_to_Sales</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_Value_of_Probability</fullName>
+        <field>Probability</field>
+        <formula>(IF(Budget__c = True,0.40,0 ) + IF(Authority__c = True,0.30,0 ) + IF(Pain__c = True,0.10,0 ) + IF(Timeframe__c = True,0.10,0 ) + IF(Verbal__c = True, 0.05,0 ))/ IF(Competition__c = True, 2, 1 )</formula>
+        <name>Change Value of Probability</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Inbound_Product</fullName>
+        <field>Add_Inbound_Product__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Inbound Product</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Update_Manager_Notes</fullName>
+        <field>Update_Manager_Notes__c</field>
+        <name>Clear Update Manager Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_the_Update_Field</fullName>
+        <field>Update__c</field>
+        <name>Clear the Update Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Close_Date_Update_After_Won</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY ()</formula>
+        <name>Close Date Update After Won</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Move_Opportunity_Stage_to_Lost</fullName>
+        <description>Moves Opportunity Stage to Lost when Criteria is met</description>
+        <field>StageName</field>
+        <literalValue>Lost</literalValue>
+        <name>Move Opportunity Stage to Lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Initial_Implementation_Link</fullName>
+        <field>Implementation_Packet_Edit_Link__c</field>
+        <name>Populate Initial Implementation Link</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reason_why_Lost</fullName>
+        <description>Populate Why I Lost this Deal field</description>
+        <field>Why_I_Lost_this_Deal__c</field>
+        <formula>&quot;No execution date and created date greater than 1 day&quot;</formula>
+        <name>Reason why Lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Initial_Opp_Close_Date</fullName>
+        <field>CloseDate</field>
+        <formula>Today() + 45</formula>
+        <name>Set Initial Opp Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Opp_Close_Date</fullName>
+        <description>Set Opportunity close date to the current date.</description>
+        <field>CloseDate</field>
+        <formula>Today()</formula>
+        <name>Set Opp Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Top_2_Date_Populate</fullName>
+        <field>Top_2_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Top 2 Date Populate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Box</fullName>
+        <field>Notify_Sales_Reps__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Box</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Notification_Trigger_Point</fullName>
+        <field>Notify_Rep_Email__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Notification Trigger Point</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Name</fullName>
+        <field>Name</field>
+        <formula>Contact__r.Account.Name</formula>
+        <name>Update Account Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Close_Date_to_Today</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>Update Close Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Completed_Date</fullName>
+        <field>Outbound_Check_Sheet_Completed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Completed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_MSA_Start_Date</fullName>
+        <field>MSA_Start_Date__c</field>
+        <formula>Expected_Close_Date__c</formula>
+        <name>Update MSA Start Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Manager_Completed_Date</fullName>
+        <field>Manager_Outbound_Sheet_Completed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Manager Completed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Manager_Notes</fullName>
+        <field>Manager_Notes__c</field>
+        <formula>TEXT(MONTH(DATEVALUE(NOW())))+&quot;/&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot;/&quot; +TEXT(YEAR(DATEVALUE(NOW()))) &amp; &quot; &quot; &amp;
+IF(
+OR(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) = 12
+),
+&quot;12&quot;,
+TEXT( VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp; &quot;:&quot; &amp;
+MID( TEXT( NOW() - 0.208 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; - &quot; &amp;&quot;(&quot;&amp; $User.FirstName &amp; &quot; &quot; &amp; $User.LastName &amp;&quot;)&quot;&amp; &quot; - &quot; + Update_Manager_Notes__c +
+BR()&amp;
+BR()
++PRIORVALUE(  Manager_Notes__c )</formula>
+        <name>Update Manager Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Notes_Field</fullName>
+        <description>CDT = NOW() - .25
+CST = NOW () - .208</description>
+        <field>Notes__c</field>
+        <formula>TEXT(MONTH(DATEVALUE(NOW())))+&quot;/&quot; +TEXT(DAY(DATEVALUE(NOW())))+&quot;/&quot; +TEXT(YEAR(DATEVALUE(NOW()))) &amp; &quot; &quot; &amp;
+IF(
+OR(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) = 12
+),
+&quot;12&quot;,
+TEXT( VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp; &quot;:&quot; &amp;
+MID( TEXT( NOW() - 0.208 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW() - 0.208 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; - &quot; &amp;&quot;(&quot;&amp; $User.FirstName &amp; &quot; &quot; &amp; $User.LastName &amp;&quot;)&quot;&amp; &quot; - &quot; + Update__c +
+BR()&amp;
+BR()
+
++PRIORVALUE( Notes__c )</formula>
+        <name>Update Notes Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Top_5_Date</fullName>
+        <field>Top_5_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Top 5 Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Abstrakt Opportunity Notification</fullName>
+        <actions>
+            <name>Abstrakt_Opportunity_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring Revenue Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Opportunity_Generated_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>contains</operation>
+            <value>Abstrakt Marketing Group</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>American Energy Services Test</fullName>
+        <actions>
+            <name>Client_Follow_Up_Reminder</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Client_Follow_Up_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>equals</operation>
+            <value>Email Notification Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>equals</operation>
+            <value>EFS Energy - Missouri</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Client Follow Up Date</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Client_Follow_Up_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Client_Follow_Up_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>8</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Client Opportunity Marked Won</fullName>
+        <actions>
+            <name>Client_Opportunity_Marked_Won</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Won - Closed Business</value>
+        </criteriaItems>
+        <description>Sends email notification to account team when client opportunity is marked won</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Client Won Deal%3A Update Close Date</fullName>
+        <actions>
+            <name>Update_Close_Date_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Won</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email for Lost or Delayed Opp</fullName>
+        <actions>
+            <name>Email_John_About_Lost_or_Delayed_Deals</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Lost,Delayed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Hot Opportunity Notification</fullName>
+        <actions>
+            <name>Hot_Opportunity_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Probability</field>
+            <operation>greaterOrEqual</operation>
+            <value>90</value>
+        </criteriaItems>
+        <description>This rule notifies John Schwepker any time an opportunity is marked as &gt;90% probability.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manager Outbound Check Sheet Completed Date</fullName>
+        <actions>
+            <name>Update_Manager_Completed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Manager_Check_Sheet_Completed_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Manager_Outbound_Sheet_Completed_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Mark Lost if no execution date and created date greater than 1 day</fullName>
+        <actions>
+            <name>Move_Opportunity_Stage_to_Lost</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reason_why_Lost</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring Revenue Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Contract_Execution_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>lessThan</operation>
+            <value>LAST 1 DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Pitching</value>
+        </criteriaItems>
+        <description>If the Contract Execution Date is blank and the Opportunity created date is greater than 90 days, mark the opportunity as Lost.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notification for New Opportunity Status</fullName>
+        <actions>
+            <name>Email_for_Client_Opportunity_Status_Change_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>4/26 dh, Deactivated - Moved to flow: Opportunity: Notification of Status Change
+When the client updates an Opportunity&apos;s Stage, Client Notes, or Client Follow Up Date sends an email</description>
+        <formula>AND( RecordTypeId = &apos;0124A000001gz6B&apos;, ISPICKVAL(Account.Status__c, &apos;Active&apos;), OR( ISCHANGED(StageName), ISCHANGED( Client_Notes__c ), ISCHANGED( Client_Follow_Up_Date__c ) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Director of PSM Referral</fullName>
+        <actions>
+            <name>PSM_Referral_Send_Email_To_Mark</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Referring_PSM_If_Applicable__c</field>
+            <operation>equals</operation>
+            <value>Danielle Schermaul</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Referred_By_Account_Text__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Referring_PSM_Director__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Referral_Type__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Recurring Revenue Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.LeadSource</field>
+            <operation>notEqual</operation>
+            <value>90 Day Client</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Owner of New Referral Opp</fullName>
+        <actions>
+            <name>New_Referral_Opportunity_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Uncheck_Notification_Trigger_Point</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Notify_Rep_Email__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Sales Reps of Docusign Sent</fullName>
+        <actions>
+            <name>Opportunity_Contract_Sent_Market_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Uncheck_Box</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Notify_Sales_Reps__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>PandaDocument: Update Metro Area &amp; Notify Reps
+Process builder - Docusign: Update Metro with Sent Date - New App
+Docusign: Update Metro with Sent Date - New App</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Outbound Pitch Sheet Completed</fullName>
+        <actions>
+            <name>Opportunity_Email_for_Check_Sheet_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Outbound_Check_Sheet_Completed_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Manager_Outbound_Sheet_Completed_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A Populate MSA</fullName>
+        <actions>
+            <name>Update_MSA_Start_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.MSA_Start_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Expected_Close_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Outbound Check Sheet Completed Date</fullName>
+        <actions>
+            <name>Update_Completed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Outbound_Check_Sheet_Completed_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Outbound_Check_Sheet_Completed_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Implememtation Link</fullName>
+        <actions>
+            <name>Populate_Initial_Implementation_Link</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SYS - Opp Close Date</fullName>
+        <actions>
+            <name>Set_Opp_Close_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Won,Lost,Delayed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Recurring Revenue Opportunity</value>
+        </criteriaItems>
+        <description>Set &apos;Close Date&apos; when &apos;Stage&apos; = &quot;Won&quot;, &quot;Delayed&quot;, or &quot;Lost&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SYS - Set Opp Close Date</fullName>
+        <actions>
+            <name>Set_Initial_Opp_Close_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Start_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Salesforce Opportunity Follow Up Date Alert Delayed</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Follow_up_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Salesforce Opportunity</value>
+        </criteriaItems>
+        <description>Trigger email for follow up on Salesforce Opportunity</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Salesforce_Opportunity_Follow_Up</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Follow_up_Date__c</offsetFromField>
+            <timeLength>-23</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Client Follow Up Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Client_Follow_Up_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Client_Follow_Up_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Client_Follow_Up_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Client_Follow_Up_Date__c</offsetFromField>
+            <timeLength>8</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Top 2 Date Populate</fullName>
+        <actions>
+            <name>Top_2_Date_Populate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Top_2__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Top 5 Date Populate</fullName>
+        <actions>
+            <name>Update_Top_5_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Top_5_Opportunities__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Account Name</fullName>
+        <actions>
+            <name>Update_Account_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.UserRoleId</field>
+            <operation>equals</operation>
+            <value>Sales Staff</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>deactivated to prevent account names changing delete if the issue stopped</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Add Inbound Product</fullName>
+        <actions>
+            <name>Check_Inbound_Product</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>IF(AND(ISPICKVAL(Product__c, &apos;Pipeline Inbound&apos;), ISNULL(Amount) ),TRUE,FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Close Date after Won</fullName>
+        <actions>
+            <name>Close_Date_Update_After_Won</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>4-28-2021 -Kyle -  Added Record type so it does not update sales reoccurring revenue opportunity</description>
+        <formula>AND(
+ISPICKVAL(Opportunity_Stage__c,&quot;Won&quot;),
+RecordTypeId &lt;&gt; &quot;012G0000000qERiIAM&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Field is Populated</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Update__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This will populate the Notes field with the most recent text entered into the Update field.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Field is Populated v2</fullName>
+        <actions>
+            <name>Clear_the_Update_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Notes_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Update__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Manager Notes Field is Populated</fullName>
+        <actions>
+            <name>Clear_Update_Manager_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Manager_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Update_Manager_Notes__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Probability</fullName>
+        <actions>
+            <name>Change_Value_of_Probability</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Budget__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Authority__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Pain__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Timeframe__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Competition__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Won,Lost</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Won</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Website Audit Approval Date</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Website_Approved_1__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

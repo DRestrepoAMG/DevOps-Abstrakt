@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline Management</fullName>
+                <default>false</default>
+                <label>Pipeline Management</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>Full Service</fullName>
+                <default>false</default>
+                <label>Full Service</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>Continuity</fullName>
+                <default>false</default>
+                <label>Continuity</label>
+            </value>
+            <value>
+                <fullName>Pipeline Management &amp; Social Media</fullName>
+                <default>false</default>
+                <label>Pipeline Management &amp; Social Media</label>
+            </value>
+            <value>
+                <fullName>Blog Package</fullName>
+                <default>false</default>
+                <label>Blog Package</label>
+            </value>
+            <value>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+                <label>Case Study</label>
+            </value>
+            <value>
+                <fullName>Graphic Video</fullName>
+                <default>false</default>
+                <label>Graphic Video</label>
+            </value>
+            <value>
+                <fullName>Sell Sheets</fullName>
+                <default>false</default>
+                <label>Sell Sheets</label>
+            </value>
+            <value>
+                <fullName>SEO</fullName>
+                <default>false</default>
+                <label>SEO</label>
+            </value>
+            <value>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+                <label>Paid Search</label>
+            </value>
+            <value>
+                <fullName>Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <label>Virtual Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Inbound Pipeline</fullName>
+                <default>false</default>
+                <label>Inbound Pipeline</label>
+            </value>
+            <value>
+                <fullName>Creative Services</fullName>
+                <default>false</default>
+                <label>Creative Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_10_Risk__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This box is used by Director of Partner Sales to identify top 10 cancel risks at any time</description>
+    <externalId>false</externalId>
+    <label>Top 10 Cancel Risk</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

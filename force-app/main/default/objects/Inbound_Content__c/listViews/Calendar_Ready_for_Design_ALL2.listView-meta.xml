@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calendar_Ready_for_Design_ALL2</fullName>
+    <columns>Designer__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Social_Media_Manager__c</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Design Edits,Ready for Graphic Designer,Design QA Edits</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Creative_Calendar</value>
+    </filters>
+    <label>Calendar Ready for Design - ALL</label>
+    <sharedTo>
+        <group>Directors_and_Above</group>
+        <role>Graphic_Designer</role>
+        <role>Implementation_Manager</role>
+        <role>Implementation_Specialist</role>
+    </sharedTo>
+</ListView>

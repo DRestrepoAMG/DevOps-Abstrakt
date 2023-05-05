@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Manager_s_Call_Score__c</fullName>
+    <description>The project manager&apos;s score based on the Implementation Call Quality Scorecard.</description>
+    <externalId>false</externalId>
+    <formula>(CASE( Clearly_prep_the_meeting__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Set_and_follow_proper_agenda__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Were_agreement_qualifier_reviewed__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Asked_insightful_interesting_questions__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Provided_accurate_guidance_suggestions__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE(Did_the_IPM_bring_up_payment_due_dates__c,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE(Provide_proper_expectations_answers__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+ 
+CASE(Keep_tone_and_pace_of_call_appropriate__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Discussed_other_services_for_an_upsell__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE( Recap_with_action_items_due_dates__c ,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0))/(20-
+(CASE( Clearly_prep_the_meeting__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Set_and_follow_proper_agenda__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Were_agreement_qualifier_reviewed__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Asked_insightful_interesting_questions__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Provided_accurate_guidance_suggestions__c ,
+&quot;NA&quot;,2,
+0)+
+CASE(Did_the_IPM_bring_up_payment_due_dates__c,
+&quot;NA&quot;,2,
+0)+
+CASE(Provide_proper_expectations_answers__c ,
+&quot;NA&quot;,2,
+0)+ 
+CASE(Keep_tone_and_pace_of_call_appropriate__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Discussed_other_services_for_an_upsell__c ,
+&quot;NA&quot;,2,
+0)+
+CASE( Recap_with_action_items_due_dates__c ,
+&quot;NA&quot;,2,
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Manager&apos;s Call Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

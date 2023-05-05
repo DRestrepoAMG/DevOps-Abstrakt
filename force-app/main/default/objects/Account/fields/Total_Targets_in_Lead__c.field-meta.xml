@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Targets_in_Lead__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of related contacts where Dev Phase = &apos;03 Lead&apos;.  Updated by Account Pipeline Metrics batch process.</inlineHelpText>
+    <label>Total Targets in Lead</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

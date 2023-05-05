@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performance_Test_Error__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If GTMetrix returned an error when Workato tried to start the performance test, the error is stored here.  It usually means that too many tests were started at the same time.</inlineHelpText>
+    <label>Performance Test Error</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

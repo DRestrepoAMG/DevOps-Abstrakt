@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Collection_Goal_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+(AND 
+(OR( Cleansing_Program__c = False,  
+NOT(INCLUDES(Additional_Guarantees__c,&quot;Companies Cleansed&quot;))),  
+to_Appt_Goal_Actual__c &gt;= 1),  Monthly_Data_Collection_Goal__c  *(50/100),Monthly_Data_Collection_Goal__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Monthly Company Cleansed Goal is prorated 50% when there isn&apos;t a company cleansed guarantee, % to Appt Goal Actual is at least 100%.</inlineHelpText>
+    <label>Company Cleansed Goal Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

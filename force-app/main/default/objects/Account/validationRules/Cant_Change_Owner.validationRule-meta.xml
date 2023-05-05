@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Change_Owner</fullName>
+    <active>true</active>
+    <description>Only System Administrators can change owner. This is needed to ensure the psr allocation records with the success manager are updated correctly for planning future months allocations and to ensure no one is over-allocated. Case #00049636</description>
+    <errorConditionFormula>AND(ISCHANGED( OwnerId ),
+ $User.ProfileId &lt;&gt;&apos;00eA0000000nBcd&apos;,
+ $User.ProfileId &lt;&gt;&apos;00e4w000001GrLF&apos;,
+ RecordTypeId =&apos;012A0000000kZfw&apos;)</errorConditionFormula>
+    <errorMessage>In order to keep track of allocations, please put in a case to request ownership change.</errorMessage>
+</ValidationRule>

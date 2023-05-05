@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Assets__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISPICKVAL(Marketing_Assets__c, &apos;None&apos;),ISPICKVAL(Marketing_Assets__c, &apos;Landing Page Only&apos;),ISBLANK(text(Marketing_Assets__c))),FALSE,TRUE)</formula>
+    <label>Has Assets</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEO_Type_Reasoning</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordTypeId = &quot;0124w000001Ypml&quot;,
+OR(
+AND(
+ISPICKVAL( SEO_Type__c, &quot;Image Alt Tags&quot;),
+ISBLANK(What_page_images_do_we_need_to_target__c)),
+AND(
+ISPICKVAL( SEO_Type__c, &quot;Meta Refreshes&quot;),
+ISBLANK(What_pages_do_we_need_to_refresh__c)),
+AND(
+ISPICKVAL(SEO_Type__c,&quot;Internal Linking&quot;),
+ISBLANK(What_pages_do_we_need_to_focus_on__c)),
+AND(
+ISPICKVAL(SEO_Type__c,&quot;Call-to-Action&quot;),
+ISBLANK(What_page_CTA_s_do_we_need_to_adjust__c))))</errorConditionFormula>
+    <errorDisplayField>SEO_Type__c</errorDisplayField>
+    <errorMessage>Please fill out the appropriate text field.</errorMessage>
+</ValidationRule>

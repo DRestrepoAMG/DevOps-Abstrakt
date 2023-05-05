@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If your PO is for Sales, Sales Enablement or Services (Delivery, Account Management, Operations) please select the division it is for. If it is for more than one division, select one and put the other division and the % split in the notes
+
+If your PO is for the back office functions for the entire enterprise, select the dept:
+Accounting
+HR
+Training (Company Wide only)
+Recruiting (Company Wide only)
+Facilities
+Corp Marketing &amp; Culture
+IT and Technology (Company Wide only)
+General Business</inlineHelpText>
+    <label>Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outbound SDR</fullName>
+                <default>false</default>
+                <label>Outbound SDR</label>
+            </value>
+            <value>
+                <fullName>SDR Boost (Collateral)</fullName>
+                <default>false</default>
+                <label>SDR Boost (Collateral)</label>
+            </value>
+            <value>
+                <fullName>Creative Services</fullName>
+                <default>false</default>
+                <label>Creative Services</label>
+            </value>
+            <value>
+                <fullName>Inbound SDR (SEO)</fullName>
+                <default>false</default>
+                <label>Inbound SDR (SEO)</label>
+            </value>
+            <value>
+                <fullName>Talent Acquisition (Client Services)</fullName>
+                <default>false</default>
+                <label>Talent Acquisition (Client Services)</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR (Sapper Core)</fullName>
+                <default>false</default>
+                <label>Bionic SDR (Sapper Core)</label>
+            </value>
+            <value>
+                <fullName>Proserve</fullName>
+                <default>false</default>
+                <label>Proserve</label>
+            </value>
+            <value>
+                <fullName>Cloud</fullName>
+                <default>false</default>
+                <label>Cloud</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>Training (Company Wide only)</fullName>
+                <default>false</default>
+                <label>Training (Company Wide only)</label>
+            </value>
+            <value>
+                <fullName>Recruiting (Company Wide only)</fullName>
+                <default>false</default>
+                <label>Recruiting (Company Wide only)</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Corp Marketing &amp; Culture</fullName>
+                <default>false</default>
+                <label>Corp Marketing &amp; Culture</label>
+            </value>
+            <value>
+                <fullName>IT and Technology (Company Wide only)</fullName>
+                <default>false</default>
+                <label>IT and Technology (Company Wide only)</label>
+            </value>
+            <value>
+                <fullName>General Business Expenses</fullName>
+                <default>false</default>
+                <label>General Business Expenses</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

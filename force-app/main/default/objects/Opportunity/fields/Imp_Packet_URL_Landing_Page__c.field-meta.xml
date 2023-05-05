@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Imp_Packet_URL_Landing_Page__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Begins(Implementation_Packet_Edit_Link__c, &quot;https://www.surveygizmo.com&quot;), &quot;&quot;, 
+
+HYPERLINK(IF(ISPICKVAL(Industry__c, &apos;IT&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273701/AMG-IMP-LP-IT?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Commercial Cleaning&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273677/AMG-IMP-LP-CC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Real Estate Agent Recruitment&apos;), 
+&quot;https://www.surveygizmo.com/s3/4450915/AMG-IMP-LP-REREC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - LO Recruitment&apos;), 
+&quot;https://www.surveygizmo.com/s3/4496950/AMG-IMP-LP-LOREC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - LO/Referral&apos;), 
+&quot;https://www.surveygizmo.com/s3/4497109/AMG-IMP-LP-LOREF?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Mortgage - Realtor Referral&apos;), 
+&quot;https://www.surveygizmo.com/s3/4496856/AMG-IMP-LP-REREF?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Material Handling&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273642/AMG-IMP-LP-MH?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;HVAC&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273288/AMG-IMP-LP-HVAC?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;LED Lighting&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273015/AMG-IMP-LP-LED?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Commercial Roofing&apos;), 
+&quot;https://www.surveygizmo.com/s3/4273378/AMG-IMP-LP-Roof?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Solar&apos;), 
+&quot;https://www.surveygizmo.com/s3/4308601/AMG-IMG-LP-Solar?opportunityid=&quot;+Id, 
+
+IF(ISPICKVAL(Industry__c, &apos;Commercial Real Estate&apos;), 
+&quot;https://www.surveygizmo.com/s3/4805760/AMG-IMP-LP-CRE?opportunityid=&quot;+Id,
+
+IF(ISPICKVAL(Industry__c, &apos;Construction&apos;), 
+&quot;https://survey.alchemer.com/s3/6096497/Abstrakt-Implementation-Packet-LP-Construction?opportunityid=&quot;+Id,
+
+&quot;https://www.surveygizmo.com/s3/4246161/AMG-IMP-LP-Other?opportunityid=&quot;+Id))))))))))))), &quot;Use This Link to Start Packet Only&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is used to start the packet for landing page. Client needs to be sent the edit link.</inlineHelpText>
+    <label>Imp Packet URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

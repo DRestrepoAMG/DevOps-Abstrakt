@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAM_Referrals</fullName>
+    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8 AND 9 AND 10</booleanFilter>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Referring_PSM_If_Applicable__c</columns>
+    <columns>Referring_PSM_Director__c</columns>
+    <columns>Referred_By_Account_Text__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Referred_by_Account__c</field>
+        <operation>notContain</operation>
+        <value>Abstrakt</value>
+    </filters>
+    <filters>
+        <field>Referring_PSM_Director__c</field>
+        <operation>equals</operation>
+        <value>Ernest Brooks IV,James Leisinger,Kyle Bryan,Mark Monika,Thomas Hackler</value>
+    </filters>
+    <filters>
+        <field>Referring_PSM_If_Applicable__c</field>
+        <operation>equals</operation>
+        <value>Alexander Foley,Angela Ogle,Tony Mori,Barbara Williams,Brendan Madden,Brett Simon,Chance Smith,David Dillard,David Ruckman,Ernest Brooks,Greg Heins,James Leisinger</value>
+    </filters>
+    <filters>
+        <field>Referring_PSM_If_Applicable__c</field>
+        <operation>equals</operation>
+        <value>James White,Joshua Hensley,Kevin Sodemann,Kyle Bryan,Lauren Hutchcraft,Mark Monika,Mary O&apos;Toole,Rachel Grant,Reid Marks,Scott McQuality,Tara Dille,Thomas Hackler</value>
+    </filters>
+    <filters>
+        <field>Referred_by_Account__c</field>
+        <operation>equals</operation>
+        <value>0014A00002OyLKEQA3,0014A00002PcbAnQAJ,0014A00002PdT9OQAV,0014A00002GBBnhQAH,0014A00002IhnEXQAZ,0014A00002Hh6T6QAJ,0014A00002Li4umQAB,0014A00002LfqaTQAR,0014A00002EUlkAQAT</value>
+    </filters>
+    <filters>
+        <field>Referred_by_Account__c</field>
+        <operation>equals</operation>
+        <value>0014A00002GncIr,001G000001vXt96,0014A00002P0KEZ,0014A00002OHy6b,0014A00002OyRj0,0014A00002PdToq,0014A00002HhGY3,001G0000020CKuJ,0014A00002LegIr,0014A00002QmsYb,0014A00002Dmn4h,0014A00002PdOGx</value>
+    </filters>
+    <filters>
+        <field>Referred_by_Account__c</field>
+        <operation>equals</operation>
+        <value>0014A00002TY2TD,0014A00002NnRB2,0014A00002PdP6e,0014A00002GozTN,0014A00002HiSy6,0014A00002Ju1AZ,001G000001n0Dlw,0014A00002HhJor,001G0000021fvkW,0014A00002IhtFB,001G000000sd88M,001G000001tq2tT</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Product__c</field>
+        <operation>equals</operation>
+        <value>Pipeline Outbound</value>
+    </filters>
+    <filters>
+        <field>Stampley_Status__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>PAM Referrals</label>
+    <sharedTo>
+        <group>Partner_Account_Manager</group>
+        <role>BDS_Partner_Account_Manager</role>
+        <role>Director_of_Maryville</role>
+        <role>Partner_Sales_Manager</role>
+        <role>Partner_Success_Manager</role>
+        <role>SDR</role>
+    </sharedTo>
+</ListView>

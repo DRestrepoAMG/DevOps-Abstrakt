@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_View_Inbound_Content</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>Submitted_to_Client_Date__c</columns>
+    <columns>Topic__c</columns>
+    <columns>Draft_Link__c</columns>
+    <columns>Content_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Client Cancelled,Client Auto Opted Out</value>
+    </filters>
+    <label>Client View - All Creative Content</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+    </sharedTo>
+</ListView>

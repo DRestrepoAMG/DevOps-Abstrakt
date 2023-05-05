@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wrap_Up_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>(VALUE(TEXT(Importance_of_MRMs__c ))+
+VALUE(TEXT(SDR_Turnover__c ))+
+VALUE(TEXT(Ramp_Up_Period_0_10__c ))+
+VALUE(TEXT(Why_Abstrakt__c ))+
+VALUE(TEXT(Business_and_Sales_Process_Practices__c ))+
+VALUE(TEXT(Qualifiers_and_Disqualifiers__c ))+
+VALUE(TEXT(Reschedules_and_No_Shows_Conflicts__c ))+
+VALUE(TEXT(Invoice_and_Monthly_Payment__c ))+
+VALUE(TEXT(Partner_Satisfaction_Score__c ))+
+VALUE(TEXT(Key_Takeaways__c )))/100</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wrap Up Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

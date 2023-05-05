@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_have_cancel_date_to_mark_cancelled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordTypeId &lt;&gt;&apos;012A0000000kZbF&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+NOT(ISPICKVAL(Industry ,&apos;Abstrakt&apos;)),
+ISPICKVAL( Status__c ,&apos;Canceled&apos;),
+ISBLANK( Cancel_Date__c ))</errorConditionFormula>
+    <errorMessage>Must Populate Cancel Date to Marked Canceled</errorMessage>
+</ValidationRule>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pitch_1_Result__c</fullName>
+    <externalId>false</externalId>
+    <label>Pitch #1 Result</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Completed Closed Market</fullName>
+                <default>false</default>
+                <label>Completed Closed Market</label>
+            </value>
+            <value>
+                <fullName>Completed Competitor</fullName>
+                <default>false</default>
+                <label>Completed Competitor</label>
+            </value>
+            <value>
+                <fullName>Completed Don&apos;t Want to Grow</fullName>
+                <default>false</default>
+                <label>Completed Don&apos;t Want to Grow</label>
+            </value>
+            <value>
+                <fullName>Completed Engaged</fullName>
+                <default>false</default>
+                <label>Completed Engaged</label>
+            </value>
+            <value>
+                <fullName>Completed Lost</fullName>
+                <default>false</default>
+                <label>Completed Lost</label>
+            </value>
+            <value>
+                <fullName>Completed No Budget</fullName>
+                <default>false</default>
+                <label>Completed No Budget</label>
+            </value>
+            <value>
+                <fullName>Completed No Interest</fullName>
+                <default>false</default>
+                <label>Completed No Interest</label>
+            </value>
+            <value>
+                <fullName>Completed Not a Fit</fullName>
+                <default>false</default>
+                <label>Completed Not a Fit</label>
+            </value>
+            <value>
+                <fullName>Completed Not KDM</fullName>
+                <default>false</default>
+                <label>Completed Not KDM</label>
+            </value>
+            <value>
+                <fullName>Completed Nurture</fullName>
+                <default>false</default>
+                <label>Completed Nurture</label>
+            </value>
+            <value>
+                <fullName>Completed Proposal</fullName>
+                <default>false</default>
+                <label>Completed Proposal</label>
+            </value>
+            <value>
+                <fullName>Completed Scheduled Next</fullName>
+                <default>false</default>
+                <label>Completed Scheduled Next</label>
+            </value>
+            <value>
+                <fullName>Completed Too Expensive</fullName>
+                <default>false</default>
+                <label>Completed Too Expensive</label>
+            </value>
+            <value>
+                <fullName>Completed Too Much Work</fullName>
+                <default>false</default>
+                <label>Completed Too Much Work</label>
+            </value>
+            <value>
+                <fullName>Completed Waiting List</fullName>
+                <default>false</default>
+                <label>Completed Waiting List</label>
+            </value>
+            <value>
+                <fullName>Contacted Not Pitched</fullName>
+                <default>false</default>
+                <label>Contacted Not Pitched</label>
+            </value>
+            <value>
+                <fullName>In Process</fullName>
+                <default>false</default>
+                <label>In Process</label>
+            </value>
+            <value>
+                <fullName>No Show</fullName>
+                <default>false</default>
+                <label>No Show</label>
+            </value>
+            <value>
+                <fullName>Rescheduled</fullName>
+                <default>false</default>
+                <label>Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Territory Closed</fullName>
+                <default>false</default>
+                <label>Territory Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

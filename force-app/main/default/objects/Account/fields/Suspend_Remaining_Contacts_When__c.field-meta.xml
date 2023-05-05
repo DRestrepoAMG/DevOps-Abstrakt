@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suspend_Remaining_Contacts_When__c</fullName>
+    <description>The value selected here determines at what stage, if at all, a contact will cause all other remaining contacts for the related company and account to be suspended by a trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value selected here determines at what stage, if at all, a contact will cause all other remaining contacts for the related company and account to be suspended by a trigger</inlineHelpText>
+    <label>Suspend Remaining Contacts When</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appt</fullName>
+                <default>false</default>
+                <label>Appt</label>
+            </value>
+            <value>
+                <fullName>Lead No Interest</fullName>
+                <default>false</default>
+                <label>Lead No Interest</label>
+            </value>
+            <value>
+                <fullName>KDM</fullName>
+                <default>false</default>
+                <label>KDM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

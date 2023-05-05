@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MWitte_IT_Houston</fullName>
+    <booleanFilter>3 AND (2 OR 4) AND (1 OR 5)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Industry__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Mailing_State__c</columns>
+    <columns>Exclusive_Target_List__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Witte</value>
+    </filters>
+    <filters>
+        <field>Metro_Area__c</field>
+        <operation>contains</operation>
+        <value>Houston</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>City_Region__c</field>
+        <operation>contains</operation>
+        <value>Houston</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>contains</operation>
+        <value>mwitt</value>
+    </filters>
+    <label>MWitte IT Houston</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

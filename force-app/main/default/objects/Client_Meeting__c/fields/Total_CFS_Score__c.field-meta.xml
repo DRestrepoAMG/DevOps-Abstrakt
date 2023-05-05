@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_CFS_Score__c</fullName>
+    <description>Total CFS equals their final score divided by 12.</description>
+    <externalId>false</externalId>
+    <formula>(CASE(Overall_Abstrakt_Satisfaction__c,
+&apos;5&apos;,5,
+&apos;4&apos;,4,
+&apos;3&apos;,3,
+&apos;2&apos;,2,
+&apos;1&apos;,1,
+0)+
+CASE(Would_You_Recommend_Abstrakt__c, 
+&apos;YES&apos;,2,
+&apos;NO&apos;,1,
+0)+  
+CASE(Alignment_With_Abstrakt_Expectations__c,  
+&apos;Very Aligned&apos;,3,
+&apos;Somewhat Aligned&apos;,2,
+&apos;Not Aligned&apos;,1,
+0)+
+CASE(Are_We_Talking_to_the_Final_KDM__c, 
+&apos;Yes&apos;,2,
+&apos;No&apos;,1,
+0
+))
+/12</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total CFS equals their final score divided by 12.</inlineHelpText>
+    <label>Total CFS Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

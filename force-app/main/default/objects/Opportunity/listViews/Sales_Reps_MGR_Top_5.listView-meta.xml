@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Reps_MGR_Top_5</fullName>
+    <columns>X2nd_Voice__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Top_5_Opportunities__c</columns>
+    <columns>Manager_Top_5__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Recurring_Revenue_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notContain</operation>
+        <value>won</value>
+    </filters>
+    <filters>
+        <field>Manager_Top_5__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Manager Top 5 Opportunties - Sales</label>
+    <sharedTo>
+        <group>Sales</group>
+    </sharedTo>
+</ListView>

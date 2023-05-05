@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMG_Referral_Email_Campaign_Joe</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Referred_by_Account__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Referring_PSM_If_Applicable__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Follow_up_Date__c</columns>
+    <columns>Callback_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>equals</operation>
+        <value>Joe Henthorn</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Customer Referral</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>10/31/2019 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Won</value>
+    </filters>
+    <filters>
+        <field>Market_Closed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>AMG Referral Email Campaign - Joe</label>
+    <sharedTo>
+        <role>SDR</role>
+    </sharedTo>
+</ListView>

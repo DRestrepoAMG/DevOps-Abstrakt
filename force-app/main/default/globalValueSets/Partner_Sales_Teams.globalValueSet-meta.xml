@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>404 - Team Not Found</fullName>
+        <default>false</default>
+        <label>404 - Team Not Found</label>
+    </customValue>
+    <customValue>
+        <fullName>Abstrakt Gladiators</fullName>
+        <default>false</default>
+        <label>Abstrakt Gladiators</label>
+    </customValue>
+    <customValue>
+        <fullName>Abstrakt Studios</fullName>
+        <default>false</default>
+        <label>Abstrakt Studios</label>
+    </customValue>
+    <customValue>
+        <fullName>Abstrakt Word Police</fullName>
+        <default>false</default>
+        <label>Abstrakt Word Police</label>
+    </customValue>
+    <customValue>
+        <fullName>Attack of the Phones</fullName>
+        <default>false</default>
+        <label>Attack of the Phones</label>
+    </customValue>
+    <customValue>
+        <fullName>Bad News Bears</fullName>
+        <default>false</default>
+        <label>Bad News Bears</label>
+    </customValue>
+    <customValue>
+        <fullName>Breakfast Club</fullName>
+        <default>false</default>
+        <label>Breakfast Club</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffalo Soldiers</fullName>
+        <default>false</default>
+        <label>Buffalo Soldiers</label>
+    </customValue>
+    <customValue>
+        <fullName>Callywood</fullName>
+        <default>false</default>
+        <label>Callywood</label>
+    </customValue>
+    <customValue>
+        <fullName>Cars</fullName>
+        <default>false</default>
+        <label>Cars</label>
+    </customValue>
+    <customValue>
+        <fullName>Cash Cows</fullName>
+        <default>false</default>
+        <label>Cash Cows</label>
+    </customValue>
+    <customValue>
+        <fullName>Code Name Kidz Next Door</fullName>
+        <default>false</default>
+        <label>Code Name Kidz Next Door</label>
+    </customValue>
+    <customValue>
+        <fullName>Creative Juices</fullName>
+        <default>false</default>
+        <label>Creative Juices</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Intelligence Agency</fullName>
+        <default>false</default>
+        <label>Data Intelligence Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Snipers</fullName>
+        <default>false</default>
+        <label>Digital Snipers</label>
+    </customValue>
+    <customValue>
+        <fullName>Diners Drive-ins &amp; Dials</fullName>
+        <default>false</default>
+        <label>Diners Drive-ins &amp; Dials</label>
+    </customValue>
+    <customValue>
+        <fullName>Disco Ninjas</fullName>
+        <default>false</default>
+        <label>Disco Ninjas</label>
+    </customValue>
+    <customValue>
+        <fullName>Dr. McGillicuddy&apos;s Stupendous Fantasmagorical Retention ElixirTM</fullName>
+        <default>false</default>
+        <label>Dr. McGillicuddy&apos;s Stupendous Fantasmagorical Retention ElixirTM</label>
+    </customValue>
+    <customValue>
+        <fullName>Dream Team</fullName>
+        <default>false</default>
+        <label>Dream Team</label>
+    </customValue>
+    <customValue>
+        <fullName>ESPN</fullName>
+        <default>false</default>
+        <label>ESPN</label>
+    </customValue>
+    <customValue>
+        <fullName>Fast &amp; Furious</fullName>
+        <default>false</default>
+        <label>Fast &amp; Furious</label>
+    </customValue>
+    <customValue>
+        <fullName>Floor</fullName>
+        <default>false</default>
+        <label>Floor</label>
+    </customValue>
+    <customValue>
+        <fullName>Game of Phones</fullName>
+        <default>false</default>
+        <label>Game of Phones</label>
+    </customValue>
+    <customValue>
+        <fullName>Get Rev Recked</fullName>
+        <default>false</default>
+        <label>Get Rev Recked</label>
+    </customValue>
+    <customValue>
+        <fullName>Hogwarts: School of Pitchcraft</fullName>
+        <default>false</default>
+        <label>Hogwarts: School of Pitchcraft</label>
+    </customValue>
+    <customValue>
+        <fullName>Inbound and Down</fullName>
+        <default>false</default>
+        <label>Inbound and Down</label>
+    </customValue>
+    <customValue>
+        <fullName>Jedi Order</fullName>
+        <default>false</default>
+        <label>Jedi Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Kings of the Ring</fullName>
+        <default>false</default>
+        <label>Kings of the Ring</label>
+    </customValue>
+    <customValue>
+        <fullName>Let&apos;s Get Fiscal</fullName>
+        <default>false</default>
+        <label>Let&apos;s Get Fiscal</label>
+    </customValue>
+    <customValue>
+        <fullName>License to Close</fullName>
+        <default>false</default>
+        <label>License to Close</label>
+    </customValue>
+    <customValue>
+        <fullName>Lotso Meetings</fullName>
+        <default>false</default>
+        <label>Lotso Meetings</label>
+    </customValue>
+    <customValue>
+        <fullName>Magic Ringdom</fullName>
+        <default>false</default>
+        <label>Magic Ringdom</label>
+    </customValue>
+    <customValue>
+        <fullName>Maryville Mad Dogs</fullName>
+        <default>false</default>
+        <label>Maryville Mad Dogs</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission Possible</fullName>
+        <default>false</default>
+        <label>Mission Possible</label>
+    </customValue>
+    <customValue>
+        <fullName>MLB</fullName>
+        <default>false</default>
+        <label>MLB</label>
+    </customValue>
+    <customValue>
+        <fullName>MLS</fullName>
+        <default>false</default>
+        <label>MLS</label>
+    </customValue>
+    <customValue>
+        <fullName>New Hire Team</fullName>
+        <default>false</default>
+        <label>New Hire Team</label>
+    </customValue>
+    <customValue>
+        <fullName>New Money</fullName>
+        <default>false</default>
+        <label>New Money</label>
+    </customValue>
+    <customValue>
+        <fullName>NFL</fullName>
+        <default>false</default>
+        <label>NFL</label>
+    </customValue>
+    <customValue>
+        <fullName>NHL</fullName>
+        <default>false</default>
+        <label>NHL</label>
+    </customValue>
+    <customValue>
+        <fullName>No Fonts Given</fullName>
+        <default>false</default>
+        <label>No Fonts Given</label>
+    </customValue>
+    <customValue>
+        <fullName>Outbound Outlaws</fullName>
+        <default>false</default>
+        <label>Outbound Outlaws</label>
+    </customValue>
+    <customValue>
+        <fullName>PLC Team</fullName>
+        <default>false</default>
+        <label>PLC Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Retention to Detail</fullName>
+        <default>false</default>
+        <label>Retention to Detail</label>
+    </customValue>
+    <customValue>
+        <fullName>Rock N Roll Call of Fame</fullName>
+        <default>false</default>
+        <label>Rock N Roll Call of Fame</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Gods</fullName>
+        <default>false</default>
+        <label>Sales Gods</label>
+    </customValue>
+    <customValue>
+        <fullName>Sapper Consulting</fullName>
+        <default>false</default>
+        <label>Sapper Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>School of Rock</fullName>
+        <default>false</default>
+        <label>School of Rock</label>
+    </customValue>
+    <customValue>
+        <fullName>South Side Director Team!</fullName>
+        <default>false</default>
+        <label>South Side Director Team!</label>
+    </customValue>
+    <customValue>
+        <fullName>Space Calls</fullName>
+        <default>false</default>
+        <label>Space Calls</label>
+    </customValue>
+    <customValue>
+        <fullName>Star Command</fullName>
+        <default>false</default>
+        <label>Star Command</label>
+    </customValue>
+    <customValue>
+        <fullName>Strate&apos;gs</fullName>
+        <default>false</default>
+        <label>Strate&apos;gs</label>
+    </customValue>
+    <customValue>
+        <fullName>Super Smash Calls</fullName>
+        <default>false</default>
+        <label>Super Smash Calls</label>
+    </customValue>
+    <customValue>
+        <fullName>The Breakfast Club</fullName>
+        <default>false</default>
+        <label>The Breakfast Club</label>
+    </customValue>
+    <customValue>
+        <fullName>The Claw</fullName>
+        <default>false</default>
+        <label>The Claw</label>
+    </customValue>
+    <customValue>
+        <fullName>The Dream Team</fullName>
+        <default>false</default>
+        <label>The Dream Team</label>
+    </customValue>
+    <customValue>
+        <fullName>The Gantt Farm</fullName>
+        <default>false</default>
+        <label>The Gantt Farm</label>
+    </customValue>
+    <customValue>
+        <fullName>The Influencers</fullName>
+        <default>false</default>
+        <label>The Influencers</label>
+    </customValue>
+    <customValue>
+        <fullName>The Mighty Ducks</fullName>
+        <default>false</default>
+        <label>The Mighty Ducks</label>
+    </customValue>
+    <customValue>
+        <fullName>The Premier League</fullName>
+        <default>false</default>
+        <label>The Premier League</label>
+    </customValue>
+    <customValue>
+        <fullName>The Shark Tank</fullName>
+        <default>false</default>
+        <label>The Shark Tank</label>
+    </customValue>
+    <customValue>
+        <fullName>The Shield</fullName>
+        <default>false</default>
+        <label>The Shield</label>
+    </customValue>
+    <customValue>
+        <fullName>The Style Guides</fullName>
+        <default>false</default>
+        <label>The Style Guides</label>
+    </customValue>
+    <customValue>
+        <fullName>The Subject Lions</fullName>
+        <default>false</default>
+        <label>The Subject Lions</label>
+    </customValue>
+    <customValue>
+        <fullName>The Warmer Regards</fullName>
+        <default>false</default>
+        <label>The Warmer Regards</label>
+    </customValue>
+    <customValue>
+        <fullName>The Wolves of 1st Street</fullName>
+        <default>false</default>
+        <label>The Wolves of 1st Street</label>
+    </customValue>
+    <customValue>
+        <fullName>Top Guns</fullName>
+        <default>false</default>
+        <label>Top Guns</label>
+    </customValue>
+    <customValue>
+        <fullName>Tune Squad</fullName>
+        <default>false</default>
+        <label>Tune Squad</label>
+    </customValue>
+    <customValue>
+        <fullName>UFC</fullName>
+        <default>false</default>
+        <label>UFC</label>
+    </customValue>
+    <customValue>
+        <fullName>Weapons of Mass Creation</fullName>
+        <default>false</default>
+        <label>Weapons of Mass Creation</label>
+    </customValue>
+    <customValue>
+        <fullName>The Worm Dawgs</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Worm Dawgs</label>
+    </customValue>
+    <customValue>
+        <fullName>The Night&apos;s Watch</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Night&apos;s Watch</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone Thugz-N-Harmony</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Phone Thugz-N-Harmony</label>
+    </customValue>
+    <customValue>
+        <fullName>Knockout Kings</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Knockout Kings</label>
+    </customValue>
+    <customValue>
+        <fullName>American Gladiators</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>American Gladiators</label>
+    </customValue>
+    <customValue>
+        <fullName>The Dialers of Oz</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Dialers of Oz</label>
+    </customValue>
+    <customValue>
+        <fullName>Get Rich or Dial Tryin&apos;</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Get Rich or Dial Tryin&apos;</label>
+    </customValue>
+    <customValue>
+        <fullName>The Commission</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Commission</label>
+    </customValue>
+    <customValue>
+        <fullName>The Pirates</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Pirates</label>
+    </customValue>
+    <customValue>
+        <fullName>The Titans</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Titans</label>
+    </customValue>
+    <customValue>
+        <fullName>Globetrotters</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Globetrotters</label>
+    </customValue>
+    <customValue>
+        <fullName>Rock and Roll Call of Fame</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rock and Roll Call of Fame</label>
+    </customValue>
+    <customValue>
+        <fullName>Dunder Mifflin</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dunder Mifflin</label>
+    </customValue>
+    <customValue>
+        <fullName>Fellowship of the Rings</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fellowship of the Rings</label>
+    </customValue>
+    <customValue>
+        <fullName>Mad Dialers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mad Dialers</label>
+    </customValue>
+    <customValue>
+        <fullName>A-Train</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>A-Train</label>
+    </customValue>
+    <customValue>
+        <fullName>Total Dials</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Total Dials</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>PAM Team</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAM Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Dragoncall Z</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dragoncall Z</label>
+    </customValue>
+    <customValue>
+        <fullName>The Other Guys</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Other Guys</label>
+    </customValue>
+    <customValue>
+        <fullName>The Money Team</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Money Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Tsunami Squad</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tsunami Squad</label>
+    </customValue>
+    <customValue>
+        <fullName>The Justice League</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Justice League</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal House</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Animal House</label>
+    </customValue>
+    <customValue>
+        <fullName>Michael Scott IT Company</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Michael Scott IT Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Attack of the Phones - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Attack of the Phones - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Callywood - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Callywood - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Diners Drive-ins &amp; Dials - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diners Drive-ins &amp; Dials - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Hogwarts: School of Pitchcraft - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hogwarts: School of Pitchcraft - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Michael Scott IT Company - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Michael Scott IT Company - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Top Guns - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Top Guns - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>The Premier League - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Premier League - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Total Dials - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Total Dials - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>UFC - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UFC - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>NFL - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NFL - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Super Smash Calls - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Super Smash Calls - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>The Mighty Ducks - PAM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Mighty Ducks - PAM</label>
+    </customValue>
+    <customValue>
+        <fullName>PAM Team 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAM Team 2</label>
+    </customValue>
+    <customValue>
+        <fullName>PAM Team 4</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAM Team 4</label>
+    </customValue>
+    <customValue>
+        <fullName>PAM Team 3</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAM Team 3</label>
+    </customValue>
+    <customValue>
+        <fullName>PAM Team 5</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAM Team 5</label>
+    </customValue>
+    <customValue>
+        <fullName>Willy Wonka and the Appointment Factory</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Willy Wonka and the Appointment Factory</label>
+    </customValue>
+    <customValue>
+        <fullName>The Dark Side</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Dark Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Abstrakt Avengers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Abstrakt Avengers</label>
+    </customValue>
+    <customValue>
+        <fullName>THE INTERNS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>THE INTERNS</label>
+    </customValue>
+    <customValue>
+        <fullName>Harry Potter and the Sorcerers Phone</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Harry Potter and the Sorcerers Phone</label>
+    </customValue>
+    <customValue>
+        <fullName>NBA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NBA</label>
+    </customValue>
+    <customValue>
+        <fullName>World Wrestling Foneration</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>World Wrestling Foneration</label>
+    </customValue>
+    <customValue>
+        <fullName>Toy Story</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Toy Story</label>
+    </customValue>
+    <customValue>
+        <fullName>No Dialers Left Behind</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No Dialers Left Behind</label>
+    </customValue>
+    <customValue>
+        <fullName>Strictly Pitching</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strictly Pitching</label>
+    </customValue>
+    <customValue>
+        <fullName>Nothing But Appointments</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nothing But Appointments</label>
+    </customValue>
+    <customValue>
+        <fullName>Mighty Morphin Cold Callers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mighty Morphin Cold Callers</label>
+    </customValue>
+    <customValue>
+        <fullName>Fish Tank</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fish Tank</label>
+    </customValue>
+    <customValue>
+        <fullName>The Round Table</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>The Round Table</label>
+    </customValue>
+    <masterLabel>Partner Sales Teams</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

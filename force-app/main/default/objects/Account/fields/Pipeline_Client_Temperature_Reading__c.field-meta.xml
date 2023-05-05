@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Client_Temperature_Reading__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1 - Red = Not Renewing
+2 - Orange = Not Likely to Renew
+3 - Yellow = On the Fence
+4 - Blue = 100% Renewing, Not Quite a Lifetime Partner Yet
+5 - Green = I&apos;m a Lifetime Partner</inlineHelpText>
+    <label>Partner Satisfaction Temperature Reading</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Red</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+            <value>
+                <fullName>Orange</fullName>
+                <color>#FF6600</color>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+            <value>
+                <fullName>Yellow</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>Yellow</label>
+            </value>
+            <value>
+                <fullName>Blue</fullName>
+                <color>#000099</color>
+                <default>false</default>
+                <label>Blue</label>
+            </value>
+            <value>
+                <fullName>Green</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

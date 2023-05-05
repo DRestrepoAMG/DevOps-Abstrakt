@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDR_Sales_Appts_This_Month</fullName>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Lead_Source_Generated_By__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Opportunity_Generated_By__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Metro_Area__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Referred_by_Account__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Reason_Lost__c</columns>
+    <columns>Why_I_Lost_this_Deal__c</columns>
+    <columns>Mailing_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>SDR,PPM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Generated_By__c</field>
+        <operation>equals</operation>
+        <value>Natalie Archer,David Keithley,Seth Rothermich,Joseph Mosby</value>
+    </filters>
+    <label>SDR Sales Appts This Month</label>
+    <sharedTo>
+        <group>Abstrakt_Internal_PSRs</group>
+        <role>Director_of_Maryville</role>
+    </sharedTo>
+</ListView>

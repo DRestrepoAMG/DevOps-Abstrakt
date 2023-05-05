@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Green_Percent__c</columns>
+    <columns>Yellow_Percent__c</columns>
+    <columns>MeetRequirementsPercent__c</columns>
+    <columns>Status__c</columns>
+    <columns>Notes__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>User_Role__c</columns>
+    <columns>Hide_Metric_Progress_Bars__c</columns>
+    <columns>Goal_Type__c</columns>
+    <columns>Object_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Overview__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Give a complete description of what was sold to the client, what Abstrakt is required to fulfill, and any additional information that will help during the process.</inlineHelpText>
+    <label>Program Overview</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

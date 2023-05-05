@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Audit_URL__c</fullName>
+    <description>Used for the Case Type &apos;Website Audit&apos;. Must be populated before moving case to Closed. When case is Closed, the matching field on the account page will be updated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used for the Case Type &apos;Website Audit&apos;. Must be populated before moving case to Closed. When case is Closed, the matching field on the account page will be updated.</inlineHelpText>
+    <label>Digital Audit URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

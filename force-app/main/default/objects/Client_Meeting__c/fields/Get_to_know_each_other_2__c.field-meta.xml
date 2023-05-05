@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Get_to_know_each_other_2__c</fullName>
+    <defaultValue>&quot;-How long have you been in the business?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ 
+&quot;-How did you get into the business?&quot; +SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ 
+&quot;-What keeps you busy outside of work (Hobbies, family, etc)?&quot; +SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ 
+&quot;-Have you ever cold called before? (Just ask between rapport and PAS)&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ 
+&quot;-Have you ever paid for it prior to this?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ 
+&quot;-What other forms of marketing are you currently using?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Get to know each other</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

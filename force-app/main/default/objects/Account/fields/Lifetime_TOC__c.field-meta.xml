@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lifetime_TOC__c</fullName>
+    <description>This is updated by the nightly Account Metric Batch process with a total count of contacts with a Dev Outcome of &apos;07 TOC Open&apos;
+
+TOC Date not equal to Null – This will show all records submitted as a TOC lifetime</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is updated by the nightly Account Metric Batch process with a total count of contacts with a Dev Outcome of &apos;07 TOC Open&apos;</inlineHelpText>
+    <label>Lifetime TOC</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

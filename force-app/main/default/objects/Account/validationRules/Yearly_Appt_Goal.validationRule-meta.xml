@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yearly_Appt_Goal</fullName>
+    <active>true</active>
+    <description>This field editable for Profile Pipeline Director and Inside Sales Manager. Success directors /managers share the same profile with Sales directors/managers, but only Success has permission to edit this field.</description>
+    <errorConditionFormula>AND(
+	ISCHANGED(Yearly_Appt_Goal__c),
+	RecordTypeId = &apos;012A0000000kZfw&apos;,
+	AND(
+		CONTAINS($User.Title, &apos;Sales&apos;),
+		OR(
+			$Profile.Name = &apos;Inside Sales Manager&apos;,
+			$Profile.Name = &apos;Pipeline Director&apos;
+			)
+		)
+	)</errorConditionFormula>
+    <errorMessage>Only Success Managers and Admins have permission to change Yearly Appt Goal</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Expectations__c</fullName>
+    <defaultValue>&quot;90 days for Google to fully index the site&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;18 months to fully optimize an SEO program&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;How many inquiries do you expect/would like to see coming through your site?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;Let’s say year 2 was starting tomorrow and you needed to let me know if you were renewing or not. What makes that decision a no-brainer?&quot;+SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+ SUBSTITUTE($Label.NewLine, &quot;-&quot;, &quot;&quot;)+
+&quot;What does your ideal lead look like?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Inbound Expectations</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

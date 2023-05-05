@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sapper_Wrap_Up_Score__c</fullName>
+    <description>Used to score Sapper Consulting Wrap Up Calls.</description>
+    <externalId>false</externalId>
+    <formula>(CASE( About_Abstrakt__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Ramp_Up_Period__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Monthly_Results_Meeting__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Reschedules_No_Shows__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Sapper_Timeline_of_Expectations__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( How_Do_You_Currently_Get_Leads__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( How_did_you_win_your_largest_client__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( What_s_your_average_deal_size__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(  What_does_first_interaction_look_like__c  ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(  How_do_you_track_follow_ups__c  ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( What_Are_Your_Specific_Goals__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( What_is_the_expectation_on_closed_deals__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( How_will_you_define_success_after_1_year__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(Payment__c,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE( Account_Details__c ,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0)+
+CASE(CFS_Score__c,
+&apos;Yes&apos;,2,
+&apos;Somewhat&apos;,1,
+&apos;No&apos;,0,
+0))/32</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sapper Wrap-Up Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Scored_a_Call__c</fullName>
+    <description>Used to show whether a client graded either a NAC or an Appointment call for current month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText># of completed Client Non-Appointment or Client Appointment scorecards this month.</inlineHelpText>
+    <label>Client Scored a Call</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

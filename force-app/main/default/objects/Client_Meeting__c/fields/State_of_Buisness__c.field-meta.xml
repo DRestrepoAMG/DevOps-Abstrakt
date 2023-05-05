@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_of_Buisness__c</fullName>
+    <description>MRM Partner meeting business issues</description>
+    <externalId>false</externalId>
+    <label>State of Buisness</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cash-Flow/Finances</fullName>
+                <default>false</default>
+                <label>Cash-Flow/Finances</label>
+            </value>
+            <value>
+                <fullName>Low Client Retention</fullName>
+                <default>false</default>
+                <label>Low Client Retention</label>
+            </value>
+            <value>
+                <fullName>Not Decision Maker</fullName>
+                <default>false</default>
+                <label>Not Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Other Business Risk</fullName>
+                <default>false</default>
+                <label>Other Business Risk</label>
+            </value>
+            <value>
+                <fullName>Selling the Business/Merger</fullName>
+                <default>false</default>
+                <label>Selling the Business/Merger</label>
+            </value>
+            <value>
+                <fullName>Staffing Issues/Lack of Resources</fullName>
+                <default>false</default>
+                <label>Staffing Issues/Lack of Resources</label>
+            </value>
+            <value>
+                <fullName>Uncollected AR</fullName>
+                <default>false</default>
+                <label>Uncollected AR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

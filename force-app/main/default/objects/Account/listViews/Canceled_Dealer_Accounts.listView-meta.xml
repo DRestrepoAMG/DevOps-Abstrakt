@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canceled_Dealer_Accounts</fullName>
+    <columns>Sales_Rep__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Cancel_Date__c</columns>
+    <columns>Satisfaction_Level__c</columns>
+    <columns>Number_of_Days_Live__c</columns>
+    <columns>Billed_Amount__c</columns>
+    <columns>Email__c</columns>
+    <columns>Go_Live_Date__c</columns>
+    <columns>Payment_Type__c</columns>
+    <columns>Monthly_Appt_Goal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Dealer_Account</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Canceled</value>
+    </filters>
+    <label>Canceled Dealer Accounts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

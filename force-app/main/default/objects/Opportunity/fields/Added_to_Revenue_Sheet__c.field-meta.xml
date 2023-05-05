@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Added_to_Revenue_Sheet__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For Workato Integration Television</description>
+    <externalId>false</externalId>
+    <label>Added to Revenue Sheet</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

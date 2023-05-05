@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Design_Proofing</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Designer__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Design QA</value>
+    </filters>
+    <label>Design Proofing - Marketing Collateral</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <role>Graphic_Designer</role>
+        <role>Senior_Graphic_Designer</role>
+    </sharedTo>
+</ListView>

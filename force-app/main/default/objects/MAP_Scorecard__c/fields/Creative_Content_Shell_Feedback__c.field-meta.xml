@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creative_Content_Shell_Feedback__c</fullName>
+    <defaultValue>&quot;Is the Creative Content shell phase updated and marked published? Does it follow the proper naming convention? Are the published link and scheduled fields filled in correctly?&quot;</defaultValue>
+    <description>Digital QA Scorecard: Blog</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is the Creative Content shell phase updated and marked published? Does it follow the proper naming convention? Are the published link and scheduled fields filled in correctly?</inlineHelpText>
+    <label>Creative Content Shell Feedback</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

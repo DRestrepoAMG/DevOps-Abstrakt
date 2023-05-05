@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(CASE( Priority, &quot;Low&quot;, &quot;/img/samples/light_green.gif&quot;, &quot;Medium&quot;, &quot;/img/samples/light_yellow.gif&quot;, &quot;High&quot;, &quot;/img/samples/light_red.gif&quot;,&quot;/img/samples/light_red.gif&quot;),&quot;Current Status&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is a sample formula field that displays a traffic light based on the case&apos;s priority.</inlineHelpText>
+    <label>Priority Flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

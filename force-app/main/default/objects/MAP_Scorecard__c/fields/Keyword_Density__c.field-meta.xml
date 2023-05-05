@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Keyword_Density__c</fullName>
+    <description>Digital QA Scorecard: Blog</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is keyword density for the head keyword 1% or higher (used 8 times or more in 750-word blog or 10 times in 1,000-word blog)?</inlineHelpText>
+    <label>Keyword Density</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

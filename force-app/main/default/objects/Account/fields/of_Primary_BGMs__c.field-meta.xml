@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Primary_BGMs__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Adds up the number of Active BGMs listed as Primary.  This ends up being used to calculate the amount of revenue allocated to BGM.</inlineHelpText>
+    <label># of Primary SDRs</label>
+    <summaryFilterItems>
+        <field>BGM_Team__c.ResponsibilityLevel__c</field>
+        <operation>equals</operation>
+        <value>Primary</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>BGM_Team__c.BGM_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryForeignKey>BGM_Team__c.Account_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

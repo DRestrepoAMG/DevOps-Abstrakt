@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliated_with_Current_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &apos;Sapper_CSS&apos;,
+ISPICKVAL( Affiliated_with_a_Current_account__c , &quot;Yes&quot;) ,
+ISBLANK(Affiliated_Account__c )
+)</errorConditionFormula>
+    <errorDisplayField>Affiliated_Account__c</errorDisplayField>
+    <errorMessage>Please provide name of affiliated account.</errorMessage>
+</ValidationRule>

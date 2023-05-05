@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Content Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Creative</fullName>
+                <default>false</default>
+                <label>Customer Creative</label>
+            </value>
+            <value>
+                <fullName>Email Library</fullName>
+                <default>false</default>
+                <label>Email Library</label>
+            </value>
+            <value>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+                <label>Landing Page</label>
+            </value>
+            <value>
+                <fullName>LinkedIn In-Mails</fullName>
+                <default>false</default>
+                <label>LinkedIn In-Mails</label>
+            </value>
+            <value>
+                <fullName>Monthly Social Media Calendar</fullName>
+                <default>false</default>
+                <label>Monthly Social Media Calendar</label>
+            </value>
+            <value>
+                <fullName>Ongoing</fullName>
+                <default>false</default>
+                <label>Ongoing</label>
+            </value>
+            <value>
+                <fullName>Outbound Asset</fullName>
+                <default>false</default>
+                <label>Outbound Asset</label>
+            </value>
+            <value>
+                <fullName>Video Script</fullName>
+                <default>false</default>
+                <label>Video Script</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>Weekly Social Media Calendar</fullName>
+                <default>false</default>
+                <label>Weekly Social Media Calendar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describe_what_you_expect_as_an_appt__c</fullName>
+    <defaultValue>&quot;Take them back to the definition of an appointment and insert worst case scenario (you drive all the way to an appointment for the receptionist to tell you they don’t want to meet anymore or they cancelled prior to the meeting).&quot;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>A. Take them back to the definition of an appointment and insert worst case scenario (you drive all the way to an appointment for the receptionist to tell you they don’t want to meet anymore or they cancelled prior to the meeting).</inlineHelpText>
+    <label>Describe what you expect as an appt</label>
+    <length>2000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

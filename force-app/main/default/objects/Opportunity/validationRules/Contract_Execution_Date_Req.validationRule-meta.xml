@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Execution_Date_Req</fullName>
+    <active>true</active>
+    <description>Contract Execution Date required when stage = &quot;Won&quot; &amp; Metro Area required when stage = &quot;Won&quot;</description>
+    <errorConditionFormula>AND (ISPICKVAL(StageName, &quot;Won&quot;), OR(
+ ISNULL(Metro_Area__c),
+  ISNULL(Contract_Execution_Date__c)),
+  $UserRole.Name &lt;&gt; &quot;Automotive Sales&quot;, 
+$UserRole.Name &lt;&gt; &quot;Administrative Staff&quot;, 
+ Owner.Profile.Name &lt;&gt; &quot;Pipeline Client User&quot;,
+ RecordTypeId  &lt;&gt; &quot;0124A000001gz3W&quot; ,
+ RecordTypeId &lt;&gt; &quot;0124A000001gz6B&quot;)</errorConditionFormula>
+    <errorDisplayField>Contract_Execution_Date__c</errorDisplayField>
+    <errorMessage>Contract Execution Date is required when Stage is &quot;Won&quot;.
+Metro Area is required when Stage is &quot;Won&quot;.</errorMessage>
+</ValidationRule>

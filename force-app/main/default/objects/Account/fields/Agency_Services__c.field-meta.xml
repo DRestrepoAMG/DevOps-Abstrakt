@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Services__c</fullName>
+    <description>This is for Agency clients only.</description>
+    <externalId>false</externalId>
+    <label>Agency Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assets/Collateral</fullName>
+                <default>false</default>
+                <label>Assets/Collateral</label>
+            </value>
+            <value>
+                <fullName>Automotive Social Media</fullName>
+                <default>false</default>
+                <label>Automotive Social Media</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR</fullName>
+                <default>false</default>
+                <label>Bionic SDR</label>
+            </value>
+            <value>
+                <fullName>Custom Creative</fullName>
+                <default>false</default>
+                <label>Custom Creative</label>
+            </value>
+            <value>
+                <fullName>Digital Strategy Consulting</fullName>
+                <default>false</default>
+                <label>Digital Strategy Consulting</label>
+            </value>
+            <value>
+                <fullName>Email Campaign (Pay Per Meeting)</fullName>
+                <default>false</default>
+                <label>Email Campaign (Pay Per Meeting)</label>
+            </value>
+            <value>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+                <label>Email Marketing</label>
+            </value>
+            <value>
+                <fullName>LinkedinBooster</fullName>
+                <default>false</default>
+                <label>LinkedinBooster</label>
+            </value>
+            <value>
+                <fullName>Local SEO</fullName>
+                <default>false</default>
+                <label>Local SEO</label>
+            </value>
+            <value>
+                <fullName>Marketing Collateral</fullName>
+                <default>false</default>
+                <label>Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>Media Buys</fullName>
+                <default>false</default>
+                <label>Media Buys</label>
+            </value>
+            <value>
+                <fullName>Ongoing Content</fullName>
+                <default>false</default>
+                <label>Ongoing Content</label>
+            </value>
+            <value>
+                <fullName>Ongoing SEO</fullName>
+                <default>false</default>
+                <label>Ongoing SEO</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pipeline SEO: Social Content</fullName>
+                <default>false</default>
+                <label>Pipeline SEO: Social Content</label>
+            </value>
+            <value>
+                <fullName>PPC/SEM</fullName>
+                <default>false</default>
+                <label>PPC/SEM</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>ProServe</fullName>
+                <default>false</default>
+                <label>ProServe</label>
+            </value>
+            <value>
+                <fullName>SEO/Website</fullName>
+                <default>false</default>
+                <label>SEO</label>
+            </value>
+            <value>
+                <fullName>Social Boost - Facebook</fullName>
+                <default>false</default>
+                <label>Social Boost - Facebook</label>
+            </value>
+            <value>
+                <fullName>Social Boost - LinkedIn</fullName>
+                <default>false</default>
+                <label>Social Boost - LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Social Content Only</fullName>
+                <default>false</default>
+                <label>Social Content Only</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>Web Hosting Only</fullName>
+                <default>false</default>
+                <label>Web Hosting Only</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>WebsiteBuild</fullName>
+                <default>false</default>
+                <label>Website Build</label>
+            </value>
+            <value>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+                <label>Email Campaign (Flat Rate)</label>
+            </value>
+            <value>
+                <fullName>20 Hr Creative Pkg</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20 Hr Creative Pkg</label>
+            </value>
+            <value>
+                <fullName>Agency Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agency Services</label>
+            </value>
+            <value>
+                <fullName>Automotive Agency Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Agency Service</label>
+            </value>
+            <value>
+                <fullName>Automotive Agency Service, Automotive Social Media, Video</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Agency Service, Automotive Social Media, Video</label>
+            </value>
+            <value>
+                <fullName>Automotive Social Media, Video</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Social Media, Video</label>
+            </value>
+            <value>
+                <fullName>Automotive Social Return</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Social Return</label>
+            </value>
+            <value>
+                <fullName>Automotive Social Return, Automotive Agency Service,  Video</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Social Return, Automotive Agency Service,  Video</label>
+            </value>
+            <value>
+                <fullName>Automotive Social Return, Automotive Agency Service, Automotive Social Media, Video</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive Social Return, Automotive Agency Service, Automotive Social Media, Video</label>
+            </value>
+            <value>
+                <fullName>Automotive with Ads</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive with Ads</label>
+            </value>
+            <value>
+                <fullName>Automotive without Ads</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Automotive without Ads</label>
+            </value>
+            <value>
+                <fullName>B2B Social Media</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B2B Social Media</label>
+            </value>
+            <value>
+                <fullName>Direkt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direkt</label>
+            </value>
+            <value>
+                <fullName>Email Campaign (Flat Rate)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email Campaign (Flat Rate)</label>
+            </value>
+            <value>
+                <fullName>General Social Media</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Social Media</label>
+            </value>
+            <value>
+                <fullName>Inbound Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inbound Guarantee</label>
+            </value>
+            <value>
+                <fullName>Inbound Non-Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inbound Non-Guarantee</label>
+            </value>
+            <value>
+                <fullName>Kreate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kreate</label>
+            </value>
+            <value>
+                <fullName>LinkedIn - Lead Boost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LinkedIn - Lead Boost</label>
+            </value>
+            <value>
+                <fullName>Local SEO,  Video Website</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Local SEO,  Video Website</label>
+            </value>
+            <value>
+                <fullName>Reputation Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reputation Management</label>
+            </value>
+            <value>
+                <fullName>Social with Ads</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Social with Ads</label>
+            </value>
+            <value>
+                <fullName>Virtual Marketing Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Virtual Marketing Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hours_Charged_To__c</fullName>
+    <description>used to assign marketing case owners in guided submission flow</description>
+    <externalId>false</externalId>
+    <label>Hours Charged To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>AMG Cloud</fullName>
+                <default>false</default>
+                <label>AMG Cloud</label>
+            </value>
+            <value>
+                <fullName>AMG Marketing &amp; Culture</fullName>
+                <default>false</default>
+                <label>AMG Marketing &amp; Culture</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR - Account Management</fullName>
+                <default>false</default>
+                <label>Bionic SDR - Account Management</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR - Fulfillment</fullName>
+                <default>false</default>
+                <label>Bionic SDR - Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Bionic SDR - Operations</fullName>
+                <default>false</default>
+                <label>Bionic SDR - Operations</label>
+            </value>
+            <value>
+                <fullName>Creative</fullName>
+                <default>false</default>
+                <label>Creative</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Inbound SDR - Account Management</fullName>
+                <default>false</default>
+                <label>Inbound SDR - Account Management</label>
+            </value>
+            <value>
+                <fullName>Inbound SDR - Fulfillment</fullName>
+                <default>false</default>
+                <label>Inbound SDR - Fulfillment</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Marketing/Culture</fullName>
+                <default>false</default>
+                <label>Marketing/Culture</label>
+            </value>
+            <value>
+                <fullName>Outbound SDR - Account Management</fullName>
+                <default>false</default>
+                <label>Outbound SDR - Account Management</label>
+            </value>
+            <value>
+                <fullName>Outbound SDR - Fulfillment</fullName>
+                <default>false</default>
+                <label>Outbound SDR - Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Outbound SDR - Operations</fullName>
+                <default>false</default>
+                <label>Outbound SDR - Operations</label>
+            </value>
+            <value>
+                <fullName>Product, Process, and Project Management</fullName>
+                <default>false</default>
+                <label>Product, Process, and Project Management</label>
+            </value>
+            <value>
+                <fullName>Recruiting</fullName>
+                <default>false</default>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <fullName>Sales/Sales Enablement</fullName>
+                <default>false</default>
+                <label>Sales/Sales Enablement</label>
+            </value>
+            <value>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Analytics</label>
+            </value>
+            <value>
+                <fullName>Digital Content &amp; Strategy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Digital Content &amp; Strategy</label>
+            </value>
+            <value>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email Marketing</label>
+            </value>
+            <value>
+                <fullName>Executive Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Executive Sales</label>
+            </value>
+            <value>
+                <fullName>HR / Recruiting / Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HR / Recruiting / Training</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Implementations / Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementations / Operations</label>
+            </value>
+            <value>
+                <fullName>Marketing Collateral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>Marketing Services Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing Services Account Management</label>
+            </value>
+            <value>
+                <fullName>Outbound Pipeline Account Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound Pipeline Account Management</label>
+            </value>
+            <value>
+                <fullName>Outbound Pipeline Activity Fulfillment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound Pipeline Activity Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Partner Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner Sales</label>
+            </value>
+            <value>
+                <fullName>Product &amp; Process Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product &amp; Process Management</label>
+            </value>
+            <value>
+                <fullName>Product Development / Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Development / Sales</label>
+            </value>
+            <value>
+                <fullName>Sales Enablement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Enablement</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Video Production</label>
+            </value>
+            <value>
+                <fullName>Website / Ongoing Creative Product Development</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Website / Ongoing Creative Product Development</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

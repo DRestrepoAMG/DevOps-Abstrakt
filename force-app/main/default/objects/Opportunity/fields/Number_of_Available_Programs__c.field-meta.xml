@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Available_Programs__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Industry__c,
+&apos;Accounting&apos;,Metro_Area__r.Accounting_Programs_Available__c,
+&apos;Advertising&apos;,Metro_Area__r.Advertising_Programs_Available__c,
+&apos;AT&amp;T - Alliance&apos; , Metro_Area__r.AT_T_Programs_Available__c,
+&apos;AT&amp;T - APEX&apos; , Metro_Area__r.AT_T_Programs_Available__c,
+&apos;Commercial Cleaning&apos; , Metro_Area__r.Commercial_Cleaning_Programs_Available__c  ,
+&apos;Commercial Roofing&apos; , Metro_Area__r.Commercial_Roofing_Programs_Available__c,
+&apos;Commercial Insurance&apos;,Metro_Area__r.Commercial_Insurance_Programs_Available__c,
+&apos;Construction&apos; ,  Metro_Area__r.Construction_Programs_Available__c  ,
+&apos;HVAC&apos; , Metro_Area__r.HVAC_Programs_Available__c  ,
+&apos;IT&apos; ,  Metro_Area__r.IT_Programs_Available__c,
+&apos;LED Lighting&apos; ,  Metro_Area__r.LED_Programs_Available__c,
+&apos;Mortgage - LO Recruitment&apos; ,  Metro_Area__r.LO_Recruitment_Available__c,
+&apos;Mortgage - Realtor Referral&apos; ,  Metro_Area__r.Mortgage_Programs_Available__c ,
+&apos;Real Estate Agent Recruitment&apos; ,  Metro_Area__r.Real_Estate_Agent_Recruitment_Available__c,
+&apos;Solar&apos; ,  Metro_Area__r.Solar_Programs_Available__c,
+&apos;Software&apos;,Metro_Area__r.Software_Programs_Available__c,
+&apos;Telecom&apos; ,  Metro_Area__r.Telecom_Programs_Available__c,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Number of Available Programs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

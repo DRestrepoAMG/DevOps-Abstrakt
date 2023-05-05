@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Overview</fullName>
+    <columns>NAME</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>Page_Blog_Title__c</columns>
+    <columns>Funnel_Focus__c</columns>
+    <columns>Goal__c</columns>
+    <columns>Value__c</columns>
+    <columns>Strategy_Notes__c</columns>
+    <columns>Client_Notes__c</columns>
+    <columns>Page_URL__c</columns>
+    <columns>Collateral_Type__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Collateral_Type__c</field>
+        <operation>equals</operation>
+        <value>Blog,New Page,Web Page,Web Page Refresh</value>
+    </filters>
+    <label>Content Overview</label>
+</ListView>

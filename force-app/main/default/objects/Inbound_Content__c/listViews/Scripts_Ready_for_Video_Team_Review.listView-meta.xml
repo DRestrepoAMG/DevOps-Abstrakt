@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scripts_Ready_for_Video_Team_Review</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Feedback__c</columns>
+    <columns>Revisions_Required__c</columns>
+    <columns>Client_Feedback_2nd_Round__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Video Team Review</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Marketing_Collateral,Inbound_Content__c.Video</value>
+    </filters>
+    <label>Scripts Ready for Video Team Review</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

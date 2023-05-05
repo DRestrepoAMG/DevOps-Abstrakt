@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Services_Cases</fullName>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>State_the_Issue__c</columns>
+    <columns>Case_Category__c</columns>
+    <columns>Total_Action_Hours_Completed__c</columns>
+    <columns>Business_Days_to_Resolve_Case__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Expected_Due_Date__c</columns>
+    <columns>Associated_Action__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Submitted_By__c</field>
+        <operation>contains</operation>
+        <value>Stevenson,Clark,Tichy,Yocco,goetz,derkach,graue,neff,chrismer,graham,halcomb</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>notContain</operation>
+        <value>audit,cancelled,linkedIn</value>
+    </filters>
+    <filters>
+        <field>Case_Category__c</field>
+        <operation>notEqual</operation>
+        <value>Creative - External,Creative - Internal,Design,Desk Move Request,Digital Strategy,Facilities / Maintenance Request,List Request,Website Development</value>
+    </filters>
+    <filters>
+        <field>Submitted_By__c</field>
+        <operation>notContain</operation>
+        <value>mary</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Inbound SDR Cases</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

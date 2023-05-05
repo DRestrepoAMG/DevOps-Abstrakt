@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abstrakt_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to roles object. Not AMC Roles.</description>
+    <externalId>false</externalId>
+    <label>Abstrakt Role</label>
+    <referenceTo>Role__c</referenceTo>
+    <relationshipLabel>Abstrakt Role User Details</relationshipLabel>
+    <relationshipName>Abstrakt_Role_User_Details</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

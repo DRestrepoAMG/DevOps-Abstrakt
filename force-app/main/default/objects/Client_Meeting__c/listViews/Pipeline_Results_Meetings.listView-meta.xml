@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Results_Meetings</fullName>
+    <columns>NAME</columns>
+    <columns>Meeting_Held_Date__c</columns>
+    <columns>Rewind__c</columns>
+    <columns>Review__c</columns>
+    <columns>Recommend__c</columns>
+    <columns>Recap__c</columns>
+    <columns>CSI_Score__c</columns>
+    <columns>Next_Meeting_Date_Time__c</columns>
+    <columns>Call_Recording_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Client_Meeting__c.Pipeline_Monthly_Results_Meetings</value>
+    </filters>
+    <label>Pipeline Results Meetings</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

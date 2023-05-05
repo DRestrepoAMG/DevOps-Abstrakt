@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moving_Up_Editors_Creative_Content</fullName>
+    <columns>Editor__c</columns>
+    <columns>Designer__c</columns>
+    <columns>Associated_Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Outbound_Asset_Manager__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Content_Writer__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Inbound_Content__c.Creative_Calendar,Inbound_Content__c.Ongoing_SEO_Content,Inbound_Content__c.Inbound_Content,Inbound_Content__c.Marketing_Collateral</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Internal Editing,Project Manager QA,Ready for Design</value>
+    </filters>
+    <label>Moving Up Editors Creative Content</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

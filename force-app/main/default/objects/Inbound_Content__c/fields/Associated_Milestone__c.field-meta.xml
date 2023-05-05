@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associated_Milestone__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Associated Milestone</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please select a milestone associated with the Project</errorMessage>
+        <filterItems>
+            <field>amc__Milestone__c.amc__Project__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Associated_Project__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>amc__Milestone__c</referenceTo>
+    <relationshipLabel>Creative Content</relationshipLabel>
+    <relationshipName>Creative_Content</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

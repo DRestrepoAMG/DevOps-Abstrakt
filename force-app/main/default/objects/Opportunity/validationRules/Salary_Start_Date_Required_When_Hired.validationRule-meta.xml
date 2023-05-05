@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salary_Start_Date_Required_When_Hired</fullName>
+    <active>true</active>
+    <description>Require the salary accepted be populated when stage is hired.</description>
+    <errorConditionFormula>AND (ISPICKVAL(StageName, &quot;Hired&quot;),
+OR(ISNULL( Accepted_Salary__c ),
+ISNULL( Candidate_Start_Date__c )),
+RecordTypeId = &apos;0124w000001Yqpv&apos;)</errorConditionFormula>
+    <errorMessage>Please provide the accepted salary amount and candidate&apos;s start date when stage is marked Hired.</errorMessage>
+</ValidationRule>

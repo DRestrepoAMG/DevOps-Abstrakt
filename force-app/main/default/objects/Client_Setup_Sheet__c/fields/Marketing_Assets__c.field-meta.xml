@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Assets__c</fullName>
+    <externalId>false</externalId>
+    <label>Assets Provided</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Landing Page Only</fullName>
+                <default>false</default>
+                <label>Landing Page Only</label>
+            </value>
+            <value>
+                <fullName>Landing Page and Marketing Collateral</fullName>
+                <default>false</default>
+                <label>Landing Page and Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>No Landing Page (Marketing Collateral Only)</fullName>
+                <default>false</default>
+                <label>No Landing Page (Marketing Collateral Only)</label>
+            </value>
+            <value>
+                <fullName>No Landing Page or Marketing Collateral</fullName>
+                <default>false</default>
+                <label>No Landing Page or Marketing Collateral</label>
+            </value>
+            <value>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Landing Page</label>
+            </value>
+            <value>
+                <fullName>Landing Page and Updated Assets</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Landing Page and Updated Assets</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Upgraded</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Upgraded</label>
+            </value>
+            <value>
+                <fullName>Upgraded Assets Only</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Upgraded Assets Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

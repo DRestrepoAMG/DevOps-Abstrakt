@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Main_POC__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup relationship to users for association of partner user to account that may, or may not, be the same as Partner User</description>
+    <externalId>false</externalId>
+    <label>Portal Main POC</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AccountsBeOH</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

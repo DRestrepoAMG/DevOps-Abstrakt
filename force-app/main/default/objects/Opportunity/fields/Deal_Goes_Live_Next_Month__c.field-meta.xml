@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Goes_Live_Next_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( MONTH(Today()) = MONTH(ADDMONTHS(Contract_Execution_Date__c,-1)) ,True,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Deal Goes Live Next Month</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

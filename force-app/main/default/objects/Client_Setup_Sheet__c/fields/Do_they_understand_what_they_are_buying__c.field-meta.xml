@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_they_understand_what_they_are_buying__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Do they understand that we are building a sales pipeline and the benefit of our program initially is to collect data, stay in touch and ultimately set up appointments that will lead to sales for them?</inlineHelpText>
+    <label>Do they understand what they are buying?</label>
+    <length>3000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>
