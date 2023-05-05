@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <constants>
+        <description>Paige Breuklander</description>
+        <name>APlayerManager</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>005G0000008xU77IAE</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Kristopher Karsten</description>
+        <name>HRBenefits</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054A00000A4JStQAN</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Leo Cotton</description>
+        <name>LeveeRaederFacilitiesUser</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054A000008xkHDQAY</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Grace Jacquot</description>
+        <name>MarketingOwner</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>005G0000007v40kIAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Mary Goetz</description>
+        <name>OfficeManager</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>005G0000001qiszIAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Jacqueline Roberts</description>
+        <name>PayRoll</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054A000008xjadQAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Demetrius McNutt</description>
+        <name>PeperFacilitiesUser</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054w00000AzGuIAAV</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Melissa McCoy</description>
+        <name>ProjectManager</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054A000008xXyJQAU</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Cassandra McGee</description>
+        <name>Reception</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0054A000009R4sNQAS</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Record_Type_Decision</name>
+        <label>Record Type Decision</label>
+        <locationX>315</locationX>
+        <locationY>400</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ESC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0124w000001YpvxAAC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.HR_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Processed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_ESC_Update_A_Player_Case</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>ESC</label>
+        </rules>
+        <rules>
+            <name>Termination</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0124w000001Ypw2AAC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.HR_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Process</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Termination_Record</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Termination</label>
+        </rules>
+    </decisions>
+    <description>Removed Swag Store case</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>for3Days</name>
+        <dataType>Date</dataType>
+        <expression>IF(MOD( Today() - DATE(1900, 1, 6), 7) &gt; 3,
+Today()  + 5,Today()  + 3)</expression>
+    </formulas>
+    <formulas>
+        <name>forESCLink</name>
+        <dataType>String</dataType>
+        <expression>&quot;https://amg.lightning.force.com/lightning/r/&quot;+{!Get_Termination_Record.Id}+&quot;/view&quot;</expression>
+    </formulas>
+    <formulas>
+        <description>2/18/22
+PeperFacilitiesUser &gt; Demetrius McNutt &gt; 0054w00000AzGuIAAV
+LeveeRaederFacilitiesUser &gt; Leo Cotton &gt; 0054A000008xkHDQAY
+Mary&gt; 005G0000001qiszIAA
+
+Leo: ALL LEV and RAE-05
+Demetrius: ALL PEP, RAE-01, RAE-02</description>
+        <name>forFacilitiesAssignment</name>
+        <dataType>String</dataType>
+        <expression>IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;LEV&quot;),{!LeveeRaederFacilitiesUser},
+IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;RAE-05&quot;),{!LeveeRaederFacilitiesUser},
+IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;PEP&quot;),{!LeveeRaederFacilitiesUser},
+IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;RAE-01&quot;),{!PeperFacilitiesUser},
+IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;RAE-02&quot;),{!PeperFacilitiesUser},
+IF(CONTAINS({!Get_Termination_Record.Employee_Name__r.Desk_Number__c},&quot;RAE-03&quot;),{!LeveeRaederFacilitiesUser},
+&quot;005G0000001qiszIAA&quot;))))))</expression>
+    </formulas>
+    <formulas>
+        <name>forTenDays</name>
+        <dataType>Date</dataType>
+        <expression>IF(MOD( TODAY()  - DATE(1900, 1, 6), 7) &gt; 1,
+TODAY()  + 14,TODAY()  + 12)</expression>
+    </formulas>
+    <formulas>
+        <name>forTwoDays</name>
+        <dataType>Date</dataType>
+        <expression>IF(MOD( TODAY()  - DATE(1900, 1, 6), 7) &gt; 4,
+TODAY()  + 4,TODAY()  + 2)</expression>
+    </formulas>
+    <formulas>
+        <name>forUserId</name>
+        <dataType>String</dataType>
+        <expression>CASESAFEID({!$User.Id})</expression>
+    </formulas>
+    <interviewLabel>ESC: Record Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ESC: Record Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_ESC_Update_A_Player_Case</name>
+        <label>Create ESC Update A-Player Case</label>
+        <locationX>196</locationX>
+        <locationY>487</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <stringValue>0014A00002iQDE3QAO</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>A-Player Scorecard</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Product, Process, Reporting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>txtDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>005G0000008xU77IAE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>20 - Lowest Priority</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>ESC Update A-Player</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <stringValue>https://amg.lightning.force.com/lightning/r/ESC__c/{!$Record.Id}/view</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Facilities_Case</name>
+        <label>Create Facilities Case</label>
+        <locationX>554</locationX>
+        <locationY>941</locationY>
+        <connector>
+            <targetReference>Create_Reception_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Facilities / Maintenance Request</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Office / Facilities Requests</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>FacilitiesDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>forFacilitiesAssignment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Facilities</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_HR_Benefits_Case</name>
+        <label>Create HR/Benefits Case</label>
+        <locationX>558</locationX>
+        <locationY>1717</locationY>
+        <connector>
+            <targetReference>Update_User_Term_Date</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Role Documents</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Types__c</field>
+            <value>
+                <stringValue>Other</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Human Resources / Training / A-Player Requests</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>HRBenefitsDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>HRBenefits</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - HR/Benefits</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Marketing_Case</name>
+        <label>Create Marketing Case</label>
+        <locationX>548</locationX>
+        <locationY>1323</locationY>
+        <connector>
+            <targetReference>Create_Payroll_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Video / Photography</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Types__c</field>
+            <value>
+                <stringValue>Testimonial Video</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Internal Marketing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>MarketingDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>MarketingOwner</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Marketing Materials</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Office_Manager_Case</name>
+        <label>Create Office Manager Case</label>
+        <locationX>550</locationX>
+        <locationY>1195</locationY>
+        <connector>
+            <targetReference>Create_Marketing_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Facilities / Maintenance Request</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Office / Facilities Requests</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>OfficeManagerDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>OfficeManager</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Update Seating Chart</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Payroll_Case</name>
+        <label>Create Payroll Case</label>
+        <locationX>547</locationX>
+        <locationY>1594</locationY>
+        <connector>
+            <targetReference>Create_HR_Benefits_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTenDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Accounting Questions</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Accounting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>PayrollDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>PayRoll</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Payroll Updates</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Reception_Case</name>
+        <label>Create Reception Case</label>
+        <locationX>549</locationX>
+        <locationY>1052</locationY>
+        <connector>
+            <targetReference>Create_Office_Manager_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Facilities / Maintenance Request</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Office / Facilities Requests</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>ReceptionDesciption</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Reception</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Executive Assistant</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>PM_Case_Aplayer</name>
+        <label>PM Case - Aplayer</label>
+        <locationX>549</locationX>
+        <locationY>655</locationY>
+        <connector>
+            <targetReference>PM_Case_Reporting_Dashboards</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <stringValue>0014A00002iQDE3QAO</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>for3Days</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>A-Player Scorecard</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Types__c</field>
+            <value>
+                <stringValue>Edits</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Product, Process, Reporting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>APlayerDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>APlayerManager</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - A-Player Update</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>PM_Case_Reporting_Dashboards</name>
+        <label>PM Case-Reporting / Dashboards</label>
+        <locationX>550</locationX>
+        <locationY>784</locationY>
+        <connector>
+            <targetReference>Create_Facilities_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <stringValue>0014A00002iQDE3QAO</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Assigned_Must_be_Resolved_by_Date__c</field>
+            <value>
+                <elementReference>forTwoDays</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_Category__c</field>
+            <value>
+                <stringValue>Reporting / Dashboards</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department_Responsible_for_Issue__c</field>
+            <value>
+                <stringValue>Product, Process, Reporting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>ProjectManagementDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ESC__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Guided_Case_Submission__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>APlayerManager</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Abstrakt Termination - Project Management</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submitted_By__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>URLs_Provided_by_Submitter__c</field>
+            <value>
+                <elementReference>forESCLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Termination_Record</name>
+        <label>Get Termination Record</label>
+        <locationX>551</locationX>
+        <locationY>537</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>PM_Case_Aplayer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ESC__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_User_Term_Date</name>
+        <label>Update User Term Date</label>
+        <locationX>563</locationX>
+        <locationY>1852</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Termination_Record.Employee_Name__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Never_Started__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Never_Started__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Termination_Date__c</field>
+            <value>
+                <elementReference>Get_Termination_Record.Term_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <start>
+        <locationX>206</locationX>
+        <locationY>52</locationY>
+        <connector>
+            <targetReference>Record_Type_Decision</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 AND 2) OR (3 AND 4 AND 5)</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0124w000001Ypw2AAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HR_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>In Process</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HR_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Processed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0124w000001YpvxAAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Automation_Processed__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>ESC__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>APlayerDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} user was terminated on {!Get_Termination_Record.Term_Date__c} – Please update their A-Player scorecard to Past Employee Scorecard to reduce batch update sizes. Additionally, please check if any managers&apos; scorecards and impacted and make any necessary updates.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>FacilitiesDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}.
+
+Desk Location: {!Get_Termination_Record.Employee_Name__r.Desk_Number__c}
+
+Please complete the following items:
+•	Collect all personal items from their desk and bring to Cassi’s desk.
+•	Return all IT equipment to the IT Help desk.
+•	Clean and disinfect the desk and drawers.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>HRBenefitsDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}.
+
+Please terminate benefits in Caravus.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>MarketingDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}.
+
+Please review to ensure the employee is not on any spotlight posts or similar marketing materials.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>OfficeManagerDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}.
+
+Desk Location: {!Get_Termination_Record.Employee_Name__r.Desk_Number__c}
+
+Please remove the employee from the seating chart.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PayrollDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}. Please complete the following items within the term process:
+
+1)	Receive Notification of Termination email from HR
+
+2)	Term Information (from HR secondary email)
+             a.         Determine if Voluntary or Involuntary
+             b.         Receive reason for Termination email from HR
+             c.	         Determine the date of termination, if different from LDW
+
+3)	Calculate final check amount:
+             a.	Determine the last date worked (on ESC record)
+             b.	Lookup Annual/Hourly Wage
+              c.	Calculate the number of hours to be paid on final
+             d.	Determine if Sign-On Bonus was paid
+             e.	Determine any Benefit deductions from final
+              f.	Determine any Food Purchases
+             g.	Determine PTO Eligibility Payout/Deduction (on ESC record)
+             h.	Determine any AB Store Purchases (Danny Beene Case)
+
+4)	Deactivation: 
+             a.	Delete any future PTO that was scheduled
+             b.	Terminate in Paylocity
+5)	Documentations: 
+             a.	Log on Payroll Worksheet in Excel
+             b.	Log PTO hours paid out/deducted/forfeited
+              c.	Log any pay that was paid out in advance due to payroll submission time
+
+6)	Verify all Equipment is returned to Abstrakt
+
+7)	Final Paycheck Timeline
+             a.	Run a Check Preview/Notify Accounting if a manual check is required for an Involuntary termination
+             b.	Voluntary terminations payout on the next scheduled payroll</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ProjectManagementDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c} – Please make the employee inactive on their user details. 
+
+1. Update the User.
+a) Clear the fields: Assistant Manager, Director, Sales Manager Director, and the Next Month Manager.
+b) Check the checkbox: Pipeline Fulfillment Update &amp; Save
+
+2. Make Employee Inactive.
+a) Update Role &amp; Profile to “Past Employee”, Uncheck Active checkbox &amp; save. A notification box will pop up – click OK
+b) User Deactivation screen will pop up – Click “Remove user from account teams” if they were ever an Account Manager. When in doubt, check the box, it won’t hurt anything.
+
+3. Deactivate employee in Litmos.
+a) Go to Litmos, Go to People Tab
+b) Type a person’s name, click on person, click button for “Deactivate User”</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ReceptionDesciption</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Get_Termination_Record.Employee_Name_formula__c} was terminated on {!Get_Termination_Record.Term_Date__c}.
+
+Desk Location: {!Get_Termination_Record.Employee_Name__r.Desk_Number__c}
+
+Please complete the following items:
+•	Setup courier for sending personal items from desk to past employees’ home (if applicable)
+•	Plan for their IT equipment to be couriered back to the office (if applicable)
+•	Once all items are returned and IT approves – let HR and Payroll know that the employee has passed “inspection”
+•	Make sure employee badge and parking pass are turned in and employee badge inactive.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txtDescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Please update or double-check the employee is on the correct A-Player Scorecard:
+{!$Record.New_Title__c}: Scorecard
+Employee Name: {!$Record.Employee_Name_formula__c}
+Current Title: {!$Record.Current_Title__c}
+New Title: {!$Record.New_Title__c}
+Effective Date: {!$Record.Effective_Date__c}</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varesc</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

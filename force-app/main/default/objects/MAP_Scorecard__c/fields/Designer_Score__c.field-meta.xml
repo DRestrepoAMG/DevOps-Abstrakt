@@ -9,7 +9,7 @@ IF(ISPICKVAL(Designer_Design_Engaging__c,&apos;NA&apos;),0,VALUE(TEXT(Designer_D
 (15+IF(ISPICKVAL(Designer_Design_Engaging__c,&apos;NA&apos;),0,5)
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Impacted By: Part 3 (Design Proofer), Part 5 (Video Producer), &amp; Part 6 (Senior Auditor)</inlineHelpText>
+    <inlineHelpText>Impacted By: Part 3 (Design Proofer) &amp; Part 6 (Senior Auditor / &quot;Manager&quot;)</inlineHelpText>
     <label>Designer Score</label>
     <precision>18</precision>
     <required>false</required>

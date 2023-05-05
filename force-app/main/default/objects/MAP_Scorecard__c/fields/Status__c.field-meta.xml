@@ -22,11 +22,6 @@
                 <label>In Progress</label>
             </value>
             <value>
-                <fullName>Editing</fullName>
-                <default>false</default>
-                <label>Editing</label>
-            </value>
-            <value>
                 <fullName>Marketing Manager</fullName>
                 <default>false</default>
                 <label>Marketing Manager</label>
@@ -55,6 +50,12 @@
                 <fullName>Completed</fullName>
                 <default>false</default>
                 <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Editing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Editing</label>
             </value>
             <value>
                 <fullName>Part 1-4 Complete</fullName>

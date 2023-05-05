@@ -1001,6 +1001,10 @@
             <fullName>5</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Commitment_Recap__c</picklist>
@@ -1270,6 +1274,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1617,6 +1625,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1981,6 +1993,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3423,6 +3439,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -5605,10 +5625,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Editing</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Editor Final QA</fullName>
             <default>false</default>
         </values>
@@ -5649,6 +5665,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -5818,6 +5838,10 @@
             <fullName>5</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Technicality_Video__c</picklist>
@@ -5874,6 +5898,10 @@
         </values>
         <values>
             <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
             <default>false</default>
         </values>
     </picklistValues>

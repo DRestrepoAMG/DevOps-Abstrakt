@@ -11,7 +11,7 @@ IF(ISPICKVAL(Producer_Production_Engaging__c,&apos;NA&apos;),0,VALUE(TEXT(Produc
 (15+IF(ISPICKVAL(Producer_Production_Engaging__c,&apos;NA&apos;),0,5)
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Impacted By: Part 5 (Producer) &amp; Part 6 (Senior Auditor)</inlineHelpText>
+    <inlineHelpText>Impacted By: Part 5 (Producer) &amp; Part 6 (Senior Auditor / &quot;Manager&quot;)</inlineHelpText>
     <label>Video Score</label>
     <precision>18</precision>
     <required>false</required>

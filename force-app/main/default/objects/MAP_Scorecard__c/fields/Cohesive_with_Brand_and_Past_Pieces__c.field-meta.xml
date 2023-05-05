@@ -46,7 +46,6 @@ Score Impacted: Designer Score</inlineHelpText>
             <value>
                 <fullName>NA</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>NA</label>
             </value>
         </valueSetDefinition>

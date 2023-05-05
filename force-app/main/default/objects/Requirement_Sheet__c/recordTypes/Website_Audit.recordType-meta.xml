@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Website_Audit</fullName>
     <active>true</active>
+    <description>DEACTIVATE THIS. Not being used since 2020 ( as of 5/2023 )</description>
     <label>Website Audit</label>
     <picklistValues>
         <picklist>About_Us_Video__c</picklist>

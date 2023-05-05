@@ -26,7 +26,7 @@
 		)
 		)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>Impacted By: Part 1 (Editor), Part 5 (Video Producer), &amp; Part 6 (Senior Auditor)</inlineHelpText>
+    <inlineHelpText>Impacted By: Part 1 (Editor)  &amp; Part 6 (Senior Auditor / &quot;Manager&quot;)</inlineHelpText>
     <label>Copywriter Score</label>
     <precision>18</precision>
     <required>false</required>
