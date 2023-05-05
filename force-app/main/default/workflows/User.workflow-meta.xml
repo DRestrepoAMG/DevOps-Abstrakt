@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HR_SURVEY_45_DAYS</fullName>
+        <description>HR Survey sent out after 45 days since hire date</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>kkarsten@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>HR_Email_Templates/X30_Day_Satisfaction_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Survey_sent_out_after_90_days_since_hire_date</fullName>
+        <description>HR Survey sent out after 90 days since hire date</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>kkarsten@abstraktmg.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>HR_Email_Templates/X90_Day_Satisfaction_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Exec_Sales_Notification_For_Pardot</fullName>
+        <description>New Exec Sales Notification For Pardot</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pheidbrier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>New_Email_Platform/Abstrakt_New_Exec_Sales_User_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Maryville_BDS_Notification_For_Pardot</fullName>
+        <description>New Maryville BDS Notification For Pardot</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pheidbrier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>New_Email_Platform/Abstrakt_New_PSR_User_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_PSR_Notification_For_Pardot</fullName>
+        <description>New PSR Notification For Pardot</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>hwischmeier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pheidbrier@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>New_Email_Platform/Abstrakt_New_PSR_User_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Clear_Manager_Field</fullName>
+        <field>ManagerId</field>
+        <name>Clear Manager Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Deactivate_User</fullName>
+        <description>This action deactivates a user.</description>
+        <field>IsActive</field>
+        <literalValue>0</literalValue>
+        <name>Deactivate User</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PSR_Team_Remove</fullName>
+        <field>Partner_Sales_Team__c</field>
+        <name>PSR Team Remove</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Manager</fullName>
+        <field>Last_Manager__c</field>
+        <formula>Manager.FirstName +&quot; &quot;+ Manager.LastName</formula>
+        <name>Update Last Manager</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Survey_Report_ID_Text</fullName>
+        <field>Survey_Report_Id_Text__c</field>
+        <formula>Survey_Report_Id__c</formula>
+        <name>Update Survey Report ID Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_termination_date</fullName>
+        <field>Termination_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update termination date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <flowActions>
+        <fullName>Start_Portal_User_Automation_Flow</fullName>
+        <flow>Automated_Portal_User_Configuration</flow>
+        <flowInputs>
+            <name>AccountId</name>
+            <value>{!Contact.Account.Id}</value>
+        </flowInputs>
+        <flowInputs>
+            <name>AccountName</name>
+            <value>{!Contact.Account.Name}</value>
+        </flowInputs>
+        <flowInputs>
+            <name>AccountRecordTypeID</name>
+            <value>{!Contact.Account.RecordType.Id}</value>
+        </flowInputs>
+        <flowInputs>
+            <name>ClientContactID</name>
+            <value>{!ContactId}</value>
+        </flowInputs>
+        <flowInputs>
+            <name>PartnerUserID</name>
+            <value>{!Id}</value>
+        </flowInputs>
+        <label>Start Portal User Automation Flow</label>
+        <language>en_US</language>
+        <protected>false</protected>
+    </flowActions>
+    <outboundMessages>
+        <fullName>Outbound_Message_to_Litmos</fullName>
+        <apiVersion>55.0</apiVersion>
+        <endpointUrl>https://www.workato.com/webhooks/rest/a5ef3b26-ee87-4245-9592-8dc6c3b4dbb3/user-webhook</endpointUrl>
+        <fields>Email</fields>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>sboudreau@abstraktmg.com</integrationUser>
+        <name>Outbound Message to Litmos</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Clear Manager When User is Inactive</fullName>
+        <actions>
+            <name>Clear_Manager_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Remove PSR Team</fullName>
+        <actions>
+            <name>PSR_Team_Remove</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Start User Creation Process</fullName>
+        <actions>
+            <name>Start_Portal_User_Automation_Flow</name>
+            <type>FlowAction</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client User - Inbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client User - Inbound/Outbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Pipeline Client User - Outbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Last Manager</fullName>
+        <actions>
+            <name>Update_Last_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update termination date</fullName>
+        <actions>
+            <name>Update_termination_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

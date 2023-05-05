@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Creative_Brief_Follow_Up_Email</fullName>
+        <description>Creative Brief Follow-Up Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>nwulf@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Marketing_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Creative_Brief_Follow_Up</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Unresponsive_On_Hold</fullName>
+        <description>Email Unresponsive On-Hold</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>nwulf@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Marketing_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/On_Hold_Client_Unresponsive_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Notify_POMS</fullName>
+        <description>Email to Notify POMS</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nwulf@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Marketing_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Internal_Link_for_Marketing_Assets</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_POM_of_Update</fullName>
+        <description>Notify POM of Update</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nwulf@abstraktmg.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Marketing_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Abstrakt_Marketing_Group/Internal_Link_for_Marketing_Assets</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Moves_to_Unreponsive</fullName>
+        <field>Status__c</field>
+        <literalValue>On Hold - Client Unresponsive</literalValue>
+        <name>Moves to Unreponsive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Completed_Date_on_Marketing_Asset</fullName>
+        <description>Updates Completed Date when Email Updated field is checked.</description>
+        <field>Completed_Date__c</field>
+        <formula>TODAY ()</formula>
+        <name>Update Completed Date on Marketing Asset</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Unresponsive</fullName>
+        <field>Status__c</field>
+        <literalValue>On Hold - Client Unresponsive</literalValue>
+        <name>Update Status to Unresponsive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Unresponsive_1</fullName>
+        <field>Status__c</field>
+        <literalValue>On Hold - Client Unresponsive</literalValue>
+        <name>Update Status to Unresponsive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Completed_w_o_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Complete Without Approval</literalValue>
+        <name>Update to Completed w/o Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Create Case to Upload Completed Marketing Asset</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Asset_Package__c</field>
+            <operation>equals</operation>
+            <value>Custom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Asset Ready for Upload Notification</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Asset_Package__c</field>
+            <operation>equals</operation>
+            <value>Custom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Completed Date on Marketing Asset</fullName>
+        <actions>
+            <name>Update_Completed_Date_on_Marketing_Asset</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Email_Updated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Waiting on Creative Brief</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Waiting on Creative Brief from Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Marketing_Asset__c.Due_Date__c</field>
+            <operation>lessThan</operation>
+            <value>NEXT MONTH</value>
+        </criteriaItems>
+        <description>After 3 days email is sent to the client and POM</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Creative_Brief_Follow_Up_Email</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Notify_POM_of_Update</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Email_Unresponsive_On_Hold</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Update_Status_to_Unresponsive_1</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

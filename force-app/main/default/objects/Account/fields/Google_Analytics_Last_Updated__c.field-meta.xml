@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Google_Analytics_Last_Updated__c</fullName>
+    <description>Tracks when the workato recipe for google analytics was last completed.</description>
+    <externalId>false</externalId>
+    <label>Google Analytics Last Updated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

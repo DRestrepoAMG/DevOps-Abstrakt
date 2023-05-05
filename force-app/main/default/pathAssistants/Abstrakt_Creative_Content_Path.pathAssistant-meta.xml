@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Inbound_Content__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Abstrakt Creative Content Path</masterLabel>
+    <recordTypeName>Abstrakt_Content</recordTypeName>
+</PathAssistant>
