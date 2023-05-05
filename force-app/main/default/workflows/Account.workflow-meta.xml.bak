@@ -504,7 +504,7 @@
         <description>Notification to Create Inbound User</description>
         <protected>false</protected>
         <recipients>
-            <recipient>pheidbrier@abstraktmg.com</recipient>
+            <recipient>hwischmeier@abstraktmg.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -859,7 +859,7 @@ TEXT(YEAR(TODAY()))</formula>
     <outboundMessages>
         <fullName>Account_Real_Time_Workato_Webhook</fullName>
         <apiVersion>42.0</apiVersion>
-        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Account&amp;org_id=00D7h0000004kK9</endpointUrl>
+        <endpointUrl>https://www.workato.com/webhooks/notify/salesforce?sobject=Account&amp;org_id=00D7j0000004fAX</endpointUrl>
         <fields>Current_PSR__c</fields>
         <fields>Id</fields>
         <fields>Org_Wide_Email_Id__c</fields>
@@ -942,7 +942,7 @@ ISCHANGED( Program_Size__c ),
             <name>Automotive_Account_Satisfaction_Level_Change</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Satisfaction_Level__c</field>
             <operation>equals</operation>
@@ -981,7 +981,7 @@ ISCHANGED( Program_Size__c ),
             <name>Automotive_Client_Cancellation</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.RecordTypeId</field>
             <operation>equals</operation>
@@ -996,7 +996,7 @@ ISCHANGED( Program_Size__c ),
     </rules>
     <rules>
         <fullName>Billed Amount Shifts - Populate 3 Amount Fields</fullName>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Billed_Amount__c</field>
             <operation>notEqual</operation>
@@ -1468,7 +1468,7 @@ ISCHANGED(Cancel_Date__c))</formula>
     </rules>
     <rules>
         <fullName>Update Infinity Costs Based on Appt Goal</fullName>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.RecordTypeId</field>
             <operation>equals</operation>
@@ -1505,7 +1505,7 @@ ISCHANGED(Cancel_Date__c))</formula>
     </rules>
     <rules>
         <fullName>Update Sales Territory Field</fullName>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Status__c</field>
             <operation>equals</operation>
@@ -1537,7 +1537,7 @@ ISCHANGED(Cancel_Date__c))</formula>
     </rules>
     <rules>
         <fullName>Weekly Task Creation - Kickoff %28Auto%29</fullName>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.RecordTypeId</field>
             <operation>equals</operation>
@@ -1557,7 +1557,7 @@ ISCHANGED(Cancel_Date__c))</formula>
             <name>Dealer_Acct_Mgmt_Meeting</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
         <criteriaItems>
             <field>Account.Name</field>
