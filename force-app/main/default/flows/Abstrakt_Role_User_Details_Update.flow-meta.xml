@@ -54,6 +54,13 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
+        <name>Brad_Test</name>
+        <label>Brad Test</label>
+        <locationX>633</locationX>
+        <locationY>647</locationY>
+        <inputReference>$Record</inputReference>
+    </recordCreates>
+    <recordCreates>
         <name>Create_New_Abstrakt_Role_User_Detail</name>
         <label>Create New Abstrakt Role User Detail</label>
         <locationX>172</locationX>

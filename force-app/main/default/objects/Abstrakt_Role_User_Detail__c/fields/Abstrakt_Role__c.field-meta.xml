@@ -5,6 +5,16 @@
     <description>Lookup to roles object. Not AMC Roles.</description>
     <externalId>false</externalId>
     <label>Abstrakt Role</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Abstrakt role status must be active.</errorMessage>
+        <filterItems>
+            <field>Role__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Role__c</referenceTo>
     <relationshipLabel>Abstrakt Role User Details</relationshipLabel>
     <relationshipName>Abstrakt_Role_User_Details</relationshipName>

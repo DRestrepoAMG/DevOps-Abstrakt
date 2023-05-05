@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_Industry_When_Industry_is_Other</fullName>
+    <active>true</active>
+    <description>The source industry field must be filled out when the industry field is marked other.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Industry__c, &quot;Other&quot;),
+ISBLANK(TEXT( Source_Industry__c )))</errorConditionFormula>
+    <errorMessage>You must fill out the Source Industry field if the Industry is &quot;Other&quot;.</errorMessage>
+</ValidationRule>

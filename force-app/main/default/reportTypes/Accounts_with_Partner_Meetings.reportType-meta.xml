@@ -2445,21 +2445,6 @@
             <field>of_Closed_Opportunities__c</field>
             <table>Account</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SEMrush_Last_Updated__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Google_Analytics_Last_Updated__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>GTMetrix_Last_Updated__c</field>
-            <table>Account</table>
-        </columns>
         <masterLabel>Accounts</masterLabel>
     </sections>
     <sections>
@@ -4556,6 +4541,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Sitemap_Strategy_Workbook_Link__c</field>
+            <table>Account.Monthly_Results_Meetings__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Are_you_willing_to_provide_a_referral__c</field>
             <table>Account.Monthly_Results_Meetings__r</table>
         </columns>
         <masterLabel>Partner Meetings</masterLabel>
